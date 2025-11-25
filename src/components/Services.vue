@@ -8,7 +8,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Service 1: Korean Skin Aesthetic (PRIMARY) -->
-        <div id="skin-aesthetic" class="group bg-white p-6 rounded-2xl text-center cursor-pointer relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 border border-gray-100">
+        <router-link to="/skin-aesthetic" id="skin-aesthetic" class="group bg-white p-6 rounded-2xl text-center cursor-pointer relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 border border-gray-100">
           <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           
           <div class="mb-8 overflow-hidden rounded-xl relative aspect-[4/3]">
@@ -23,10 +23,10 @@
             <span>Learn More</span>
             <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </div>
-        </div>
+        </router-link>
 
         <!-- Service 2: Anti-Aging Dermatology (SECONDARY) -->
-        <div id="dermatology" class="group bg-white p-6 rounded-2xl text-center cursor-pointer relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 border border-gray-100">
+        <router-link to="/dermatology" id="dermatology" class="group bg-white p-6 rounded-2xl text-center cursor-pointer relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 border border-gray-100">
           <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           
           <div class="mb-8 overflow-hidden rounded-xl relative aspect-[4/3]">
@@ -41,10 +41,10 @@
             <span>Learn More</span>
             <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </div>
-        </div>
+        </router-link>
 
         <!-- Service 3: Aesthetic Dentistry (MINIMAL) -->
-        <div id="dentistry" class="group bg-white p-6 rounded-2xl text-center cursor-pointer relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 border border-gray-100">
+        <router-link to="/dentistry" id="dentistry" class="group bg-white p-6 rounded-2xl text-center cursor-pointer relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 border border-gray-100">
           <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           
           <div class="mb-8 overflow-hidden rounded-xl relative aspect-[4/3]">
@@ -59,7 +59,7 @@
             <span>Learn More</span>
             <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </section>

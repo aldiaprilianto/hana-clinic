@@ -30,30 +30,30 @@ onUnmounted(() => {
         v-for="(bg, index) in backgrounds" 
         :key="index"
         class="absolute inset-0 transition-opacity duration-1000"
-        :class="currentBg === index ? 'opacity-30' : 'opacity-0'"
+        :class="currentBg === index ? 'opacity-50' : 'opacity-0'"
       >
         <img :src="bg" alt="Korean Beauty Treatment" class="w-full h-full object-cover" />
       </div>
     </div>
 
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white/80 via-white/70 to-white/80"></div>
+    <!-- Gradient Overlay - More subtle for better background visibility -->
+    <div class="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/60"></div>
 
     <!-- Animated Particles/Glow -->
     <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-[100px] animate-glow"></div>
     <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px] animate-glow delay-1000"></div>
 
     <div class="container mx-auto px-6 relative z-10 text-center pt-20">
-      <div class="glass inline-block px-6 py-2 rounded-full mb-8 animate-slide-up border-primary/10">
+      <div class="glass inline-block px-6 py-2 rounded-full mb-8 animate-slide-up border-primary/10 bg-white/80">
         <h2 class="text-xs md:text-sm uppercase tracking-[0.3em] text-primary/80">Korean Beauty Technology</h2>
       </div>
       
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-tight animate-slide-up delay-100 text-dark">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-tight animate-slide-up delay-100 text-dark drop-shadow-lg">
         Advanced Korean <br/>
         <span class="italic font-light bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary">Skin Aesthetic</span>
       </h1>
       
-      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light text-gray-700 leading-relaxed animate-slide-up delay-200 backdrop-blur-sm p-4 rounded-xl border border-white/40 bg-white/50">
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light text-gray-800 leading-relaxed animate-slide-up delay-200 backdrop-blur-sm p-4 rounded-xl border border-white/40 bg-white/70 shadow-lg">
         Experience world-class Korean beauty treatments. From advanced anti-aging procedures to transformative skin rejuvenation with cutting-edge technology.
       </p>
       
@@ -61,7 +61,7 @@ onUnmounted(() => {
         <a href="#contact" class="bg-primary text-white px-10 py-4 hover:bg-dark transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium rounded-full shadow-lg hover:shadow-xl hover:scale-105">
           Book Consultation
         </a>
-        <a href="#skin-aesthetic" class="px-10 py-4 text-primary hover:text-accent transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium flex items-center gap-2 group bg-white/50 backdrop-blur-sm rounded-full">
+        <a href="#skin-aesthetic" class="px-10 py-4 text-primary hover:text-accent transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium flex items-center gap-2 group bg-white/70 backdrop-blur-sm rounded-full shadow-lg">
           <span>View Treatments</span>
           <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </a>

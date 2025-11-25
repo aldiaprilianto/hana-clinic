@@ -24,12 +24,10 @@ onUnmounted(() => {
   ]">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <div class="flex items-center">
-        <a href="#" class="flex items-center gap-2 group">
-          <!-- Logo Placeholder or Image -->
-          <div class="text-2xl font-serif font-bold text-primary tracking-widest group-hover:text-accent transition-colors">
-            HANA <span class="text-accent">CLINIC</span>
-          </div>
-        </a>
+        <router-link to="/" class="flex items-center gap-2 group">
+          <!-- Logo Image -->
+          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
+        </router-link>
       </div>
       
       <!-- Desktop Menu -->
