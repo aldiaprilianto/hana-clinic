@@ -19,52 +19,82 @@ onUnmounted(() => {
 
 <template>
   <header :class="[
-    'fixed w-full z-50 transition-all duration-300',
-    isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'
+    'fixed w-full z-50 transition-all duration-500',
+    isScrolled ? 'glass py-4' : 'bg-transparent py-6'
   ]">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <div class="flex items-center">
-        <a href="#" class="flex items-center gap-2">
-          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-12 w-auto" />
+        <a href="#" class="flex items-center gap-2 group">
+          <!-- Logo Placeholder or Image -->
+          <div class="text-2xl font-serif font-bold text-primary tracking-widest group-hover:text-accent transition-colors">
+            HANA <span class="text-accent">CLINIC</span>
+          </div>
         </a>
       </div>
       
       <!-- Desktop Menu -->
       <nav class="hidden md:flex items-center space-x-8">
-        <a href="#" :class="['hover:text-accent transition-colors uppercase text-xs tracking-[0.2em] font-medium', isScrolled ? 'text-dark' : 'text-primary']">Home</a>
-        <a href="#services" :class="['hover:text-accent transition-colors uppercase text-xs tracking-[0.2em] font-medium', isScrolled ? 'text-dark' : 'text-primary']">Services</a>
-        <a href="#about" :class="['hover:text-accent transition-colors uppercase text-xs tracking-[0.2em] font-medium', isScrolled ? 'text-dark' : 'text-primary']">About</a>
-        <a href="#testimonials" :class="['hover:text-accent transition-colors uppercase text-xs tracking-[0.2em] font-medium', isScrolled ? 'text-dark' : 'text-primary']">Stories</a>
-        <a href="#contact" class="bg-primary text-white px-6 py-2.5 hover:bg-dark transition-all duration-300 uppercase text-xs tracking-[0.2em] font-medium rounded-full shadow-md hover:shadow-lg">Book Now</a>
+        <a href="#" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Home</a>
+        <a href="#skin-aesthetic" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Skin Aesthetic</a>
+        <a href="#equipment" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Technology</a>
+        <a href="#about" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">About</a>
+        <a href="#contact" class="btn-primary ml-4">
+          Book Appointment
+        </a>
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button @click="isMenuOpen = !isMenuOpen" :class="['md:hidden focus:outline-none', isScrolled ? 'text-dark' : 'text-primary']">
+      <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-primary focus:outline-none hover:text-accent transition-colors">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
 
     <!-- Mobile Menu -->
     <transition
-      enter-active-class="transition duration-200 ease-out"
+      enter-active-class="transition duration-300 ease-out"
       enter-from-class="transform -translate-y-4 opacity-0"
       enter-to-class="transform translate-y-0 opacity-100"
-      leave-active-class="transition duration-150 ease-in"
+      leave-active-class="transition duration-200 ease-in"
       leave-from-class="transform translate-y-0 opacity-100"
       leave-to-class="transform -translate-y-4 opacity-0"
     >
-      <div v-if="isMenuOpen" class="md:hidden bg-white absolute w-full shadow-lg border-t border-gray-100">
-        <div class="flex flex-col px-6 py-6 space-y-4">
-          <a href="#" class="text-dark hover:text-primary uppercase text-xs tracking-[0.2em] font-medium">Home</a>
-          <a href="#services" class="text-dark hover:text-primary uppercase text-xs tracking-[0.2em] font-medium">Services</a>
-          <a href="#about" class="text-dark hover:text-primary uppercase text-xs tracking-[0.2em] font-medium">About</a>
-          <a href="#testimonials" class="text-dark hover:text-primary uppercase text-xs tracking-[0.2em] font-medium">Stories</a>
-          <a href="#contact" class="bg-primary text-white px-6 py-3 text-center hover:bg-dark uppercase text-xs tracking-[0.2em] font-medium">Book Now</a>
+      <div v-if="isMenuOpen" class="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-lg">
+        <div class="flex flex-col px-6 py-8 space-y-6">
+          <a href="#" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Home</a>
+          <a href="#skin-aesthetic" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Skin Aesthetic</a>
+          <a href="#equipment" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Technology</a>
+          <a href="#about" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">About</a>
+          <a href="#contact" class="btn-primary text-center w-full">Book Now</a>
         </div>
       </div>
     </transition>
   </header>
 </template>
+
+<style scoped>
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #C5A059;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-primary {
+  @apply bg-accent text-primary px-6 py-2.5 uppercase text-xs tracking-[0.2em] font-bold rounded-sm hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)] hover:shadow-[0_0_30px_rgba(197,160,89,0.5)];
+}
+</style>

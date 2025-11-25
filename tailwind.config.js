@@ -7,14 +7,35 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#334155', // Slate 700 - Sophisticated Dark
-                secondary: '#F8FAFC', // Slate 50 - Clean White
-                dark: '#0F172A', // Slate 900
-                accent: '#38BDF8', // Sky 400 - Futuristic Glow
+                primary: '#0f75bc', // Hana Blue - Main Brand Color
+                secondary: '#ffffff', // White - Background
+                accent: '#13a89e', // Hana Teal - Secondary Brand Color
+                dark: '#0f172a', // Slate 900 - Main Text
+                muted: '#64748B', // Slate 500 - Subtitle text
+                surface: '#F8FAFC', // Slate 50 - Card backgrounds
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Outfit', 'sans-serif'],
                 serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-out',
+                'slide-up': 'slideUp 0.8s ease-out',
+                'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                slideUp: {
+                    '0%': { transform: 'translateY(20px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' },
+                }
             }
         },
     },

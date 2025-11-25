@@ -8,7 +8,7 @@
             <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-16 w-auto brightness-0 invert" />
           </a>
           <p class="text-gray-300 font-light leading-relaxed mb-8 pr-8">
-            Elevating dentistry to an art form. We invite you to experience the difference of truly personalized, high-end dental care.
+            Elevating beauty and wellness to an art form. We invite you to experience the difference of truly personalized, high-end care.
           </p>
           <div class="flex space-x-6">
             <a href="#" class="text-white hover:text-primary transition-colors text-sm uppercase tracking-widest">Instagram</a>

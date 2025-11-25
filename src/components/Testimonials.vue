@@ -17,7 +17,7 @@
             <span v-for="i in 5" :key="i">★</span>
           </div>
           <p class="text-gray-600 font-light italic mb-8 leading-relaxed relative z-10">
-            "A shout out to Dr. Hana and Team for providing excellent and gentle dental care. She exudes a warm, professional, and friendly energy, and her skills and expertise are impressive."
+            "A shout out to Dr. Hana and Team for providing excellent and gentle care. She exudes a warm, professional, and friendly energy, and her skills and expertise are impressive."
           </p>
           <h4 class="font-serif text-lg text-dark">— Sarah M.</h4>
         </div>
@@ -28,7 +28,7 @@
             <span v-for="i in 5" :key="i">★</span>
           </div>
           <p class="text-gray-600 font-light italic mb-8 leading-relaxed relative z-10">
-            "I've never felt so comfortable at a dentist's office. The attention to detail and the beautiful environment make it a truly unique experience. My smile has never looked better."
+            "I've never felt so comfortable at a clinic. The attention to detail and the beautiful environment make it a truly unique experience. I've never looked better."
           </p>
           <h4 class="font-serif text-lg text-dark">— Michael R.</h4>
         </div>
