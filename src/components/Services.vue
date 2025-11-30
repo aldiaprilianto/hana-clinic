@@ -1,3 +1,9 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="services" class="py-24 bg-secondary relative overflow-hidden">
     <!-- Decorative Background Elements -->
@@ -6,9 +12,9 @@
     
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center mb-20">
-        <h3 class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4 animate-fade-in">Our Expertise</h3>
-        <h2 class="text-4xl md:text-5xl font-serif text-dark mb-6 animate-slide-up">Premium Beauty & Dental Care</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">Experience world-class treatments combining Korean aesthetic technology with expert dental care</p>
+        <h3 class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4 animate-fade-in">{{ $t('services.expertise') }}</h3>
+        <h2 class="text-4xl md:text-5xl font-serif text-primary mb-4 animate-slide-up">{{ $t('services.title') }}</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed animate-slide-up">{{ $t('services.subtitle') }}</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -19,7 +25,7 @@
           
           <!-- Category Badge -->
           <div class="absolute top-6 right-6 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-            20 Treatments
+            {{ $t('services.skinAesthetic.treatments') }}
           </div>
           
           <!-- Image Container -->
@@ -36,8 +42,8 @@
             </div>
           </div>
           
-          <h3 class="text-3xl font-serif mb-4 text-primary group-hover:text-accent transition-colors duration-300">Skin Aesthetic Treatment</h3>
-          <p class="text-gray-500 leading-relaxed mb-6 font-light">Advanced Korean aesthetic treatments including Botox, Fillers, Thread Lifting, Laser Therapy, and comprehensive anti-aging solutions for radiant, youthful skin.</p>
+          <h3 class="text-3xl font-serif mb-4 text-primary group-hover:text-accent transition-colors duration-300">{{ $t('services.skinAesthetic.title') }}</h3>
+          <p class="text-gray-500 leading-relaxed mb-6 font-light">{{ $t('services.skinAesthetic.description') }}</p>
           
           <!-- Treatment Highlights -->
           <div class="flex flex-wrap justify-center gap-2 mb-6">
@@ -48,7 +54,7 @@
           </div>
           
           <div class="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gray-400 group-hover:text-accent transition-colors font-semibold">
-            <span>Explore Treatments</span>
+            <span>{{ $t('services.learnMore') }}</span>
             <svg class="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </div>
         </router-link>
@@ -60,7 +66,7 @@
           
           <!-- Category Badge -->
           <div class="absolute top-6 right-6 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-            12 Treatments
+            {{ $t('services.dental.services') }}
           </div>
           
           <!-- Image Container -->
@@ -77,8 +83,8 @@
             </div>
           </div>
           
-          <h3 class="text-3xl font-serif mb-4 text-primary group-hover:text-accent transition-colors duration-300">Dental Treatment</h3>
-          <p class="text-gray-500 leading-relaxed mb-6 font-light">Comprehensive dental care including aesthetic dentistry, orthodontics, oral surgery, and preventive treatments for a healthy, beautiful smile.</p>
+          <h3 class="text-3xl font-serif mb-4 text-primary group-hover:text-accent transition-colors duration-300">{{ $t('services.dental.title') }}</h3>
+          <p class="text-gray-500 leading-relaxed mb-6 font-light">{{ $t('services.dental.description') }}</p>
           
           <!-- Treatment Highlights -->
           <div class="flex flex-wrap justify-center gap-2 mb-6">
@@ -89,7 +95,7 @@
           </div>
           
           <div class="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gray-400 group-hover:text-accent transition-colors font-semibold">
-            <span>Explore Treatments</span>
+            <span>{{ $t('services.learnMore') }}</span>
             <svg class="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </div>
         </router-link>

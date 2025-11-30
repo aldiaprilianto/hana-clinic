@@ -1,3 +1,9 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="testimonials" class="py-24 bg-secondary relative overflow-hidden">
     <!-- Decorative background element -->
@@ -6,8 +12,8 @@
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center mb-16">
-        <h3 class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4">Patient Stories</h3>
-        <h2 class="text-4xl md:text-5xl font-serif text-dark">My Highest Recommendation</h2>
+        <h3 class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4">{{ $t('testimonials.patientStories') }}</h3>
+        <h2 class="text-4xl md:text-5xl font-serif text-dark">{{ $t('testimonials.title') }}</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -17,7 +23,7 @@
             <span v-for="i in 5" :key="i">★</span>
           </div>
           <p class="text-gray-600 font-light italic mb-8 leading-relaxed relative z-10">
-            "A shout out to Dr. Hana and Team for providing excellent and gentle care. She exudes a warm, professional, and friendly energy, and her skills and expertise are impressive."
+            "{{ $t('testimonials.review1') }}"
           </p>
           <h4 class="font-serif text-lg text-dark">— Sarah M.</h4>
         </div>
@@ -28,14 +34,14 @@
             <span v-for="i in 5" :key="i">★</span>
           </div>
           <p class="text-gray-600 font-light italic mb-8 leading-relaxed relative z-10">
-            "I've never felt so comfortable at a clinic. The attention to detail and the beautiful environment make it a truly unique experience. I've never looked better."
+            "{{ $t('testimonials.review2') }}"
           </p>
           <h4 class="font-serif text-lg text-dark">— Michael R.</h4>
         </div>
       </div>
       
       <div class="text-center mt-16">
-        <a href="#" class="inline-block border-b border-dark pb-1 text-sm uppercase tracking-widest hover:text-primary hover:border-primary transition-colors">Read More Stories</a>
+        <a href="#" class="inline-block border-b border-dark pb-1 text-sm uppercase tracking-widest hover:text-primary hover:border-primary transition-colors">{{ $t('testimonials.readMore') }}</a>
       </div>
     </div>
   </section>

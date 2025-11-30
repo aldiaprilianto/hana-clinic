@@ -1,5 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const currentBg = ref(0)
 const backgrounds = [
@@ -49,20 +52,19 @@ onUnmounted(() => {
       </div>
       
       <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-tight animate-slide-up delay-100 text-dark drop-shadow-lg">
-        Advanced Korean <br/>
-        <span class="italic font-light bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary">Skin Aesthetic</span>
+        {{ $t('hero.title') }}
       </h1>
       
       <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light text-gray-800 leading-relaxed animate-slide-up delay-200 backdrop-blur-sm p-4 rounded-xl border border-white/40 bg-white/70 shadow-lg">
-        Experience world-class Korean beauty treatments. From advanced anti-aging procedures to transformative skin rejuvenation with cutting-edge technology.
+        {{ $t('hero.subtitle') }}
       </p>
       
       <div class="animate-slide-up delay-300 flex justify-center gap-6">
         <a href="#contact" class="bg-primary text-white px-10 py-4 hover:bg-dark transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium rounded-full shadow-lg hover:shadow-xl hover:scale-105">
-          Book Consultation
+          {{ $t('hero.bookConsultation') }}
         </a>
         <a href="#skin-aesthetic" class="px-10 py-4 text-primary hover:text-accent transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium flex items-center gap-2 group bg-white/70 backdrop-blur-sm rounded-full shadow-lg">
-          <span>View Treatments</span>
+          <span>{{ $t('services.learnMore') }}</span>
           <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </a>
       </div>

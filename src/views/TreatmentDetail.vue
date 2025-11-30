@@ -1,17 +1,26 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { getTreatmentById, skinAestheticTreatments, dentalTreatments } from '../Data/treatmentData.js'
 
+const { t, locale } = useI18n()
 const route = useRoute()
 const router = useRouter()
 
 const treatment = ref(null)
 const relatedTreatments = ref([])
 
-onMounted(() => {
-  const treatmentId = route.params.id
-  treatment.value = getTreatmentById(treatmentId)
+// Helper to get localized content
+const getLocalizedContent = (content) => {
+  if (typeof content === 'object' && content !== null && content[locale.value]) {
+    return content[locale.value]
+  }
+  return content // Fallback to string if not localized yet
+}
+
+const loadTreatment = (id) => {
+  treatment.value = getTreatmentById(id)
   
   if (treatment.value) {
     // Get related treatments from the same category
@@ -20,19 +29,28 @@ onMounted(() => {
       : dentalTreatments
     
     relatedTreatments.value = allTreatments
-      .filter(t => t.id !== treatmentId)
+      .filter(t => t.id !== id)
       .slice(0, 3)
   }
+}
+
+onMounted(() => {
+  loadTreatment(route.params.id)
+})
+
+watch(() => route.params.id, (newId) => {
+  loadTreatment(newId)
+  window.scrollTo(0, 0)
 })
 
 const navigateToTreatment = (treatmentId) => {
   router.push(`/treatment/${treatmentId}`)
-  window.scrollTo(0, 0)
-  treatment.value = getTreatmentById(treatmentId)
 }
 
 const categoryName = computed(() => {
-  return treatment.value?.category === 'skin-aesthetic' ? 'Skin Aesthetic' : 'Dental'
+  return treatment.value?.category === 'skin-aesthetic' 
+    ? t('nav.skinAesthetic') 
+    : t('nav.dentalTreatment')
 })
 
 const categoryPath = computed(() => {
@@ -45,7 +63,7 @@ const categoryPath = computed(() => {
     <!-- Hero Section -->
     <section class="relative h-[70vh] overflow-hidden">
       <div class="absolute inset-0">
-        <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover">
+        <img :src="treatment.image" :alt="getLocalizedContent(treatment.name)" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       </div>
       
@@ -55,154 +73,125 @@ const categoryPath = computed(() => {
             <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
-            <span class="text-sm uppercase tracking-widest">Back to {{ categoryName }}</span>
+            <span class="text-sm uppercase tracking-widest">{{ $t('common.backTo') }} {{ categoryName }}</span>
           </router-link>
           
-          <div class="inline-block bg-accent/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-            <span class="text-accent text-sm font-bold uppercase tracking-wider">{{ categoryName }} Treatment</span>
-          </div>
-          
-          <h1 class="text-5xl md:text-6xl font-serif mb-6">{{ treatment.name }}</h1>
-          <p class="text-xl text-white/90 leading-relaxed">{{ treatment.shortDescription }}</p>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">{{ getLocalizedContent(treatment.name) }}</h1>
+          <p class="text-xl text-white/90 leading-relaxed max-w-2xl">{{ getLocalizedContent(treatment.shortDescription) }}</p>
         </div>
       </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="container mx-auto px-6 py-20">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <!-- Main Content Column -->
-        <div class="lg:col-span-2">
-          <!-- Overview -->
-          <section class="mb-16">
-            <h2 class="text-3xl font-serif text-primary mb-6">Overview</h2>
-            <p class="text-gray-700 leading-relaxed text-lg">{{ treatment.description }}</p>
-          </section>
-
-          <!-- Benefits -->
-          <section class="mb-16">
-            <h2 class="text-3xl font-serif text-primary mb-8">Benefits</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div
-                v-for="(benefit, index) in treatment.benefits"
-                :key="index"
-                class="flex items-start gap-3 bg-surface p-4 rounded-xl border border-gray-100"
-              >
-                <div class="flex-shrink-0 w-6 h-6 bg-accent/10 rounded-full flex items-center justify-center mt-0.5">
-                  <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700">{{ benefit }}</span>
-              </div>
+    <!-- Content Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-16">
+          <!-- Main Content -->
+          <div class="lg:w-2/3">
+            <div class="mb-12">
+              <h2 class="text-3xl font-serif text-primary mb-6">{{ $t('treatment.overview') }}</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">{{ getLocalizedContent(treatment.description) }}</p>
             </div>
-          </section>
 
-          <!-- Procedure -->
-          <section class="mb-16">
-            <h2 class="text-3xl font-serif text-primary mb-8">Procedure</h2>
-            <div class="space-y-4">
-              <div
-                v-for="(step, index) in treatment.procedure"
-                :key="index"
-                class="flex gap-4 items-start"
-              >
-                <div class="flex-shrink-0 w-10 h-10 bg-accent text-primary rounded-full flex items-center justify-center font-bold">
-                  {{ index + 1 }}
-                </div>
-                <div class="flex-1 pt-2">
-                  <p class="text-gray-700">{{ step }}</p>
+            <div class="mb-12">
+              <h2 class="text-3xl font-serif text-primary mb-6">{{ $t('treatment.keyBenefits') }}</h2>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <li v-for="(benefit, index) in treatment.benefits" :key="index" class="flex items-start gap-3">
+                  <span class="text-accent mt-1">✦</span>
+                  <span class="text-gray-600">{{ getLocalizedContent(benefit) }}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-12">
+              <h2 class="text-3xl font-serif text-primary mb-6">{{ $t('treatment.procedure') }}</h2>
+              <div class="space-y-6">
+                <div v-for="(step, index) in treatment.procedure" :key="index" class="flex gap-6">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/5 text-primary flex items-center justify-center font-serif font-bold text-lg">
+                    {{ index + 1 }}
+                  </div>
+                  <div>
+                    <p class="text-gray-600 leading-relaxed pt-2">{{ getLocalizedContent(step) }}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
 
-        <!-- Sidebar -->
-        <div class="lg:col-span-1">
-          <div class="sticky top-24 space-y-6">
-            <!-- Quick Info Card -->
-            <div class="bg-gradient-to-br from-primary to-[#2a3f3f] text-white p-8 rounded-2xl shadow-xl">
-              <h3 class="text-2xl font-serif mb-6">Quick Information</h3>
+          <!-- Sidebar -->
+          <div class="lg:w-1/3">
+            <div class="bg-surface p-8 rounded-2xl sticky top-32 border border-gray-100 shadow-lg">
+              <h3 class="text-2xl font-serif text-primary mb-6">{{ $t('treatment.atAGlance') }}</h3>
               
-              <div class="space-y-4">
-                <div class="border-b border-white/20 pb-4">
-                  <div class="text-white/70 text-sm uppercase tracking-wider mb-1">Duration</div>
-                  <div class="text-lg">{{ treatment.duration }}</div>
+              <div class="space-y-6 mb-8">
+                <div class="flex items-start gap-4 pb-6 border-b border-gray-200">
+                  <div class="text-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-dark text-sm uppercase tracking-wider mb-1">{{ $t('treatment.duration') }}</h4>
+                    <p class="text-gray-600">{{ getLocalizedContent(treatment.duration) }}</p>
+                  </div>
                 </div>
-                
-                <div class="border-b border-white/20 pb-4">
-                  <div class="text-white/70 text-sm uppercase tracking-wider mb-1">Recovery Time</div>
-                  <div class="text-lg">{{ treatment.recovery }}</div>
+
+                <div class="flex items-start gap-4 pb-6 border-b border-gray-200">
+                  <div class="text-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-dark text-sm uppercase tracking-wider mb-1">{{ $t('treatment.recovery') }}</h4>
+                    <p class="text-gray-600">{{ getLocalizedContent(treatment.recovery) }}</p>
+                  </div>
                 </div>
-                
-                <div class="pb-2">
-                  <div class="text-white/70 text-sm uppercase tracking-wider mb-1">Results</div>
-                  <div class="text-lg">{{ treatment.results }}</div>
+
+                <div class="flex items-start gap-4">
+                  <div class="text-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-dark text-sm uppercase tracking-wider mb-1">{{ $t('treatment.results') }}</h4>
+                    <p class="text-gray-600">{{ getLocalizedContent(treatment.results) }}</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- CTA Card -->
-            <div class="bg-accent/10 p-8 rounded-2xl border-2 border-accent/30">
-              <h3 class="text-xl font-serif text-primary mb-4">Ready to Get Started?</h3>
-              <p class="text-gray-600 mb-6 text-sm">Book a consultation with our specialists to discuss your treatment plan</p>
-              <a href="/#contact" class="block w-full bg-accent text-primary text-center px-6 py-3 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl">
-                Book Consultation
+              <a href="#contact" class="block w-full bg-primary text-white text-center py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                {{ $t('treatment.bookConsultation') }}
               </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Related Treatments -->
-    <section v-if="relatedTreatments.length > 0" class="bg-surface py-20">
+    <section class="py-20 bg-surface border-t border-gray-100">
       <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-serif text-primary mb-12 text-center">Related Treatments</h2>
-        
+        <h2 class="text-3xl font-serif text-primary mb-12 text-center">{{ $t('treatment.relatedTreatments') }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            v-for="related in relatedTreatments"
+          <div 
+            v-for="related in relatedTreatments" 
             :key="related.id"
             @click="navigateToTreatment(related.id)"
-            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-1"
+            class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-pointer"
           >
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <img 
-                :src="related.image" 
-                :alt="related.name"
-                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-              >
+            <div class="h-48 overflow-hidden relative">
+              <img :src="related.image" :alt="getLocalizedContent(related.name)" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
-            
             <div class="p-6">
-              <h3 class="text-xl font-serif text-primary mb-2 group-hover:text-accent transition-colors">{{ related.name }}</h3>
-              <p class="text-gray-600 text-sm line-clamp-2">{{ related.shortDescription }}</p>
+              <h3 class="text-lg font-serif text-primary mb-2 group-hover:text-accent transition-colors">{{ getLocalizedContent(related.name) }}</h3>
+              <span class="text-accent text-xs font-bold uppercase tracking-widest group-hover:underline">{{ $t('common.learnMore') }}</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Final CTA -->
-    <section class="bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-20">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-serif mb-6">Transform Your Beauty Journey Today</h2>
-        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">Our experienced team is ready to help you achieve your aesthetic goals with personalized care and advanced treatments</p>
-        <a href="/#contact" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
-          Contact Us Now
-        </a>
-      </div>
-    </section>
   </div>
 </template>
-
-<style scoped>
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-</style>

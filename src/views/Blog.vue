@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const blogPosts = ref([
   {
@@ -65,20 +68,28 @@ const featuredPost = ref(blogPosts.value[0])
   <div class="min-h-screen bg-white">
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-32 overflow-hidden">
+      <!-- Batik Pattern Background -->
+      <div class="absolute inset-0 opacity-20">
+        <img src="/images/batik.jpeg" alt="" class="w-full h-full object-cover" />
+      </div>
+      
+      <!-- Dark Overlay for Better Text Readability -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40"></div>
+      
       <div class="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
       <div class="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
       
       <div class="container mx-auto px-6 relative z-10">
-        <router-link to="/" class="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors group">
+        <router-link to="/" class="inline-flex items-center gap-2 text-white hover:text-white mb-8 transition-colors group drop-shadow-lg">
           <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
           </svg>
-          <span class="text-sm uppercase tracking-widest">Back to Home</span>
+          <span class="text-sm uppercase tracking-widest font-semibold">{{ $t('nav.backToHome') }}</span>
         </router-link>
         
         <div class="max-w-4xl">
-          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">Blog & News</h1>
-          <p class="text-xl text-white/90 leading-relaxed">Stay updated with the latest beauty trends, treatment insights, and clinic news</p>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('blog.title') }}</h1>
+          <p class="text-xl text-white leading-relaxed drop-shadow-lg">{{ $t('blog.subtitle') }}</p>
         </div>
       </div>
       
@@ -129,8 +140,8 @@ const featuredPost = ref(blogPosts.value[0])
     <section class="py-20">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-serif text-primary mb-4">Latest Articles</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">Expert insights and tips from our team of specialists</p>
+          <h2 class="text-4xl font-serif text-primary mb-4">{{ $t('blog.latestArticles') }}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('blog.latestDescription') }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -175,17 +186,17 @@ const featuredPost = ref(blogPosts.value[0])
     <!-- Newsletter Section -->
     <section class="bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-20">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-serif mb-6">Stay Updated</h2>
-        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">Subscribe to our newsletter for the latest beauty tips, treatment updates, and exclusive offers</p>
+        <h2 class="text-4xl font-serif mb-6">{{ $t('blog.stayUpdated') }}</h2>
+        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">{{ $t('blog.stayDescription') }}</p>
         
         <div class="max-w-md mx-auto flex gap-4">
           <input 
             type="email" 
-            placeholder="Enter your email"
+            :placeholder="$t('blog.enterEmail')"
             class="flex-1 px-6 py-4 rounded-full text-primary focus:outline-none focus:ring-2 focus:ring-accent"
           >
           <button class="bg-accent text-primary px-8 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
-            Subscribe
+            {{ $t('blog.subscribe') }}
           </button>
         </div>
       </div>

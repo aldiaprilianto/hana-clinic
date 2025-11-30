@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 const isOpen = ref(false)
 const name = ref('')
 const message = ref('')
@@ -12,7 +14,7 @@ const toggleChat = () => {
 const sendMessage = () => {
   if (!name.value || !message.value) return
   
-  const text = `Hello, my name is ${name.value}. ${message.value}`
+  const text = `${t('whatsapp.greeting')} ${name.value}. ${message.value}`
   const url = `https://wa.me/6282336427407?text=${encodeURIComponent(text)}`
   window.open(url, '_blank')
   
@@ -43,8 +45,8 @@ const sendMessage = () => {
             </svg>
           </div>
           <div>
-            <h3 class="text-white font-medium text-sm">Hana Clinic Support</h3>
-            <p class="text-white/80 text-xs">Typically replies instantly</p>
+            <h3 class="text-white font-medium text-sm">{{ $t('whatsapp.support') }}</h3>
+            <p class="text-white/80 text-xs">{{ $t('whatsapp.replyTime') }}</p>
           </div>
           <button @click="isOpen = false" class="ml-auto text-white/80 hover:text-white">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +58,7 @@ const sendMessage = () => {
         <!-- Body -->
         <div class="p-4 bg-white/80 backdrop-blur-sm h-64 overflow-y-auto flex flex-col gap-3">
           <div class="bg-white p-3 rounded-r-xl rounded-bl-xl shadow-sm max-w-[85%] self-start text-sm text-gray-600">
-            Hello! 👋 Welcome to Hana Clinic. How can we help you today?
+            {{ $t('whatsapp.welcomeMessage') }}
           </div>
         </div>
 
@@ -65,12 +67,12 @@ const sendMessage = () => {
           <input 
             v-model="name"
             type="text" 
-            placeholder="Your Name" 
+            :placeholder="$t('whatsapp.namePlaceholder')" 
             class="w-full mb-2 px-3 py-2 bg-gray-50 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-primary"
           >
           <textarea 
             v-model="message"
-            placeholder="Type your message..." 
+            :placeholder="$t('whatsapp.messagePlaceholder')" 
             rows="2"
             class="w-full mb-2 px-3 py-2 bg-gray-50 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-none"
           ></textarea>
@@ -78,7 +80,7 @@ const sendMessage = () => {
             @click="sendMessage"
             class="w-full bg-primary text-white py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
           >
-            <span>Start Chat</span>
+            <span>{{ $t('whatsapp.startChat') }}</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
             </svg>

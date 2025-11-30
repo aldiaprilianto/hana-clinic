@@ -1,5 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { locale, t } = useI18n()
 
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)
@@ -7,6 +10,11 @@ const showServicesDropdown = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
+}
+
+const switchLanguage = (lang) => {
+  locale.value = lang
+  localStorage.setItem('locale', lang)
 }
 
 onMounted(() => {
@@ -27,13 +35,13 @@ onUnmounted(() => {
       <div class="flex items-center">
         <router-link to="/" class="flex items-center gap-2 group">
           <!-- Logo Image -->
-          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
+          <img src="/images/new_logo.jpeg" alt="Hana Clinic Logo" class="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
         </router-link>
       </div>
       
       <!-- Desktop Menu -->
       <nav class="hidden lg:flex items-center space-x-6">
-        <router-link to="/" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Home</router-link>
+        <router-link to="/" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.home') }}</router-link>
         
         <!-- Services Dropdown -->
         <div 
@@ -42,7 +50,7 @@ onUnmounted(() => {
           @mouseleave="showServicesDropdown = false"
         >
           <button class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300 flex items-center gap-1">
-            Services
+            {{ $t('nav.services') }}
             <svg class="w-4 h-4 transition-transform" :class="showServicesDropdown ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
@@ -66,8 +74,8 @@ onUnmounted(() => {
                     </svg>
                   </div>
                   <div>
-                    <div class="font-semibold text-primary group-hover:text-accent transition-colors">Skin Aesthetic</div>
-                    <div class="text-xs text-gray-500">20 Treatments</div>
+                    <div class="font-semibold text-primary group-hover:text-accent transition-colors">{{ $t('nav.skinAesthetic') }}</div>
+                    <div class="text-xs text-gray-500">{{ $t('services.skinAesthetic.treatments') }}</div>
                   </div>
                 </div>
               </router-link>
@@ -80,8 +88,8 @@ onUnmounted(() => {
                     </svg>
                   </div>
                   <div>
-                    <div class="font-semibold text-primary group-hover:text-accent transition-colors">Dental Treatment</div>
-                    <div class="text-xs text-gray-500">12 Services</div>
+                    <div class="font-semibold text-primary group-hover:text-accent transition-colors">{{ $t('nav.dentalTreatment') }}</div>
+                    <div class="text-xs text-gray-500">{{ $t('services.dental.services') }}</div>
                   </div>
                 </div>
               </router-link>
@@ -89,12 +97,60 @@ onUnmounted(() => {
           </transition>
         </div>
         
-        <router-link to="/team" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Team</router-link>
-        <router-link to="/gallery" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Gallery</router-link>
-        <router-link to="/blog" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Blog</router-link>
-        <router-link to="/career" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">Career</router-link>
+        <router-link to="/team" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.team') }}</router-link>
+        <router-link to="/gallery" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.gallery') }}</router-link>
+        <router-link to="/blog" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.blog') }}</router-link>
+        <router-link to="/career" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.career') }}</router-link>
+        
+        <!-- Language Switcher with Flags -->
+        <div class="relative group">
+          <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all duration-300 border border-white/20">
+            <span class="text-xl">{{ locale === 'id' ? '🇮🇩' : '🇬🇧' }}</span>
+            <span class="text-xs font-semibold uppercase tracking-wider">{{ locale === 'id' ? 'ID' : 'EN' }}</span>
+            <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          
+          <!-- Dropdown -->
+          <div class="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
+            <button 
+              @click="switchLanguage('id')" 
+              :class="[
+                'w-full flex items-center gap-3 px-4 py-3 hover:bg-accent/10 transition-colors',
+                locale === 'id' ? 'bg-accent/5' : ''
+              ]"
+            >
+              <span class="text-2xl">🇮🇩</span>
+              <div class="text-left flex-1">
+                <div class="text-sm font-semibold text-primary">Indonesia</div>
+                <div class="text-xs text-gray-500">Bahasa</div>
+              </div>
+              <svg v-if="locale === 'id'" class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <button 
+              @click="switchLanguage('en')" 
+              :class="[
+                'w-full flex items-center gap-3 px-4 py-3 hover:bg-accent/10 transition-colors',
+                locale === 'en' ? 'bg-accent/5' : ''
+              ]"
+            >
+              <span class="text-2xl">🇬🇧</span>
+              <div class="text-left flex-1">
+                <div class="text-sm font-semibold text-primary">English</div>
+                <div class="text-xs text-gray-500">Language</div>
+              </div>
+              <svg v-if="locale === 'en'" class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
         <a href="#contact" class="btn-primary ml-4">
-          Book Appointment
+          {{ $t('nav.bookAppointment') }}
         </a>
       </nav>
 
@@ -118,20 +174,54 @@ onUnmounted(() => {
     >
       <div v-if="isMenuOpen" class="lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-lg">
         <div class="flex flex-col px-6 py-8 space-y-6">
-          <router-link to="/" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Home</router-link>
+          <router-link to="/" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.home') }}</router-link>
           
           <!-- Mobile Services -->
           <div class="space-y-3">
-            <div class="text-primary/80 uppercase text-sm tracking-[0.15em] font-medium">Services</div>
-            <router-link to="/skin-aesthetic" @click="isMenuOpen = false" class="block pl-4 text-primary/70 hover:text-accent text-sm transition-colors">Skin Aesthetic (20)</router-link>
-            <router-link to="/dental" @click="isMenuOpen = false" class="block pl-4 text-primary/70 hover:text-accent text-sm transition-colors">Dental Treatment (12)</router-link>
+            <div class="text-primary/80 uppercase text-sm tracking-[0.15em] font-medium">{{ $t('nav.services') }}</div>
+            <router-link to="/skin-aesthetic" @click="isMenuOpen = false" class="block pl-4 text-primary/70 hover:text-accent text-sm transition-colors">{{ $t('nav.skinAesthetic') }} (20)</router-link>
+            <router-link to="/dental" @click="isMenuOpen = false" class="block pl-4 text-primary/70 hover:text-accent text-sm transition-colors">{{ $t('nav.dentalTreatment') }} (12)</router-link>
           </div>
           
-          <router-link to="/team" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Team</router-link>
-          <router-link to="/gallery" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Gallery</router-link>
-          <router-link to="/blog" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Blog</router-link>
-          <router-link to="/career" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">Career</router-link>
-          <a href="#contact" @click="isMenuOpen = false" class="btn-primary text-center w-full">Book Now</a>
+          <router-link to="/team" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.team') }}</router-link>
+          <router-link to="/gallery" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.gallery') }}</router-link>
+          <router-link to="/blog" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.blog') }}</router-link>
+          <router-link to="/career" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.career') }}</router-link>
+          
+          <!-- Mobile Language Switcher -->
+          <div class="pt-4 border-t border-gray-200">
+            <div class="text-xs text-gray-500 uppercase tracking-wider mb-3">Language / Bahasa</div>
+            <div class="grid grid-cols-2 gap-3">
+              <button 
+                @click="switchLanguage('id')" 
+                :class="[
+                  'flex items-center justify-center gap-2 px-4 py-3 rounded-xl transition-all duration-300 border-2',
+                  locale === 'id' ? 'bg-accent/10 border-accent text-primary' : 'bg-gray-50 border-gray-200 text-gray-600'
+                ]"
+              >
+                <span class="text-2xl">🇮🇩</span>
+                <div class="text-left">
+                  <div class="text-xs font-bold">ID</div>
+                  <div class="text-[10px]">Indonesia</div>
+                </div>
+              </button>
+              <button 
+                @click="switchLanguage('en')" 
+                :class="[
+                  'flex items-center justify-center gap-2 px-4 py-3 rounded-xl transition-all duration-300 border-2',
+                  locale === 'en' ? 'bg-accent/10 border-accent text-primary' : 'bg-gray-50 border-gray-200 text-gray-600'
+                ]"
+              >
+                <span class="text-2xl">🇬🇧</span>
+                <div class="text-left">
+                  <div class="text-xs font-bold">EN</div>
+                  <div class="text-[10px]">English</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          
+          <a href="#contact" @click="isMenuOpen = false" class="btn-primary text-center w-full">{{ $t('nav.bookNow') }}</a>
         </div>
       </div>
     </transition>

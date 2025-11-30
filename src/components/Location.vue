@@ -1,9 +1,15 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="location" class="py-24 bg-surface">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h3 class="text-sm uppercase tracking-[0.2em] text-primary mb-4">Visit Us</h3>
-        <h2 class="text-4xl md:text-5xl font-serif text-dark">Our Premium Clinic</h2>
+        <h3 class="text-sm uppercase tracking-[0.2em] text-primary mb-4">{{ $t('location.visitUs') }}</h3>
+        <h2 class="text-4xl md:text-5xl font-serif text-dark">{{ $t('location.title') }}</h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -27,7 +33,7 @@
           <div>
             <h3 class="text-2xl font-serif text-primary mb-4">Hana Clinic</h3>
             <p class="text-gray-600 leading-relaxed mb-6">
-              Experience world-class Korean aesthetic treatments in our state-of-the-art facility. Our clinic combines cutting-edge technology with luxurious comfort to provide you with the ultimate beauty experience.
+              {{ $t('location.description') }}
             </p>
           </div>
 
@@ -41,7 +47,7 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-semibold text-dark mb-1">Address</h4>
+                <h4 class="font-semibold text-dark mb-1">{{ $t('location.address') }}</h4>
                 <p class="text-gray-600">Jl. Sudirman No. 123<br>Jakarta Selatan, 12190<br>Indonesia</p>
               </div>
             </div>
@@ -53,7 +59,7 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-semibold text-dark mb-1">Phone</h4>
+                <h4 class="font-semibold text-dark mb-1">{{ $t('location.phone') }}</h4>
                 <a href="tel:+6282336427407" class="text-primary hover:text-accent transition-colors">+62 823-3642-7407</a>
               </div>
             </div>
@@ -65,11 +71,11 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-semibold text-dark mb-1">Operating Hours</h4>
+                <h4 class="font-semibold text-dark mb-1">{{ $t('location.hours') }}</h4>
                 <div class="text-gray-600 space-y-1">
-                  <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-                  <p>Saturday: 9:00 AM - 6:00 PM</p>
-                  <p>Sunday: 10:00 AM - 4:00 PM</p>
+                  <p>{{ $t('footer.weekdays') }}: 9:00 AM - 8:00 PM</p>
+                  <p>{{ $t('footer.saturday') }}: 9:00 AM - 6:00 PM</p>
+                  <p>{{ $t('footer.sunday') }}: 10:00 AM - 4:00 PM</p>
                 </div>
               </div>
             </div>
@@ -90,7 +96,7 @@
           </div>
 
           <a href="#contact" class="inline-block bg-primary text-white px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 w-full text-center">
-            Get Directions
+            {{ $t('location.getDirections') }}
           </a>
         </div>
       </div>

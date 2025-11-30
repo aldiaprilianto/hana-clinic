@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const team = ref([
   {
@@ -63,20 +66,28 @@ const team = ref([
   <div class="min-h-screen bg-white">
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-32 overflow-hidden">
+      <!-- Batik Pattern Background -->
+      <div class="absolute inset-0 opacity-20">
+        <img src="/images/batik.jpeg" alt="" class="w-full h-full object-cover" />
+      </div>
+      
+      <!-- Dark Overlay for Better Text Readability -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40"></div>
+      
       <div class="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
       <div class="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
       
       <div class="container mx-auto px-6 relative z-10">
-        <router-link to="/" class="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors group">
+        <router-link to="/" class="inline-flex items-center gap-2 text-white hover:text-white mb-8 transition-colors group drop-shadow-lg">
           <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
           </svg>
-          <span class="text-sm uppercase tracking-widest">Back to Home</span>
+          <span class="text-sm uppercase tracking-widest font-semibold">{{ $t('nav.backToHome') }}</span>
         </router-link>
         
         <div class="max-w-4xl">
-          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">Our Expert Team</h1>
-          <p class="text-xl text-white/90 leading-relaxed">Meet the dedicated professionals committed to your beauty and wellness journey</p>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('team.title') }}</h1>
+          <p class="text-xl text-white leading-relaxed drop-shadow-lg">{{ $t('team.subtitle') }}</p>
         </div>
       </div>
       
@@ -91,8 +102,8 @@ const team = ref([
     <section class="py-20">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-serif text-primary mb-4">World-Class Professionals</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">Our team brings together expertise from around the world to provide you with the best care possible</p>
+          <h2 class="text-4xl font-serif text-primary mb-4">{{ $t('team.worldClass') }}</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('team.worldClassDescription') }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -120,14 +131,14 @@ const team = ref([
             <!-- Info -->
             <div class="p-6">
               <div class="mb-4">
-                <div class="text-xs uppercase tracking-wider text-gray-500 mb-2">Specialization</div>
+                <div class="text-xs uppercase tracking-wider text-gray-500 mb-2">{{ $t('team.specialization') }}</div>
                 <div class="text-primary font-semibold">{{ member.specialization }}</div>
               </div>
 
               <p class="text-gray-600 text-sm leading-relaxed mb-4">{{ member.bio }}</p>
 
               <div>
-                <div class="text-xs uppercase tracking-wider text-gray-500 mb-3">Expertise</div>
+                <div class="text-xs uppercase tracking-wider text-gray-500 mb-3">{{ $t('team.expertise') }}</div>
                 <div class="flex flex-wrap gap-2">
                   <span
                     v-for="(skill, index) in member.expertise"
@@ -147,10 +158,10 @@ const team = ref([
     <!-- CTA Section -->
     <section class="bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-20">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-serif mb-6">Schedule a Consultation</h2>
-        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">Meet with our experts to discuss your aesthetic goals and create a personalized treatment plan</p>
+        <h2 class="text-4xl font-serif mb-6">{{ $t('team.scheduleConsultation') }}</h2>
+        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">{{ $t('team.scheduleDescription') }}</p>
         <a href="/#contact" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
-          Book Consultation
+          {{ $t('team.bookConsultation') }}
         </a>
       </div>
     </section>

@@ -1,41 +1,44 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const currentSlide = ref(0)
-const promos = [
+const promos = computed(() => [
   {
-    title: 'Special Ultherapy Promotion',
-    subtitle: 'Premium Korean Lifting Treatment',
-    discount: 'Up to 30% OFF',
+    title: t('promo.ultherapy.title'),
+    subtitle: t('promo.ultherapy.subtitle'),
+    discount: t('promo.ultherapy.discount'),
     image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
-    cta: 'Book Now'
+    cta: t('promo.bookNow')
   },
   {
-    title: 'Thermage FLX Package',
-    subtitle: 'Advanced Radiofrequency Lifting',
-    discount: 'Limited Time Offer',
+    title: t('promo.thermage.title'),
+    subtitle: t('promo.thermage.subtitle'),
+    discount: t('promo.thermage.discount'),
     image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop',
-    cta: 'Learn More'
+    cta: t('promo.learnMore')
   },
   {
-    title: 'Korean Skin Booster',
-    subtitle: 'Radiant Glow Treatment',
-    discount: 'First Session 20% OFF',
+    title: t('promo.skinbooster.title'),
+    subtitle: t('promo.skinbooster.subtitle'),
+    discount: t('promo.skinbooster.discount'),
     image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2070&auto=format&fit=crop',
-    cta: 'Get Started'
+    cta: t('promo.getStarted')
   }
-]
+])
 
 let slideInterval = null
 let touchStartX = 0
 let touchEndX = 0
 
 const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % promos.length
+  currentSlide.value = (currentSlide.value + 1) % promos.value.length
 }
 
 const prevSlide = () => {
-  currentSlide.value = currentSlide.value === 0 ? promos.length - 1 : currentSlide.value - 1
+  currentSlide.value = currentSlide.value === 0 ? promos.value.length - 1 : currentSlide.value - 1
 }
 
 const goToSlide = (index) => {
