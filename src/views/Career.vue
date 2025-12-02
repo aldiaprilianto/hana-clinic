@@ -106,9 +106,7 @@ const benefits = ref([
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-32 overflow-hidden">
       <!-- Batik Pattern Background -->
-      <div class="absolute inset-0 opacity-20">
-        <img src="/images/batik.jpeg" alt="" class="w-full h-full object-cover" />
-      </div>
+      <div class="absolute inset-0 opacity-15" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat; background-position: 0 0;"></div>
       
       <!-- Dark Overlay for Better Text Readability -->
       <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40"></div>

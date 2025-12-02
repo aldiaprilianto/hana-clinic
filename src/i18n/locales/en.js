@@ -24,15 +24,17 @@ export default {
         subtitle: 'Comprehensive treatments for your beauty and wellness',
         skinAesthetic: {
             title: 'Skin Aesthetic Treatment',
-            description: '20 premium treatments using advanced Korean aesthetic technology',
-            treatments: '20 Premium Treatments',
+            description: '20+ premium treatments using advanced Korean aesthetic technology',
+            treatments: '20+ Premium Treatments',
             categories: 'Treatment Categories',
             intro: 'Explore our comprehensive range of skin aesthetic treatments, each designed to address specific concerns and deliver exceptional results'
         },
         dental: {
             title: 'Dental Treatment',
-            description: '12 comprehensive services from aesthetic dentistry to advanced oral surgery',
-            services: '12 Comprehensive Services'
+            description: '10+ comprehensive services from aesthetic dentistry to advanced oral surgery',
+            services: '10+ Comprehensive Services',
+            ourServices: 'Our Dental Services',
+            intro: 'Experience comprehensive dental care with our state-of-the-art facilities and expert team'
         },
         learnMore: 'Learn More',
         viewAll: 'View All Treatments'
@@ -143,6 +145,7 @@ export default {
         ourServices: 'Our Services',
         aboutUs: 'About Us',
         backTo: 'Back to',
+        backToHome: 'Back to Home',
         premium: 'Premium'
     },
     about: {

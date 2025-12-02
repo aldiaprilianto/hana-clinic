@@ -1,22 +1,10 @@
 <script setup>
-import { dentalTreatments } from '../Data/treatmentData.js'
+import { dentalCategories } from '../Data/treatmentData.js'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const router = useRouter()
-
-const navigateToTreatment = (treatmentId) => {
-  router.push(`/treatment/${treatmentId}`)
-}
-
-// Helper to get localized content
-const getLocalizedContent = (content) => {
-  if (typeof content === 'object' && content !== null && content[locale.value]) {
-    return content[locale.value]
-  }
-  return content // Fallback to string if not localized yet
-}
 </script>
 
 <template>
@@ -24,9 +12,7 @@ const getLocalizedContent = (content) => {
     <!-- Hero Header -->
     <header class="relative bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-32 overflow-hidden">
       <!-- Batik Pattern Background -->
-      <div class="absolute inset-0 opacity-20">
-        <img src="/images/batik.jpeg" alt="" class="w-full h-full object-cover" />
-      </div>
+      <div class="absolute inset-0 opacity-15" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat; background-position: 0 0;"></div>
       
       <!-- Dark Overlay for Better Text Readability -->
       <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40"></div>
@@ -60,36 +46,69 @@ const getLocalizedContent = (content) => {
       </div>
     </header>
 
-    <!-- Treatments Grid -->
-    <div class="container mx-auto px-6 py-20">
-      <div class="text-center mb-16">
+    <!-- Specialized Services Grid (Aesthetic, Ortho, Endo) -->
+    <div class="container mx-auto px-6 py-16">
+      <div class="text-center mb-12">
         <h2 class="text-4xl font-serif text-primary mb-4">{{ $t('services.dental.ourServices') }}</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('services.dental.intro') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div 
-          v-for="treatment in dentalTreatments" 
-          :key="treatment.id"
-          @click="navigateToTreatment(treatment.id)"
-          class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100"
-        >
-          <div class="relative h-64 overflow-hidden">
-            <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
-            <img :src="treatment.image" :alt="getLocalizedContent(treatment.name)" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-            <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg z-20 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div v-for="category in dentalCategories.slice(0, 3)" :key="category.id" class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col">
+          <!-- Header -->
+          <div class="bg-primary py-5 text-center">
+            <h3 class="font-serif font-bold text-xl uppercase tracking-wider text-white" style="color: white !important;">{{ category.title }}</h3>
+          </div>
+          <!-- Content -->
+          <div class="p-6 space-y-6 flex-grow bg-surface/30">
+            <div v-for="(treatment, index) in category.treatments" :key="index" class="relative group">
+              <div class="relative overflow-hidden rounded-xl shadow-md aspect-[4/3] border border-gray-100">
+                 <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                 <!-- Gradient Overlay -->
+                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"></div>
+                 
+                 <!-- Label -->
+                 <div class="absolute bottom-0 left-0 right-0 p-4 text-center">
+                   <span class="text-white font-medium text-sm uppercase tracking-wide drop-shadow-md">{{ treatment.name }}</span>
+                 </div>
+              </div>
             </div>
           </div>
-          
-          <div class="p-8">
-            <h3 class="text-xl font-serif mb-2 text-primary group-hover:text-accent transition-colors">{{ getLocalizedContent(treatment.name) }}</h3>
-            <p class="text-gray-600 mb-4 line-clamp-3 text-sm leading-relaxed">{{ getLocalizedContent(treatment.shortDescription) }}</p>
-            <span class="text-accent text-xs font-bold uppercase tracking-widest group-hover:underline">{{ $t('common.learnMore') }}</span>
-          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- General Services List -->
+    <div class="bg-surface py-20 relative overflow-hidden">
+      <!-- Decorative Background -->
+      <div class="absolute top-0 left-0 w-full h-full opacity-5" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat;"></div>
+      
+      <div class="container mx-auto px-6 relative z-10">
+         <div class="flex items-center justify-center mb-16">
+            <div class="h-px bg-primary/30 w-24"></div>
+            <h2 class="text-3xl font-serif text-primary mx-6 uppercase tracking-widest">{{ dentalCategories[3].title }}</h2>
+            <div class="h-px bg-primary/30 w-24"></div>
+         </div>
+         
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+           <div v-for="(treatment, index) in dentalCategories[3].treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20">
+              <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
+                 <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                 <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+              </div>
+              <div class="p-8 md:w-3/5 flex flex-col justify-center">
+                 <h3 class="text-xl font-serif font-bold text-primary mb-3 group-hover:text-accent transition-colors">{{ treatment.name }}</h3>
+                 <p class="text-gray-600 text-sm leading-relaxed">{{ treatment.description }}</p>
+                 
+                 <div class="mt-4 pt-4 border-t border-gray-100 flex items-center text-accent text-xs font-bold uppercase tracking-widest">
+                    <span>{{ $t('common.learnMore') }}</span>
+                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                 </div>
+              </div>
+           </div>
+         </div>
       </div>
     </div>
   </div>

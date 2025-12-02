@@ -69,9 +69,7 @@ const featuredPost = ref(blogPosts.value[0])
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-32 overflow-hidden">
       <!-- Batik Pattern Background -->
-      <div class="absolute inset-0 opacity-20">
-        <img src="/images/batik.jpeg" alt="" class="w-full h-full object-cover" />
-      </div>
+      <div class="absolute inset-0 opacity-15" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat; background-position: 0 0;"></div>
       
       <!-- Dark Overlay for Better Text Readability -->
       <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40"></div>
@@ -208,6 +206,7 @@ const featuredPost = ref(blogPosts.value[0])
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -215,6 +214,7 @@ const featuredPost = ref(blogPosts.value[0])
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

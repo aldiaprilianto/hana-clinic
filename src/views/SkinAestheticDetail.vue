@@ -1,22 +1,10 @@
 <script setup>
-import { skinAestheticTreatments } from '../Data/treatmentData.js'
+import { skinAestheticCategories } from '../Data/treatmentData.js'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const router = useRouter()
-
-const navigateToTreatment = (treatmentId) => {
-  router.push(`/treatment/${treatmentId}`)
-}
-
-// Helper to get localized content
-const getLocalizedContent = (content) => {
-  if (typeof content === 'object' && content !== null && content[locale.value]) {
-    return content[locale.value]
-  }
-  return content // Fallback to string if not localized yet
-}
 </script>
 
 <template>
@@ -24,9 +12,7 @@ const getLocalizedContent = (content) => {
     <!-- Hero Header -->
     <header class="relative bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-32 overflow-hidden">
       <!-- Batik Pattern Background -->
-      <div class="absolute inset-0 opacity-20">
-        <img src="/images/batik.jpeg" alt="" class="w-full h-full object-cover" />
-      </div>
+      <div class="absolute inset-0 opacity-15" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat; background-position: 0 0;"></div>
       
       <!-- Dark Overlay for Better Text Readability -->
       <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40"></div>
@@ -67,39 +53,33 @@ const getLocalizedContent = (content) => {
         <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('services.skinAesthetic.intro') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
-          v-for="treatment in skinAestheticTreatments"
-          :key="treatment.id"
-          @click="navigateToTreatment(treatment.id)"
-          class="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 cursor-pointer border border-gray-100 hover:border-accent/30 transform hover:-translate-y-1"
+          v-for="category in skinAestheticCategories"
+          :key="category.id"
+          class="flex flex-col h-full bg-[#e0e7e9] shadow-lg hover:shadow-2xl transition-all duration-300"
         >
           <!-- Image -->
-          <div class="relative aspect-[4/3] overflow-hidden">
-            <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
-            <img :src="treatment.image" :alt="getLocalizedContent(treatment.name)" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-            
-            <!-- Overlay Badge -->
-            <div class="absolute top-4 left-4 z-20">
-              <span class="bg-white/90 backdrop-blur-sm text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                {{ $t('common.premium') }}
-              </span>
-            </div>
+          <div class="relative aspect-[4/3] overflow-hidden group">
+            <img :src="category.image" :alt="category.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <!-- Simulated Before/After Labels -->
+            <div class="absolute top-0 left-0 bg-white/80 px-3 py-1 text-xs font-bold text-gray-800">BEFORE</div>
+            <div class="absolute top-0 right-0 bg-white/80 px-3 py-1 text-xs font-bold text-gray-800">AFTER</div>
           </div>
           
-          <!-- Content -->
-          <div class="p-8">
-            <h3 class="text-xl font-serif mb-3 text-primary group-hover:text-accent transition-colors">{{ getLocalizedContent(treatment.name) }}</h3>
-            <p class="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">{{ getLocalizedContent(treatment.shortDescription) }}</p>
-            
-            <div class="flex items-center justify-between border-t border-gray-100 pt-4">
-              <span class="text-accent text-xs font-bold uppercase tracking-widest group-hover:underline">{{ $t('common.learnMore') }}</span>
-              <div class="w-8 h-8 rounded-full bg-surface flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </div>
-            </div>
+          <!-- Title -->
+          <div class="bg-[#009ca6] py-4 px-4 text-center relative z-10">
+            <h3 class="text-white font-bold text-lg uppercase tracking-wide">{{ category.title }}</h3>
+          </div>
+          
+          <!-- List -->
+          <div class="p-6 flex-grow bg-[#e0e7e9]">
+            <ul class="space-y-2">
+              <li v-for="(item, index) in category.treatments" :key="index" class="flex items-start text-sm text-gray-800 leading-relaxed">
+                <span class="mr-2 text-black mt-0.5">➤</span>
+                <span>{{ item }}</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

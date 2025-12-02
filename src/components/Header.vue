@@ -35,7 +35,7 @@ onUnmounted(() => {
       <div class="flex items-center">
         <router-link to="/" class="flex items-center gap-2 group">
           <!-- Logo Image -->
-          <img src="/images/new_logo.jpeg" alt="Hana Clinic Logo" class="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
+          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
         </router-link>
       </div>
       

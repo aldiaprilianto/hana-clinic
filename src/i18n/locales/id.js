@@ -24,15 +24,17 @@ export default {
         subtitle: 'Perawatan komprehensif untuk kecantikan dan kesehatan Anda',
         skinAesthetic: {
             title: 'Perawatan Estetika Kulit',
-            description: '20 perawatan premium menggunakan teknologi estetika Korea terkini',
-            treatments: '20 Perawatan Premium',
+            description: '20+ perawatan premium menggunakan teknologi estetika Korea terkini',
+            treatments: '20+ Perawatan Premium',
             categories: 'Kategori Perawatan',
             intro: 'Jelajahi berbagai perawatan estetika kulit kami, masing-masing dirancang untuk mengatasi masalah spesifik dan memberikan hasil luar biasa'
         },
         dental: {
             title: 'Perawatan Gigi',
-            description: '12 layanan lengkap dari kedokteran gigi estetika hingga bedah mulut lanjutan',
-            services: '12 Layanan Lengkap'
+            description: '10+ layanan lengkap dari kedokteran gigi estetika hingga bedah mulut lanjutan',
+            services: '10+ Layanan Lengkap',
+            ourServices: 'Layanan Gigi Kami',
+            intro: 'Rasakan perawatan gigi komprehensif dengan fasilitas canggih dan tim ahli kami'
         },
         learnMore: 'Pelajari Lebih Lanjut',
         viewAll: 'Lihat Semua Perawatan'
@@ -143,6 +145,7 @@ export default {
         ourServices: 'Layanan Kami',
         aboutUs: 'Tentang Kami',
         backTo: 'Kembali ke',
+        backToHome: 'Kembali ke Beranda',
         premium: 'Premium'
     },
     about: {

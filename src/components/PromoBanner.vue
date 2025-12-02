@@ -73,8 +73,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="py-16 bg-gradient-to-r from-surface via-white to-surface overflow-hidden">
-    <div class="container mx-auto px-6">
+  <section class="relative py-16 bg-gradient-to-r from-surface via-white to-surface overflow-hidden">
+    <!-- Batik Pattern Background -->
+    <div class="absolute inset-0 opacity-8" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat; background-position: 0 0;"></div>
+    
+    <!-- Subtle overlay to reduce batik prominence -->
+    <div class="absolute inset-0 bg-white/30"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
       <div class="relative" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
         <!-- Slides Container -->
         <div class="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
