@@ -61,7 +61,7 @@ const router = useRouter()
           </div>
           <!-- Content -->
           <div class="p-6 space-y-6 flex-grow bg-surface/30">
-            <div v-for="(treatment, index) in category.treatments" :key="index" class="relative group">
+            <div v-for="(treatment, index) in category.treatments" :key="index" class="relative group cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
               <div class="relative overflow-hidden rounded-xl shadow-md aspect-[4/3] border border-gray-100">
                  <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                  <!-- Gradient Overlay -->
@@ -91,7 +91,7 @@ const router = useRouter()
          </div>
          
          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-           <div v-for="(treatment, index) in dentalCategories[3].treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20">
+           <div v-for="(treatment, index) in dentalCategories[3].treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20 cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
               <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
                  <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                  <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>

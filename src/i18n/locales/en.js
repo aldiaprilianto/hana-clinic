@@ -2,6 +2,7 @@
 export default {
     nav: {
         home: 'Home',
+        about: 'About Us',
         services: 'Services',
         skinAesthetic: 'Skin Aesthetic',
         dentalTreatment: 'Dental Treatment',
@@ -230,8 +231,32 @@ export default {
         support: 'Customer Support',
         replyTime: 'Usually replies in 1 hour',
         greeting: 'Hello! How can we help you with Hana Clinic treatments today?',
+        welcomeMessage: 'Welcome to Hana Clinic Support! How can we assist you today?',
         placeholder: 'Type your message...',
         startChat: 'Start Chat'
+    },
+    aboutUs: {
+        title: 'About Us',
+        subtitle: 'Your Trusted Partner in Beauty & Wellness',
+        storyTitle: 'Our Story',
+        description: 'At Hana Clinic, we believe that beauty is a reflection of inner health and confidence. Our state-of-the-art facility combines advanced Korean technology with the expertise of world-class professionals to deliver exceptional results. We are dedicated to providing personalized care in a luxurious and comfortable environment.',
+        description2: 'Founded with a vision to bring world-class aesthetic and dental care to Indonesia, Hana Clinic has grown into a premier destination for those seeking excellence. Our team of specialists is committed to staying at the forefront of medical advancements to ensure the best possible outcomes for our patients.',
+        mission: 'Our Mission',
+        missionText: 'To empower individuals to look and feel their best through safe, effective, and innovative aesthetic and dental treatments.',
+        vision: 'Our Vision',
+        visionText: 'To be the leading aesthetic and dental clinic in Indonesia, setting the standard for excellence in patient care and clinical outcomes.',
+        whyChooseUs: 'Why Choose Us',
+        expertTeam: 'Expert Team',
+        expertTeamDesc: 'Our doctors are certified specialists with years of experience in their respective fields.',
+        modernTech: 'Modern Technology',
+        modernTechDesc: 'We use the latest FDA-approved equipment and techniques to ensure safety and results.',
+        patientCare: 'Patient Care',
+        patientCareDesc: 'Your comfort and satisfaction are our top priorities. We provide personalized care plans.',
+        yearsExp: 'Years Experience',
+        happyPatients: 'Happy Patients',
+        treatments: 'Treatments',
+        awards: 'Awards Won',
+        readyToVisit: 'Ready to Visit Us?'
     },
     testimonials: {
         patientStories: 'Patient Stories',

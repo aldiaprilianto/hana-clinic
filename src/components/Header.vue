@@ -42,6 +42,7 @@ onUnmounted(() => {
       <!-- Desktop Menu -->
       <nav class="hidden lg:flex items-center space-x-6">
         <router-link to="/" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.home') }}</router-link>
+        <router-link to="/about" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.about') }}</router-link>
         
         <!-- Services Dropdown -->
         <div 
@@ -149,7 +150,7 @@ onUnmounted(() => {
           </div>
         </div>
         
-        <a href="#contact" class="btn-primary ml-4">
+        <a href="https://wa.me/6281386017622" target="_blank" class="btn-primary ml-4">
           {{ $t('nav.bookAppointment') }}
         </a>
       </nav>
@@ -175,6 +176,7 @@ onUnmounted(() => {
       <div v-if="isMenuOpen" class="lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-lg">
         <div class="flex flex-col px-6 py-8 space-y-6">
           <router-link to="/" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.home') }}</router-link>
+          <router-link to="/about" @click="isMenuOpen = false" class="text-primary/80 hover:text-accent uppercase text-sm tracking-[0.15em] font-medium transition-colors">{{ $t('nav.about') }}</router-link>
           
           <!-- Mobile Services -->
           <div class="space-y-3">
@@ -221,7 +223,7 @@ onUnmounted(() => {
             </div>
           </div>
           
-          <a href="#contact" @click="isMenuOpen = false" class="btn-primary text-center w-full">{{ $t('nav.bookNow') }}</a>
+          <a href="https://wa.me/6281386017622" target="_blank" @click="isMenuOpen = false" class="btn-primary text-center w-full">{{ $t('nav.bookNow') }}</a>
         </div>
       </div>
     </transition>

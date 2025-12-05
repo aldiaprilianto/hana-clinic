@@ -7,12 +7,18 @@ import Career from '../views/Career.vue'
 import Team from '../views/Team.vue'
 import Gallery from '../views/Gallery.vue'
 import Blog from '../views/Blog.vue'
+import AboutView from '../views/AboutView.vue'
 
 const routes = [
     {
         path: '/',
         name: 'Home',
         component: Home
+    },
+    {
+        path: '/about',
+        name: 'About',
+        component: AboutView
     },
     {
         path: '/skin-aesthetic',

@@ -1985,7 +1985,72 @@ export const dentalTreatments = [
 
 export const getTreatmentById = (id) => {
   const allTreatments = [...skinAestheticTreatments, ...dentalTreatments];
-  return allTreatments.find(treatment => treatment.id === id);
+  const found = allTreatments.find(treatment => treatment.id === id);
+
+  if (found) return found;
+
+  // Fallback: Search in categories to generate a stub
+  let stub = null;
+
+  // Search in Skin Aesthetic Categories
+  for (const cat of skinAestheticCategories) {
+    const item = cat.treatments.find(t => t.id === id);
+    if (item) {
+      return {
+        id: item.id,
+        name: { en: item.name, id: item.name }, // Use same name for both if no translation
+        category: 'skin-aesthetic',
+        shortDescription: { en: 'Advanced aesthetic treatment', id: 'Perawatan estetika lanjutan' },
+        description: {
+          en: `Experience our professional ${item.name}. This treatment is designed to address your specific skin concerns using advanced techniques and technology.`,
+          id: `Rasakan ${item.name} profesional kami. Perawatan ini dirancang untuk mengatasi masalah kulit spesifik Anda menggunakan teknik dan teknologi canggih.`
+        },
+        image: cat.image, // Fallback to category image
+        benefits: {
+          en: ['Professional care', 'Advanced technology', 'Personalized approach', 'Safe procedure'],
+          id: ['Perawatan profesional', 'Teknologi canggih', 'Pendekatan personal', 'Prosedur aman']
+        },
+        procedure: {
+          en: ['Consultation', 'Treatment preparation', 'Procedure', 'Post-care'],
+          id: ['Konsultasi', 'Persiapan perawatan', 'Prosedur', 'Pasca-perawatan']
+        },
+        duration: { en: 'Varies', id: 'Bervariasi' },
+        recovery: { en: 'Minimal', id: 'Minimal' },
+        results: { en: 'Visible improvement', id: 'Perbaikan terlihat' }
+      };
+    }
+  }
+
+  // Search in Dental Categories
+  for (const cat of dentalCategories) {
+    const item = cat.treatments.find(t => t.id === id);
+    if (item) {
+      return {
+        id: item.id,
+        name: { en: item.name, id: item.name },
+        category: 'dental',
+        shortDescription: { en: 'Professional dental care', id: 'Perawatan gigi profesional' },
+        description: {
+          en: item.description || `Professional ${item.name} provided by our expert dental team.`,
+          id: item.description || `${item.name} profesional yang diberikan oleh tim dokter gigi ahli kami.`
+        },
+        image: item.image,
+        benefits: {
+          en: ['Expert care', 'Modern equipment', 'Comfortable environment'],
+          id: ['Perawatan ahli', 'Peralatan modern', 'Lingkungan nyaman']
+        },
+        procedure: {
+          en: ['Examination', 'Treatment', 'Review'],
+          id: ['Pemeriksaan', 'Perawatan', 'Tinjauan']
+        },
+        duration: { en: 'Varies', id: 'Bervariasi' },
+        recovery: { en: 'Minimal', id: 'Minimal' },
+        results: { en: 'Improved oral health', id: 'Peningkatan kesehatan mulut' }
+      };
+    }
+  }
+
+  return null;
 };
 
 export const skinAestheticCategories = [
@@ -1994,14 +2059,14 @@ export const skinAestheticCategories = [
     title: 'Acne Solutions',
     image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Acne Laser Therapy (fractional, Q-switched, or diode)',
-      'Chemical Peels (salicylic, glycolic, TCA light)',
-      'Extraction Facial / Comedone Removal',
-      'LED Blue Light Therapy',
-      'Acne Intralesional Injection (ILK)',
-      'Acne Control Meso / Acne Booster',
-      'Oil Control Laser & Sebum Regulation',
-      'Oral & Topical dermatologist medicine'
+      { name: 'Acne Laser Therapy (fractional, Q-switched, or diode)', id: 'acne-laser' },
+      { name: 'Chemical Peels (salicylic, glycolic, TCA light)', id: 'chemical-peels-acne' },
+      { name: 'Extraction Facial / Comedone Removal', id: 'extraction-facial' },
+      { name: 'LED Blue Light Therapy', id: 'led-blue-light' },
+      { name: 'Acne Intralesional Injection (ILK)', id: 'acne-injection' },
+      { name: 'Acne Control Meso / Acne Booster', id: 'acne-meso' },
+      { name: 'Oil Control Laser & Sebum Regulation', id: 'oil-control-laser' },
+      { name: 'Oral & Topical dermatologist medicine', id: 'acne-medicine' }
     ]
   },
   {
@@ -2009,16 +2074,16 @@ export const skinAestheticCategories = [
     title: 'Brightening Solutions',
     image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Brightening Laser (Q-Switched / Pico)',
-      'Whitening Drip / Whitening Infusion ( IU snow white infusion)',
-      'Whitening Injection',
-      'Brightening Meso (Vit C, Glutathione cocktails)',
-      'Chemical Peels for Brightening',
-      'Melasma Laser Protocols',
-      'Microneedling with Brightening Serum',
-      'IPL Photofacial',
-      'Pigment-Targeting Laser',
-      'Topical dermatologist-grade skincare'
+      { name: 'Brightening Laser (Q-Switched / Pico)', id: 'brightening-laser' },
+      { name: 'Whitening Drip / Whitening Infusion ( IU snow white infusion)', id: 'whitening-drip' },
+      { name: 'Whitening Injection', id: 'whitening-injection' },
+      { name: 'Brightening Meso (Vit C, Glutathione cocktails)', id: 'brightening-meso' },
+      { name: 'Chemical Peels for Brightening', id: 'chemical-peels-brightening' },
+      { name: 'Melasma Laser Protocols', id: 'melasma-laser' },
+      { name: 'Microneedling with Brightening Serum', id: 'microneedling-brightening' },
+      { name: 'IPL Photofacial', id: 'ipl-photofacial' },
+      { name: 'Pigment-Targeting Laser', id: 'pigment-laser' },
+      { name: 'Topical dermatologist-grade skincare', id: 'brightening-skincare' }
     ]
   },
   {
@@ -2026,16 +2091,16 @@ export const skinAestheticCategories = [
     title: 'Anti Aging Solutions',
     image: '/images/treatments/botox_treatment_1764461614966.png',
     treatments: [
-      'Botox for Wrinkles (forehead, frown lines, crow’s feet)',
-      'Dermal Fillers (cheek, nasolabial, under-eye, lips)',
-      'HIFU / Ultrasound Lifting',
-      'RF Skin Tightening',
-      'Skin Booster (PN/PNC, HA, Rejuran)',
-      'Laser Resurfacing',
-      'Threadlift',
-      'PRP Rejuvenation Therapy',
-      'Face Contouring',
-      'Stem-Cells'
+      { name: 'Botox for Wrinkles (forehead, frown lines, crow’s feet)', id: 'botox-wrinkles' },
+      { name: 'Dermal Fillers (cheek, nasolabial, under-eye, lips)', id: 'dermal-fillers-aging' },
+      { name: 'HIFU / Ultrasound Lifting', id: 'hifu-lifting' },
+      { name: 'RF Skin Tightening', id: 'rf-tightening' },
+      { name: 'Skin Booster (PN/PNC, HA, Rejuran)', id: 'skin-booster-aging' },
+      { name: 'Laser Resurfacing', id: 'laser-resurfacing' },
+      { name: 'Threadlift', id: 'threadlift' },
+      { name: 'PRP Rejuvenation Therapy', id: 'prp-therapy' },
+      { name: 'Face Contouring', id: 'face-contouring' },
+      { name: 'Stem-Cells', id: 'stem-cells' }
     ]
   },
   {
@@ -2043,18 +2108,18 @@ export const skinAestheticCategories = [
     title: 'Slimming & Contouring',
     image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Cryolipolysis / Fat Freeze',
-      'RF Body Tightening',
-      'Laser Lipo / Cavitation',
-      'Body Slimming Injection',
-      'Lymphatic Detox Massage',
-      'HIFEM Muscle Stimulation',
-      'HIFU V-Shape Lifting',
-      'Jawline Botox / Masseter Slimming',
-      'Chin & Cheek Filler',
-      'Thread Lift for Contour',
-      'Fat-Dissolving Injection (Kybella-type)',
-      'Fat removal surgery'
+      { name: 'Cryolipolysis / Fat Freeze', id: 'cryolipolysis' },
+      { name: 'RF Body Tightening', id: 'rf-body' },
+      { name: 'Laser Lipo / Cavitation', id: 'laser-lipo' },
+      { name: 'Body Slimming Injection', id: 'slimming-injection' },
+      { name: 'Lymphatic Detox Massage', id: 'lymphatic-massage' },
+      { name: 'HIFEM Muscle Stimulation', id: 'hifem' },
+      { name: 'HIFU V-Shape Lifting', id: 'hifu-v-shape' },
+      { name: 'Jawline Botox / Masseter Slimming', id: 'jawline-botox' },
+      { name: 'Chin & Cheek Filler', id: 'chin-cheek-filler' },
+      { name: 'Thread Lift for Contour', id: 'thread-lift-contour' },
+      { name: 'Fat-Dissolving Injection (Kybella-type)', id: 'fat-dissolving' },
+      { name: 'Fat removal surgery', id: 'fat-removal-surgery' }
     ]
   },
   {
@@ -2062,14 +2127,14 @@ export const skinAestheticCategories = [
     title: 'Hair Growth Treatments',
     image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Hair Growth Laser / LLLT',
-      'Hair Meso (Growth Factor Injections)',
-      'PRP Hair Treatment',
-      'Topical Minoxidil Program',
-      'DNA Salmon Hair',
-      'Oral supplements (under doctor supervision)',
-      'Scalp Detox & Deep Cleansing Treatment',
-      'Hair Transplant'
+      { name: 'Hair Growth Laser / LLLT', id: 'hair-laser' },
+      { name: 'Hair Meso (Growth Factor Injections)', id: 'hair-meso' },
+      { name: 'PRP Hair Treatment', id: 'prp-hair' },
+      { name: 'Topical Minoxidil Program', id: 'minoxidil' },
+      { name: 'DNA Salmon Hair', id: 'dna-salmon-hair' },
+      { name: 'Oral supplements (under doctor supervision)', id: 'hair-supplements' },
+      { name: 'Scalp Detox & Deep Cleansing Treatment', id: 'scalp-detox' },
+      { name: 'Hair Transplant', id: 'hair-transplant' }
     ]
   },
   {
@@ -2077,15 +2142,15 @@ export const skinAestheticCategories = [
     title: 'Rejuvenating Treatments',
     image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Skin Booster (Hyaluronic Acid / PDRN / Rejuran / NCTF)',
-      'Hydrafacial / Aqua Peeling',
-      'Microneedling Therapy',
-      'Laser Rejuvenation',
-      'Oxygen Facial',
-      'Dermaplaning',
-      'Meso Glow (vitamins + peptides)',
-      'PRP Rejuvenation Therapy',
-      'DNA Salmon'
+      { name: 'Skin Booster (Hyaluronic Acid / PDRN / Rejuran / NCTF)', id: 'skin-booster-rejuv' },
+      { name: 'Hydrafacial / Aqua Peeling', id: 'hydrafacial' },
+      { name: 'Microneedling Therapy', id: 'microneedling-rejuv' },
+      { name: 'Laser Rejuvenation', id: 'laser-rejuv' },
+      { name: 'Oxygen Facial', id: 'oxygen-facial' },
+      { name: 'Dermaplaning', id: 'dermaplaning' },
+      { name: 'Meso Glow (vitamins + peptides)', id: 'meso-glow' },
+      { name: 'PRP Rejuvenation Therapy', id: 'prp-rejuv' },
+      { name: 'DNA Salmon', id: 'dna-salmon' }
     ]
   },
   {
@@ -2093,14 +2158,14 @@ export const skinAestheticCategories = [
     title: 'Scars & Pore Solution',
     image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Subcision',
-      'RF Microneedling (Dermapen / Morpheus / Secret RF)',
-      'Fractional Laser (CO2 / Erbium / Fractional Resurfacing)',
-      'TCA CROSS (Chemical Reconstruction of Skin Scars)',
-      'PRP (Platelet-Rich Plasma)',
-      'Skin Boosters (PN/HA / Rejuran / Profilo type)',
-      'Meso Whitening for Acne Marks',
-      'Cross-Linked Filler for Atrophic Scars'
+      { name: 'Subcision', id: 'subcision' },
+      { name: 'RF Microneedling (Dermapen / Morpheus / Secret RF)', id: 'rf-microneedling' },
+      { name: 'Fractional Laser (CO2 / Erbium / Fractional Resurfacing)', id: 'fractional-laser' },
+      { name: 'TCA CROSS (Chemical Reconstruction of Skin Scars)', id: 'tca-cross' },
+      { name: 'PRP (Platelet-Rich Plasma)', id: 'prp-scars' },
+      { name: 'Skin Boosters (PN/HA / Rejuran / Profilo type)', id: 'skin-boosters-scars' },
+      { name: 'Meso Whitening for Acne Marks', id: 'meso-whitening' },
+      { name: 'Cross-Linked Filler for Atrophic Scars', id: 'filler-scars' }
     ]
   },
   {
@@ -2108,15 +2173,15 @@ export const skinAestheticCategories = [
     title: 'Hair removal',
     image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
     treatments: [
-      'Diode Laser Hair Removal',
-      'Alexandrite Laser (755 nm)',
-      'IPL Hair Removal (Intense Pulsed Light)',
-      'SHR (Super Hair Removal)',
-      'Electrolysis (FDA-certified permanent removal)',
-      'Armpit hair removal',
-      'Body Hair Removal',
-      'Facial Hair removal',
-      'Brazilian Hair removal'
+      { name: 'Diode Laser Hair Removal', id: 'diode-laser' },
+      { name: 'Alexandrite Laser (755 nm)', id: 'alexandrite-laser' },
+      { name: 'IPL Hair Removal (Intense Pulsed Light)', id: 'ipl-hair' },
+      { name: 'SHR (Super Hair Removal)', id: 'shr-hair' },
+      { name: 'Electrolysis (FDA-certified permanent removal)', id: 'electrolysis' },
+      { name: 'Armpit hair removal', id: 'armpit-hair' },
+      { name: 'Body Hair Removal', id: 'body-hair' },
+      { name: 'Facial Hair removal', id: 'facial-hair' },
+      { name: 'Brazilian Hair removal', id: 'brazilian-hair' }
     ]
   }
 ];
@@ -2126,24 +2191,24 @@ export const dentalCategories = [
     id: 'aesthetic',
     title: 'Aesthetic',
     treatments: [
-      { name: 'Veneer Indirect (Porcelain)', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop' },
-      { name: 'Bleaching', image: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=2070&auto=format&fit=crop' },
-      { name: 'Veneer Direct (Composite)', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' }
+      { name: 'Veneer Indirect (Porcelain)', id: 'veneer-indirect', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop' },
+      { name: 'Bleaching', id: 'bleaching', image: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=2070&auto=format&fit=crop' },
+      { name: 'Veneer Direct (Composite)', id: 'veneer-direct', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
     id: 'orthodontic',
     title: 'Orthodontic',
     treatments: [
-      { name: 'Ortho Cekat / Behel', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' },
-      { name: 'Clear Aligner', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop' }
+      { name: 'Ortho Cekat / Behel', id: 'ortho-behel', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' },
+      { name: 'Clear Aligner', id: 'clear-aligner', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
     id: 'endodontic',
     title: 'Endodontic',
     treatments: [
-      { name: 'Root Canal (Perawatan Saluran Akar)', image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2070&auto=format&fit=crop' }
+      { name: 'Root Canal (Perawatan Saluran Akar)', id: 'root-canal', image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
@@ -2151,21 +2216,25 @@ export const dentalCategories = [
     title: 'General Dentistry',
     treatments: [
       {
+        id: 'tooth-extraction',
         name: 'Cabut Gigi (Tooth Extraction)',
         description: 'Untuk gigi yang sudah rusak parah, goyang, infeksi berat, Impaksi atau tidak bisa dipertahankan lagi. Dokter gigi menggunakan alat khusus seperti forceps dan elevator untuk melepaskan gigi dari soketnya dengan aman.',
         image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2070&auto=format&fit=crop'
       },
       {
+        id: 'scaling-cleaning',
         name: 'Scaling (Pembersihan Karang Gigi)',
         description: 'Scaling adalah prosedur untuk membersihkan plak dan karang gigi yang menumpuk di permukaan gigi dan garis gusi. Dokter menggunakan alat ultrasonic scaler yang bergetar untuk memecah karang gigi.',
         image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f72?q=80&w=2070&auto=format&fit=crop'
       },
       {
+        id: 'dental-filling',
         name: 'Tambal Gigi (Filling)',
         description: 'Tambal gigi dilakukan untuk memperbaiki gigi yang berlubang akibat karies. Setelah membersihkan bagian gigi yang rusak, dokter mengisi lubang dengan bahan resin komposit.',
         image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop'
       },
       {
+        id: 'dentures',
         name: 'Gigi Palsu (Dentures)',
         description: 'Gigi palsu adalah pengganti gigi yang hilang, dapat berupa sebagian (partial denture) atau seluruhnya (full denture). Prosesnya melibatkan pengukuran rahang dan pencetakan.',
         image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop'
@@ -2173,3 +2242,4 @@ export const dentalCategories = [
     ]
   }
 ];
+

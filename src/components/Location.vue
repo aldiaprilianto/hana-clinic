@@ -60,7 +60,7 @@ const { t } = useI18n()
               </div>
               <div>
                 <h4 class="font-semibold text-dark mb-1">{{ $t('location.phone') }}</h4>
-                <a href="tel:+6282336427407" class="text-primary hover:text-accent transition-colors">+62 823-3642-7407</a>
+                <a href="tel:+6281386017622" class="text-primary hover:text-accent transition-colors">+62 813-8601-7622</a>
               </div>
             </div>
 

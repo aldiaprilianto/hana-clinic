@@ -2,6 +2,7 @@
 export default {
     nav: {
         home: 'Beranda',
+        about: 'Tentang Kami',
         services: 'Layanan',
         skinAesthetic: 'Estetika Kulit',
         dentalTreatment: 'Perawatan Gigi',
@@ -230,8 +231,32 @@ export default {
         support: 'Dukungan Pelanggan',
         replyTime: 'Biasanya membalas dalam 1 jam',
         greeting: 'Halo! Ada yang bisa kami bantu dengan perawatan Hana Clinic hari ini?',
+        welcomeMessage: 'Selamat datang di Dukungan Hana Clinic! Ada yang bisa kami bantu hari ini?',
         placeholder: 'Ketik pesan Anda...',
         startChat: 'Mulai Chat'
+    },
+    aboutUs: {
+        title: 'Tentang Kami',
+        subtitle: 'Mitra Terpercaya Anda dalam Kecantikan & Kesehatan',
+        storyTitle: 'Cerita Kami',
+        description: 'Di Hana Clinic, kami percaya bahwa kecantikan adalah cerminan dari kesehatan batin dan kepercayaan diri. Fasilitas canggih kami menggabungkan teknologi Korea terdepan dengan keahlian profesional kelas dunia untuk memberikan hasil yang luar biasa. Kami berdedikasi untuk memberikan perawatan personal dalam lingkungan yang mewah dan nyaman.',
+        description2: 'Didirikan dengan visi untuk membawa perawatan estetika dan gigi kelas dunia ke Indonesia, Hana Clinic telah berkembang menjadi tujuan utama bagi mereka yang mencari keunggulan. Tim spesialis kami berkomitmen untuk tetap berada di garis depan kemajuan medis untuk memastikan hasil terbaik bagi pasien kami.',
+        mission: 'Misi Kami',
+        missionText: 'Untuk memberdayakan individu agar terlihat dan merasa terbaik melalui perawatan estetika dan gigi yang aman, efektif, dan inovatif.',
+        vision: 'Visi Kami',
+        visionText: 'Menjadi klinik estetika dan gigi terkemuka di Indonesia, menetapkan standar keunggulan dalam perawatan pasien dan hasil klinis.',
+        whyChooseUs: 'Mengapa Memilih Kami',
+        expertTeam: 'Tim Ahli',
+        expertTeamDesc: 'Dokter kami adalah spesialis bersertifikat dengan pengalaman bertahun-tahun di bidangnya masing-masing.',
+        modernTech: 'Teknologi Modern',
+        modernTechDesc: 'Kami menggunakan peralatan dan teknik terbaru yang disetujui FDA untuk memastikan keamanan dan hasil.',
+        patientCare: 'Perawatan Pasien',
+        patientCareDesc: 'Kenyamanan dan kepuasan Anda adalah prioritas utama kami. Kami menyediakan rencana perawatan yang dipersonalisasi.',
+        yearsExp: 'Tahun Pengalaman',
+        happyPatients: 'Pasien Bahagia',
+        treatments: 'Perawatan',
+        awards: 'Penghargaan',
+        readyToVisit: 'Siap Mengunjungi Kami?'
     },
     testimonials: {
         patientStories: 'Cerita Pasien',

@@ -201,7 +201,7 @@ const benefits = ref([
                     </span>
                   </div>
                 </div>
-                <a href="https://wa.me/6282336427407?text=Hi%2C%20I%27m%20interested%20in%20the%20position%20of%20" class="bg-accent text-primary px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-primary hover:text-white transition-all duration-300">
+                <a href="https://wa.me/6281386017622?text=Hi%2C%20I%27m%20interested%20in%20the%20position%20of%20" class="bg-accent text-primary px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-primary hover:text-white transition-all duration-300">
                   {{ $t('career.applyNow') }}
                 </a>
               </div>
@@ -234,7 +234,7 @@ const benefits = ref([
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-serif mb-6">{{ $t('career.dontSeePosition') }}</h2>
         <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">{{ $t('career.dontSeeDescription') }}</p>
-        <a href="https://wa.me/6282336427407?text=Hi%2C%20I%27d%20like%20to%20submit%20my%20resume%20for%20future%20opportunities" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
+        <a href="https://wa.me/6281386017622?text=Hi%2C%20I%27d%20like%20to%20submit%20my%20resume%20for%20future%20opportunities" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
           {{ $t('career.sendResume') }}
         </a>
       </div>

@@ -33,6 +33,7 @@ const { t } = useI18n()
           <h3 class="text-sm uppercase tracking-[0.2em] text-white font-bold mb-8">{{ $t('footer.quickLinks') }}</h3>
           <ul class="space-y-3 text-white/80 font-light">
             <li><router-link to="/" class="hover:text-white transition-colors">{{ $t('nav.home') }}</router-link></li>
+            <li><router-link to="/about" class="hover:text-white transition-colors">{{ $t('nav.about') }}</router-link></li>
             <li><router-link to="/skin-aesthetic" class="hover:text-white transition-colors">{{ $t('nav.skinAesthetic') }}</router-link></li>
             <li><router-link to="/dental" class="hover:text-white transition-colors">{{ $t('nav.dentalTreatment') }}</router-link></li>
             <li><router-link to="/team" class="hover:text-white transition-colors">{{ $t('nav.team') }}</router-link></li>
@@ -50,7 +51,7 @@ const { t } = useI18n()
             Jakarta Selatan, Indonesia 12190
           </p>
           <p class="text-white/80 font-light mb-6 leading-loose">
-            <a href="tel:+6282336427407" class="hover:text-white transition-colors block">+62 823-3642-7407</a>
+            <a href="tel:+6281386017622" class="hover:text-white transition-colors block">+62 813-8601-7622</a>
             <a href="mailto:hello@hanaclinic.id" class="hover:text-white transition-colors block">hello@hanaclinic.id</a>
           </p>
           <a href="#" class="inline-block border border-white/30 px-6 py-2.5 text-xs uppercase tracking-widest hover:bg-white hover:text-primary hover:border-white transition-all">{{ $t('footer.getDirections') }}</a>

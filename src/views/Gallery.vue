@@ -183,7 +183,7 @@ const filterGallery = (category) => {
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-serif mb-6">{{ $t('gallery.readyForTransformation') }}</h2>
         <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">{{ $t('gallery.readyDescription') }}</p>
-        <a href="/#contact" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
+        <a href="https://wa.me/6281386017622" target="_blank" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
           {{ $t('gallery.bookConsultation') }}
         </a>
       </div>

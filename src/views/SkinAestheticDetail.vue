@@ -75,9 +75,9 @@ const router = useRouter()
           <!-- List -->
           <div class="p-6 flex-grow bg-[#e0e7e9]">
             <ul class="space-y-2">
-              <li v-for="(item, index) in category.treatments" :key="index" class="flex items-start text-sm text-gray-800 leading-relaxed">
-                <span class="mr-2 text-black mt-0.5">➤</span>
-                <span>{{ item }}</span>
+              <li v-for="(item, index) in category.treatments" :key="index" class="flex items-start text-sm text-gray-800 leading-relaxed group cursor-pointer hover:text-primary transition-colors" @click="router.push(`/treatment/${item.id}`)">
+                <span class="mr-2 text-black mt-0.5 group-hover:text-primary transition-colors">➤</span>
+                <span class="group-hover:underline">{{ item.name }}</span>
               </li>
             </ul>
           </div>
