@@ -17,14 +17,14 @@ const { t } = useI18n()
         <div class="space-y-4">
           <div class="grid grid-cols-2 gap-4">
             <div class="overflow-hidden rounded-2xl shadow-lg">
-              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop" alt="Clinic Reception" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-700">
+              <img src="/images/clinic/clinic12.png" alt="Clinic Reception" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-700">
             </div>
             <div class="overflow-hidden rounded-2xl shadow-lg">
-              <img src="https://images.unsplash.com/photo-1631248055645-e3a5c7d9b6c5?q=80&w=2070&auto=format&fit=crop" alt="Treatment Room" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-700">
+              <img src="/images/clinic/clinic13.png" alt="Treatment Room" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-700">
             </div>
           </div>
           <div class="overflow-hidden rounded-2xl shadow-lg">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop" alt="Clinic Interior" class="w-full h-80 object-cover hover:scale-110 transition-transform duration-700">
+            <img src="/images/clinic/clinic14.png" alt="Clinic Interior" class="w-full h-80 object-cover hover:scale-110 transition-transform duration-700">
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const { t } = useI18n()
               </div>
               <div>
                 <h4 class="font-semibold text-dark mb-1">{{ $t('location.address') }}</h4>
-                <p class="text-gray-600">Jl. Sudirman No. 123<br>Jakarta Selatan, 12190<br>Indonesia</p>
+                <p class="text-gray-600">{{ $t('location.addressLine1') }}<br>{{ $t('location.addressLine2') }}</p>
               </div>
             </div>
 
@@ -60,7 +60,8 @@ const { t } = useI18n()
               </div>
               <div>
                 <h4 class="font-semibold text-dark mb-1">{{ $t('location.phone') }}</h4>
-                <a href="tel:+6281386017622" class="text-primary hover:text-accent transition-colors">+62 813-8601-7622</a>
+                <a :href="`tel:${$t('location.phoneNumber')}`" class="text-primary hover:text-accent transition-colors block">{{ $t('location.phoneNumber') }}</a>
+                <a :href="`mailto:${$t('location.emailAddress')}`" class="text-primary hover:text-accent transition-colors block mt-1">{{ $t('location.emailAddress') }}</a>
               </div>
             </div>
 

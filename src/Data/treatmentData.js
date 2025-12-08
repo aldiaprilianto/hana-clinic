@@ -2057,7 +2057,7 @@ export const skinAestheticCategories = [
   {
     id: 'acne-solutions',
     title: 'Acne Solutions',
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/ACNE-Before-After.png',
     treatments: [
       { name: 'Acne Laser Therapy (fractional, Q-switched, or diode)', id: 'acne-laser' },
       { name: 'Chemical Peels (salicylic, glycolic, TCA light)', id: 'chemical-peels-acne' },
@@ -2072,7 +2072,7 @@ export const skinAestheticCategories = [
   {
     id: 'brightening-solutions',
     title: 'Brightening Solutions',
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/BRIGHTENING-Before-After.png',
     treatments: [
       { name: 'Brightening Laser (Q-Switched / Pico)', id: 'brightening-laser' },
       { name: 'Whitening Drip / Whitening Infusion ( IU snow white infusion)', id: 'whitening-drip' },
@@ -2089,7 +2089,7 @@ export const skinAestheticCategories = [
   {
     id: 'anti-aging-solutions',
     title: 'Anti Aging Solutions',
-    image: '/images/treatments/botox_treatment_1764461614966.png',
+    image: '/images/treatments/ANTI-AGING-Before-After.png',
     treatments: [
       { name: 'Botox for Wrinkles (forehead, frown lines, crow’s feet)', id: 'botox-wrinkles' },
       { name: 'Dermal Fillers (cheek, nasolabial, under-eye, lips)', id: 'dermal-fillers-aging' },
@@ -2106,7 +2106,7 @@ export const skinAestheticCategories = [
   {
     id: 'slimming-contouring',
     title: 'Slimming & Contouring',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/SLIMMING-Before-After.png',
     treatments: [
       { name: 'Cryolipolysis / Fat Freeze', id: 'cryolipolysis' },
       { name: 'RF Body Tightening', id: 'rf-body' },
@@ -2125,7 +2125,7 @@ export const skinAestheticCategories = [
   {
     id: 'hair-growth',
     title: 'Hair Growth Treatments',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/HAIR-GROWTH-Before-After.png',
     treatments: [
       { name: 'Hair Growth Laser / LLLT', id: 'hair-laser' },
       { name: 'Hair Meso (Growth Factor Injections)', id: 'hair-meso' },
@@ -2140,7 +2140,7 @@ export const skinAestheticCategories = [
   {
     id: 'rejuvenating-treatments',
     title: 'Rejuvenating Treatments',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/REJUVENATE-Before-After.png',
     treatments: [
       { name: 'Skin Booster (Hyaluronic Acid / PDRN / Rejuran / NCTF)', id: 'skin-booster-rejuv' },
       { name: 'Hydrafacial / Aqua Peeling', id: 'hydrafacial' },
@@ -2156,7 +2156,7 @@ export const skinAestheticCategories = [
   {
     id: 'scars-pore-solution',
     title: 'Scars & Pore Solution',
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/SCAR-Before-After.png',
     treatments: [
       { name: 'Subcision', id: 'subcision' },
       { name: 'RF Microneedling (Dermapen / Morpheus / Secret RF)', id: 'rf-microneedling' },
@@ -2171,7 +2171,7 @@ export const skinAestheticCategories = [
   {
     id: 'hair-removal',
     title: 'Hair removal',
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
     treatments: [
       { name: 'Diode Laser Hair Removal', id: 'diode-laser' },
       { name: 'Alexandrite Laser (755 nm)', id: 'alexandrite-laser' },

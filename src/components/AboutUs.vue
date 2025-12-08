@@ -5,33 +5,25 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="py-20 bg-white overflow-hidden">
+  <section class="py-24 bg-surface overflow-hidden relative">
     <div class="container mx-auto px-6">
-      <div class="flex flex-col lg:flex-row items-center gap-16">
-        <!-- Image with decorative elements -->
+      <!-- Title Section to match 'Spectacular' style -->
+      <div class="text-center mb-16 relative z-10 max-w-4xl mx-auto">
+        <h3 class="text-accent text-sm font-medium uppercase tracking-[0.3em] mb-4">{{ $t('aboutUs.title') }}</h3>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight mb-6">{{ $t('aboutUs.subtitle') }}</h2>
+        <div class="w-24 h-px bg-accent/30 mx-auto"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center gap-16 relative z-10">
+        <!-- Image using the user provided image -->
         <div class="lg:w-1/2 relative">
           <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
             <img 
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop" 
+              src="/images/clinic/clinic23.png" 
               alt="Hana Clinic Interior" 
               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
             >
             <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-          </div>
-          
-          <!-- Floating Stats/Card -->
-          <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl border border-gray-100 hidden md:block animate-float">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
-                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <div>
-                <div class="text-2xl font-bold text-primary">15+</div>
-                <div class="text-xs text-gray-500 uppercase tracking-wider">Years Experience</div>
-              </div>
-            </div>
           </div>
           
           <!-- Decorative Pattern -->
@@ -40,35 +32,78 @@ const { t } = useI18n()
 
         <!-- Content -->
         <div class="lg:w-1/2">
-          <div class="inline-block bg-accent/10 px-4 py-2 rounded-full mb-6">
-            <span class="text-accent text-sm font-bold uppercase tracking-wider">{{ $t('aboutUs.title') }}</span>
-          </div>
-          
-          <h2 class="text-4xl md:text-5xl font-serif text-primary mb-6 leading-tight">{{ $t('aboutUs.subtitle') }}</h2>
-          
-          <p class="text-gray-600 text-lg leading-relaxed mb-8">
-            {{ $t('aboutUs.description') }}
-          </p>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            <div class="bg-surface p-6 rounded-xl border border-gray-100 hover:border-accent/30 transition-colors">
-              <h3 class="font-serif text-xl text-primary mb-3">{{ $t('aboutUs.mission') }}</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">{{ $t('aboutUs.missionText') }}</p>
+          <div class="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
+            <p>
+              {{ $t('aboutUs.description') }}
+            </p>
+            <div class="border-l-4 border-accent/30 pl-6 italic text-gray-700">
+              {{ $t('aboutUs.tagline') }}
             </div>
-            <div class="bg-surface p-6 rounded-xl border border-gray-100 hover:border-accent/30 transition-colors">
-              <h3 class="font-serif text-xl text-primary mb-3">{{ $t('aboutUs.vision') }}</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">{{ $t('aboutUs.visionText') }}</p>
-            </div>
+            <p>
+              {{ $t('aboutUs.focus') }}
+            </p>
+            <p v-html="$t('aboutUs.symbolism')"></p>
           </div>
 
-          <router-link to="/team" class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm hover:text-accent transition-colors group">
-            <span>{{ $t('common.learnMore') }}</span>
-            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </router-link>
+          <div class="space-y-6">
+            <h3 class="font-serif text-2xl text-primary mb-6">{{ $t('aboutUs.advantageTitle') }}</h3>
+            
+            <!-- Advantage Items -->
+            <div class="grid gap-6">
+              <div class="flex gap-4 items-start group">
+                <div class="w-10 h-10 shrink-0 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <span class="text-xl">💎</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary">{{ $t('aboutUs.advantages.accessibleExcellence') }}</h4>
+                  <p class="text-sm text-gray-600 mt-1">{{ $t('aboutUs.advantages.accessibleExcellenceDesc') }}</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start group">
+                <div class="w-10 h-10 shrink-0 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <span class="text-xl">💻</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary">{{ $t('aboutUs.advantages.cuttingEdgeTech') }}</h4>
+                  <p class="text-sm text-gray-600 mt-1">{{ $t('aboutUs.advantages.cuttingEdgeTechDesc') }}</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start group">
+                <div class="w-10 h-10 shrink-0 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <span class="text-xl">👩‍⚕️</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary">{{ $t('aboutUs.advantages.trustedSpecialists') }}</h4>
+                  <p class="text-sm text-gray-600 mt-1">{{ $t('aboutUs.advantages.trustedSpecialistsDesc') }}</p>
+                </div>
+              </div>
+
+               <div class="flex gap-4 items-start group">
+                <div class="w-10 h-10 shrink-0 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <span class="text-xl">🛡️</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary">{{ $t('aboutUs.advantages.uncompromisedSafety') }}</h4>
+                  <p class="text-sm text-gray-600 mt-1">{{ $t('aboutUs.advantages.uncompromisedSafetyDesc') }}</p>
+                </div>
+              </div>
+
+               <div class="flex gap-4 items-start group">
+                <div class="w-10 h-10 shrink-0 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <span class="text-xl">🌿</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-primary">{{ $t('aboutUs.advantages.sustainableBeauty') }}</h4>
+                  <p class="text-sm text-gray-600 mt-1">{{ $t('aboutUs.advantages.sustainableBeautyDesc') }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 </template>

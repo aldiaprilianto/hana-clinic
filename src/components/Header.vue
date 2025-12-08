@@ -29,13 +29,13 @@ onUnmounted(() => {
 <template>
   <header :class="[
     'fixed w-full z-50 transition-all duration-500',
-    isScrolled ? 'glass py-4' : 'bg-transparent py-6'
+    isScrolled ? 'glass py-3' : 'bg-transparent py-5'
   ]">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <div class="flex items-center">
         <router-link to="/" class="flex items-center gap-2 group">
           <!-- Logo Image -->
-          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
+          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105" />
         </router-link>
       </div>
       

@@ -32,7 +32,7 @@ const { t } = useI18n()
           <div class="mb-8 overflow-hidden rounded-2xl relative aspect-[4/3] shadow-lg">
             <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/0 group-hover:from-black/20 transition-all z-10 duration-700"></div>
             <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors z-10 duration-500"></div>
-            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop" alt="Skin Aesthetic Treatment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
+            <img src="/images/treatments/BRIGHTENING-Before-After.png" alt="Skin Aesthetic Treatment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
             
             <!-- Floating Icon -->
             <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20">
@@ -47,10 +47,13 @@ const { t } = useI18n()
           
           <!-- Treatment Highlights -->
           <div class="flex flex-wrap justify-center gap-2 mb-6">
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Botox & Fillers</span>
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Thread Lifting</span>
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Laser Treatments</span>
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Skinboosters</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Acne Solutions</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Anti-Aging Solutions</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Brightening Solutions</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Scars & Pore Solutions</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Hair Growth Treatments</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Hair Removal Solutions</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Rejuvenating Treatments</span>
           </div>
           
           <div class="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gray-400 group-hover:text-accent transition-colors font-semibold">
@@ -88,10 +91,9 @@ const { t } = useI18n()
           
           <!-- Treatment Highlights -->
           <div class="flex flex-wrap justify-center gap-2 mb-6">
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Aesthetic Dentistry</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Aesthetic</span>
             <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Orthodontic</span>
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Oral Surgery</span>
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Implants</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Endodontic</span>
           </div>
           
           <div class="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gray-400 group-hover:text-accent transition-colors font-semibold">

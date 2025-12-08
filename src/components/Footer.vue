@@ -17,7 +17,7 @@ const { t } = useI18n()
         <!-- Brand -->
         <div>
           <a href="#" class="inline-block mb-8">
-            <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-16 w-auto brightness-0 invert" />
+            <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-24 w-auto brightness-0 invert" />
           </a>
           <p class="text-gray-300 font-light leading-relaxed mb-8">
             {{ $t('footer.tagline') }}
@@ -47,12 +47,12 @@ const { t } = useI18n()
         <div>
           <h3 class="text-sm uppercase tracking-[0.2em] text-white font-bold mb-8">{{ $t('footer.contactUs') }}</h3>
           <p class="text-white/80 font-light mb-4 leading-loose">
-            Jl. Senopati No. 123, Kebayoran Baru<br>
-            Jakarta Selatan, Indonesia 12190
+            {{ $t('location.addressLine1') }}<br>
+            {{ $t('location.addressLine2') }}
           </p>
           <p class="text-white/80 font-light mb-6 leading-loose">
-            <a href="tel:+6281386017622" class="hover:text-white transition-colors block">+62 813-8601-7622</a>
-            <a href="mailto:hello@hanaclinic.id" class="hover:text-white transition-colors block">hello@hanaclinic.id</a>
+            <a :href="`tel:${$t('location.phoneNumber')}`" class="hover:text-white transition-colors block">{{ $t('location.phoneNumber') }}</a>
+            <a :href="`mailto:${$t('location.emailAddress')}`" class="hover:text-white transition-colors block">{{ $t('location.emailAddress') }}</a>
           </p>
           <a href="#" class="inline-block border border-white/30 px-6 py-2.5 text-xs uppercase tracking-widest hover:bg-white hover:text-primary hover:border-white transition-all">{{ $t('footer.getDirections') }}</a>
         </div>

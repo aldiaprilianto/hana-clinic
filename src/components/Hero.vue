@@ -6,10 +6,12 @@ const { t } = useI18n()
 
 const currentBg = ref(0)
 const backgrounds = [
-  'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop', // Korean skincare
-  'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop', // Facial treatment
-  'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=2070&auto=format&fit=crop', // Beauty spa
-  'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=2070&auto=format&fit=crop'  // Aesthetic clinic
+  '/images/clinic/clinic08.png',
+  '/images/clinic/clinic09.png',
+  '/images/clinic/clinic10.png',
+  '/images/clinic/clinic12.png',
+  '/images/clinic/clinic13.png',
+  '/images/clinic/clinic14.png',
 ]
 
 let bgInterval = null
