@@ -208,7 +208,7 @@ export default {
         phone: 'Phone',
         phoneNumber: '08222222190',
         email: 'Email',
-        emailAddress: 'admin@hanaclinics.com',
+        emailAddress: 'admin{\'@\'}hanaclinics.com',
         hours: 'Operating Hours',
         getDirections: 'Get Directions'
     },
