@@ -2,9 +2,27 @@
 import { dentalCategories } from '../Data/treatmentData.js'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const router = useRouter()
+
+const openCategories = ref({})
+
+const toggleCategory = (id) => {
+  openCategories.value[id] = !openCategories.value[id]
+}
+
+const isCategoryOpen = (id) => {
+  return !!openCategories.value[id]
+}
+
+const getLoc = (val) => {
+  if (typeof val === 'object' && val !== null && val.en) {
+    return val[locale.value] || val.en
+  }
+  return val
+}
 </script>
 
 <template>
@@ -33,7 +51,7 @@ const router = useRouter()
           <div class="inline-block bg-accent/30 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <span class="text-white text-sm font-bold uppercase tracking-wider drop-shadow-md">{{ $t('services.dental.services') }}</span>
           </div>
-          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('services.dental.title') }}</h1>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('services.dental.title') }}</h1>
           <p class="text-xl text-white max-w-2xl leading-relaxed drop-shadow-lg">{{ $t('services.dental.description') }}</p>
         </div>
       </div>
@@ -53,25 +71,88 @@ const router = useRouter()
         <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('services.dental.intro') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div v-for="category in dentalCategories.slice(0, 3)" :key="category.id" class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col">
-          <!-- Header -->
-          <div class="bg-primary py-5 text-center">
-            <h3 class="font-serif font-bold text-xl uppercase tracking-wider text-white" style="color: white !important;">{{ category.title }}</h3>
-          </div>
-          <!-- Content -->
-          <div class="p-6 space-y-6 flex-grow bg-surface/30">
-            <div v-for="(treatment, index) in category.treatments" :key="index" class="relative group cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
-              <div class="relative overflow-hidden rounded-xl shadow-md aspect-[4/3] border border-gray-100">
-                 <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                 <!-- Gradient Overlay -->
-                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80"></div>
-                 
-                 <!-- Label -->
-                 <div class="absolute bottom-0 left-0 right-0 p-4 text-center">
-                   <span class="text-white font-medium text-sm uppercase tracking-wide drop-shadow-md">{{ treatment.name }}</span>
-                 </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          v-for="category in dentalCategories.slice(0, 3)"
+          :key="category.id"
+          class="relative h-[480px] rounded-[2rem] overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 bg-gray-900"
+          @click="toggleCategory(category.id)"
+        >
+          <!-- Blurred Background Layer -->
+          <img 
+            :src="category.treatments[0]?.image || '/images/dental-placeholder.jpg'" 
+            class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-60 scale-125 pointer-events-none"
+          >
+          
+          <!-- Main Image -->
+          <img 
+            :src="category.treatments[0]?.image || '/images/dental-placeholder.jpg'" 
+            :alt="getLoc(category.title)" 
+            class="absolute inset-0 w-full h-full object-contain transition-transform duration-700 ease-in-out z-10"
+            :class="isCategoryOpen(category.id) ? 'scale-105' : 'group-hover:scale-105'"
+          >
+          
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-300 z-20"></div>
+
+          <!-- Card Content (Default State) -->
+          <div 
+            class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end h-full transition-all duration-500 transform z-30"
+            :class="isCategoryOpen(category.id) ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'"
+          >
+            <h3 class="text-white font-serif text-3xl leading-tight mb-2 drop-shadow-lg">
+              {{ getLoc(category.title) }}
+            </h3>
+            <div class="flex items-center gap-2 text-white/80 text-sm font-medium uppercase tracking-widest mt-2 group-hover:text-white transition-colors">
+              <span>{{ $t('services.viewAll') }}</span>
+              <div class="bg-white/20 p-2 rounded-full backdrop-blur-sm group-hover:bg-white/30 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
               </div>
+            </div>
+          </div>
+
+           <!-- Revealed Content (Overlay State) -->
+          <div 
+            class="absolute inset-0 bg-white/95 backdrop-blur-md p-8 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] z-50"
+            :class="isCategoryOpen(category.id) ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'"
+          >
+            <!-- Header -->
+            <div class="flex items-start justify-between mb-6 pb-4 border-b border-gray-100">
+               <h3 class="text-primary font-serif text-2xl leading-none">
+                {{ getLoc(category.title) }}
+              </h3>
+              <button 
+                class="text-gray-400 hover:text-primary transition-colors p-1"
+                @click.stop="toggleCategory(category.id)"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Scrollable List -->
+            <div class="h-[320px] overflow-y-auto pr-2 custom-scrollbar">
+              <ul class="space-y-3">
+                <li v-for="(item, index) in category.treatments" :key="index" 
+                    class="group/item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer border border-transparent hover:border-gray-100"
+                    @click.stop="router.push(`/treatment/${item.id}`)">
+                  
+                  <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent/50 group-hover/item:bg-accent shrink-0 transition-colors"></div>
+                  
+                  <div class="flex-1">
+                    <span class="text-gray-700 text-md font-semibold leading-relaxed group-hover/item:text-primary transition-colors block">
+                      {{ getLoc(item.name) }}
+                    </span>
+                  </div>
+                  
+                  <svg class="w-4 h-4 text-gray-300 group-hover/item:text-accent transform -translate-x-2 opacity-0 group-hover/item:translate-x-0 group-hover/item:opacity-100 transition-all shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -86,19 +167,19 @@ const router = useRouter()
       <div class="container mx-auto px-6 relative z-10">
          <div class="flex items-center justify-center mb-16">
             <div class="h-px bg-primary/30 w-24"></div>
-            <h2 class="text-3xl font-serif text-primary mx-6 uppercase tracking-widest">{{ dentalCategories[3].title }}</h2>
+            <h2 class="text-3xl font-serif text-primary mx-6 uppercase tracking-widest">{{ getLoc(dentalCategories[3]?.title) }}</h2>
             <div class="h-px bg-primary/30 w-24"></div>
          </div>
          
          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-           <div v-for="(treatment, index) in dentalCategories[3].treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20 cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
+           <div v-for="(treatment, index) in dentalCategories[3]?.treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20 cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
               <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
-                 <img :src="treatment.image" :alt="treatment.name" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                 <img :src="treatment.image" :alt="getLoc(treatment.name)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                  <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
               </div>
               <div class="p-8 md:w-3/5 flex flex-col justify-center">
-                 <h3 class="text-xl font-serif font-bold text-primary mb-3 group-hover:text-accent transition-colors">{{ treatment.name }}</h3>
-                 <p class="text-gray-600 text-sm leading-relaxed">{{ treatment.description }}</p>
+                 <h3 class="text-xl font-serif font-bold text-primary mb-3 group-hover:text-accent transition-colors">{{ getLoc(treatment.name) }}</h3>
+                 <p class="text-gray-600 text-sm leading-relaxed">{{ getLoc(treatment.description) }}</p>
                  
                  <div class="mt-4 pt-4 border-t border-gray-100 flex items-center text-accent text-xs font-bold uppercase tracking-widest">
                     <span>{{ $t('common.learnMore') }}</span>
@@ -113,3 +194,20 @@ const router = useRouter()
     </div>
   </div>
 </template>
+
+<style scoped>
+/* Custom Scrollbar for the overlay list */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+</style>

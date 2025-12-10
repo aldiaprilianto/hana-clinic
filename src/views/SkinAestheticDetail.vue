@@ -2,9 +2,27 @@
 import { skinAestheticCategories } from '../Data/treatmentData.js'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const router = useRouter()
+
+const openCategories = ref({})
+
+const toggleCategory = (id) => {
+  openCategories.value[id] = !openCategories.value[id]
+}
+
+const isCategoryOpen = (id) => {
+  return !!openCategories.value[id]
+}
+
+const getLoc = (val) => {
+  if (typeof val === 'object' && val !== null && val.en) {
+    return val[locale.value] || val.en
+  }
+  return val
+}
 </script>
 
 <template>
@@ -33,7 +51,7 @@ const router = useRouter()
           <div class="inline-block bg-accent/30 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <span class="text-white text-sm font-bold uppercase tracking-wider drop-shadow-md">{{ $t('services.skinAesthetic.treatments') }}</span>
           </div>
-          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('services.skinAesthetic.title') }}</h1>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('services.skinAesthetic.title') }}</h1>
           <p class="text-xl text-white max-w-2xl leading-relaxed drop-shadow-lg">{{ $t('services.skinAesthetic.description') }}</p>
         </div>
       </div>
@@ -53,36 +71,109 @@ const router = useRouter()
         <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('services.skinAesthetic.intro') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="category in skinAestheticCategories"
           :key="category.id"
-          class="flex flex-col h-full bg-[#e0e7e9] shadow-lg hover:shadow-2xl transition-all duration-300"
+          class="relative h-[480px] rounded-[2rem] overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 bg-gray-900"
+          @click="toggleCategory(category.id)"
         >
-          <!-- Image -->
-          <div class="relative aspect-[4/3] overflow-hidden group">
-            <img :src="category.image" :alt="category.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <!-- Simulated Before/After Labels -->
-            <div class="absolute top-0 left-0 bg-white/80 px-3 py-1 text-xs font-bold text-gray-800">BEFORE</div>
-            <div class="absolute top-0 right-0 bg-white/80 px-3 py-1 text-xs font-bold text-gray-800">AFTER</div>
-          </div>
+          <!-- Blurred Background Layer (Fills the card for aesthetics) -->
+          <img 
+            :src="category.image" 
+            class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-60 scale-125 pointer-events-none"
+          >
           
-          <!-- Title -->
-          <div class="bg-[#009ca6] py-4 px-4 text-center relative z-10">
-            <h3 class="text-white font-bold text-lg uppercase tracking-wide">{{ category.title }}</h3>
-          </div>
+          <!-- Main Image (Fully visible, no cropping) -->
+          <img 
+            :src="category.image" 
+            :alt="getLoc(category.title)" 
+            class="absolute inset-0 w-full h-full object-contain transition-transform duration-700 ease-in-out z-10"
+            :class="isCategoryOpen(category.id) ? 'scale-105' : 'group-hover:scale-105'"
+          >
           
-          <!-- List -->
-          <div class="p-6 flex-grow bg-[#e0e7e9]">
-            <ul class="space-y-2">
-              <li v-for="(item, index) in category.treatments" :key="index" class="flex items-start text-sm text-gray-800 leading-relaxed group cursor-pointer hover:text-primary transition-colors" @click="router.push(`/treatment/${item.id}`)">
-                <span class="mr-2 text-black mt-0.5 group-hover:text-primary transition-colors">➤</span>
-                <span class="group-hover:underline">{{ item.name }}</span>
-              </li>
-            </ul>
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-300 z-20"></div>
+
+          <!-- Card Content (Default State) -->
+          <div 
+            class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end h-full transition-all duration-500 transform z-30"
+            :class="isCategoryOpen(category.id) ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'"
+          >
+            <h3 class="text-white font-serif text-3xl leading-tight mb-2 drop-shadow-lg">
+              {{ getLoc(category.title) }}
+            </h3>
+            <div class="flex items-center gap-2 text-white/80 text-sm font-medium uppercase tracking-widest mt-2 group-hover:text-white transition-colors">
+              <span>{{ $t('services.viewAll') }}</span>
+              <div class="bg-white/20 p-2 rounded-full backdrop-blur-sm group-hover:bg-white/30 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Revealed Content (Overlay State) -->
+          <div 
+            class="absolute inset-0 bg-white/95 backdrop-blur-md p-8 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] z-50"
+            :class="isCategoryOpen(category.id) ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'"
+          >
+            <!-- Header -->
+            <div class="flex items-start justify-between mb-6 pb-4 border-b border-gray-100">
+               <h3 class="text-primary font-serif text-2xl leading-none">
+                {{ getLoc(category.title) }}
+              </h3>
+              <button 
+                class="text-gray-400 hover:text-primary transition-colors p-1"
+                @click.stop="toggleCategory(category.id)"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Scrollable List -->
+            <div class="h-[320px] overflow-y-auto pr-2 custom-scrollbar">
+              <ul class="space-y-3">
+                <li v-for="(item, index) in category.treatments" :key="index" 
+                    class="group/item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer border border-transparent hover:border-gray-100"
+                    @click.stop="router.push(`/treatment/${item.id}`)">
+                  
+                  <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent/50 group-hover/item:bg-accent shrink-0 transition-colors"></div>
+                  
+                  <div class="flex-1">
+                    <span class="text-gray-700 text-md font-semibold leading-relaxed group-hover/item:text-primary transition-colors block">
+                      {{ getLoc(item.name) }}
+                    </span>
+                  </div>
+                  
+                  <svg class="w-4 h-4 text-gray-300 group-hover/item:text-accent transform -translate-x-2 opacity-0 group-hover/item:translate-x-0 group-hover/item:opacity-100 transition-all shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+/* Custom Scrollbar for the overlay list */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+</style>
