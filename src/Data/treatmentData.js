@@ -1247,7 +1247,7 @@ export const dentalTreatments = [
       en: 'Aesthetic dentistry focuses on improving the appearance of your teeth, gums, and smile. From teeth whitening to veneers, we offer comprehensive cosmetic solutions to give you the confident, beautiful smile you deserve.',
       id: 'Kedokteran gigi estetik berfokus pada perbaikan penampilan gigi, gusi, dan senyum Anda. Dari pemutihan gigi hingga veneer, kami menawarkan solusi kosmetik komprehensif untuk memberi Anda senyum indah dan percaya diri yang layak Anda dapatkan.'
     },
-    image: '/images/treatments/dental_aesthetic_1764461689643.png',
+    image: '/images/dental/Veneer.png',
     benefits: {
       en: [
         'Brighter, whiter smile',
@@ -1308,7 +1308,7 @@ export const dentalTreatments = [
       en: 'Endodontic treatment, commonly known as root canal therapy, treats the inside of the tooth when the pulp becomes inflamed or infected. Our advanced techniques ensure comfortable, effective treatment to save your natural tooth.',
       id: 'Perawatan endodontik, atau terapi saluran akar, merawat bagian dalam gigi ketika pulpa meradang atau terinfeksi. Teknik canggih kami memastikan perawatan yang nyaman dan efektif untuk menyelamatkan gigi asli Anda.'
     },
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/dental/TambalGigi.png',
     benefits: {
       en: [
         'Saves natural tooth',
@@ -1371,7 +1371,7 @@ export const dentalTreatments = [
       en: 'Oral surgery encompasses various surgical procedures including wisdom tooth extraction, dental implant placement, jaw surgery, and treatment of oral pathology. Our experienced surgeons use advanced techniques for optimal outcomes.',
       id: 'Bedah mulut mencakup berbagai prosedur bedah termasuk pencabutan gigi bungsu, pemasangan implan gigi, bedah rahang, dan perawatan patologi mulut. Ahli bedah berpengalaman kami menggunakan teknik canggih untuk hasil optimal.'
     },
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop',
+    image: '/images/dental/CabutGigi.png',
     benefits: {
       en: [
         'Expert surgical care',
@@ -1497,7 +1497,7 @@ export const dentalTreatments = [
       en: 'Dental scaling is a professional cleaning procedure that removes plaque, tartar, and stains from your teeth. Regular scaling prevents gum disease, cavities, and maintains fresh breath and healthy gums.',
       id: 'Scaling gigi adalah prosedur pembersihan profesional yang menghilangkan plak, karang gigi, dan noda dari gigi Anda. Scaling rutin mencegah penyakit gusi, gigi berlubang, serta menjaga napas segar dan gusi sehat.'
     },
-    image: '/images/treatments/dental_scaling_1764461712680.png',
+    image: '/images/dental/Scaling.png',
     benefits: {
       en: [
         'Removes plaque and tartar',
@@ -1560,7 +1560,7 @@ export const dentalTreatments = [
       en: 'Dental fillings restore teeth damaged by decay or trauma. We use high-quality, tooth-colored composite materials that blend naturally with your teeth while providing strong, durable restoration.',
       id: 'Tambal gigi memperbaiki gigi yang rusak akibat pembusukan atau trauma. Kami menggunakan bahan komposit berkualitas tinggi sewarna gigi yang menyatu secara alami dengan gigi Anda sambil memberikan restorasi yang kuat dan tahan lama.'
     },
-    image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/dental/TambalGigi.png',
     benefits: {
       en: [
         'Stops decay progression',
@@ -1623,7 +1623,7 @@ export const dentalTreatments = [
       en: 'Orthodontic treatment corrects misaligned teeth and jaws using braces, clear aligners, or other appliances. Achieve a straighter, healthier smile with our modern orthodontic solutions.',
       id: 'Perawatan ortodontik memperbaiki gigi dan rahang yang tidak rata menggunakan kawat gigi, aligner bening, atau alat lainnya. Dapatkan senyum yang lebih rata dan sehat dengan solusi ortodontik modern kami.'
     },
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+    image: '/images/dental/OrthoCekatBehel.png',
     benefits: {
       en: [
         'Straighter teeth',
@@ -1871,7 +1871,7 @@ export const dentalTreatments = [
       en: 'Prosthodontics specializes in replacing missing teeth and restoring oral function with crowns, bridges, dentures, and dental implants. Regain your smile, confidence, and ability to eat comfortably.',
       id: 'Prostodontik berspesialisasi dalam mengganti gigi yang hilang dan memulihkan fungsi mulut dengan mahkota, jembatan, gigi palsu, dan implan gigi. Dapatkan kembali senyum, kepercayaan diri, dan kemampuan makan Anda dengan nyaman.'
     },
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+    image: '/images/dental/GigiPalsuTiruan.png',
     benefits: {
       en: [
         'Restores missing teeth',
@@ -2061,7 +2061,7 @@ export const skinAestheticCategories = [
   {
     id: 'anti-aging-solutions',
     title: { en: 'Anti Aging Solutions', id: 'Solusi Anti Penuaan' },
-    image: '/images/treatments/ANTI-AGING-Before-After.png',
+    image: '/images/treatments/ANTIAGING-Before-After.png',
     treatments: [
       { name: { en: 'Botox', id: 'Botox' }, id: 'botox-wrinkles' },
       { name: { en: 'Dermal Fillers', id: 'Filler Dermal' }, id: 'dermal-fillers-aging' },
@@ -2163,27 +2163,27 @@ export const dentalCategories = [
     id: 'aesthetic',
     title: { en: 'Aesthetic', id: 'Estetika' },
     treatments: [
-      { name: { en: 'Veneer Indirect', id: 'Veneer Indirect' }, id: 'veneer-indirect', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Bleaching', id: 'Bleaching' }, id: 'bleaching', image: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Veneer Direct', id: 'Veneer Direct' }, id: 'veneer-direct', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Veneer Indirect', id: 'Veneer Indirect' }, id: 'veneer-indirect', image: '/images/dental/Veneer.png' },
+      { name: { en: 'Bleaching', id: 'Bleaching' }, id: 'bleaching', image: '/images/dental/Bleaching.png' },
+      { name: { en: 'Veneer Direct', id: 'Veneer Direct' }, id: 'veneer-direct', image: '/images/dental/Veneer.png' }
     ]
   },
   {
     id: 'orthodontic',
     title: { en: 'Orthodontic', id: 'Ortodontik' },
     treatments: [
-      { name: { en: 'Metal Braces', id: 'Kawat Gigi Metal' }, id: 'metal-braces', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Ceramic Braces', id: 'Kawat Gigi Keramik' }, id: 'ceramic-braces', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Clear Aligners', id: 'Clear Aligners' }, id: 'clear-aligners', image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Metal Braces', id: 'Kawat Gigi Metal' }, id: 'metal-braces', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Ceramic Braces', id: 'Kawat Gigi Keramik' }, id: 'ceramic-braces', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Clear Aligners', id: 'Clear Aligners' }, id: 'clear-aligners', image: '/images/dental/ClearAligner.png' }
     ]
   },
   {
     id: 'endodontic',
     title: { en: 'Endodontic', id: 'Endodontik' },
     treatments: [
-      { name: { en: 'Root Canal', id: 'Saluran Akar' }, id: 'root-canal', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop' },
-      { name: { en: 'Re-treatment', id: 'Perawatan Ulang' }, id: 'retreatment-root-canal', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop' },
-      { name: { en: 'Apicoectomy', id: 'Apicoectomy' }, id: 'apicoectomy', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop' }
+      { name: { en: 'Root Canal', id: 'Saluran Akar' }, id: 'root-canal', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Re-treatment', id: 'Perawatan Ulang' }, id: 'retreatment-root-canal', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Apicoectomy', id: 'Apicoectomy' }, id: 'apicoectomy', image: '/images/dental/CabutGigi2.png' }
     ]
   },
   {
@@ -2191,15 +2191,27 @@ export const dentalCategories = [
     title: { en: 'General Dentistry', id: 'Gigi Umum' },
     treatments: [
       {
+        name: { en: 'Scaling (Teeth Cleaning)', id: 'Scaling (Pembersihan Karang Gigi)' },
+        id: 'scaling',
+        image: '/images/dental/Scaling.png',
+        description: { en: 'Professional teeth cleaning for optimal oral health.', id: 'Pembersihan gigi profesional untuk kesehatan mulut optimal.' }
+      },
+      {
+        name: { en: 'Dental Filling', id: 'Tambal Gigi' },
+        id: 'tambal-gigi',
+        image: '/images/dental/TambalGigi.png',
+        description: { en: 'Restore damaged teeth with modern filling materials.', id: 'Kembalikan gigi rusak dengan bahan tambal modern.' }
+      },
+      {
         name: { en: 'Oral Surgery', id: 'Bedah Mulut' },
         id: 'bedah-mulut',
-        image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop',
+        image: '/images/dental/CabutGigi.png',
         description: { en: 'Expert surgical procedures including extractions and implants.', id: 'Prosedur bedah ahli termasuk pencabutan dan implan.' }
       },
       {
         name: { en: 'Prosthodontic', id: 'Prostodontik' },
         id: 'prosthodontic',
-        image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+        image: '/images/dental/GigiPalsuTiruan.png',
         description: { en: 'Restoring oral function and appearance with artificial teeth.', id: 'Memulihkan fungsi mulut dan penampilan dengan gigi tiruan.' }
       },
       {

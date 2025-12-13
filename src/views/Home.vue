@@ -18,7 +18,7 @@ import Location from '../components/Location.vue'
     <PromoBanner />
     <AboutUs />
     <About />
-    <Testimonials />
+    <!-- <Testimonials /> -->
     <Location />
   </div>
 </template>

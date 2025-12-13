@@ -74,9 +74,7 @@ const { t } = useI18n()
               <div>
                 <h4 class="font-semibold text-dark mb-1">{{ $t('location.hours') }}</h4>
                 <div class="text-gray-600 space-y-1">
-                  <p>{{ $t('footer.weekdays') }}: 9:00 AM - 8:00 PM</p>
-                  <p>{{ $t('footer.saturday') }}: 9:00 AM - 6:00 PM</p>
-                  <p>{{ $t('footer.sunday') }}: 10:00 AM - 4:00 PM</p>
+                  <p>{{ $t('footer.schedule.allDays') }}: 10:00 - 21:00</p>
                 </div>
               </div>
             </div>

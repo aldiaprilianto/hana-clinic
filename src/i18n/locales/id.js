@@ -133,7 +133,8 @@ export default {
             monThu: 'Sen - Kam',
             friday: 'Jumat',
             satSun: 'Sab - Min',
-            closed: 'Tutup'
+            closed: 'Tutup',
+            allDays: 'Setiap Hari'
         }
     },
     common: {
@@ -159,42 +160,103 @@ export default {
     },
     equipment: {
         koreanTech: 'Teknologi Korea',
-        title: 'Perawatan Lifting Spektakuler',
-        subtitle: 'Temui perangkat lifting laser Korea canggih kami yang dipercaya oleh klinik estetika terkemuka di seluruh dunia',
-        ultherapy: {
-            title: 'Ultherapy Prime',
-            description: 'Memanfaatkan potensi penuh ultrasound untuk menargetkan lapisan SMAS untuk efek lifting yang elegan',
-            tag: 'Generasi ke-2'
+        title: 'Teknologi Korea',
+        subtitle: 'Perawatan laser menggunakan mesin berteknologi terbaru, serta perawatan injeksi dengan bahan berkualitas tinggi yang telah lulus uji klinis oleh dokter-dokter spesialis.',
+        // Tool Translations based on file names
+        aquasure: {
+            title: 'AquaSure H2',
+            description: 'Sistem hydro-facial canggih untuk pembersihan mendalam, eksfoliasi, dan hidrasi kulit.',
+            tag: 'Hydro Facial'
         },
-        thermage: {
-            title: 'Thermage FLX',
-            description: 'Meningkatkan kecantikan Anda dengan hasil tak tertandingi dari lifting radiofrekuensi canggih',
-            tag: 'Teknologi RF'
+        cellreturn: {
+            title: 'CellReturn LED Mask',
+            description: 'Masker terapi LED premium untuk anti-penuaan, perawatan jerawat, dan peremajaan kulit.',
+            tag: 'Terapi LED'
         },
-        linearz: {
-            title: 'Linear Z',
-            description: 'Perangkat yang dirancang presisi untuk lifting tertarget pada area spesifik dengan solusi yang disesuaikan',
-            tag: 'Lifting Presisi'
+        clatuu: {
+            title: 'Classys Clatuu Alpha',
+            description: 'Perangkat cryolipolysis non-invasif untuk pengurangan lemak dan pembentukan tubuh yang efektif.',
+            tag: 'Body Contouring'
         },
-        oligio: {
-            title: 'Oligio',
-            description: 'Pancarkan kecerahan dan tingkatkan produksi kolagen untuk kulit yang awet muda dan bercahaya',
-            tag: 'Peningkat Kolagen'
+        ultraformer: {
+            title: 'Classys Ultraformer III',
+            description: 'Ultrasound terfokus intensitas tinggi (HIFU) untuk pengencangan wajah tanpa bedah.',
+            tag: 'Lifting HIFU'
         },
-        volnewmer: {
-            title: 'Volnewmer',
-            description: 'Lifting bercahaya yang memprioritaskan kesehatan kulit dan kecantikan alami',
-            tag: 'Kesehatan Kulit'
+        curas: {
+            title: 'Curas IPL',
+            description: 'Terapi Intense Pulsed Light untuk mengatasi pigmentasi, jerawat, dan pencerahan kulit.',
+            tag: 'Terapi IPL'
         },
-        hifu: {
-            title: 'Teknologi HIFU',
-            description: 'High-Intensity Focused Ultrasound untuk pengencangan kulit non-invasif',
-            tag: 'Non-Invasif'
+        dermashine: {
+            title: 'Derma Shine Pro',
+            description: 'Sistem injeksi digital untuk pengiriman skin booster dan asam hialuronat yang presisi.',
+            tag: 'Skin Booster'
         },
-        skinboosters: {
-            title: 'Skin Booster',
-            description: 'Skin booster Korea premium untuk hidrasi mendalam dan peremajaan',
-            tag: 'Hidrasi Mendalam'
+        emsculpt: {
+            title: 'EMSculpt',
+            description: 'Terapi elektromagnetik intensitas tinggi untuk membangun otot dan membakar lemak secara bersamaan.',
+            tag: 'Body Sculpting'
+        },
+        exilis: {
+            title: 'Exilis Elite',
+            description: 'Kombinasi radiofrekuensi dan ultrasound untuk pengencangan kulit dan pembentukan tubuh.',
+            tag: 'Pengencangan RF'
+        },
+        hydroscalp: {
+            title: 'Hydro Scalp',
+            description: 'Perangkat khusus untuk pembersihan kulit kepala mendalam dan meningkatkan pertumbuhan rambut sehat.',
+            tag: 'Perawatan Kulit Kepala'
+        },
+        kiierr: {
+            title: 'Kiierr Korea Cap',
+            description: 'Teknologi topi laser penumbuh rambut untuk merangsang folikel dan mengatasi kerontokan.',
+            tag: 'Restorasi Rambut'
+        },
+        fraxis: {
+            title: 'Fraxis Duo',
+            description: 'Laser Fraksional CO2 dikombinasikan dengan RF microneedling untuk perawatan bekas luka dan pori-pori.',
+            tag: 'Perawatan Bekas Luka'
+        },
+        picocare: {
+            title: 'Picocare 450',
+            description: 'Laser Picosecond kuat untuk mengatasi pigmentasi, tato, dan peremajaan kulit.',
+            tag: 'Laser Pico'
+        },
+        clarity: {
+            title: 'Lutronic Clarity II',
+            description: 'Laser gelombang ganda untuk penghilangan bulu jangka panjang yang efektif dan cepat.',
+            tag: 'Hair Removal'
+        },
+        medifuge: {
+            title: 'Medifuge',
+            description: 'Sistem profesional untuk mempersiapkan faktor pertumbuhan terkonsentrasi (CGF) untuk regenerasi.',
+            tag: 'Regeneratif'
+        },
+        o2toderm: {
+            title: 'O2toDerm',
+            description: 'Terapi infus oksigen premium untuk menyembuhkan, menghidrasi, dan merevitalisasi kulit lelah.',
+            tag: 'Infus Oksigen'
+        },
+        secretrf: {
+            title: 'Secret RF',
+            description: 'Sistem RF microneedling fraksional untuk lifting, pengencangan, dan pengurangan bekas luka.',
+            tag: 'Microneedling RF'
+        },
+        shurink: {
+            title: 'Shurink Universe',
+            description: 'Teknologi HIFU generasi berikutnya untuk lifting dan pengencangan yang lebih cepat dan nyaman.',
+            tag: 'HIFU Canggih'
+        },
+        soprano: {
+            title: 'Soprano Titanium',
+            description: 'Penghilangan bulu laser dioda tanpa rasa sakit yang cocok untuk semua jenis kulit.',
+            tag: 'Hair Removal'
+        },
+        vitalinjector: {
+            title: 'Vital Injector 2',
+            description: 'Sistem injeksi dengan bantuan vakum untuk pengiriman perawatan kulit yang aman dan konsisten.',
+            tag: 'Skin Booster'
         },
         scheduleConsultation: 'Jadwalkan Konsultasi Peralatan'
     },

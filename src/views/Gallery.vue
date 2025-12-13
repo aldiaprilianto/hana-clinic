@@ -16,63 +16,63 @@ const categories = ref([
 const galleryItems = ref([
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '',
     title: 'Botox Treatment Result',
     category: 'skin',
     description: 'Natural-looking wrinkle reduction'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+    image: '',
     title: 'Smile Makeover',
     category: 'dental',
     description: 'Complete dental transformation'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=2075&auto=format&fit=crop',
+    image: '',
     title: 'Skinbooster Glow',
     category: 'skin',
     description: 'Radiant, hydrated skin'
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+    image: '',
     title: 'Dental Implant Success',
     category: 'dental',
     description: 'Perfect tooth replacement'
   },
   {
     id: 5,
-    image: 'https://images.unsplash.com/photo-1610633389918-7d5b0c9b7e3a?q=80&w=2070&auto=format&fit=crop',
+    image: '',
     title: 'Laser Toning Results',
     category: 'skin',
     description: 'Even skin tone achieved'
   },
   {
     id: 6,
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop',
+    image: '',
     title: 'Thread Lift Transformation',
     category: 'before-after',
     description: 'Non-surgical facelift results'
   },
   {
     id: 7,
-    image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=2071&auto=format&fit=crop',
+    image: '',
     title: 'Filler Enhancement',
     category: 'skin',
     description: 'Natural volume restoration'
   },
   {
     id: 8,
-    image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=2074&auto=format&fit=crop',
+    image: '',
     title: 'Teeth Whitening',
     category: 'dental',
     description: 'Brighter, whiter smile'
   },
   {
     id: 9,
-    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=2073&auto=format&fit=crop',
+    image: '',
     title: 'Acne Scar Treatment',
     category: 'before-after',
     description: 'Smooth, clear skin achieved'
@@ -113,7 +113,7 @@ const filterGallery = (category) => {
         </router-link>
         
         <div class="max-w-4xl">
-          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('gallery.title') }}</h1>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('gallery.title') }}</h1>
           <p class="text-xl text-white leading-relaxed drop-shadow-lg">{{ $t('gallery.subtitle') }}</p>
         </div>
       </div>
@@ -156,10 +156,14 @@ const filterGallery = (category) => {
             class="group relative aspect-square overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
           >
             <img 
+              v-if="item.image"
               :src="item.image" 
               :alt="item.title"
               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
             >
+            <div v-else class="w-full h-full flex items-center justify-center bg-gray-100 text-gray-400 font-bold uppercase tracking-widest text-sm">
+              Empty / Kosong
+            </div>
             
             <!-- Overlay -->
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">

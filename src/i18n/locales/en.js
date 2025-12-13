@@ -133,7 +133,8 @@ export default {
             monThu: 'Mon - Thu',
             friday: 'Friday',
             satSun: 'Sat - Sun',
-            closed: 'Closed'
+            closed: 'Closed',
+            allDays: 'All Days'
         }
     },
     common: {
@@ -159,42 +160,103 @@ export default {
     },
     equipment: {
         koreanTech: 'Korean Technology',
-        title: 'Spectacular Lifting Treatments',
-        subtitle: 'Meet our state-of-the-art Korean laser lifting devices trusted by leading aesthetic clinics worldwide',
-        ultherapy: {
-            title: 'Ultherapy Prime',
-            description: 'Utilizing the full potential of ultrasound to target the SMAS layer for an elegant lifting effect',
-            tag: '2nd Generation'
+        title: 'Korean Technology',
+        subtitle: 'Laser treatments using the latest technology machines, as well as injection treatments with high-quality ingredients that have passed clinical trials by specialist doctors.',
+        // Tool Translations based on file names
+        aquasure: {
+            title: 'AquaSure H2',
+            description: 'Advanced hydro-facial system for deep cleansing, exfoliating, and hydrating the skin.',
+            tag: 'Hydro Facial'
         },
-        thermage: {
-            title: 'Thermage FLX',
-            description: 'Elevating your beauty with the unmatched results of advanced radiofrequency lifting',
-            tag: 'RF Technology'
+        cellreturn: {
+            title: 'CellReturn LED Mask',
+            description: 'Premium LED therapy mask for anti-aging, acne treatment, and skin rejuvenation.',
+            tag: 'LED Therapy'
         },
-        linearz: {
-            title: 'Linear Z',
-            description: 'Precision-designed device for targeted lifting on specific areas with customized solutions',
-            tag: 'Precision Lifting'
+        clatuu: {
+            title: 'Classys Clatuu Alpha',
+            description: 'Non-invasive cryolipolysis device for effective fat reduction and body contouring.',
+            tag: 'Body Contouring'
         },
-        oligio: {
-            title: 'Oligio',
-            description: 'Spark radiance and boost collagen production for youthful, glowing skin',
-            tag: 'Collagen Boost'
+        ultraformer: {
+            title: 'Classys Ultraformer III',
+            description: 'High-intensity focused ultrasound (HIFU) for non-surgical face lifting and tightening.',
+            tag: 'HIFU Lifting'
         },
-        volnewmer: {
-            title: 'Volnewmer',
-            description: 'Radiant lifting that prioritizes skin wellness and natural beauty',
-            tag: 'Skin Wellness'
+        curas: {
+            title: 'Curas IPL',
+            description: 'Intense Pulsed Light therapy for treating pigmentation, acne, and skin brightening.',
+            tag: 'IPL Therapy'
         },
-        hifu: {
-            title: 'HIFU Technology',
-            description: 'High-Intensity Focused Ultrasound for non-invasive skin tightening',
-            tag: 'Non-Invasive'
+        dermashine: {
+            title: 'Derma Shine Pro',
+            description: 'Digital injection system for precise delivery of skin boosters and hyaluronic acid.',
+            tag: 'Skin Booster'
         },
-        skinboosters: {
-            title: 'Skin Boosters',
-            description: 'Premium Korean skin boosters for deep hydration and rejuvenation',
-            tag: 'Deep Hydration'
+        emsculpt: {
+            title: 'EMSculpt',
+            description: 'High-intensity electromagnetic therapy to build muscle and burn fat simultaneously.',
+            tag: 'Body Sculpting'
+        },
+        exilis: {
+            title: 'Exilis Elite',
+            description: 'Combined radiofrequency and ultrasound for skin tightening and body contouring.',
+            tag: 'RF Tightening'
+        },
+        hydroscalp: {
+            title: 'Hydro Scalp',
+            description: 'Specialized device for deep scalp cleansing and promoting healthy hair growth.',
+            tag: 'Scalp Care'
+        },
+        kiierr: {
+            title: 'Kiierr Korea Cap',
+            description: 'Laser hair growth cap technology to stimulate follicles and treat hair loss.',
+            tag: 'Hair Restoration'
+        },
+        fraxis: {
+            title: 'Fraxis Duo',
+            description: 'CO2 Fractional Laser combined with RF microneedling for scar and pore treatment.',
+            tag: 'Scar Treatment'
+        },
+        picocare: {
+            title: 'Picocare 450',
+            description: 'Powerful Picosecond laser for treating pigmentation, tattoos, and skin rejuvenation.',
+            tag: 'Pico Laser'
+        },
+        clarity: {
+            title: 'Lutronic Clarity II',
+            description: 'Dual-wavelength laser for effective and fast long-term hair removal.',
+            tag: 'Hair Removal'
+        },
+        medifuge: {
+            title: 'Medifuge',
+            description: 'Professional system for preparing concentrated growth factors (CGF) for regeneration.',
+            tag: 'Regenerative'
+        },
+        o2toderm: {
+            title: 'O2toDerm',
+            description: 'Premium oxygen infusion therapy to heal, hydrate, and revitalize tired skin.',
+            tag: 'Oxygen Infusion'
+        },
+        secretrf: {
+            title: 'Secret RF',
+            description: 'Fractional RF microneedling system for skin lifting, tightening, and scar reduction.',
+            tag: 'Microneedling RF'
+        },
+        shurink: {
+            title: 'Shurink Universe',
+            description: 'Next-generation HIFU technology for faster, more comfortable lifting and tightening.',
+            tag: 'Advanced HIFU'
+        },
+        soprano: {
+            title: 'Soprano Titanium',
+            description: 'Painless diode laser hair removal suitable for all skin types.',
+            tag: 'Hair Removal'
+        },
+        vitalinjector: {
+            title: 'Vital Injector 2',
+            description: 'Vacuum-assisted injection system for safe and consistent skin treatment delivery.',
+            tag: 'Skin Booster'
         },
         scheduleConsultation: 'Schedule Equipment Consultation'
     },

@@ -123,7 +123,7 @@ const benefits = ref([
         </router-link>
         
         <div class="max-w-4xl">
-          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('career.title') }}</h1>
+          <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{{ $t('career.title') }}</h1>
           <p class="text-xl text-white leading-relaxed drop-shadow-lg">{{ $t('career.subtitle') }}</p>
         </div>
       </div>

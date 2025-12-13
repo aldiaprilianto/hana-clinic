@@ -27,15 +27,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header :class="[
-    'fixed w-full z-50 transition-all duration-500',
-    isScrolled ? 'glass py-3' : 'bg-transparent py-5'
-  ]">
+  <header class="fixed w-full z-50 transition-all duration-500 glass py-3">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <div class="flex items-center">
         <router-link to="/" class="flex items-center gap-2 group">
           <!-- Logo Image -->
-          <img src="/images/logo.png" alt="Hana Clinic Logo" class="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105" />
+          <img src="/images/logo_lama.png" alt="Hana Clinic Logo" class="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105" />
         </router-link>
       </div>
       
@@ -251,7 +248,7 @@ onUnmounted(() => {
 }
 
 .btn-primary {
-  @apply bg-accent text-primary px-6 py-2.5 uppercase text-xs tracking-[0.2em] font-bold rounded-sm hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)] hover:shadow-[0_0_30px_rgba(197,160,89,0.5)];
+  @apply bg-accent text-white px-6 py-2.5 uppercase text-xs tracking-[0.2em] font-bold rounded-sm hover:bg-white hover:text-primary transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)] hover:shadow-[0_0_30px_rgba(197,160,89,0.5)];
 }
 
 .glass {

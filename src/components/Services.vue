@@ -12,7 +12,7 @@ const { t } = useI18n()
     
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center mb-20">
-        <h3 class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4 animate-fade-in">{{ $t('services.expertise') }}</h3>
+        <!-- <h3 class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4 animate-fade-in">{{ $t('services.expertise') }}</h3> -->
         <h2 class="text-4xl md:text-5xl font-serif text-primary mb-4 animate-slide-up">{{ $t('services.title') }}</h2>
         <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed animate-slide-up">{{ $t('services.subtitle') }}</p>
       </div>
@@ -32,7 +32,7 @@ const { t } = useI18n()
           <div class="mb-8 overflow-hidden rounded-2xl relative aspect-[4/3] shadow-lg">
             <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/0 group-hover:from-black/20 transition-all z-10 duration-700"></div>
             <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors z-10 duration-500"></div>
-            <img src="/images/treatments/BRIGHTENING-Before-After.png" alt="Skin Aesthetic Treatment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
+            <img src="/images/treatments/SkinBanner.png" alt="Skin Aesthetic Treatment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
             
             <!-- Floating Icon -->
             <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20">
@@ -76,7 +76,7 @@ const { t } = useI18n()
           <div class="mb-8 overflow-hidden rounded-2xl relative aspect-[4/3] shadow-lg">
             <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/0 group-hover:from-black/20 transition-all z-10 duration-700"></div>
             <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors z-10 duration-500"></div>
-            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop" alt="Dental Treatment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
+            <img src="/images/treatments/DentalBanner.png" alt="Dental Treatment" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0">
             
             <!-- Floating Icon -->
             <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20">

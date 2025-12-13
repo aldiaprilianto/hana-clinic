@@ -71,7 +71,7 @@ const getLoc = (val) => {
         <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('services.skinAesthetic.intro') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
           v-for="category in skinAestheticCategories"
           :key="category.id"
