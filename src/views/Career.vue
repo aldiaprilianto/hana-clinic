@@ -1,102 +1,54 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
-const openPositions = ref([
-  {
-    id: 1,
-    title: 'Aesthetic Doctor',
-    department: 'Medical',
-    type: 'Full-time',
-    location: 'Clinic',
-    description: 'We are seeking an experienced aesthetic doctor to join our team. Must have expertise in Korean aesthetic treatments including injectables, laser procedures, and thread lifting.',
-    requirements: [
-      'Medical degree with valid license',
-      'Minimum 2 years experience in aesthetic medicine',
-      'Expertise in Botox, fillers, and thread lifting',
-      'Excellent patient communication skills',
-      'Passion for aesthetic medicine'
-    ]
-  },
-  {
-    id: 2,
-    title: 'Dental Specialist',
-    department: 'Dental',
-    type: 'Full-time',
-    location: 'Clinic',
-    description: 'Join our dental team to provide comprehensive dental care including aesthetic dentistry, orthodontics, and oral surgery.',
-    requirements: [
-      'Dental degree with valid license',
-      'Experience in aesthetic dentistry preferred',
-      'Strong technical skills',
-      'Patient-centered approach',
-      'Team player with excellent communication'
-    ]
-  },
-  {
-    id: 3,
-    title: 'Clinic Nurse',
-    department: 'Medical',
-    type: 'Full-time',
-    location: 'Clinic',
-    description: 'Experienced nurse to assist with aesthetic and dental procedures, patient care, and clinic operations.',
-    requirements: [
-      'Nursing degree with valid license',
-      'Experience in aesthetic clinic preferred',
-      'Strong organizational skills',
-      'Excellent patient care abilities',
-      'Ability to work in fast-paced environment'
-    ]
-  },
-  {
-    id: 4,
-    title: 'Customer Service Representative',
-    department: 'Administration',
-    type: 'Full-time',
-    location: 'Clinic',
-    description: 'Front desk position managing appointments, customer inquiries, and providing excellent patient experience.',
-    requirements: [
-      'Excellent communication skills',
-      'Experience in customer service',
-      'Proficient in computer systems',
-      'Professional appearance and demeanor',
-      'Fluent in Indonesian and English'
-    ]
-  }
-])
+// Keys to map over for positions
+const positionKeys = ['hr', 'telesales', 'digitalMarketing', 'apoteker']
 
-const benefits = ref([
+const openPositions = computed(() => {
+  return positionKeys.map((key, index) => ({
+    id: index + 1,
+    title: t(`career.positions.${key}.title`),
+    department: t(`career.positions.${key}.department`),
+    type: t(`career.positions.${key}.type`),
+    location: t(`career.positions.${key}.location`),
+    description: t(`career.positions.${key}.description`),
+    requirements: tm(`career.positions.${key}.requirements`)
+  }))
+})
+
+const benefits = computed(() => [
   {
     icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
-    title: 'Competitive Salary',
-    description: 'Industry-leading compensation packages'
+    title: t('career.benefits.competitiveSalary'),
+    description: t('career.benefits.competitiveDescription')
   },
   {
     icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
-    title: 'Professional Development',
-    description: 'Continuous training and skill enhancement'
+    title: t('career.benefits.professionalDevelopment'),
+    description: t('career.benefits.professionalDescription')
   },
   {
     icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
-    title: 'Team Environment',
-    description: 'Collaborative and supportive workplace'
+    title: t('career.benefits.teamEnvironment'),
+    description: t('career.benefits.teamDescription')
   },
   {
     icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
-    title: 'Health Insurance',
-    description: 'Comprehensive health coverage for staff'
+    title: t('career.benefits.healthInsurance'),
+    description: t('career.benefits.healthDescription')
   },
   {
     icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
-    title: 'Flexible Schedule',
-    description: 'Work-life balance support'
+    title: t('career.benefits.flexibleSchedule'),
+    description: t('career.benefits.flexibleDescription')
   },
   {
     icon: 'M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z',
-    title: 'Career Growth',
-    description: 'Clear advancement opportunities'
+    title: t('career.benefits.careerGrowth'),
+    description: t('career.benefits.careerDescription')
   }
 ])
 </script>
@@ -201,7 +153,8 @@ const benefits = ref([
                     </span>
                   </div>
                 </div>
-                <a href="https://wa.me/6281386017622?text=Hi%2C%20I%27m%20interested%20in%20the%20position%20of%20" class="bg-accent text-primary px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-primary hover:text-white transition-all duration-300">
+                <!-- Updated APPLY NOW Button: text-white -->
+                <a :href="`https://wa.me/6281386017622?text=Hi%2C%20I%27m%20interested%20in%20the%20position%20of%20${position.title}`" class="bg-accent text-white px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-primary hover:text-white transition-all duration-300">
                   {{ $t('career.applyNow') }}
                 </a>
               </div>
@@ -234,7 +187,8 @@ const benefits = ref([
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-serif mb-6">{{ $t('career.dontSeePosition') }}</h2>
         <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">{{ $t('career.dontSeeDescription') }}</p>
-        <a href="https://wa.me/6281386017622?text=Hi%2C%20I%27d%20like%20to%20submit%20my%20resume%20for%20future%20opportunities" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
+        <!-- Updated SEND RESUME Button: bg-white text-primary -->
+        <a href="https://wa.me/6281386017622?text=Hi%2C%20I%27d%20like%20to%20submit%20my%20resume%20for%20future%20opportunities" class="inline-block bg-white text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-gray-100 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:scale-105">
           {{ $t('career.sendResume') }}
         </a>
       </div>

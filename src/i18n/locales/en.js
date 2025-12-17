@@ -118,6 +118,65 @@ export default {
             flexibleDescription: 'Work-life balance support',
             careerGrowth: 'Career Growth',
             careerDescription: 'Clear advancement opportunities'
+        },
+        requirements: 'Requirements:',
+        applyNow: 'Apply Now',
+        positions: {
+            hr: {
+                title: 'HR & TA Staff',
+                department: 'Human Resources',
+                type: 'Full-time',
+                location: 'Clinic',
+                description: 'Join our team to manage recruitment and support HR operations.',
+                requirements: [
+                    'Minimum D3 or Bachelor Degree in Psychology or Human Resource Management',
+                    'Minimum 1 year experience as Talent Acquisition',
+                    'Experience in managing End to End recruitment process and support HR operations',
+                    'Good communication, Structured and excellent strategist and executioner'
+                ]
+            },
+            telesales: {
+                title: 'Telesales (Chat only)',
+                department: 'Sales & Marketing',
+                type: 'Full-time',
+                location: 'Clinic',
+                description: 'Engage with clients via chat to promote our services and achieve sales targets.',
+                requirements: [
+                    'Minimum 1 year experience in Telesales, Telemarketing, Sales, or Customer Service (Clinic company preferred)',
+                    'Strong communication and persuasive skills',
+                    'Able to multitask and work toward sales targets',
+                    'Interest in dental and aesthetic services with a service-oriented mindset',
+                    'Adaptive and comfortable working in a fast-paced environment',
+                    'Target oriented: #Chat taken and Conversions'
+                ]
+            },
+            digitalMarketing: {
+                title: 'Digital Marketing',
+                department: 'Marketing',
+                type: 'Full-time',
+                location: 'Clinic',
+                description: 'Drive our digital presence and manage marketing campaigns.',
+                requirements: [
+                    'Minimum 2 Years Experience in Digital Marketing related field',
+                    'Able to manage Ads',
+                    'Good business acumen',
+                    'Strategic thinking and planning',
+                    'Ability to monitor CPL, CPB and all marketing metrics',
+                    'Experience in KOL management'
+                ]
+            },
+            apoteker: {
+                title: 'Pharmacist (Apoteker)',
+                department: 'Medical',
+                type: 'Full-time',
+                location: 'Clinic',
+                description: 'Manage pharmacy operations and ensure medication safety.',
+                requirements: [
+                    'Apothecary Profession Education with active STRA',
+                    'Willing to be the Clinic Pharmacist in Charge (APA)',
+                    'Minimum 1 year experience in aesthetic/medical clinic (preferred)'
+                ]
+            }
         }
     },
     footer: {
@@ -305,24 +364,32 @@ export default {
     aboutUs: {
         title: 'COMPANY OVERVIEW',
         subtitle: 'HANA (하나) Means The One',
-        description: 'We signify unity, excellence, and being the number one choice for modern aesthetic, dental, and wellness care.',
-        tagline: '"Your Number one trusted solution for your face, smile and body"',
-        focus: 'Focus: Medical Efficacy → Bring expected result',
-        symbolism: 'It symbolizes <strong>One</strong> trusted place, <strong>One</strong> complete solution, <strong>One</strong> standard of excellence, <strong>One</strong> journey to confidence.',
-        advantageTitle: 'HANA Competitive Advantage',
+        storyTitle: 'We signify unity, excellence, and being the number one choice for modern aesthetic, dental, and wellness care.',
+        description2: 'HANA (하나) means “The One”—reflecting our commitment to delivering top-tier aesthetic, dental, and wellness care. We believe every individual is unique, and our priority is to provide safe, effective, and maximum results that enhance your best self.\n\nCombining advanced technology, professional expertise, and a holistic approach, HANA Clinics strives to be the number one choice for modern facial, dental, and body wellness solutions.',
+        tagline: '"Your number one trusted solution for your face, smile and body."',
+        mission: 'Mission',
+        missionText: [
+            'To provide high-quality aesthetic and dental treatments using modern, safe, and evidence-based methods.',
+            'To make professional beauty and oral care accessible without compromising standards or patient safety.',
+            'To deliver personalized, compassionate care that prioritizes comfort, trust & Transparency, and natural-looking results.',
+            'To continuously innovate through advanced technology, skilled practitioners, and ongoing professional development.',
+            'To create a patient-centered environment where every individual feels valued, understood, and confident in their transformation journey.'
+        ],
+        vision: 'Vision',
+        visionText: 'To be the most trusted skin and dental clinic in Indonesia, providing accessible care that blends affordability, aesthetic excellence, and compassionate medical service in every patient experience.',
+        whyChooseUs: 'Why Choose Us',
         advantages: {
-            accessibleExcellence: 'Accessible Excellence',
-            accessibleExcellenceDesc: 'Premium results made more reachable and affordable without compromising quality.',
-            cuttingEdgeTech: 'Cutting-Edge Technology',
-            cuttingEdgeTechDesc: 'The latest medical-grade devices for safer, faster, and more effective treatments.',
-            trustedSpecialists: 'Trusted Specialists',
-            trustedSpecialistsDesc: 'Certified, experienced doctors who prioritize personalized, proven results.',
-            uncompromisedSafety: 'Uncompromised Safety',
-            uncompromisedSafetyDesc: 'International-standard hygiene, protocols, and patient protection.',
-            sustainableBeauty: 'Sustainable Beauty',
-            sustainableBeautyDesc: 'Environmentally conscious operations for long-term beauty, wellness and care. Focusing on trusts and retention.'
+            trust: 'Excellence You Can Trust',
+            trustDesc: 'Premium aesthetic and dental care with uncompromised standards but accessible.',
+            expertTeam: 'Expert Hands',
+            expertTeamDesc: 'Skilled professionals and Specialists who provide the best medical efficacy.',
+            modernTech: 'Advanced Technology',
+            modernTechDesc: 'Modern techniques for refined, Maximum results.',
+            patientCare: 'Personalized Experience',
+            patientCareDesc: 'Thoughtfully tailored treatments for every individual.'
         },
         readFullBio: 'Read Full Bio',
+        ourLocation: 'OUR LOCATION',
         readyToVisit: 'Ready to Visit Us?'
     },
     testimonials: {

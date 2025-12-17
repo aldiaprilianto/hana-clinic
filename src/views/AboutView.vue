@@ -1,27 +1,24 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
+// Advantages keys matching the translation file
 const advantages = [
   {
-    key: 'accessibleExcellence',
-    icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+    key: 'trust',
+    icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
   },
   {
-    key: 'cuttingEdgeTech',
-    icon: 'M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z'
-  },
-  {
-    key: 'trustedSpecialists',
+    key: 'expertTeam',
     icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z'
   },
   {
-    key: 'uncompromisedSafety',
-    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    key: 'modernTech',
+    icon: 'M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z'
   },
   {
-    key: 'sustainableBeauty',
+    key: 'patientCare',
     icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
   }
 ]
@@ -62,49 +59,81 @@ const advantages = [
       </div>
     </section>
 
-    <!-- Overview Section -->
+    <!-- About Content Section -->
     <section class="py-20">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center">
-          <blockquote class="text-2xl md:text-3xl font-serif text-primary italic mb-12">
-            {{ $t('aboutUs.tagline') }}
-          </blockquote>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left items-center">
-            <div class="space-y-6">
-               <p class="text-gray-600 text-lg leading-relaxed border-l-4 border-accent pl-6">
-                {{ $t('aboutUs.description') }}
-              </p>
-              <div class="bg-surface p-6 rounded-xl border border-gray-100">
-                <h3 class="font-serif text-xl text-primary mb-2">{{ $t('aboutUs.focus') }}</h3>
-              </div>
-            </div>
-            <div v-html="$t('aboutUs.symbolism')" class="text-gray-600 leading-relaxed bg-primary/5 p-8 rounded-2xl">
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <!-- Using clinic interior image -->
+             <img src="/images/clinic/clinic23.png" alt="Hana Clinic Interior" class="w-full h-full object-cover min-h-[400px]" onerror="this.onerror=null; this.src='/images/batik.jpeg'"/>
+          </div>
+          <div class="space-y-6">
+             <h2 class="text-3xl font-serif text-primary leading-tight">{{ $t('aboutUs.storyTitle') }}</h2>
+             <div class="w-20 h-1 bg-accent"></div>
+             <p class="text-gray-600 leading-relaxed whitespace-pre-line">
+               {{ $t('aboutUs.description2') }}
+             </p>
+             <blockquote class="text-xl font-serif text-primary italic border-l-4 border-accent pl-6 py-2 bg-primary/5 rounded-r-lg">
+                {{ $t('aboutUs.tagline') }}
+             </blockquote>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Competitive Advantages -->
+    <!-- Mission & Vision Section -->
     <section class="py-20 bg-surface relative overflow-hidden">
-      <!-- Decorative Background -->
-      <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat;"></div>
-      
-      <div class="container mx-auto px-6 relative z-10">
+        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: url('/images/batik.jpeg'); background-size: auto; background-repeat: repeat;"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div>
+                   <h3 class="text-2xl font-serif text-primary mb-6 flex items-center gap-3">
+                       <span class="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-white text-lg font-bold">M</span>
+                       {{ $t('aboutUs.mission') }}
+                   </h3>
+                   <ul class="space-y-4">
+                       <li v-for="(item, index) in tm('aboutUs.missionText')" :key="index" class="flex gap-3 text-gray-700">
+                           <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                           </svg>
+                           <span>{{ item }}</span>
+                       </li>
+                   </ul>
+                </div>
+                
+                <!-- Vision -->
+                 <div>
+                   <h3 class="text-2xl font-serif text-primary mb-6 flex items-center gap-3">
+                       <span class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">V</span>
+                       {{ $t('aboutUs.vision') }}
+                   </h3>
+                   <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                       <p class="text-lg text-gray-700 leading-relaxed text-center italic">
+                           "{{ $t('aboutUs.visionText') }}"
+                       </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20">
+      <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-serif text-primary mb-4">{{ $t('aboutUs.advantageTitle') }}</h2>
+          <h2 class="text-4xl font-serif text-primary mb-4">{{ $t('aboutUs.whyChooseUs') }}</h2>
           <div class="w-24 h-1 bg-accent mx-auto"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div 
             v-for="adv in advantages" 
             :key="adv.key"
-            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100 hover:border-accent/30"
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100 hover:border-accent/30 text-center"
           >
-            <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-              <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-accent/20 transition-colors">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="adv.icon"></path>
               </svg>
             </div>
@@ -116,14 +145,17 @@ const advantages = [
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 text-center">
+    <section class="py-20 text-center bg-gray-50">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-serif text-primary mb-8">{{ $t('aboutUs.readyToVisit') }}</h2>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <router-link to="/team" class="px-8 py-3 bg-white border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 rounded-full uppercase tracking-widest text-sm font-bold">
-            {{ $t('nav.team') }}
+        <div class="flex flex-col md:flex-row gap-6 justify-center">
+          <!-- Team / Our Location Button -->
+          <router-link to="/location" class="px-8 py-3 bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 rounded-full uppercase tracking-widest text-sm font-bold shadow-lg">
+            {{ $t('aboutUs.ourLocation') }}
           </router-link>
-          <a href="https://wa.me/6281386017622" target="_blank" class="px-8 py-3 bg-accent text-primary hover:bg-primary hover:text-white transition-all duration-300 rounded-full uppercase tracking-widest text-sm font-bold shadow-lg">
+          
+          <!-- Book Appointment Button -->
+          <a href="https://wa.me/6281386017622" target="_blank" class="px-8 py-3 bg-[#4BAF47] text-white hover:bg-[#3d9139] transition-all duration-300 rounded-full uppercase tracking-widest text-sm font-bold shadow-lg">
             {{ $t('nav.bookAppointment') }}
           </a>
         </div>

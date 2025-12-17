@@ -118,6 +118,65 @@ export default {
             flexibleDescription: 'Dukungan keseimbangan kerja-hidup',
             careerGrowth: 'Pertumbuhan Karir',
             careerDescription: 'Peluang kemajuan yang jelas'
+        },
+        requirements: 'Persyaratan:',
+        applyNow: 'Lamar Sekarang',
+        positions: {
+            hr: {
+                title: 'Staf HR & TA',
+                department: 'Sumber Daya Manusia',
+                type: 'Penuh Waktu',
+                location: 'Klinik',
+                description: 'Bergabunglah dengan tim kami untuk mengelola rekrutmen dan mendukung operasional HR.',
+                requirements: [
+                    'Minimal D3 atau Sarjana Psikologi atau Manajemen SDM',
+                    'Pengalaman minimal 1 tahun sebagai Talent Acquisition',
+                    'Pengalaman dalam mengelola proses rekrutmen End to End dan mendukung operasional HR',
+                    'Komunikasi yang baik, Terstruktur, serta ahli strategi dan eksekusi yang sangat baik'
+                ]
+            },
+            telesales: {
+                title: 'Telesales (Khusus Chat)',
+                department: 'Penjualan & Pemasaran',
+                type: 'Penuh Waktu',
+                location: 'Klinik',
+                description: 'Berinteraksi dengan klien melalui obrolan untuk mempromosikan layanan kami dan mencapai target penjualan.',
+                requirements: [
+                    'Pengalaman minimal 1 tahun di Telesales, Telemarketing, Sales, atau Customer Service (diutamakan perusahaan klinik)',
+                    'Keterampilan komunikasi dan persuasif yang kuat',
+                    'Mampu melakukan banyak tugas dan bekerja menuju target penjualan',
+                    'Minat pada layanan gigi dan estetika dengan pola pikir berorientasi layanan',
+                    'Adaptif dan nyaman bekerja di lingkungan yang serba cepat',
+                    'Berorientasi target: #Chat diambil dan Konversi'
+                ]
+            },
+            digitalMarketing: {
+                title: 'Digital Marketing',
+                department: 'Pemasaran',
+                type: 'Penuh Waktu',
+                location: 'Klinik',
+                description: 'Dorong kehadiran digital kami dan kelola kampanye pemasaran.',
+                requirements: [
+                    'Pengalaman minimal 2 tahun di bidang terkait Digital Marketing',
+                    'Mampu mengelola Iklan (Ads)',
+                    'Ketajaman bisnis yang baik',
+                    'Pemikiran dan perencanaan strategis',
+                    'Kemampuan untuk memantau CPL, CPB dan semua metrik pemasaran',
+                    'Pengalaman dalam manajemen KOL'
+                ]
+            },
+            apoteker: {
+                title: 'Apoteker',
+                department: 'Medis',
+                type: 'Penuh Waktu',
+                location: 'Klinik',
+                description: 'Mengelola operasional farmasi dan memastikan keamanan pengobatan.',
+                requirements: [
+                    'Pendidikan Profesi Apoteker dengan STRA aktif',
+                    'Bersedia menjadi APA klinik',
+                    'Pengalaman minimal 1 tahun di klinik estetika/medis (lebih diutamakan)'
+                ]
+            }
         }
     },
     footer: {
@@ -305,24 +364,32 @@ export default {
     aboutUs: {
         title: 'GAMBARAN PERUSAHAAN',
         subtitle: 'HANA (하나) Berarti Satu (The One)',
-        description: 'Kami melambangkan kesatuan, keunggulan, dan menjadi pilihan nomor satu untuk perawatan estetika modern, gigi, dan kesehatan.',
+        storyTitle: 'Kami melambangkan kesatuan, keunggulan, dan menjadi pilihan nomor satu untuk perawatan estetika modern, gigi, dan kesehatan.',
+        description2: 'HANA (하나) berarti “Satu”—mencerminkan komitmen kami untuk memberikan perawatan estetika, gigi, dan kesehatan tingkat atas. Kami percaya setiap individu unik, dan prioritas kami adalah memberikan hasil yang aman, efektif, dan maksimal yang meningkatkan jati diri terbaik Anda.\n\nMenggabungkan teknologi canggih, keahlian profesional, dan pendekatan holistik, HANA Clinics berusaha menjadi pilihan nomor satu untuk solusi kesehatan wajah, gigi, dan tubuh modern.',
         tagline: '"Solusi terpercaya nomor satu untuk wajah, senyum, dan tubuh Anda"',
-        focus: 'Fokus: Efektivitas Medis → Membawa hasil yang diharapkan',
-        symbolism: 'Ini melambangkan <strong>Satu</strong> tempat terpercaya, <strong>Satu</strong> solusi lengkap, <strong>Satu</strong> standar keunggulan, <strong>Satu</strong> perjalanan menuju kepercayaan diri.',
-        advantageTitle: 'Keunggulan Kompetitif HANA',
+        mission: 'Misi',
+        missionText: [
+            'Menyediakan perawatan estetika dan gigi berkualitas tinggi menggunakan metode modern, aman, dan berbasis bukti.',
+            'Membuat perawatan kecantikan dan mulut profesional dapat diakses tanpa mengorbankan standar atau keselamatan pasien.',
+            'Memberikan perawatan yang personal dan penuh kasih yang memprioritaskan kenyamanan, kepercayaan & transparansi, serta hasil yang tampak alami.',
+            'Terus berinovasi melalui teknologi canggih, praktisi terampil, dan pengembangan profesional berkelanjutan.',
+            'Menciptakan lingkungan yang berpusat pada pasien di mana setiap individu merasa dihargai, dipahami, dan percaya diri dalam perjalanan transformasi mereka.'
+        ],
+        vision: 'Visi',
+        visionText: 'Menjadi klinik kulit dan gigi terpercaya di Indonesia, menyediakan perawatan yang mudah diakses yang memadukan keterjangkauan, keunggulan estetika, dan layanan medis yang penuh kasih dalam setiap pengalaman pasien.',
+        whyChooseUs: 'Mengapa Memilih Kami',
         advantages: {
-            accessibleExcellence: 'Keunggulan yang Terjangkau',
-            accessibleExcellenceDesc: 'Hasil premium yang lebih mudah dijangkau dan terjangkau tanpa mengorbankan kualitas.',
-            cuttingEdgeTech: 'Teknologi Mutakhir',
-            cuttingEdgeTechDesc: 'Perangkat medis terbaru untuk perawatan yang lebih aman, lebih cepat, dan lebih efektif.',
-            trustedSpecialists: 'Spesialis Terpercaya',
-            trustedSpecialistsDesc: 'Dokter bersertifikat dan berpengalaman yang memprioritaskan hasil yang terbukti dan dipersonalisasi.',
-            uncompromisedSafety: 'Keamanan Tanpa Kompromi',
-            uncompromisedSafetyDesc: 'Kebersihan, protokol, dan perlindungan pasien berstandar internasional.',
-            sustainableBeauty: 'Kecantikan Berkelanjutan',
-            sustainableBeautyDesc: 'Operasi yang sadar lingkungan untuk kecantikan, kesehatan, dan perawatan jangka panjang. Berfokus pada kepercayaan dan retensi.'
+            trust: 'Keunggulan yang Dapat Dipercaya',
+            trustDesc: 'Perawatan estetika dan gigi premium dengan standar tanpa kompromi namun terjangkau.',
+            expertTeam: 'Tangan Ahli',
+            expertTeamDesc: 'Profesional terampil dan Spesialis yang memberikan efikasi medis terbaik.',
+            modernTech: 'Teknologi Canggih',
+            modernTechDesc: 'Teknik modern untuk hasil maksimal yang halus.',
+            patientCare: 'Pengalaman Personal',
+            patientCareDesc: 'Perawatan yang dirancang khusus untuk setiap individu.'
         },
         readFullBio: 'Baca Biografi Lengkap',
+        ourLocation: 'LOKASI KAMI',
         readyToVisit: 'Siap Mengunjungi Kami?'
     },
     testimonials: {
