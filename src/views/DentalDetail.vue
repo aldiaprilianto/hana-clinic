@@ -71,9 +71,9 @@ const getLoc = (val) => {
         <p class="text-gray-600 max-w-2xl mx-auto">{{ $t('services.dental.intro') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         <div
-          v-for="category in dentalCategories.slice(0, 3)"
+          v-for="category in dentalCategories.slice(0, 5)"
           :key="category.id"
           class="relative h-[480px] rounded-[2rem] overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 bg-gray-900"
           @click="toggleCategory(category.id)"
@@ -167,19 +167,18 @@ const getLoc = (val) => {
       <div class="container mx-auto px-6 relative z-10">
          <div class="flex items-center justify-center mb-16">
             <div class="h-px bg-primary/30 w-24"></div>
-            <h2 class="text-3xl font-serif text-primary mx-6 uppercase tracking-widest">{{ getLoc(dentalCategories[3]?.title) }}</h2>
+            <h2 class="text-3xl font-serif text-primary mx-6 uppercase tracking-widest">{{ getLoc(dentalCategories[5]?.title) }}</h2>
             <div class="h-px bg-primary/30 w-24"></div>
          </div>
          
          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-           <div v-for="(treatment, index) in dentalCategories[3]?.treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20 cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
+           <div v-for="(treatment, index) in dentalCategories[5]?.treatments" :key="index" class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group border border-gray-100 hover:border-primary/20 cursor-pointer" @click="router.push(`/treatment/${treatment.id}`)">
               <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
                  <img :src="treatment.image" :alt="getLoc(treatment.name)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                  <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
               </div>
               <div class="p-8 md:w-3/5 flex flex-col justify-center">
                  <h3 class="text-xl font-serif font-bold text-primary mb-3 group-hover:text-accent transition-colors">{{ getLoc(treatment.name) }}</h3>
-                 <p class="text-gray-600 text-sm leading-relaxed">{{ getLoc(treatment.description) }}</p>
                  
                  <div class="mt-4 pt-4 border-t border-gray-100 flex items-center text-accent text-xs font-bold uppercase tracking-widest">
                     <span>{{ $t('common.learnMore') }}</span>

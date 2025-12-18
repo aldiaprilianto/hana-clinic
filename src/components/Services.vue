@@ -94,6 +94,9 @@ const { t } = useI18n()
             <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Aesthetic</span>
             <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Orthodontic</span>
             <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Endodontic</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Odontektomi</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Prosthodontic</span>
+            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">General Dentistry</span>
           </div>
           
           <div class="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gray-400 group-hover:text-accent transition-colors font-semibold">

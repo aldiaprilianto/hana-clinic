@@ -1233,6 +1233,67 @@ export const skinAestheticTreatments = [
 
 export const dentalTreatments = [
   {
+    id: 'bleaching-advanced',
+    name: {
+      en: 'Bleaching – Advanced',
+      id: 'Bleaching – Advanced'
+    },
+    category: 'dental',
+    shortDescription: {
+      en: 'Advanced teeth whitening system for deep stains and immediate results',
+      id: 'Sistem pemutihan gigi tingkat lanjut untuk noda mendalam dan hasil instan'
+    },
+    description: {
+      en: 'Our Advanced Bleaching system is a premium teeth whitening treatment designed to remove deep stains from coffee, smoking, and aging. Using a high-concentration whitening gel activated by specialized light, it provides significant shade improvement in a single session.',
+      id: 'Sistem Bleaching Advanced kami adalah perawatan pemutihan gigi premium yang dirancang untuk menghilangkan noda mendalam akibat kopi, merokok, dan penuaan. Menggunakan gel pemutih konsentrasi tinggi yang diaktifkan oleh cahaya khusus, memberikan peningkatan warna yang signifikan dalam satu sesi.'
+    },
+    image: '/images/dental/Bleaching.png',
+    benefits: {
+      en: [
+        'Removes deep stains (coffee, smoking)',
+        'Boosts confidence with a brighter smile',
+        'Immediate results visible after one session',
+        'Long-lasting effects (up to 1-2 years)',
+        'Safe, professional-grade procedure'
+      ],
+      id: [
+        'Menghilangkan noda mendalam (kopi, merokok)',
+        'Meningkatkan kepercayaan diri dengan senyum lebih cerah',
+        'Hasil instan terlihat setelah satu sesi',
+        'Efek tahan lama (hingga 1-2 tahun)',
+        'Prosedur tingkat profesional yang aman'
+      ]
+    },
+    procedure: {
+      en: [
+        'Oral examination and shade assessment',
+        'Protective gel placed on gums to prevent sensitivity',
+        'Application of high-concentration whitening gel',
+        'Light activation of the whitening agent',
+        'Final cleaning and post-care instructions'
+      ],
+      id: [
+        'Pemeriksaan mulut dan penilaian warna',
+        'Gel pelindung diletakkan pada gusi untuk mencegah sensitivitas',
+        'Aplikasi gel pemutih konsentrasi tinggi',
+        'Aktivasi cahaya pada agen pemutih',
+        'Pembersihan akhir dan instruksi pasca-perawatan'
+      ]
+    },
+    duration: {
+      en: '60-90 minutes',
+      id: '60-90 menit'
+    },
+    recovery: {
+      en: 'Effects: Temporary sensitivity for 24-48 hours. Avoid staining foods for 48 hours.',
+      id: 'Efek: Sensitivitas sementara selama 24-48 jam. Hindari makanan berwarna selama 48 jam.'
+    },
+    results: {
+      en: 'Immediate, lasts 1–2 years',
+      id: 'Instan, bertahan 1–2 tahun'
+    }
+  },
+  {
     id: 'dental-aesthetic',
     name: {
       en: 'Aesthetic Dentistry',
@@ -1997,10 +2058,11 @@ export const getTreatmentById = (id) => {
       const nameEn = typeof item.name === 'object' ? (item.name.en || item.name) : item.name;
       const nameId = typeof item.name === 'object' ? (item.name.id || item.name) : item.name;
 
+      const dentalCategoryIds = ['aesthetic', 'orthodontic', 'endodontic', 'general-dentistry', 'odontektomi', 'prosthodontic'];
       return {
         id: item.id,
         name: item.name,
-        category: cat.id === 'aesthetic' || cat.id === 'orthodontic' || cat.id === 'endodontic' ? 'dental' : 'skin-aesthetic',
+        category: dentalCategoryIds.includes(cat.id) ? 'dental' : 'skin-aesthetic',
         shortDescription: { en: 'Professional treatment', id: 'Perawatan profesional' },
         description: {
           en: `Experience our professional ${nameEn}. This treatment is designed to address your specific needs using advanced techniques.`,
@@ -2163,69 +2225,101 @@ export const dentalCategories = [
     id: 'aesthetic',
     title: { en: 'Aesthetic', id: 'Estetika' },
     treatments: [
-      { name: { en: 'Veneer Indirect', id: 'Veneer Indirect' }, id: 'veneer-indirect', image: '/images/dental/Veneer.png' },
-      { name: { en: 'Bleaching', id: 'Bleaching' }, id: 'bleaching', image: '/images/dental/Bleaching.png' },
-      { name: { en: 'Veneer Direct', id: 'Veneer Direct' }, id: 'veneer-direct', image: '/images/dental/Veneer.png' }
-    ]
-  },
-  {
-    id: 'orthodontic',
-    title: { en: 'Orthodontic', id: 'Ortodontik' },
-    treatments: [
-      { name: { en: 'Metal Braces', id: 'Kawat Gigi Metal' }, id: 'metal-braces', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Ceramic Braces', id: 'Kawat Gigi Keramik' }, id: 'ceramic-braces', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Clear Aligners', id: 'Clear Aligners' }, id: 'clear-aligners', image: '/images/dental/ClearAligner.png' }
+      { name: { en: 'Bleaching – Advanced', id: 'Bleaching – Advanced' }, id: 'bleaching-advanced', image: '/images/dental/Bleaching.png' },
+      { name: { en: 'Bleaching – Standard', id: 'Bleaching – Standard' }, id: 'bleaching-standard', image: '/images/dental/Bleaching.png' },
+      { name: { en: 'Veneer Direct (Composite)', id: 'Veneer Direct (Composite)' }, id: 'veneer-direct-composite', image: '/images/dental/Veneer.png' },
+      { name: { en: 'Veneer Indirect (Porcelain)', id: 'Veneer Indirect (Porcelain)' }, id: 'veneer-indirect-porcelain', image: '/images/dental/Veneer.png' },
+      { name: { en: 'Veneer Polishing', id: 'Polis Veneer' }, id: 'veneer-polishing', image: '/images/dental/Veneer.png' },
+      { name: { en: 'Bongkar Veneer (Veneer Removal)', id: 'Bongkar Veneer' }, id: 'veneer-removal', image: '/images/dental/Veneer.png' }
     ]
   },
   {
     id: 'endodontic',
     title: { en: 'Endodontic', id: 'Endodontik' },
     treatments: [
-      { name: { en: 'Root Canal', id: 'Saluran Akar' }, id: 'root-canal', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Re-treatment', id: 'Perawatan Ulang' }, id: 'retreatment-root-canal', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Apicoectomy', id: 'Apicoectomy' }, id: 'apicoectomy', image: '/images/dental/CabutGigi2.png' }
+      { name: { en: 'Front Tooth Root Canal', id: 'Perawatan Saluran Akar Anterior' }, id: 'root-canal-anterior', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Back Tooth Root Canal', id: 'Perawatan Saluran Akar Posterior' }, id: 'root-canal-posterior', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Inlay/Onlay PFM', id: 'Inlay/Onlay Porcelain Fused to Metal' }, id: 'inlay-onlay-pfm', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Inlay/Onlay Porcelain', id: 'Inlay/Onlay Porcelain' }, id: 'inlay-onlay-porcelain', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Fiber Post', id: 'Fiber Post' }, id: 'fiber-post', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'PSA 1 Visit – 1 Root', id: 'PSA 1 Visit – 1 Akar' }, id: 'psa-1-visit-1-akar', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'PSA 1 Visit – 2 Roots', id: 'PSA 1 Visit – 2 Akar' }, id: 'psa-1-visit-2-akar', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'PSA 1 Visit – 3 Roots', id: 'PSA 1 Visit – 3 Akar' }, id: 'psa-1-visit-3-akar', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'PSA 1 Visit – 4 Roots', id: 'PSA 1 Visit – 4 Akar' }, id: 'psa-1-visit-4-akar', image: '/images/dental/TambalGigi.png' }
+    ]
+  },
+  {
+    id: 'odontektomi',
+    title: { en: 'Odontektomi', id: 'Odontektomi' },
+    treatments: [
+      { name: { en: 'Extraction Standard – GP', id: 'Pencabutan Gigi Standar – GP' }, id: 'extraction-standard-gp', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Extraction Complicated – GP', id: 'Pencabutan Gigi Komplikasi – GP' }, id: 'extraction-complicated-gp', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Wisdom Tooth – GP', id: 'Cabut Gigi Bungsu – GP' }, id: 'wisdom-tooth-gp', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Wisdom Tooth SP (Standard)', id: 'Cabut Gigi Bungsu SP (Standar)' }, id: 'wisdom-tooth-sp-standard', image: '/images/dental/CabutGigi2.png' },
+      { name: { en: 'Wisdom Tooth SP (Complicated)', id: 'Cabut Gigi Bungsu SP (Komplikasi)' }, id: 'wisdom-tooth-sp-complicated', image: '/images/dental/CabutGigi2.png' },
+      { name: { en: 'Operculectomy', id: 'Operkulektomi' }, id: 'operculectomy', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Alveolectomy', id: 'Alveolektomi' }, id: 'alveolectomy', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Tooth Windowing – Grade 1', id: 'Windowing Gigi – Grade 1' }, id: 'windowing-gigi-grade-1', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Suturing', id: 'Penjahitan' }, id: 'suturing', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Suture Removal', id: 'Lepas Jahitan' }, id: 'suture-removal', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Surgical Follow-up', id: 'Add-On Kontrol Bedah' }, id: 'surgical-followup', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Frenectomy', id: 'Frenektomi' }, id: 'frenectomy', image: '/images/dental/CabutGigi.png' }
+    ]
+  },
+  {
+    id: 'orthodontic',
+    title: { en: 'Orthodontic', id: 'Ortodontik' },
+    treatments: [
+      { name: { en: 'Metal Braces – Standard', id: 'Metal Braces – Standard' }, id: 'metal-braces-standard', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Metal Braces – Premium', id: 'Metal Braces – Premium' }, id: 'metal-braces-premium', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Sapphire Braces', id: 'Sapphire Braces' }, id: 'sapphire-braces', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Self-Ligating Braces', id: 'Self-Ligating Braces' }, id: 'self-ligating-braces', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Damon Braces', id: 'Damon Braces' }, id: 'damon-braces', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Control Braces (Adjustment)', id: 'Kontrol Kawat Gigi' }, id: 'control-braces', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Retainer Metal Hawley', id: 'Retainer Metal Hawley' }, id: 'retainer-hawley', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Retainer Clear Essix', id: 'Retainer Clear Essix' }, id: 'retainer-essix', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Clear Aligner (KLAR) – Basic', id: 'Clear Aligner (KLAR) – Basic' }, id: 'klar-aligner-basic', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Clear Aligner (KLAR) – Advance', id: 'Clear Aligner (KLAR) – Advance' }, id: 'klar-aligner-advance', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Clear Aligner (Invisalign) – Basic', id: 'Clear Aligner (Invisalign) – Basic' }, id: 'invisalign-aligner-basic', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Clear Aligner (Invisalign) – Advance', id: 'Clear Aligner (Invisalign) – Advance' }, id: 'invisalign-aligner-advance', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Add-On: Wire (NiTi / CuNiTi)', id: 'Kawat Tambahan (NiTi / CuNiTi)' }, id: 'ortho-wire', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'OCS (Ortho Consultation)', id: 'OCS (Orthodontic Consultation System)' }, id: 'ortho-ocs', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Lingual Button', id: 'Lingual Button' }, id: 'lingual-button', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Bite Riser', id: 'Bite Riser' }, id: 'bite-riser', image: '/images/dental/OrthoCekatBehel.png' },
+      { name: { en: 'Attachment (Clear Aligner)', id: 'Attachment (Clear Aligner)' }, id: 'aligner-attachment', image: '/images/dental/ClearAligner.png' },
+      { name: { en: 'Ligature (per jaw)', id: 'Ligature (per rahang)' }, id: 'ligature', image: '/images/dental/OrthoCekatBehel.png' }
+    ]
+  },
+  {
+    id: 'prosthodontic',
+    title: { en: 'Prosthodontic', id: 'Prostodontik' },
+    treatments: [
+      { name: { en: 'Dental Crown (PFM/All-Ceramic)', id: 'Mahkota Gigi' }, id: 'dental-crown', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Dental Bridge', id: 'Jembatan Gigi' }, id: 'dental-bridge', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Full Denture', id: 'Gigi Palsu Lengkap' }, id: 'full-denture', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Partial Denture', id: 'Gigi Palsu Sebagian' }, id: 'partial-denture', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Implant-Supported Crown', id: 'Mahkota dengan Implan' }, id: 'implant-crown', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Implant-Supported Bridge', id: 'Jembatan dengan Implan' }, id: 'implant-bridge', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Overdenture', id: 'Overdenture' }, id: 'overdenture', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Temporary Crown / Bridge', id: 'Mahkota/Jembatan Sementara' }, id: 'temporary-crown-bridge', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Crown Lengthening', id: 'Crown Lengthening' }, id: 'crown-lengthening', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Occlusal Adjustment', id: 'Penyesuaian Oklusal' }, id: 'occlusal-adjustment', image: '/images/dental/GigiPalsuTiruan.png' }
     ]
   },
   {
     id: 'general-dentistry',
     title: { en: 'General Dentistry', id: 'Gigi Umum' },
     treatments: [
-      {
-        name: { en: 'Scaling (Teeth Cleaning)', id: 'Scaling (Pembersihan Karang Gigi)' },
-        id: 'scaling',
-        image: '/images/dental/Scaling.png',
-        description: { en: 'Professional teeth cleaning for optimal oral health.', id: 'Pembersihan gigi profesional untuk kesehatan mulut optimal.' }
-      },
-      {
-        name: { en: 'Dental Filling', id: 'Tambal Gigi' },
-        id: 'tambal-gigi',
-        image: '/images/dental/TambalGigi.png',
-        description: { en: 'Restore damaged teeth with modern filling materials.', id: 'Kembalikan gigi rusak dengan bahan tambal modern.' }
-      },
-      {
-        name: { en: 'Oral Surgery', id: 'Bedah Mulut' },
-        id: 'bedah-mulut',
-        image: '/images/dental/CabutGigi.png',
-        description: { en: 'Expert surgical procedures including extractions and implants.', id: 'Prosedur bedah ahli termasuk pencabutan dan implan.' }
-      },
-      {
-        name: { en: 'Prosthodontic', id: 'Prostodontik' },
-        id: 'prosthodontic',
-        image: '/images/dental/GigiPalsuTiruan.png',
-        description: { en: 'Restoring oral function and appearance with artificial teeth.', id: 'Memulihkan fungsi mulut dan penampilan dengan gigi tiruan.' }
-      },
-      {
-        name: { en: 'Dental Rontgen', id: 'Rontgen Gigi' },
-        id: 'rontgen',
-        image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
-        description: { en: 'Advanced digital imaging for accurate diagnosis.', id: 'Pencitraan digital canggih untuk diagnosis yang akurat.' }
-      },
-      {
-        name: { en: 'Dental Products', id: 'Produk Gigi' },
-        id: 'dental-products',
-        image: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?q=80&w=2080&auto=format&fit=crop',
-        description: { en: 'Professional home care products for maintaining oral health.', id: 'Produk perawatan rumah profesional untuk menjaga kesehatan mulut.' }
-      }
+      { name: { en: 'Dental Scaling & Polishing', id: 'Scaling & Poles Gigi' }, id: 'scaling-polishing', image: '/images/dental/Scaling.png' },
+      { name: { en: 'Topical Fluoride Treatment', id: 'Perawatan Fluoride Topikal' }, id: 'fluoride-treatment', image: '/images/dental/Scaling.png' },
+      { name: { en: 'Dental Sealant', id: 'Sealant Gigi' }, id: 'dental-sealant', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Front Tooth Filling', id: 'Tambal Gigi Anterior' }, id: 'filling-anterior', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Back Tooth Filling', id: 'Tambal Gigi Posterior' }, id: 'filling-posterior', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Temporary Filling', id: 'Tambalan Sementara' }, id: 'temporary-filling', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Glass Ionomer Filling', id: 'Tambalan Glass Ionomer' }, id: 'gi-filling', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Desensitization Treatment', id: 'Perawatan Desensitisasi' }, id: 'desensitization', image: '/images/dental/TambalGigi.png' },
+      { name: { en: 'Examination & Diagnosis', id: 'Pemeriksaan & Diagnosis' }, id: 'dental-exam', image: '/images/dental/Scaling.png' },
+      { name: { en: 'Dental X-Ray', id: 'Rontgen Gigi' }, id: 'dental-xray', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' }
     ]
   }
 ];

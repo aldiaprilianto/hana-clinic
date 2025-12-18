@@ -13,10 +13,11 @@ const relatedTreatments = ref([])
 
 // Helper to get localized content
 const getLocalizedContent = (content) => {
-  if (typeof content === 'object' && content !== null && content[locale.value]) {
-    return content[locale.value]
+  if (typeof content === 'object' && content !== null) {
+    if (content[locale.value]) return content[locale.value]
+    if (content.en) return content.en
   }
-  return content // Fallback to string if not localized yet
+  return content
 }
 
 const loadTreatment = (id) => {
@@ -96,9 +97,9 @@ const categoryPath = computed(() => {
             <div class="mb-12">
               <h2 class="text-3xl font-serif text-primary mb-6">{{ $t('treatment.keyBenefits') }}</h2>
               <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <li v-for="(benefit, index) in treatment.benefits" :key="index" class="flex items-start gap-3">
+                <li v-for="(benefit, index) in getLocalizedContent(treatment.benefits)" :key="index" class="flex items-start gap-3">
                   <span class="text-accent mt-1">✦</span>
-                  <span class="text-gray-600">{{ getLocalizedContent(benefit) }}</span>
+                  <span class="text-gray-600">{{ benefit }}</span>
                 </li>
               </ul>
             </div>
@@ -106,12 +107,12 @@ const categoryPath = computed(() => {
             <div class="mb-12">
               <h2 class="text-3xl font-serif text-primary mb-6">{{ $t('treatment.procedure') }}</h2>
               <div class="space-y-6">
-                <div v-for="(step, index) in treatment.procedure" :key="index" class="flex gap-6">
+                <div v-for="(step, index) in getLocalizedContent(treatment.procedure)" :key="index" class="flex gap-6">
                   <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/5 text-primary flex items-center justify-center font-serif font-bold text-lg">
                     {{ index + 1 }}
                   </div>
                   <div>
-                    <p class="text-gray-600 leading-relaxed pt-2">{{ getLocalizedContent(step) }}</p>
+                    <p class="text-gray-600 leading-relaxed pt-2">{{ step }}</p>
                   </div>
                 </div>
               </div>
