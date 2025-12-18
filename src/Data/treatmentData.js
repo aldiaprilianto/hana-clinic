@@ -1228,6 +1228,2022 @@ export const skinAestheticTreatments = [
       en: 'Immediate glow and refreshment',
       id: 'Kilau dan kesegaran instan'
     }
+  },
+  {
+    id: 'acne-laser',
+    name: { en: 'Acne Laser Therapy', id: 'Terapi Laser Jerawat' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Fast, modern acne control using medical laser to kill bacteria and calm glands.',
+      id: 'Kontrol jerawat modern yang cepat menggunakan laser medis untuk membunuh bakteri dan menenangkan kelenjar.'
+    },
+    description: {
+      en: 'Uses medical laser to kill acne bacteria and calm oil glands—fast, modern acne control. It effectively addresses active acne and prevents future breakouts.',
+      id: 'Menggunakan laser medis untuk membunuh bakteri penyebab jerawat dan menenangkan kelenjar minyak—kontrol jerawat yang cepat dan modern. Efektif mengatasi jerawat aktif dan mencegah timbulnya jerawat di masa depan.'
+    },
+    image: '/images/treatments/ACNE-Before-After.png',
+    benefits: {
+      en: ['Reduces acne', 'Controls oil production', 'Minimizes redness'],
+      id: ['Mengurangi jerawat', 'Mengontrol produksi minyak', 'Meminimalkan kemerahan']
+    },
+    procedure: {
+      en: ['Cleanse', 'Eye protection application', 'Laser passes over skin'],
+      id: ['Pembersihan', 'Aplikasi perlindungan mata', 'Laser diarahkan ke permukaan kulit']
+    },
+    duration: { en: '20–30 minutes', id: '20–30 menit' },
+    recovery: {
+      en: 'Downtime: none. Recommended to repeat every 2–4 weeks (4–6 sessions).',
+      id: 'Downtime: tidak ada. Direkomendasikan untuk diulang setiap 2–4 minggu (4–6 sesi).'
+    },
+    results: { en: 'Visible improvement in 2–4 weeks', id: 'Perbaikan terlihat dalam 2–4 minggu' }
+  },
+  {
+    id: 'chemical-peels-acne',
+    name: { en: 'Chemical Peel for Acne', id: 'Chemical Peel untuk Jerawat' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Acid peel that exfoliates pores and controls breakouts.',
+      id: 'Pengelupasan asam yang mengeksfoliasi pori-pori dan mengontrol timbulnya jerawat.'
+    },
+    description: {
+      en: 'An acid-based peel that exfoliates pores and controls breakouts. It helps clear existing acne and prevents new ones from forming by removing dead skin cells and excess oil.',
+      id: 'Cairan peeling berbasis asam yang mengeksfoliasi pori-pori dan mengontrol timbulnya jerawat. Membantu membersihkan jerawat yang ada dan mencegah pembentukan jerawat baru dengan mengangkat sel kulit mati dan minyak berlebih.'
+    },
+    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop',
+    benefits: {
+      en: ['Clears clogged pores', 'Smooths skin texture'],
+      id: ['Membersihkan pori-pori tersumbat', 'Menghaluskan tekstur kulit']
+    },
+    procedure: {
+      en: ['Cleanse', 'Peel solution applied', 'Neutralization', 'Calming mask'],
+      id: ['Pembersihan', 'Aplikasi cairan peeling', 'Netralisasi', 'Masker penenangan']
+    },
+    duration: { en: '15–20 minutes', id: '15–20 menit' },
+    recovery: {
+      en: 'Mild peeling for 3–5 days. Recommended to repeat monthly.',
+      id: 'Pengelupasan ringan selama 3–5 hari. Direkomendasikan untuk diulang setiap bulan.'
+    },
+    results: { en: 'Visible results in 7–14 days', id: 'Hasil terlihat dalam 7–14 hari' }
+  },
+  {
+    id: 'extraction-facial',
+    name: { en: 'Extraction Facial', id: 'Facial Ekstraksi' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Manual removal of blackheads and whiteheads for immediate pore clearing.',
+      id: 'Pengangkatan komedo hitam dan putih secara manual untuk pembersihan pori-pori instan.'
+    },
+    description: {
+      en: 'Manual removal of blackheads and whiteheads. It provides immediate pore clearing and smoother skin surface by removing impurities directly.',
+      id: 'Pengangkatan komedo hitam dan putih secara manual. Memberikan pembersihan pori-pori instan dan permukaan kulit yang lebih halus dengan mengangkat kotoran secara langsung.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Immediate pore clearing', 'Reduced skin congestion'],
+      id: ['Pembersihan pori-pori seketika', 'Mengurangi penyumbatan kulit']
+    },
+    procedure: {
+      en: ['Cleanse', 'Steam treatment', 'Gentle extraction', 'Soothing mask'],
+      id: ['Pembersihan', 'Perawatan uap (steam)', 'Ekstraksi lembut', 'Masker penyejuk']
+    },
+    duration: { en: '60 minutes', id: '60 menit' },
+    recovery: {
+      en: 'Temporary redness for 1–2 days. Recommended monthly.',
+      id: 'Kemerahan sementara selama 1–2 hari. Direkomendasikan setiap bulan.'
+    },
+    results: { en: 'Instant results', id: 'Hasil instan' }
+  },
+  {
+    id: 'led-blue-light',
+    name: { en: 'LED Blue Light Therapy', id: 'Terapi Sinar Biru LED' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-painful blue light therapy to kill acne bacteria and calm acne.',
+      id: 'Terapi sinar biru tanpa rasa sakit untuk membunuh bakteri jerawat dan menenangkan jerawat.'
+    },
+    description: {
+      en: 'Blue light kills acne bacteria without pain. It calms active acne and is a gentle yet effective way to manage breakouts without harsh chemicals.',
+      id: 'Sinar biru membunuh bakteri jerawat tanpa rasa sakit. Menenangkan jerawat aktif dan merupakan cara yang lembut namun efektif untuk mengatasi jerawat tanpa bahan kimia keras.'
+    },
+    image: '/images/treatments/ACNE-Before-After.png',
+    benefits: {
+      en: ['Calms active acne', 'Pain-free treatment'],
+      id: ['Menenangkan jerawat aktif', 'Perawatan tanpa rasa sakit']
+    },
+    procedure: {
+      en: ['Cleanse', 'LED exposure'],
+      id: ['Pembersihan', 'Paparan sinar LED']
+    },
+    duration: { en: '20 minutes', id: '20 menit' },
+    recovery: {
+      en: 'No downtime. Recommended 2–3 times weekly.',
+      id: 'Tidak ada downtime. Direkomendasikan 2–3 kali seminggu.'
+    },
+    results: { en: 'Gradual improvement over sessions', id: 'Perbaikan bertahap seiring sesi' }
+  },
+  {
+    id: 'acne-injection',
+    name: { en: 'Acne Injection', id: 'Suntik Jerawat' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Fast-acting steroid injection to shrink painful cystic acne.',
+      id: 'Suntikan steroid bereaksi cepat untuk merampingkan jerawat kistik yang menyakitkan.'
+    },
+    description: {
+      en: 'Steroid injection shrinks painful cystic acne fast. It provides rapid swelling reduction and is perfect for large, inflamed spots that need quick attention.',
+      id: 'Suntikan steroid merampingkan jerawat kistik yang menyakitkan dengan cepat. Memberikan pengurangan pembengkakan yang cepat dan sangat cocok untuk bintik-bintik besar meradang yang membutuhkan penanganan segera.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Rapid swelling reduction', 'Fast pain relief'],
+      id: ['Pengurangan pembengkakan yang cepat', 'Pereda nyeri yang cepat']
+    },
+    procedure: {
+      en: ['Cleanse', 'Tiny injection directly into the acne'],
+      id: ['Pembersihan', 'Suntikan kecil langsung ke dalam jerawat']
+    },
+    duration: { en: '5 minutes', id: '5 menit' },
+    recovery: {
+      en: 'Mild tenderness at the injection site. Use as needed.',
+      id: 'Rasa lunak ringan pada titik suntikan. Gunakan sesuai kebutuhan.'
+    },
+    results: { en: 'Results visible in 24–72 hours', id: 'Hasil terlihat dalam 24–72 jam' }
+  },
+  {
+    id: 'acne-meso',
+    name: { en: 'Acne Meso', id: 'Meso Jerawat' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injected anti-acne cocktail to control oil and inflammation.',
+      id: 'Koktail anti-jerawat yang disuntikkan untuk mengontrol minyak dan peradangan.'
+    },
+    description: {
+      en: 'Anti-acne cocktail injected into the skin. It controls oil and inflammation effectively, delivering therapeutic ingredients directly to where they are needed most.',
+      id: 'Koktail anti-jerawat yang disuntikkan ke dalam kulit. Mengontrol minyak dan peradangan secara efektif, memberikan bahan-bahan terapeutik langsung ke tempat yang paling membutuhkannya.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Controls oil production', 'Reduces inflammation'],
+      id: ['Mengontrol produksi minyak', 'Mengurangi peradangan']
+    },
+    procedure: {
+      en: ['Numbing cream application', 'Micro-injections into the skin'],
+      id: ['Aplikasi krim anestesi', 'Suntikan mikro ke dalam kulit']
+    },
+    duration: { en: '30 minutes', id: '30 menit' },
+    recovery: {
+      en: 'Mild redness for a short period. Recommended every 2–4 weeks.',
+      id: 'Kemerahan ringan untuk waktu singkat. Direkomendasikan setiap 2–4 minggu.'
+    },
+    results: { en: 'Results in 1–2 weeks', id: 'Hasil dalam 1–2 minggu' }
+  },
+  {
+    id: 'oil-control-laser',
+    name: { en: 'Oil Control Laser', id: 'Laser Kontrol Minyak' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Laser treatment targeting sebaceous glands to reduce oil long-term.',
+      id: 'Perawatan laser yang menargetkan kelenjar minyak untuk mengurangi minyak jangka panjang.'
+    },
+    description: {
+      en: 'Laser targets sebaceous glands to reduce oil production long-term. This treatment helps in maintaining a matte skin appearance and preventing breakouts caused by excess sebum.',
+      id: 'Laser menargetkan kelenjar minyak untuk mengurangi produksi minyak dalam jangka panjang. Perawatan ini membantu menjaga tampilan kulit tetap matte dan mencegah timbulnya jerawat akibat minyak berlebih.'
+    },
+    image: '/images/treatments/ACNE-Before-After.png',
+    benefits: {
+      en: ['Long-term oil reduction', 'Refines skin appearance'],
+      id: ['Pengurangan minyak jangka panjang', 'Memperbaiki tampilan kulit']
+    },
+    procedure: {
+      en: ['Cleanse', 'Targeted laser treatment'],
+      id: ['Pembersihan', 'Perawatan laser tertarget']
+    },
+    duration: { en: '20–30 minutes', id: '20–30 menit' },
+    recovery: {
+      en: 'No downtime. Recommended 3–5 sessions.',
+      id: 'Tidak ada downtime. Direkomendasikan 3–5 sesi.'
+    },
+    results: { en: 'Improvement over several weeks', id: 'Perbaikan selama beberapa minggu' }
+  },
+  {
+    id: 'brightening-laser',
+    name: { en: 'Brightening Laser', id: 'Laser Pencerah' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'A gentle laser that improves dull skin and breaks down uneven pigment.',
+      id: 'Laser lembut yang memperbaiki kulit kusam dan memecah pigmen yang tidak merata.'
+    },
+    description: {
+      en: 'A gentle laser that improves dull skin by stimulating collagen and breaking down uneven pigment. It gives a natural glow without peeling or injections.',
+      id: 'Laser lembut yang memperbaiki kulit kusam dengan merangsang kolagen dan memecah pigmen yang tidak rata. Memberikan kilau alami tanpa pengelupasan atau suntikan.'
+    },
+    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    benefits: {
+      en: ['Brighter complexion', 'Even skin tone', 'Boosts collagen'],
+      id: ['Wajah lebih cerah', 'Warna kulit merata', 'Meningkatkan kolagen']
+    },
+    procedure: {
+      en: ['Skin is cleansed', 'Protective eye shields placed', 'Laser passed evenly over face', 'Cooling serum applied'],
+      id: ['Pembersihan kulit', 'Pemasangan pelindung mata', 'Laser diarahkan merata ke wajah', 'Aplikasi serum pendingin']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'No downtime. Mild redness/warmth. Use sunscreen daily. Recommended every 3–4 weeks.',
+      id: 'Tanpa downtime. Kemerahan/rasa hangat ringan. Gunakan tabir surya setiap hari. Direkomendasikan setiap 3–4 minggu.'
+    },
+    results: { en: 'Glow in 1–2 weeks, improves up to 2–3 months', id: 'Kilau dalam 1–2 minggu, membaik hingga 2–3 bulan' }
+  },
+  {
+    id: 'pigment-laser-ipl',
+    name: { en: 'Pigment Laser / IPL', id: 'Laser Pigmen / IPL' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses light energy to target sunspots, freckles, and pigmentation.',
+      id: 'Menggunakan energi cahaya untuk menargetkan noda matahari, bintik-bintik, dan pigmentasi.'
+    },
+    description: {
+      en: 'Uses laser or light energy to target sunspots, freckles, and pigmentation without damaging surrounding skin.',
+      id: 'Menggunakan laser atau energi cahaya untuk menargetkan bintik matahari, freckles, dan pigmentasi tanpa merusak kulit di sekitarnya.'
+    },
+    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    benefits: {
+      en: ['Reduces dark spots', 'More even tone', 'Clearer skin'],
+      id: ['Mengurangi bintik hitam', 'Warna kulit lebih merata', 'Kulit lebih bersih']
+    },
+    procedure: {
+      en: ['Cleanse skin', 'Cooling gel applied', 'Laser/IPL pulses target pigment', 'Soothing cream applied'],
+      id: ['Pembersihan kulit', 'Aplikasi gel pendingin', 'Pulsa Laser/IPL menargetkan pigmen', 'Aplikasi krim penenang']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Downtime: none up to 3 days. Temporary darkening of spots. Avoid sun, use SPF.',
+      id: 'Downtime: tidak ada hingga 3 hari. Penggelapan sementara pada bintik-bintik. Hindari matahari, gunakan SPF.'
+    },
+    results: { en: '2–4 weeks (spots darken then fade)', id: '2–4 minggu (bintik menggelap lalu memudar)' }
+  },
+  {
+    id: 'melasma-laser',
+    name: { en: 'Melasma Laser', id: 'Laser Melasma' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Specialized laser designed for hormonal pigmentation (melasma).',
+      id: 'Laser khusus yang dirancang untuk pigmentasi hormonal (melasma).'
+    },
+    description: {
+      en: 'Specialized laser designed for hormonal pigmentation. It focuses on safe, gradual improvement rather than aggressive peeling.',
+      id: 'Laser khusus yang dirancang untuk pigmentasi hormonal. Berfokus pada perbaikan yang aman dan bertahap daripada pengelupasan agresif.'
+    },
+    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    benefits: {
+      en: ['Lightens melasma', 'Prevents rebound darkening', 'Improves skin clarity'],
+      id: ['Mencerahkan melasma', 'Mencegah penggelapan berulang', 'Meningkatkan kebersihan kulit']
+    },
+    procedure: {
+      en: ['Skin assessment & mapping', 'Gentle laser applied in multiple passes', 'Cooling and calming serum'],
+      id: ['Penilaian & pemetaan kulit', 'Laser lembut diterapkan dalam beberapa tahap', 'Serum pendingin dan penenang']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'No downtime. Mild warmth. Strict sun protection required.',
+      id: 'Tanpa downtime. Rasa hangat ringan. Diperlukan perlindungan matahari yang ketat.'
+    },
+    results: { en: '4–8 weeks, gradual improvement', id: '4–8 minggu, perbaikan bertahap' }
+  },
+  {
+    id: 'whitening-drip-injection',
+    name: { en: 'Whitening Drip / Injection', id: 'Infus / Suntik Pemutih' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'IV treatment delivering antioxidants and glutathione to brighten skin.',
+      id: 'Perawatan infus yang memberikan antioksidan dan glutathione untuk mencerahkan kulit.'
+    },
+    description: {
+      en: 'IV or injection treatment delivering antioxidants and glutathione to brighten skin from within. It works systemically for an overall brightening effect.',
+      id: 'Perawatan infus atau suntikan yang memberikan antioksidan dan glutathione untuk mencerahkan kulit dari dalam. Bekerja secara sistemik untuk efek pencerahan menyeluruh.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Brighter skin tone', 'Improves dullness', 'Antioxidant benefits'],
+      id: ['Warna kulit lebih cerah', 'Memperbaiki kekusaman', 'Manfaat antioksidan']
+    },
+    procedure: {
+      en: ['Medical assessment', 'IV line or injection administered', 'Rest during infusion'],
+      id: ['Penilaian medis', 'Pemasangan infus atau suntikan', 'Istirahat selama infus']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'No downtime. Rare nausea or fatigue. Stay hydrated.',
+      id: 'Tanpa downtime. Jarang terjadi mual atau lelah. Tetap terhidrasi.'
+    },
+    results: { en: '1–2 weeks, cumulative results', id: '1–2 minggu, hasil kumulatif' }
+  },
+  {
+    id: 'brightening-meso',
+    name: { en: 'Brightening Meso', id: 'Meso Pencerah' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Micro-injections of brightening agents delivered directly into the skin.',
+      id: 'Suntikan mikro agen pencerah yang diberikan langsung ke dalam kulit.'
+    },
+    description: {
+      en: 'Micro-injections of brightening agents directly into the skin, delivering nutrients exactly where pigmentation forms.',
+      id: 'Suntikan mikro agen pencerah langsung ke dalam kulit, memberikan nutrisi tepat di tempat pembentukan pigmentasi.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Brightens skin', 'Improves tone', 'Hydrated glow'],
+      id: ['Mencerahkan kulit', 'Memperbaiki warna kulit', 'Kilau terhidrasi']
+    },
+    procedure: {
+      en: ['Numbing cream (30 mins)', 'Micro-injections into superficial skin', 'Cooling mask applied'],
+      id: ['Krim anestesi (30 menit)', 'Suntikan mikro ke lapisan kulit dangkal', 'Aplikasi masker pendingin']
+    },
+    duration: { en: '30–40 mins', id: '30–40 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Tiny bumps and redness possible. Avoid makeup 24 hrs.',
+      id: 'Downtime: 1–2 hari. Kemungkinan benjolan kecil dan kemerahan. Hindari riasan 24 jam.'
+    },
+    results: { en: 'Visible improvement in 2–4 weeks', id: 'Perbaikan terlihat dalam 2–4 minggu' }
+  },
+  {
+    id: 'chemical-peels-brightening',
+    name: { en: 'Chemical Peel (Brightening)', id: 'Chemical Peel (Pencerah)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Controlled acid peel to exfoliate dead skin and reduce pigmentation.',
+      id: 'Pengelupasan asam terkontrol untuk mengeksfoliasi kulit mati dan mengurangi pigmentasi.'
+    },
+    description: {
+      en: 'Uses controlled acids to exfoliate dead skin and reduce pigmentation, renewing skin layers for a brighter tone.',
+      id: 'Menggunakan asam terkontrol untuk mengeksfoliasi kulit mati dan mengurangi pigmentasi, memperbarui lapisan kulit untuk warna yang lebih cerah.'
+    },
+    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop',
+    benefits: {
+      en: ['Fades pigmentation', 'Smooths texture', 'Improves radiance'],
+      id: ['Memudarkan pigmentasi', 'Menghaluskan tekstur', 'Meningkatkan kecerahan']
+    },
+    procedure: {
+      en: ['Cleanse skin', 'Peel solution applied', 'Neutralized', 'Calming cream applied'],
+      id: ['Pembersihan kulit', 'Aplikasi cairan peeling', 'Netralisasi', 'Aplikasi krim penenang']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Downtime: 3–7 days of peeling. Use moisturizer and SPF.',
+      id: 'Downtime: 3–7 hari pengelupasan. Gunakan pelembap dan SPF.'
+    },
+    results: { en: 'Visible results in 1–3 weeks', id: 'Hasil terlihat dalam 1–3 minggu' }
+  },
+  {
+    id: 'microneedling-brightening',
+    name: { en: 'Microneedling', id: 'Microneedling' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Creates micro-channels to stimulate collagen and improve pigment absorption.',
+      id: 'Membuat saluran mikro untuk merangsang kolagen dan meningkatkan penyerapan pigmen.'
+    },
+    description: {
+      en: 'Creates micro-channels to stimulate collagen and improve pigment absorption using the skin’s own healing process.',
+      id: 'Membuat saluran mikro untuk merangsang kolagen dan meningkatkan penyerapan pigmen menggunakan proses penyembuhan alami kulit.'
+    },
+    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves tone & texture', 'Boosts collagen', 'Enhances skincare efficacy'],
+      id: ['Memperbaiki warna & tekstur', 'Meningkatkan kolagen', 'Meningkatkan efektivitas skincare']
+    },
+    procedure: {
+      en: ['Numbing cream (30 mins)', 'Microneedling device applied', 'Serum infused', 'Cooling mask applied'],
+      id: ['Krim anestesi (30 menit)', 'Penggunaan alat microneedling', 'Infus serum', 'Aplikasi masker pendingin']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'Downtime: 2–3 days. Redness and sensitivity possible. Use gentle skincare.',
+      id: 'Downtime: 2–3 hari. Kemungkinan kemerahan dan sensitivitas. Gunakan skincare lembut.'
+    },
+    results: { en: 'Visible improvement in 4–6 weeks', id: 'Perbaikan terlihat dalam 4–6 minggu' }
+  },
+  {
+    id: 'ipl-photofacial',
+    name: { en: 'IPL Photofacial', id: 'IPL Photofacial' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Broad-spectrum light treats redness, pigment, and dull skin together.',
+      id: 'Cahaya spektrum luas mengatasi kemerahan, pigmen, dan kulit kusam secara bersamaan.'
+    },
+    description: {
+      en: 'Broad-spectrum light treats redness, pigment, and dull skin together in an all-in-one skin refresh.',
+      id: 'Cahaya spektrum luas mengatasi kemerahan, pigmen, dan kulit kusam bersama-an dalam satu perawatan penyegaran kulit.'
+    },
+    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    benefits: {
+      en: ['Brighter skin', 'Reduced pigment & redness', 'Healthy glow'],
+      id: ['Kulit lebih cerah', 'Mengurangi pigmen & kemerahan', 'Kilau sehat']
+    },
+    procedure: {
+      en: ['Cooling gel applied', 'IPL light pulses delivered', 'Cooling after treatment'],
+      id: ['Aplikasi gel pendingin', 'Pemberian pulsa cahaya IPL', 'Pendinginan pasca perawatan']
+    },
+    duration: { en: '30 mins', id: '30 menit' },
+    recovery: {
+      en: 'No downtime. Mild redness. Use sunscreen.',
+      id: 'Tanpa downtime. Kemerahan ringan. Gunakan tabir surya.'
+    },
+    results: { en: 'Visible results in 2–4 weeks', id: 'Hasil terlihat dalam 2–4 minggu' }
+  },
+  {
+    id: 'pigment-laser',
+    name: { en: 'Pigment Laser', id: 'Laser Pigmen' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Precision laser targeting stubborn pigmentation deeper in the skin.',
+      id: 'Laser presisi yang menargetkan pigmentasi membandel di lapisan kulit yang lebih dalam.'
+    },
+    description: {
+      en: 'Precision laser targets stubborn pigmentation deeper in the skin. It is ideal for treating resistant dark spots.',
+      id: 'Laser presisi menargetkan pigmentasi membandel jauh di dalam kulit. Ideal untuk menangani bintik hitam yang resisten.'
+    },
+    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    benefits: {
+      en: ['Breaks down stubborn pigment', 'Improves skin clarity'],
+      id: ['Memecah pigmen membandel', 'Meningkatkan kebersihan kulit']
+    },
+    procedure: {
+      en: ['Skin cleansing', 'Laser targets pigmented areas', 'Cooling gel applied'],
+      id: ['Pembersihan kulit', 'Laser menargetkan area berpigmen', 'Aplikasi gel pendingin']
+    },
+    duration: { en: '15–30 mins', id: '15–30 menit' },
+    recovery: {
+      en: 'Downtime: none to 5 days. Temporary darkening of spots. Avoid sun.',
+      id: 'Downtime: tidak ada hingga 5 hari. Penggelapan bintik sementara. Hindari matahari.'
+    },
+    results: { en: 'Visible results in 2–4 weeks', id: 'Hasil terlihat dalam 2–4 minggu' }
+  },
+  {
+    id: 'brightening-skincare',
+    name: { en: 'Topical Skincare', id: 'Skincare Topikal' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Medical-grade skincare with brightening and pigment-control ingredients.',
+      id: 'Skincare kelas medis dengan bahan pencerah dan pengontrol pigmen.'
+    },
+    description: {
+      en: 'Medical-grade skincare with brightening and pigment-control ingredients to support and maintain treatment results.',
+      id: 'Skincare kelas medis dengan bahan pencerah dan pengontrol pigmen untuk mendukung dan mempertahankan hasil perawatan.'
+    },
+    image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Prevents pigment formation', 'Maintains results', 'Improves skin health'],
+      id: ['Mencegah pembentukan pigmen', 'Mempertahankan hasil', 'Meningkatkan kesehatan kulit']
+    },
+    procedure: {
+      en: ['Doctor skin assessment', 'Customized products prescribed', 'Daily home use instructions'],
+      id: ['Penilaian kulit oleh dokter', 'Resep produk khusus', 'Instruksi penggunaan harian di rumah']
+    },
+    duration: { en: 'Ongoing daily use', id: 'Penggunaan harian berkelanjutan' },
+    recovery: {
+      en: 'No downtime. Possible mild purging initially. Be consistent.',
+      id: 'Tanpa downtime. Kemungkinan purging ringan di awal. Konsisten.'
+    },
+    results: { en: 'Visible results in 4–8 weeks', id: 'Hasil terlihat dalam 4–8 minggu' }
+  },
+  {
+    id: 'botox-wrinkles',
+    name: { en: 'Botox', id: 'Botox' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-surgical injectable treatment to soften fine lines and wrinkles.',
+      id: 'Perawatan suntik non-bedah untuk menghaluskan garis halus dan kerutan.'
+    },
+    description: {
+      en: 'Botox is a non-surgical injectable treatment designed to soften fine lines and wrinkles by relaxing targeted facial muscles. It is a highly effective and FDA-approved solution for areas like the forehead, frown lines, and crow’s feet.',
+      id: 'Botox adalah perawatan suntik non-bedah yang dirancang untuk menghaluskan garis halus dan kerutan dengan merelaksasi otot wajah tertentu. Ini adalah solusi yang sangat efektif dan disetujui FDA untuk area seperti dahi, garis kerut, dan crow’s feet.'
+    },
+    image: '/images/treatments/botox_treatment_1764461614966.png',
+    benefits: {
+      en: ['Reduces forehead wrinkles and crow’s feet', 'Prevents deeper lines from forming', 'Subtle, natural-looking rejuvenation', 'Quick treatment with long-lasting results'],
+      id: ['Mengurangi kerutan dahi dan crow’s feet', 'Mencegah pembentukan garis yang lebih dalam', 'Peremajaan alami yang halus', 'Perawatan cepat dengan hasil tahan lama']
+    },
+    procedure: {
+      en: ['Small amount of Botox is injected into specific facial muscles', 'Process is precise and performed by professionals'],
+      id: ['Sejumlah kecil Botox disuntikkan ke otot wajah tertentu', 'Prosesnya tepat dan dilakukan oleh profesional']
+    },
+    duration: { en: '10–20 mins', id: '10–20 menit' },
+    recovery: {
+      en: 'Minimal downtime. Avoid lying down for 3–4 hours, no massage for 24 hours.',
+      id: 'Downtime minimal. Hindari berbaring selama 3–4 jam, tanpa pijatan selama 24 jam.'
+    },
+    results: { en: 'Visible in 3–4 days; full results in 10–14 days', id: 'Terlihat dalam 3–4 hari; hasil penuh dalam 10–14 hari' }
+  },
+  {
+    id: 'dermal-fillers-aging',
+    name: { en: 'Dermal Fillers', id: 'Filler Dermal' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injectable treatments to restore volume and enhance facial contours.',
+      id: 'Perawatan suntik untuk mengembalikan volume dan mempertegas kontur wajah.'
+    },
+    description: {
+      en: 'Dermal fillers use high-quality hyaluronic acid to restore volume, enhance facial contours, and smooth fine lines, creating natural-looking definition.',
+      id: 'Filler dermal menggunakan asam hialuronat berkualitas tinggi untuk mengembalikan volume, meningkatkan kontur wajah, dan menghaluskan garis halus, menciptakan definisi yang tampak alami.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Adds volume to cheeks, lips, and chin', 'Smooths deep folds', 'Enhances facial contours', 'Immediate results'],
+      id: ['Menambah volume pada pipi, bibir, dan dagu', 'Menghaluskan lipatan dalam', 'Meningkatkan kontur wajah', 'Hasil instan']
+    },
+    procedure: {
+      en: ['Carefully injected beneath the skin', 'Tailored to facial structure for symmetry'],
+      id: ['Disuntikkan dengan hati-hati di bawah kulit', 'Disesuaikan dengan struktur wajah untuk simetri']
+    },
+    duration: { en: '15–30 mins', id: '15–30 menit' },
+    recovery: {
+      en: 'Minimal downtime. Avoid pressure on treated areas and heat for 24 hours.',
+      id: 'Downtime minimal. Hindari tekanan pada area yang dirawat dan panas selama 24 jam.'
+    },
+    results: { en: 'Immediate visibility, optimal in a few days', id: 'Terlihat instan, optimal dalam beberapa hari' }
+  },
+  {
+    id: 'hifu-lifting',
+    name: { en: 'HIFU', id: 'HIFU' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-invasive lifting and tightening using focused ultrasound energy.',
+      id: 'Pengencangan dan lifting non-invasif menggunakan energi ultrasound terfokus.'
+    },
+    description: {
+      en: 'HIFU is a non-invasive treatment that uses focused ultrasound energy to stimulate collagen, firming the skin and redefining facial contours without surgery.',
+      id: 'HIFU adalah perawatan non-invasif yang menggunakan energi ultrasound terfokus untuk merangsang kolagen, mengencangkan kulit, dan mempertegas kontur wajah tanpa operasi.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Lifts face, jawline, and neck', 'Improves elasticity', 'Reduces sagging', 'No downtime'],
+      id: ['Mengangkat wajah, rahang, dan leher', 'Meningkatkan elastisitas', 'Mengurangi kekenduran', 'Tanpa downtime']
+    },
+    procedure: {
+      en: ['Ultrasound energy delivered to deep skin layers', 'Targets structural tissues to trigger collagen'],
+      id: ['Energi ultrasound dikirim ke lapisan kulit dalam', 'Menargetkan jaringan struktural untuk merangsang kolagen']
+    },
+    duration: { en: '30–60 mins', id: '30–60 menit' },
+    recovery: {
+      en: 'No downtime. Avoid hot showers and saunas for 24 hours.',
+      id: 'Tanpa downtime. Hindari mandi air panas dan sauna selama 24 jam.'
+    },
+    results: { en: 'Initial tightening immediately; full results in 8–12 weeks', id: 'Pengencangan awal instan; hasil penuh dalam 8–12 minggu' }
+  },
+  {
+    id: 'rf-tightening',
+    name: { en: 'RF Tightening', id: 'Pengencangan RF' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-invasive treatment using radiofrequency to heat deeper skin layers.',
+      id: 'Perawatan non-invasif menggunakan radiofrekuensi untuk memanaskan lapisan kulit dalam.'
+    },
+    description: {
+      en: 'RF Tightening uses controlled radiofrequency energy to heat deeper layers of the skin, stimulating collagen production for a more youthful appearance.',
+      id: 'Pengencangan RF menggunakan energi radiofrekuensi terkontrol untuk memanaskan lapisan kulit yang lebih dalam, merangsang produksi kolagen untuk penampilan yang lebih muda.'
+    },
+    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves skin firmness', 'Reduces fine lines', 'Enhances facial contours', 'Comfortable treatment'],
+      id: ['Meningkatkan kekencangan kulit', 'Mengurangi garis halus', 'Meningkatkan kontur wajah', 'Perawatan yang nyaman']
+    },
+    procedure: {
+      en: ['Handheld RF device delivers uniform heat', 'Safe and painless for all skin types'],
+      id: ['Alat RF genggam menghantarkan panas yang merata', 'Aman dan tanpa rasa sakit untuk semua jenis kulit']
+    },
+    duration: { en: '20–40 mins', id: '20–40 menit' },
+    recovery: {
+      en: 'None. Avoid heat exposure and saunas for 24 hours.',
+      id: 'Tidak ada. Hindari paparan panas dan sauna selama 24 jam.'
+    },
+    results: { en: 'Best results appear within 6–12 weeks', id: 'Hasil terbaik muncul dalam 6–12 minggu' }
+  },
+  {
+    id: 'skin-booster-aging',
+    name: { en: 'Skin Booster', id: 'Skin Booster' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injectable hydrating treatment delivering micro-droplets of hyaluronic acid.',
+      id: 'Perawatan hidrasi suntik yang memberikan tetesan mikro asam hialuronat.'
+    },
+    description: {
+      en: 'Skin Booster delivers micro-droplets of hyaluronic acid into the skin to improve moisture, smoothness, and overall skin quality for a naturally refreshed glow.',
+      id: 'Skin Booster memberikan tetesan mikro asam hialuronat ke dalam kulit untuk meningkatkan kelembapan, kehalusan, dan kualitas kulit secara keseluruhan untuk kilau segar alami.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Deeply hydrates and nourishes', 'Improves texture and elasticity', 'Reduces dullness', 'Creates dewy glow'],
+      id: ['Menghidrasi dan menutrisi secara mendalam', 'Memperbaiki tekstur dan elastisitas', 'Mengurangi kekusaman', 'Menciptakan kilau dewy']
+    },
+    procedure: {
+      en: ['Micro-injections administered into superficial layers', 'Gentle technique for even hydration'],
+      id: ['Suntikan mikro pada lapisan permukaan', 'Teknik lembut untuk hidrasi yang merata']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Minimal. Avoid makeup and heat for 24 hours.',
+      id: 'Minimal. Hindari riasan dan panas selama 24 jam.'
+    },
+    results: { en: 'Radiance improves within 1–2 weeks', id: 'Kecerahan membaik dalam 1–2 minggu' }
+  },
+  {
+    id: 'laser-resurfacing',
+    name: { en: 'Laser Resurfacing', id: 'Laser Resurfacing' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Advanced rejuvenation that removes damaged skin and boosts collagen.',
+      id: 'Peremajaan canggih yang mengangkat kulit rusak dan meningkatkan kolagen.'
+    },
+    description: {
+      en: 'Laser Resurfacing is an advanced treatment that removes damaged skin layers and stimulates new collagen to refine texture and restore a youthful complexion.',
+      id: 'Laser Resurfacing adalah perawatan canggih yang mengangkat lapisan kulit yang rusak dan merangsang kolagen baru untuk memperbaiki tekstur dan memulihkan wajah awet muda.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces scars and wrinkles', 'Improves skin texture and pores', 'Minimizes pigmentation', 'Long-term renewal'],
+      id: ['Mengurangi bekas luka dan kerutan', 'Memperbaiki tekstur kulit dan pori', 'Meminimalkan pigmentasi', 'Pembaruan jangka panjang']
+    },
+    procedure: {
+      en: ['Precision laser delivers controlled energy', 'Removes damaged cells while encouraging regeneration'],
+      id: ['Laser presisi menghantarkan energi terkontrol', 'Mengangkat sel rusak sambil mendorong regenerasi']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 3–7 days. Redness and mild peeling expected. Avoid sun.',
+      id: 'Downtime: 3–7 hari. Kemerahan dan pengelupasan ringan diperkirakan. Hindari matahari.'
+    },
+    results: { en: 'Noticeable changes in 1–2 weeks; full results in 6–12 weeks', id: 'Perubahan nyata dalam 1–2 minggu; hasil penuh dalam 6–12 minggu' }
+  },
+  {
+    id: 'threadlift',
+    name: { en: 'Threadlift', id: 'Tanam Benang' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Minimally invasive lift using dissolvable threads to reposition skin.',
+      id: 'Lifting invasif minimal menggunakan benang yang dapat larut untuk reposisi kulit.'
+    },
+    description: {
+      en: 'Threadlift uses dissolvable threads to reposition sagging skin and define facial contours, offering a subtle, natural lift without surgery.',
+      id: 'Tanam benang menggunakan benang yang dapat larut untuk memposisikan ulang kulit yang kendur dan mempertegas kontur wajah, menawarkan pengangkatan alami yang halus tanpa operasi.'
+    },
+    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Lifts sagging cheeks and jawline', 'Improves skin firmness', 'Natural-looking definition', 'Collagen stimulation'],
+      id: ['Mengangkat pipi dan rahang kendur', 'Meningkatkan kekencangan kulit', 'Definisi yang tampak alami', 'Stimulasi kolagen']
+    },
+    procedure: {
+      en: ['Fine threads inserted beneath skin via cannula', 'Threads anchor and lift targeted areas'],
+      id: ['Benang halus dimasukkan di bawah kulit via kanula', 'Benang menahan dan mengangkat area target']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Minimal downtime. Avoid side sleeping and intense exercise for 1–2 weeks.',
+      id: 'Downtime minimal. Hindari tidur menyamping dan olahraga berat selama 1-2 minggu.'
+    },
+    results: { en: 'Immediate lifting effect; improves over 4–8 weeks', id: 'Efek lifting instan; membaik selama 4–8 minggu' }
+  },
+  {
+    id: 'prp-therapy',
+    name: { en: 'PRP Facial Therapy', id: 'Terapi PRP' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Regenerative treatment using your own plasma to boost collagen.',
+      id: 'Perawatan regeneratif menggunakan plasma Anda sendiri untuk meningkatkan kolagen.'
+    },
+    description: {
+      en: 'PRP facial uses your own platelet-rich plasma to boost collagen and promote natural rejuvenation, revitalizing the complexion from within.',
+      id: 'Terapi PRP menggunakan plasma kaya trombosit Anda sendiri untuk meningkatkan kolagen dan mendorong peremajaan alami, merevitalisasi wajah dari dalam.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves texture and glow', 'Reduces fine lines and scars', 'Tissue repair', 'Youthful appearance'],
+      id: ['Memperbaiki tekstur dan kilau', 'Mengurangi garis halus dan bekas luka', 'Perbaikan jaringan', 'Penampilan awet muda']
+    },
+    procedure: {
+      en: ['Blood processed to extract PRP', 'PRP applied or injected into face'],
+      id: ['Darah diproses untuk mengekstrak PRP', 'PRP diaplikasikan atau disuntikkan ke wajah']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Minimal. Avoid makeup and sun exposure for 24 hours.',
+      id: 'Minimal. Hindari riasan dan paparan matahari selama 24 jam.'
+    },
+    results: { en: 'Visible enhancement begins within 2–4 weeks', id: 'Peningkatan nyata mulai terlihat dlm 2–4 minggu' }
+  },
+  {
+    id: 'face-contouring',
+    name: { en: 'Face Contouring', id: 'Kontur Wajah' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-surgical refinement of facial features for a sculpted look.',
+      id: 'Penyempurnaan fitur wajah non-bedah untuk tampilan yang lebih terpahat.'
+    },
+    description: {
+      en: 'Face Contouring is a non-surgical treatment designed to refine facial features and create a more balanced, sculpted appearance using various methods.',
+      id: 'Kontur Wajah adalah perawatan non-bedah yang dirancang untuk menyempurnakan fitur wajah dan menciptakan penampilan yang lebih seimbang dan terpahat menggunakan berbagai metode.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Enhances jawline and chin', 'Creates symmetrical shape', 'Customizable results', 'Lifted look'],
+      id: ['Mempertegas rahang dan dagu', 'Menciptakan bentuk simetris', 'Hasil yang dapat disesuaikan', 'Tampilan terangkat']
+    },
+    procedure: {
+      en: ['Assessment of facial structure', 'Appropriate techniques applied to sculpt key areas'],
+      id: ['Penilaian struktur wajah', 'Teknik yang sesuai diterapkan untuk memahat area kunci']
+    },
+    duration: { en: '20–45 mins', id: '20–45 menit' },
+    recovery: {
+      en: 'Minimal to none. Avoid alcohol for 24–48 hours.',
+      id: 'Minimal hingga tidak ada. Hindari alkohol selama 24-48 jam.'
+    },
+    results: { en: 'Immediate or gradual, depending on method', id: 'Instan atau bertahap, tergantung metode' }
+  },
+  {
+    id: 'stem-cells',
+    name: { en: 'Stem Cell', id: 'Sel Punca' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Advanced regenerative therapy to repair and restore skin cell vitality.',
+      id: 'Terapi regeneratif canggih untuk memperbaiki dan memulihkan vitalitas sel kulit.'
+    },
+    description: {
+      en: 'Stem Cell Treatment is an advanced regenerative therapy that uses concentrated growth factors to repair and rejuvenate the skin at a cellular level.',
+      id: 'Perawatan Sel Punca adalah terapi regeneratif canggih yang menggunakan faktor pertumbuhan terkonsentrasi untuk memperbaiki dan meremajakan kulit pada tingkat sel.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Boosts cellular regeneration', 'Improves firmness and elasticity', 'Reduces scars', 'Radiance'],
+      id: ['Meningkatkan regenerasi seluler', 'Meningkatkan kekencangan dan elastisitas', 'Mengurangi bekas luka', 'Kilau']
+    },
+    procedure: {
+      en: ['Stem-cell serum applied or injected', 'Bioactive ingredients stimulate repair'],
+      id: ['Serum sel punca diaplikasikan atau disuntikkan', 'Bahan bioaktif merangsang perbaikan']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Minimal. Keep skin hydrated and avoid sun for 1–2 days.',
+      id: 'Minimal. Jaga hidrasi kulit dan hindari matahari selama 1–2 hari.'
+    },
+    results: { en: 'Subtle improvements begin within 1–3 weeks', id: 'Perbaikan halus dimulai dlm 1–3 minggu' }
+  },
+  {
+    id: 'cryolipolysis',
+    name: { en: 'Cryolipolysis (Fat Freeze)', id: 'Cryolipolysis (Pembekuan Lemak)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-surgical treatment that freezes fat cells for natural elimination.',
+      id: 'Perawatan non-bedah yang membekukan sel lemak untuk pembuangan alami.'
+    },
+    description: {
+      en: 'A non-surgical fat reduction treatment that freezes fat cells, allowing the body to naturally eliminate them without needles or surgery.',
+      id: 'Perawatan pengurangan lemak non-bedah yang membekukan sel lemak, memungkinkan tubuh untuk membuangnya secara alami tanpa jarum atau pembedahan.'
+    },
+    image: '/images/treatments/SLIMMING-Before-After.png',
+    benefits: {
+      en: ['Reduces stubborn fat pockets', 'No surgery or scars', 'Natural-looking slimming'],
+      id: ['Mengurangi kantong lemak membandel', 'Tanpa operasi atau bekas luka', 'Pelangsingan yang tampak alami']
+    },
+    procedure: {
+      en: ['Doctor marks target area', 'Protective pad applied', 'Fat-freeze applicator suctions area', 'Controlled cooling for 35–60 mins', 'Area massaged after removal'],
+      id: ['Dokter menandai area target', 'Aplikasi bantalan pelindung', 'Aplikator penghisap lemak dipasang', 'Pendinginan terkontrol selama 35-60 menit', 'Area dipijat setelah aplikator dilepas']
+    },
+    duration: { en: '45–60 mins/area', id: '45–60 menit/area' },
+    recovery: {
+      en: 'No downtime. Numbness or mild swelling ممکن. Stay hydrated.',
+      id: 'Tanpa downtime. Kemungkinan mati rasa atau bengkak ringan. Tetap terhidrasi.'
+    },
+    results: { en: 'Start in 3–4 weeks, best at 2–3 months', id: 'Mulai terlihat dlm 3–4 minggu, terbaik dlm 2-3 bulan' }
+  },
+  {
+    id: 'rf-body',
+    name: { en: 'RF Body Tightening', id: 'Pengencangan Tubuh RF' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses radiofrequency heat to tighten skin and stimulate collagen.',
+      id: 'Menggunakan panas radiofrekuensi untuk mengencangkan kulit dan merangsang kolagen.'
+    },
+    description: {
+      en: 'Uses radiofrequency heat to tighten skin and stimulate collagen, firming loose skin and improving cellulite without fat removal.',
+      id: 'Menggunakan panas radiofrekuensi untuk mengencangkan kulit dan merangsang kolagen, mengencangkan kulit yang kendur dan memperbaiki selulit tanpa sedot lemak.'
+    },
+    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Firmer skin', 'Improves cellulite', 'Smooth body contours'],
+      id: ['Kulit lebih kencang', 'Memperbaiki selulit', 'Kontur tubuh yang halus']
+    },
+    procedure: {
+      en: ['Gel applied to skin', 'RF handpiece massages area with heat', 'Controlled warming of deep skin layers'],
+      id: ['Gel diaplikasikan ke kulit', 'Handpiece RF memijat area dengan panas', 'Pemanasan terkontrol pada lapisan kulit dalam']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'No downtime. Mild warmth or redness. Stay hydrated.',
+      id: 'Tanpa downtime. Rasa hangat atau kemerahan ringan. Tetap terhidrasi.'
+    },
+    results: { en: '4–8 weeks, improves with sessions', id: '4–8 minggu, membaik seiring sesi' }
+  },
+  {
+    id: 'laser-lipo',
+    name: { en: 'Laser Lipo', id: 'Laser Lipo' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses laser energy to break down fat cells and tighten skin.',
+      id: 'Menggunakan energi laser untuk memecah sel lemak dan mengencangkan kulit.'
+    },
+    description: {
+      en: 'Uses laser energy to break down fat cells and tighten skin simultaneously, melting fat while firming the target area.',
+      id: 'Menggunakan energi laser untuk memecah sel lemak dan mengencangkan kulit secara bersamaan, melelehkan lemak sambil mengencangkan area target.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces localized fat', 'Tightens skin', 'Body shaping'],
+      id: ['Mengurangi lemak lokal', 'Mengencangkan kulit', 'Pembentukan tubuh']
+    },
+    procedure: {
+      en: ['Area cleaned and marked', 'Laser pads or probe applied', 'Fat cells disrupted by laser energy'],
+      id: ['Area dibersihkan dan ditandai', 'Bantalan laser atau probe dipasang', 'Sel lemak dihancurkan oleh energi laser']
+    },
+    duration: { en: '30–60 mins', id: '30–60 menit' },
+    recovery: {
+      en: 'No downtime. Mild soreness possible. Drink plenty of water.',
+      id: 'Tanpa downtime. Kemungkinan nyeri ringan. Minum banyak air.'
+    },
+    results: { en: 'Visible improvement in 1–3 months', id: 'Perbaikan terlihat dlm 1-3 bulan' }
+  },
+  {
+    id: 'slimming-injection',
+    name: { en: 'Slimming Injection', id: 'Suntik Pelangsing' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Fat-burning injections help dissolve fat and boost metabolism.',
+      id: 'Suntikan pembakar lemak membantu melarutkan lemak dan meningkatkan metabolisme.'
+    },
+    description: {
+      en: 'Fat-burning injections that help dissolve localized fat and boost metabolism for targeted fat reduction.',
+      id: 'Suntikan pembakar lemak yang membantu melarutkan lemak lokal dan meningkatkan metabolisme untuk pengurangan lemak yang ditargetkan.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces fat volume', 'Body contouring'],
+      id: ['Mengurangi volume lemak', 'Kontur tubuh']
+    },
+    procedure: {
+      en: ['Area disinfected', 'Multiple micro-injections into fat layer'],
+      id: ['Area didisinfeksi', 'Beberapa suntikan mikro ke lapisan lemak']
+    },
+    duration: { en: '15–30 mins', id: '15–30 menit' },
+    recovery: {
+      en: 'Downtime: 0–1 day. Swelling or tenderness possible. Avoid massage for 24 hours.',
+      id: 'Downtime: 0-1 hari. Kemungkinan bengkak atau nyeri. Hindari pijatan selama 24 jam.'
+    },
+    results: { en: 'Results in 2–4 weeks', id: 'Hasil terlihat dlm 2-4 minggu' }
+  },
+  {
+    id: 'lymphatic-massage',
+    name: { en: 'Lymphatic Massage', id: 'Pijat Limfatik' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Gentle massage to improve circulation, drainage, and reduce bloating.',
+      id: 'Pijatan lembut untuk meningkatkan sirkulasi, drainase, dan mengurangi kembung.'
+    },
+    description: {
+      en: 'A gentle massage that improves circulation and drainage, enhancing slimming results and reducing water retention.',
+      id: 'Pijatan lembut yang meningkatkan sirkulasi dan drainase, meningkatkan hasil pelangsingan dan mengurangi retensi air.'
+    },
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces water retention', 'Detox effect', 'Improves body contour'],
+      id: ['Mengurangi retensi air', 'Efek detoks', 'Memperbaiki kontur tubuh']
+    },
+    procedure: {
+      en: ['Light rhythmic massage', 'Lymph flow stimulation'],
+      id: ['Pijatan ritmis ringan', 'Stimulasi aliran limfa']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'No downtime. Deep relaxation. Stay hydrated.',
+      id: 'Tanpa downtime. Relaksasi mendalam. Tetap terhidrasi.'
+    },
+    results: { en: 'Immediate feeling of lightness', id: 'Perasaan ringan seketika' }
+  },
+  {
+    id: 'hifem',
+    name: { en: 'HIFEM (Muscle Stimulation)', id: 'HIFEM (Stimulasi Otot)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Electromagnetic energy to build muscle and burn fat simultaneously.',
+      id: 'Energi elektromagnetik untuk membentuk otot dan membakar lemak secara bersamaan.'
+    },
+    description: {
+      en: 'Uses high-intensity electromagnetic energy to build muscle and burn fat simultaneously, mimicking the effects of intense workouts.',
+      id: 'Menggunakan energi elektromagnetik intensitas tinggi untuk membentuk otot dan membakar lemak secara bersamaan, meniru efek olahraga intens.'
+    },
+    image: '/images/treatments/SLIMMING-Before-After.png',
+    benefits: {
+      en: ['Builds muscle', 'Burns fat', 'Stronger core'],
+      id: ['Membentuk otot', 'Membakar lemak', 'Core yang lebih kuat']
+    },
+    procedure: {
+      en: ['Applicators placed on target area', 'High-intensity muscle contractions for 30 mins'],
+      id: ['Aplikator ditempatkan di area target', 'Kontraksi otot intensitas tinggi selama 30 menit']
+    },
+    duration: { en: '30 mins', id: '30 menit' },
+    recovery: {
+      en: 'No downtime. Muscle soreness similar to a workout. Stretching recommended.',
+      id: 'Tanpa downtime. Nyeri otot mirip sehabis olahraga. Direkomendasikan peregangan.'
+    },
+    results: { en: 'Full results in 4–6 weeks', id: 'Hasil penuh dlm 4-6 minggu' }
+  },
+  {
+    id: 'hifu-v-shape',
+    name: { en: 'HIFU V-Shape', id: 'HIFU V-Shape' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Ultrasound lifting that tightens skin and sharpens facial contours.',
+      id: 'Lifting ultrasound yang mengencangkan kulit dan mempertajam kontur wajah.'
+    },
+    description: {
+      en: 'Ultrasound lifting treatment designed to tighten sagging skin and sharpen facial contours for a desirable V-shape.',
+      id: 'Perawatan lifting ultrasound yang dirancang untuk mengencangkan kulit kendur dan mempertajam kontur wajah untuk bentuk V yang diinginkan.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Lifts jawline', 'Reduces sagging', 'Non-surgical results'],
+      id: ['Mengangkat garis rahang', 'Mengurangi kekenduran', 'Hasil non-bedah']
+    },
+    procedure: {
+      en: ['Face mapping', 'Ultrasound energy delivered to deep layers'],
+      id: ['Pemetaan wajah', 'Energi ultrasound dihantarkan ke lapisan kulit dalam']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'No downtime. Temporary tight sensation. Normal routine.',
+      id: 'Tanpa downtime. Sensasi kencang sementara. Rutinitas normal.'
+    },
+    results: { en: 'Best results in 2–3 months', id: 'Hasil terbaik dlm 2-3 bulan' }
+  },
+  {
+    id: 'jawline-botox',
+    name: { en: 'Jawline Botox', id: 'Botox Rahang' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Relaxes masseter muscles to slim the lower face and reduce grinding.',
+      id: 'Merelaksasi otot masseter untuk melangsingkan wajah wajah bawah dan mengurangi grinding.'
+    },
+    description: {
+      en: 'Relaxes the masseter (jaw) muscles to slim the lower face profile and can also help reduce teeth grinding.',
+      id: 'Merelaksasi otot masseter (rahang) untuk melangsingkan profil wajah bawah dan juga dapat membantu mengurangi kebiasaan menggeritkan gigi.'
+    },
+    image: '/images/treatments/botox_treatment_1764461614966.png',
+    benefits: {
+      en: ['Slimmer jawline', 'Reduces teeth grinding'],
+      id: ['Garis rahang lebih ramping', 'Mengurangi kebiasaan menggeritkan gigi']
+    },
+    procedure: {
+      en: ['Area cleaned', 'Precise injections into jaw muscles'],
+      id: ['Area dibersihkan', 'Suntikan presisi ke otot rahang']
+    },
+    duration: { en: '10–15 mins', id: '10–15 menit' },
+    recovery: {
+      en: 'No downtime. Mild soreness possible. Avoid chewing hard foods.',
+      id: 'Tanpa downtime. Kemungkinan nyeri ringan. Hindari mengunyah makanan keras.'
+    },
+    results: { en: 'Results visible in 2–4 weeks', id: 'Hasil terlihat dlm 2-4 minggu' }
+  },
+  {
+    id: 'chin-cheek-filler',
+    name: { en: 'Chin Filler', id: 'Filler Dagu' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Hyaluronic acid filler enhances chin projection and facial balance.',
+      id: 'Filler asam hialuronat meningkatkan proyeksi dagu dan keseimbangan wajah.'
+    },
+    description: {
+      en: 'Hyaluronic acid filler used to enhance chin projection, improve facial harmony, and balance the profile.',
+      id: 'Filler asam hialuronat yang digunakan untuk meningkatkan proyeksi dagu, memperbaiki harmoni wajah, dan menyeimbangkan profil.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Sharper profile', 'Better facial harmony'],
+      id: ['Profil lebih tajam', 'Harmoni wajah yang lebih baik']
+    },
+    procedure: {
+      en: ['Numbing cream application', 'Filler injected and shaped by doctor'],
+      id: ['Aplikasi krim anestesi', 'Filler disuntikkan dan dibentuk oleh dokter']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. Mild swelling possible. Avoid pressure on area.',
+      id: 'Downtime: 1-3 hari. Kemungkinan bengkak ringan. Hindari tekanan pada area.'
+    },
+    results: { en: 'Immediate results, lasts 12–18 months', id: 'Hasil instan, bertahan 12-18 bulan' }
+  },
+  {
+    id: 'thread-lift-contour',
+    name: { en: 'Thread-Lift', id: 'Tanam Benang' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Dissolvable threads lift sagging skin instantly and stimulate collagen.',
+      id: 'Benang yang dapat larut mengangkat kulit kendur secara instan dan merangsang kolagen.'
+    },
+    description: {
+      en: 'Dissolvable threads inserted under the skin to provide an instant lift to sagging tissues while stimulating long-term collagen production.',
+      id: 'Benang yang dapat larut dimasukkan di bawah kulit untuk memberikan pengangkatan instan pada jaringan yang kendur sambil merangsang produksi kolagen jangka panjang.'
+    },
+    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Instant lift', 'Improved firmness'],
+      id: ['Pengangkatan instan', 'Peningkatan kekencangan']
+    },
+    procedure: {
+      en: ['Local anesthesia administered', 'Threads inserted under skin', 'Tissue lift is adjusted'],
+      id: ['Pemberian anestesi lokal', 'Benang dimasukkan di bawah kulit', 'Pengangkatan jaringan disesuaikan']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'Downtime: 3–7 days. Swelling or bruising. Avoid facial massage.',
+      id: 'Downtime: 3-7 hari. Bengkak atau memar. Hindari pijat wajah.'
+    },
+    results: { en: 'Immediate results, lasts 6–12 months', id: 'Hasil instan, bertahan 6-12 bulan' }
+  },
+  {
+    id: 'fat-dissolving',
+    name: { en: 'Fat Dissolving Injection', id: 'Suntik Penghancur Lemak' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injectable solution that breaks down fat cells permanently.',
+      id: 'Cairan suntik yang memecah sel lemak secara permanen.'
+    },
+    description: {
+      en: 'An injectable solution that permanently breaks down fat cells, which are then naturally processed and eliminated by the body.',
+      id: 'Cairan suntik yang memecah sel lemak secara permanen, yang kemudian diproses dan dibuang secara alami oleh tubuh.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Permanent fat reduction', 'Non-surgical'],
+      id: ['Pengurangan lemak permanen', 'Non-bedah']
+    },
+    procedure: {
+      en: ['Target area marked', 'Multiple micro-injections into fat layer'],
+      id: ['Area target ditandai', 'Beberapa suntikan mikro ke lapisan lemak']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Downtime: 2–5 days. Swelling and soreness expected. Compression may be advised.',
+      id: 'Downtime: 2-5 hari. Bengkak dan nyeri diperkirakan. Kompresi mungkin disarankan.'
+    },
+    results: { en: 'Visible in 4–8 weeks', id: 'Terlihat dlm 4-8 minggu' }
+  },
+  {
+    id: 'fat-removal-surgery',
+    name: { en: 'Fat Removal Surgery', id: 'Operasi Pengangkatan Lemak' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Surgical removal of fat for dramatic body contouring.',
+      id: 'Pengangkatan lemak melalui pembedahan untuk kontur tubuh yang dramatis.'
+    },
+    description: {
+      en: 'Surgical removal of fat for dramatic and permanent contouring. Most effective for addressing larger fat deposits.',
+      id: 'Pengangkatan lemak melalui pembedahan untuk pembentukan kontur yang dramatis dan permanen. Paling efektif untuk menangani timbunan lemak yang lebih besar.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Immediate results', 'Long-lasting contour'],
+      id: ['Hasil instan', 'Kontur tahan lama']
+    },
+    procedure: {
+      en: ['Anesthesia choice', 'Fat removed via medical cannula', 'Sutures and compression applied'],
+      id: ['Pilihan anestesi', 'Lemak diangkat melalui kanula medis', 'Penjahitan dan kompresi diterapkan']
+    },
+    duration: { en: '1–3 hours', id: '1–3 jam' },
+    recovery: {
+      en: 'Downtime: 1–2 weeks. Swelling and bruising. Compression garment required.',
+      id: 'Downtime: 1-2 minggu. Bengkak dan memar. Diperlukan pakaian kompresi.'
+    },
+    results: { en: 'Immediate results, final at 3 months', id: 'Hasil instan, final dlm 3 bulan' }
+  },
+  {
+    id: 'hair-laser',
+    name: { en: 'Hair Growth Laser / LLLT', id: 'Laser Penumbuh Rambut / LLLT' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses low-level laser light to stimulate follicles and improve scalp circulation.',
+      id: 'Menggunakan cahaya laser tingkat rendah untuk merangsang folikel dan sirkulasi kulit kepala.'
+    },
+    description: {
+      en: 'Uses low-level laser light to stimulate dormant hair follicles and improve scalp circulation. It is a painless, drug-free solution suitable for long-term maintenance.',
+      id: 'Menggunakan cahaya laser tingkat rendah untuk merangsang folikel rambut yang tidak aktif dan meningkatkan sirkulasi kulit kepala. Solusi tanpa rasa sakit dan bebas obat yang cocok untuk perawatan jangka panjang.'
+    },
+    image: '/images/treatments/HAIR-GROWTH-Before-After.png',
+    benefits: {
+      en: ['Reduces hair shedding', 'Strengthens existing hair', 'Improves scalp health'],
+      id: ['Mengurangi kerontokan rambut', 'Memperkuat rambut yang ada', 'Meningkatkan kesehatan kulit kepala']
+    },
+    procedure: {
+      en: ['Scalp is cleaned', 'Laser cap or device placed on scalp', 'Low-level light penetrates follicles'],
+      id: ['Kulit kepala dibersihkan', 'Topi atau perangkat laser ditempatkan pada kulit kepala', 'Cahaya tingkat rendah menembus folikel']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'No downtime. Mild scalp warmth may occur temporarily. Consistency is key.',
+      id: 'Tanpa downtime. Rasa hangat ringan pada kulit kepala mungkin terjadi sementara. Konsistensi adalah kunci.'
+    },
+    results: { en: 'Visible improvement in 3–6 months', id: 'Perbaikan terlihat dlm 3-6 bulan' }
+  },
+  {
+    id: 'hair-meso',
+    name: { en: 'Hair Meso (Growth Factor Injections)', id: 'Meso Rambut (Suntik Growth Factor)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Delivers vitamins and growth factors directly into the hair roots.',
+      id: 'Memberikan vitamin dan growth factor langsung ke akar rambut.'
+    },
+    description: {
+      en: 'Delivers vitamins, peptides, and growth factors directly into the scalp, targeting hair roots precisely where they need nourishment most.',
+      id: 'Memberikan vitamin, peptida, dan growth factor langsung ke kulit kepala, menargetkan akar rambut tepat di tempat yang paling membutuhkan nutrisi.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces hair fall', 'Improves hair thickness', 'Revitalizes weak follicles'],
+      id: ['Mengurangi rambut rontok', 'Meningkatkan ketebalan rambut', 'Merevitalisasi folikel yang lemah']
+    },
+    procedure: {
+      en: ['Scalp disinfected', 'Optional numbing cream applied', 'Micro-injections into thinning areas', 'Calming serum applied'],
+      id: ['Disinfeksi kulit kepala', 'Aplikasi krim anestesi opsional', 'Suntikan mikro ke area yang menipis', 'Aplikasi serum penenang']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 1 day. Mild swelling or tenderness possible. Avoid washing hair for 24 hrs.',
+      id: 'Downtime: 1 hari. Kemungkinan bengkak atau nyeri ringan. Hindari keramas selama 24 jam.'
+    },
+    results: { en: 'Best results in 2–3 months', id: 'Hasil terbaik dlm 2-3 bulan' }
+  },
+  {
+    id: 'prp-hair',
+    name: { en: 'PRP Hair Treatment', id: 'Perawatan Rambut PRP' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses your own platelet-rich plasma to stimulate natural hair regrowth.',
+      id: 'Menggunakan plasma kaya trombosit Anda sendiri untuk merangsang penumbuhan rambut alami.'
+    },
+    description: {
+      en: 'Uses your own platelet-rich plasma (PRP) to stimulate natural hair regrowth and thickening, harnessing your body’s own healing power.',
+      id: 'Menggunakan plasma kaya trombosit (PRP) Anda sendiri untuk merangsang penumbuhan dan penebalan rambut alami, memanfaatkan kekuatan penyembuhan tubuh Anda sendiri.'
+    },
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Stimulates new hair growth', 'Thickens hair shafts', 'Improves scalp healing'],
+      id: ['Merangsang pertumbuhan rambut baru', 'Menebalkan batang rambut', 'Meningkatkan penyembuhan kulit kepala']
+    },
+    procedure: {
+      en: ['Blood drawn from arm', 'PRP separated via centrifuge', 'Scalp numbed', 'PRP injected into scalp'],
+      id: ['Darah diambil dari lengan', 'Pemisahan PRP via pemutar (centrifuge)', 'Anestesi kulit kepala', 'PRP disuntikkan ke kulit kepala']
+    },
+    duration: { en: '60 mins', id: '60 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Tender scalp and mild redness. Avoid washing hair for 24 hrs.',
+      id: 'Downtime: 1-2 hari. Kulit kepala sensitif dan kemerahan ringan. Hindari keramas selama 24 jam.'
+    },
+    results: { en: 'Visible results in 3–6 months', id: 'Hasil terlihat dlm 3-6 bulan' }
+  },
+  {
+    id: 'minoxidil',
+    name: { en: 'Topical Minoxidil Program', id: 'Program Minoxidil Topikal' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Scientifically proven topical treatment to prolong hair growth phase.',
+      id: 'Perawatan topikal yang terbukti secara ilmiah untuk memperpanjang fase pertumbuhan rambut.'
+    },
+    description: {
+      en: 'An FDA-approved topical treatment that prolongs the hair growth phase. It is a scientifically proven method for managing hair loss and promoting regrowth.',
+      id: 'Perawatan topikal yang disetujui FDA untuk memperpanjang fase pertumbuhan rambut. Ini adalah metode yang terbukti secara ilmiah untuk mengatasi kerontokan dan mendukung penumbuhan kembali.'
+    },
+    image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Slows hair loss', 'Promotes regrowth', 'Strengthens follicles'],
+      id: ['Memperlambat kerontokan', 'Mendorong penumbuhan kembali', 'Memperkuat folikel']
+    },
+    procedure: {
+      en: ['Scalp assessment by doctor', 'Minoxidil applied to thinning areas daily', 'Continued home use'],
+      id: ['Penilaian kulit kepala oleh dokter', 'Minoxidil dioleskan ke area menipis setiap hari', 'Penggunaan rutin di rumah']
+    },
+    duration: { en: 'Daily home application', id: 'Penggunaan harian di rumah' },
+    recovery: {
+      en: 'No downtime. Temporary shedding may occur at start (normal). Be consistent.',
+      id: 'Tanpa downtime. Kerontokan sementara mungkin terjadi di awal (normal). Konsisten.'
+    },
+    results: { en: 'Visible results in 3–6 months', id: 'Hasil terlihat dlm 3-6 bulan' }
+  },
+  {
+    id: 'dna-salmon-hair',
+    name: { en: 'DNA Salmon Hair (PN Therapy)', id: 'DNA Salmon Rambut (Terapi PN)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses salmon DNA to repair scalp tissue and rejuvenate follicles.',
+      id: 'Menggunakan DNA salmon untuk memperbaiki jaringan kulit kepala dan meremajakan folikel.'
+    },
+    description: {
+      en: 'Uses polynucleotides (salmon DNA) to repair scalp tissue and rejuvenate follicles at a cellular level, promoting a healthy environment for hair growth.',
+      id: 'Menggunakan polinukleotida (DNA salmon) untuk memperbaiki jaringan kulit kepala dan meremajakan folikel di tingkat sel, mendukung lingkungan sehat untuk pertumbuhan rambut.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves scalp health', 'Enhances hair density', 'Strengthens follicles'],
+      id: ['Meningkatkan kesehatan kulit kepala', 'Meningkatkan kepadatan rambut', 'Memperkuat folikel']
+    },
+    procedure: {
+      en: ['Scalp cleansed and numbed', 'PN injected into scalp', 'Cooling and soothing serum applied'],
+      id: ['Kulit kepala dibersihkan dan dianestesi', 'PN disuntikkan ke kulit kepala', 'Aplikasi serum pendingin dan penenang']
+    },
+    duration: { en: '40–60 mins', id: '40–60 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Small injection bumps may appear. Avoid washing for 24 hrs.',
+      id: 'Downtime: 1-2 hari. Benjolan kecil bekas suntikan mungkin muncul. Hindari keramas selama 24 jam.'
+    },
+    results: { en: 'Results in 2–4 months', id: 'Hasil terlihat dlm 2-4 bulan' }
+  },
+  {
+    id: 'scalp-detox',
+    name: { en: 'Scalp Detox & Deep Cleansing', id: 'Detoks & Pembersihan Kulit Kepala' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Removes oil, buildup, and dead skin to promote healthier hair growth.',
+      id: 'Mengangkat minyak, kotoran, dan kulit mati untuk mendukung pertumbuhan rambut yang lebih sehat.'
+    },
+    description: {
+      en: 'Removes oil, product buildup, and dead skin from the scalp to improve circulation and create a clean environment for healthier hair growth.',
+      id: 'Mengangkat minyak, sisa produk, dan kulit mati dari kulit kepala untuk meningkatkan sirkulasi dan menciptakan lingkungan bersih bagi pertumbuhan rambut yang lebih sehat.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves scalp circulation', 'Reduces dandruff & oil', 'Boosts other treatment results'],
+      id: ['Meningkatkan sirkulasi kulit kepala', 'Mengurangi ketombe & minyak', 'Meningkatkan hasil perawatan lainnya']
+    },
+    procedure: {
+      en: ['Scalp analysis', 'Exfoliating scrub applied', 'Deep cleansing & massage', 'Nourishing mask applied'],
+      id: ['Analisis kulit kepala', 'Aplikasi scrub eksfoliasi', 'Pembersihan mendalam & pijat', 'Aplikasi masker penutrisi']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'No downtime. Refreshing cooling sensation. Follow regular shampoo routine.',
+      id: 'Tanpa downtime. Sensasi dingin yang menyegarkan. Ikuti rutinitas keramas biasa.'
+    },
+    results: { en: 'Immediate freshness and scalp clarity', id: 'Kesegaran instan dan kebersihan kulit kepala' }
+  },
+  {
+    id: 'hair-transplant',
+    name: { en: 'Hair Transplant', id: 'Transplantasi Rambut' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Permanent hair restoration by transferring follicles to thinning areas.',
+      id: 'Restorasi rambut permanen dengan memindahkan folikel ke area yang menipis.'
+    },
+    description: {
+      en: 'A surgical procedure that transfers hair follicles from a donor area to thinning or bald areas for permanent and natural-looking restoration.',
+      id: 'Prosedur bedah yang memindahkan folikel rambut dari area donor ke area yang menipis atau botak untuk restorasi yang permanen dan tampak alami.'
+    },
+    image: '/images/treatments/HAIR-GROWTH-Before-After.png',
+    benefits: {
+      en: ['Permanent hair restoration', 'Natural-looking hairline'],
+      id: ['Restorasi rambut permanen', 'Garis rambut yang tampak alami']
+    },
+    procedure: {
+      en: ['Local anesthesia administered', 'Hair follicles harvested (FUE/FUT)', 'Grafts implanted into target areas'],
+      id: ['Pemberian anestesi lokal', 'Pengambilan folikel rambut (FUE/FUT)', 'Graft ditanam ke area target']
+    },
+    duration: { en: '4–8 hours', id: '4–8 jam' },
+    recovery: {
+      en: 'Downtime: 7–14 days. Swelling and scabbing expected. No exercise for 2 weeks.',
+      id: 'Downtime: 7-14 hari. Bengkak dan keropeng diperkirakan. Tanpa olahraga selama 2 minggu.'
+    },
+    results: { en: 'New growth visible in 6–12 months', id: 'Pertumbuhan baru terlihat dlm 6-12 bulan' }
+  },
+  {
+    id: 'skin-booster-rejuv',
+    name: { en: 'Skin Booster (HA / PDRN / Rejuran / NCTF)', id: 'Skin Booster (HA / PDRN / Rejuran / NCTF)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injectable skin nutrients that deeply hydrate and repair skin from within.',
+      id: 'Nutrisi kulit suntik yang menghidrasi mendalam dan memperbaiki kulit dari dalam.'
+    },
+    description: {
+      en: 'Injectable skin nutrients that deeply hydrate and repair skin from within. It improves skin quality and texture rather than changing facial shape.',
+      id: 'Nutrisi kulit suntik yang menghidrasi secara mendalam dan memperbaiki kulit dari dalam. Meningkatkan kualitas dan tekstur kulit tanpa mengubah bentuk wajah.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Deep hydration', 'Glow & elasticity', 'Skin repair'],
+      id: ['Hidrasi mendalam', 'Kilau & elastisitas', 'Perbaikan kulit']
+    },
+    procedure: {
+      en: ['Face cleansing', 'Numbing cream application (20–30 min)', 'Micro-injections into superficial dermis', 'Cooling & calming serum applied'],
+      id: ['Pembersihan wajah', 'Aplikasi krim anestesi (20-30 menit)', 'Suntikan mikro ke dalam dermis superfisial', 'Aplikasi serum pendingin & penenang']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. Small bumps and mild redness possible. No makeup for 24 hrs.',
+      id: 'Downtime: 1-3 hari. Kemungkinan benjolan kecil dan kemerahan ringan. Tanpa riasan selama 24 jam.'
+    },
+    results: { en: 'Start in 7–14 days, peak at 3–4 weeks', id: 'Mulai dlm 7-14 hari, puncak dlm 3-4 minggu' }
+  },
+  {
+    id: 'hydrafacial',
+    name: { en: 'Hydrafacial / Aqua Peeling', id: 'Hydrafacial / Aqua Peeling' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Multi-step deep cleansing, exfoliation, and hydration for instant glow.',
+      id: 'Pembersihan mendalam, eksfoliasi, dan hidrasi multi-tahap untuk kilau instan.'
+    },
+    description: {
+      en: 'Multi-step deep cleansing, exfoliation, extraction, and hydration treatment. It delivers an instant glow with zero downtime.',
+      id: 'Perawatan pembersihan mendalam, eksfoliasi, ekstraksi, dan hidrasi multi-tahap. Memberikan kilau instan tanpa downtime.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Clean pores', 'Hydrated skin', 'Instant brightness'],
+      id: ['Pori-pori bersih', 'Kulit terhidrasi', 'Kecerahan instan']
+    },
+    procedure: {
+      en: ['Cleansing & exfoliation', 'Gentle suction extraction', 'Hydration serum infusion', 'LED therapy or soothing mask'],
+      id: ['Pembersihan & eksfoliasi', 'Ekstraksi hisap lembut', 'Infus serum hidrasi', 'Terapi LED atau masker penenang']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'No downtime. Slight pinkness (1–2 hrs). Resume skincare immediately.',
+      id: 'Tanpa downtime. Kemerahan tipis (1-2 jam). Segera kembali ke rutinitas skincare.'
+    },
+    results: { en: 'Immediate glow, lasts 2–4 weeks', id: 'Kilau instan, bertahan 2-4 minggu' }
+  },
+  {
+    id: 'microneedling-rejuv',
+    name: { en: 'Microneedling Therapy', id: 'Terapi Microneedling' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Creates controlled micro-injuries to stimulate collagen and improve texture.',
+      id: 'Menciptakan luka mikro terkontrol untuk merangsang kolagen dan memperbaiki tekstur.'
+    },
+    description: {
+      en: 'Creates controlled micro-injuries to stimulate the skin’s natural healing power, leading to increased collagen and improved skin texture.',
+      id: 'Menciptakan luka mikro terkontrol untuk merangsang kekuatan penyembuhan alami kulit, menghasilkan peningkatan kolagen dan tekstur kulit yang lebih baik.'
+    },
+    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    benefits: {
+      en: ['Smooth texture', 'Reduce pores & scars', 'Boost collagen'],
+      id: ['Tekstur halus', 'Mengurangi pori & bekas luka', 'Meningkatkan kolagen']
+    },
+    procedure: {
+      en: ['Cleansing', 'Numbing cream application (30 min)', 'Microneedling device passes', 'Growth serum application'],
+      id: ['Pembersihan', 'Aplikasi krim anestesi (30 menit)', 'Penggunaan alat microneedling', 'Aplikasi serum pertumbuhan']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'Downtime: 2–5 days. Redness, tightness, and light peeling possible. No makeup for 48 hrs.',
+      id: 'Downtime: 2-5 hari. Kemungkinan kemerahan, rasa kencang, dan kupas ringan. Tanpa riasan selama 48 jam.'
+    },
+    results: { en: 'Visible in 3–6 weeks, progressive improvement', id: 'Terlihat dlm 3-6 minggu, perbaikan progresif' }
+  },
+  {
+    id: 'laser-rejuv',
+    name: { en: 'Laser Rejuvenation', id: 'Laser Peremajaan' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Non-ablative laser that refreshes skin tone, pores, and fine lines.',
+      id: 'Laser non-ablatif yang menyegarkan warna kulit, pori-pori, dan garis halus.'
+    },
+    description: {
+      en: 'Non-ablative laser therapy that refreshes skin tone, minimizes pores, and reduces fine lines without peeling or significant downtime.',
+      id: 'Terapi laser non-ablatif yang menyegarkan warna kulit, mengecilkan pori-pori, dan mengurangi garis halus tanpa pengelupasan atau downtime yang berarti.'
+    },
+    image: '/images/treatments/REJUVENATE-Before-After.png',
+    benefits: {
+      en: ['Brighter skin', 'Refined pores', 'Youthful glow'],
+      id: ['Kulit lebih cerah', 'Pori-pori lebih halus', 'Kilau awet muda']
+    },
+    procedure: {
+      en: ['Cleansing', 'Protective eyewear application', 'Laser passes over face', 'Cooling gel applied'],
+      id: ['Pembersihan', 'Pemasangan pelindung mata', 'Laser diarahkan ke wajah', 'Aplikasi gel pendingin']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Minimal downtime (none to 1 day). Mild redness. Avoid sun for 3–5 days.',
+      id: 'Downtime minimal (tanpa hingga 1 hari). Kemerahan ringan. Hindari matahari selama 3-5 hari.'
+    },
+    results: { en: 'Visible improvement dlm 2–4 weeks', id: 'Perbaikan nyata dlm 2-4 minggu' }
+  },
+  {
+    id: 'oxygen-facial',
+    name: { en: 'Oxygen Facial', id: 'Oxygen Facial' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Delivers oxygen and active serums deep into the skin to refresh dull skin.',
+      id: 'Memberikan oksigen dan serum aktif ke dalam kulit untuk menyegarkan kulit kusam.'
+    },
+    description: {
+      en: 'Delivers high-pressure oxygen and active serums deep into the skin. It instantly refreshes tired, dull, or dehydrated skin.',
+      id: 'Memberikan oksigen bertekanan tinggi dan serum aktif ke dalam kulit. Menyegarkan kulit yang lelah, kusam, atau dehidrasi secara instan.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Instant glow', 'Deep hydration', 'Calms sensitive skin'],
+      id: ['Kilau instan', 'Hidrasi mendalam', 'Menenangkan kulit sensitif']
+    },
+    procedure: {
+      en: ['Cleansing', 'Gentle exfoliation', 'Oxygen infusion with serum', 'Moisturizer & SPF application'],
+      id: ['Pembersihan', 'Eksfoliasi lembut', 'Infus oksigen dengan serum', 'Penerapan pelembap & SPF']
+    },
+    duration: { en: '45 mins', id: '45 menit' },
+    recovery: {
+      en: 'No downtime. Resume routine skincare immediately.',
+      id: 'Tanpa downtime. Segera lanjutkan perawatan kulit rutin.'
+    },
+    results: { en: 'Immediate glow, lasts 1–2 weeks', id: 'Kilau seketika, bertahan 1-2 minggu' }
+  },
+  {
+    id: 'dermaplaning',
+    name: { en: 'Dermaplaning', id: 'Dermaplaning' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Physical exfoliation that removes dead skin and peach fuzz for smooth skin.',
+      id: 'Eksfoliasi fisik yang mengangkat sel kulit mati dan bulu halus untuk kulit halus.'
+    },
+    description: {
+      en: 'A physical exfoliation method that removes dead skin cells and "peach fuzz" hair, resulting in baby-smooth skin and better makeup application.',
+      id: 'Metode eksfoliasi fisik yang mengangkat sel kulit mati dan bulu halus (peach fuzz), menghasilkan kulit selembut bayi dan aplikasi riasan yang lebih baik.'
+    },
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Baby-smooth skin', 'Better makeup application', 'Brighter tone'],
+      id: ['Kulit halus seperti bayi', 'Aplikasi riasan lebih baik', 'Warna kulit lebih cerah']
+    },
+    procedure: {
+      en: ['Cleansing', 'Sterile blade exfoliation', 'Hydrating serum and sunscreen application'],
+      id: ['Pembersihan', 'Eksfoliasi dengan bilah steril', 'Penerapan serum hidrasi dan tabir surya']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'No downtime. Mild pinkness possible. Use sunscreen and gentle skincare.',
+      id: 'Tanpa downtime. Kemungkinan kemerahan tipis. Gunakan tabir surya dan perawatan lembut.'
+    },
+    results: { en: 'Immediate results, lasts 3–4 weeks', id: 'Hasil instan, bertahan 3-4 minggu' }
+  },
+  {
+    id: 'meso-glow',
+    name: { en: 'Meso Glow (Vitamins + Peptides)', id: 'Meso Glow (Vitamin + Peptida)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Vitamin and peptide injections to revive dull skin and improve texture.',
+      id: 'Suntikan vitamin dan peptida untuk meremajakan kulit kusam dan tekstur.'
+    },
+    description: {
+      en: 'Micro-injections of essential vitamins and peptides to revive dull skin, delivering nutrients directly to where they are needed most for a radiant glow.',
+      id: 'Suntikan mikro vitamin esensial dan peptida untuk menghidupkan kembali kulit kusam, memberikan nutrisi langsung ke tempat yang paling dibutuhkan untuk kilau alami.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Radiant skin', 'Even tone', 'Improved texture'],
+      id: ['Kulit bercahaya', 'Warna kulit merata', 'Tekstur yang lebih baik']
+    },
+    procedure: {
+      en: ['Cleansing', 'Numbing cream application', 'Micro-injections across treatment area', 'Cooling mask applied'],
+      id: ['Pembersihan', 'Aplikasi krim anestesi', 'Suntikan mikro di area perawatan', 'Aplikasi masker pendingin']
+    },
+    duration: { en: '30–40 mins', id: '30–40 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Tiny bumps or redness may occur. Avoid makeup for 24 hrs.',
+      id: 'Downtime: 1-2 hari. Benjolan kecil atau kemerahan mungkin terjadi. Hindari riasan selama 24 jam.'
+    },
+    results: { en: 'Best results in 1–2 weeks', id: 'Hasil terbaik dlm 1-2 minggu' }
+  },
+  {
+    id: 'prp-rejuv',
+    name: { en: 'PRP Rejuvenation Therapy', id: 'Terapi Peremajaan PRP' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses your own blood’s growth factors to regenerate skin naturally.',
+      id: 'Menggunakan faktor pertumbuhan darah sendiri untuk meregenerasi kulit secara alami.'
+    },
+    description: {
+      en: 'Harnesses your own platelet-rich plasma (PRP) growth factors to regenerate skin tissue, boost collagen, and provide a 100% natural glow.',
+      id: 'Memanfaatkan faktor pertumbuhan plasma kaya trombosit (PRP) Anda sendiri untuk meregenerasi jaringan kulit, meningkatkan kolagen, dan memberikan kilau 100% alami.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Collagen boost', 'Skin tissue repair', 'Natural glow'],
+      id: ['Peningkatan kolagen', 'Perbaikan jaringan kulit', 'Kilau alami']
+    },
+    procedure: {
+      en: ['Blood draw', 'PRP separation via centrifuge', 'Injection or microneedling application', 'Cooling & soothing'],
+      id: ['Pengambilan darah', 'Pemisahan PRP via pemutar darah', 'Aplikasi suntikan atau microneedling', 'Pendinginan & penenangan']
+    },
+    duration: { en: '60 mins', id: '60 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. Swelling and redness possible. Avoid washing for 24 hrs.',
+      id: 'Downtime: 1-3 hari. Kemungkinan bengkak dan kemerahan. Hindari mencuci muka selama 24 jam.'
+    },
+    results: { en: 'Best in 3–6 weeks, continues improving', id: 'Terbaik dlm 3-6 minggu, terus membaik' }
+  },
+  {
+    id: 'dna-salmon',
+    name: { en: 'DNA Salmon (PDRN Therapy)', id: 'DNA Salmon (Terapi PDRN)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Regenerative treatment using salmon DNA to repair and heal damaged skin.',
+      id: 'Perawatan regeneratif menggunakan DNA salmon untuk memperbaiki kulit yang rusak.'
+    },
+    description: {
+      en: 'Regenerative skin treatment using polynucleotides (salmon DNA) to repair damaged tissue and rejuvenate follicles. Excellent for anti-aging and overall healing.',
+      id: 'Perawatan kulit regeneratif menggunakan polinukleotida (DNA salmon) untuk memperbaiki jaringan yang rusak dan meremajakan folikel. Sangat baik untuk anti-penuaan dan penyembuhan menyeluruh.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Skin regeneration', 'Improved elasticity', 'Anti-aging healing'],
+      id: ['Regenerasi kulit', 'Meningkatkan elastisitas', 'Penyembuhan anti-penuaan']
+    },
+    procedure: {
+      en: ['Cleansing', 'Numbing cream application', 'PDRN micro-injections', 'Cooling mask application'],
+      id: ['Pembersihan', 'Aplikasi krim anestesi', 'Suntikan mikro PDRN', 'Aplikasi masker pendingin']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. Mild swelling or tiny bumps possible. Avoid heat and makeup for 24 hrs.',
+      id: 'Downtime: 1-3 hari. Kemungkinan bengkak ringan atau benjolan kecil. Hindari panas dan riasan selama 24 jam.'
+    },
+    results: { en: 'Visible results in 2–4 weeks', id: 'Hasil terlihat dlm 2-4 minggu' }
+  },
+  {
+    id: 'subcision',
+    name: { en: 'Subcision', id: 'Subcision' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Minor surgical technique that releases tight scar bands pulling the skin downward.',
+      id: 'Teknik bedah minor yang melepaskan pita serat kencang yang menarik kulit ke bawah.'
+    },
+    description: {
+      en: 'Subcision works beneath the skin’s surface to release stubborn acne scars that are pulled down by tight fibrous bands. Once released, the skin can naturally lift and smooth out over time.',
+      id: 'Subcision bekerja di bawah permukaan kulit untuk melepaskan bekas jerawat membandel yang ditarik ke bawah oleh pita serat kencang. Setelah dilepaskan, kulit dapat terangkat dan halus kembali secara alami seiring waktu.'
+    },
+    image: '/images/treatments/SCAR-Before-After.png',
+    benefits: {
+      en: ['Improves deep, rolling acne scars', 'Smooths uneven skin texture', 'Stimulates natural collagen production'],
+      id: ['Memperbaiki bekas jerawat dalam (rolling scars)', 'Menghaluskan tekstur kulit yang tidak rata', 'Merangsang produksi kolagen alami']
+    },
+    procedure: {
+      en: ['Skin cleansing and local anesthetic application', 'Specialized needle inserted beneath the scar', 'Needle moved to release fibrous bands', 'Space created for new collagen to form'],
+      id: ['Pembersihan kulit dan pemberian anestesi lokal', 'Jarum khusus dimasukkan di bawah bekas luka', 'Jarum digerakkan untuk melepaskan pita serat', 'Menciptakan ruang untuk pembentukan kolagen baru']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 3–7 days. Swelling and bruising possible. Avoid pressure for 1 week.',
+      id: 'Downtime: 3-7 hari. Kemungkinan bengkak dan memar. Hindari tekanan selama 1 minggu.'
+    },
+    results: { en: 'Visible in 4–6 weeks; continues to improve for 3–6 months', id: 'Terlihat dlm 4-6 minggu; terus membaik selama 3-6 bulan' }
+  },
+  {
+    id: 'rf-microneedling',
+    name: { en: 'RF Microneedling (Dermapen / Morpheus / Secret RF)', id: 'RF Microneedling (Dermapen / Morpheus / Secret RF)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Combines microneedles and radiofrequency energy to stimulate collagen deep within.',
+      id: 'Menggunakan kombinasi microneedle dan energi radiofrekuensi untuk merangsang kolagen.'
+    },
+    description: {
+      en: 'RF Microneedling combines microneedles and radiofrequency energy to stimulate collagen deep within the skin, improving acne scars, pores, and tightening sagging skin.',
+      id: 'RF Microneedling menggabungkan microneedle dan energi radiofrekuensi untuk merangsang kolagen jauh di dalam kulit, memperbaiki bekas jerawat, pori-pori, dan mengencangkan kulit.'
+    },
+    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves acne scars and pores', 'Tightens sagging skin', 'Smoothens texture', 'Minimal downtime compared to lasers'],
+      id: ['Memperbaiki bekas jerawat dan pori-pori', 'Mengencangkan kulit kendur', 'Menghaluskan tekstur', 'Downtime minimal dibanding laser']
+    },
+    procedure: {
+      en: ['Cleansing and numbing (30 mins)', 'Tiny needles penetrate skin', 'RF energy delivered to deep layers', 'Micro-injuries trigger collagen renewal'],
+      id: ['Pembersihan dan anestesi (30 menit)', 'Jarum halus menembus kulit', 'Energi RF dikirim ke lapisan kulit dalam', 'Luka mikro memicu pembaruan kolagen']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. Redness and mild swelling. Avoid makeup for 24 hrs.',
+      id: 'Downtime: 1-3 hari. Kemerahan dan bengkak ringan. Tanpa riasan selama 24 jam.'
+    },
+    results: { en: 'Initial glow in 1–2 weeks; best results in 2–3 months', id: 'Kilau awal dlm 1-2 minggu; hasil terbaik dlm 2-3 bulan' }
+  },
+  {
+    id: 'fractional-laser',
+    name: { en: 'Fractional Laser (CO2 / Erbium / Fractional Resurfacing)', id: 'Laser Fraksional (CO2 / Erbium / Fractional Resurfacing)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Creates microscopic thermal zones to trigger powerful skin renewal and collagen.',
+      id: 'Menciptakan zona termal mikroskopis untuk memicu pembaruan kulit dan kolagen.'
+    },
+    description: {
+      en: 'Fractional laser creates microscopic thermal zones in the skin to trigger powerful skin renewal and collagen rebuilding, addressing deep acne scars and uneven texture.',
+      id: 'Laser fraksional menciptakan zona termal mikroskopis pada kulit untuk memicu pembaruan kulit yang kuat dan pembangunan kembali kolagen; efektif untuk bekas luka dalam.'
+    },
+    image: '/images/treatments/SCAR-Before-After.png',
+    benefits: {
+      en: ['Reduces deep acne scars', 'Smooths uneven texture', 'Improves fine lines and pores', 'Long-term skin rejuvenation'],
+      id: ['Mengurangi bekas jerawat dalam', 'Menghaluskan tekstur tidak rata', 'Memperbaiki garis halus dan pori-pori', 'Peremajaan kulit jangka panjang']
+    },
+    procedure: {
+      en: ['Numbing (45 mins) and eye protection applied', 'Laser passes over target area', 'Post-treatment cooling applied'],
+      id: ['Anestesi (45 menit) dan pelindung mata dipasang', 'Laser diarahkan ke area target', 'Aplikasi produk pendingin pasca-tindakan']
+    },
+    duration: { en: '45–90 mins', id: '45–90 menit' },
+    recovery: {
+      en: 'Downtime: 5–14 days. Redness and peeling expected. Strict sun avoidance.',
+      id: 'Downtime: 5-14 hari. Kemerahan dan pengelupasan diperkirakan. Hindari matahari.'
+    },
+    results: { en: 'Long-term improvement as collagen rebuilds', id: 'Perbaikan jangka panjang saat kolagen terbentuk kembali' }
+  },
+  {
+    id: 'tca-cross',
+    name: { en: 'TCA CROSS', id: 'TCA CROSS' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'High-strength acid targets deep ice-pick scars to stimulate collagen from within.',
+      id: 'Asam berkekuatan tinggi menargetkan bekas luka ice-pick untuk merangsang kolagen.'
+    },
+    description: {
+      en: 'TCA CROSS uses high-strength acid applied directly into deep ice-pick scars to stimulate collagen and shrink scars from within, targeting them precisely.',
+      id: 'TCA CROSS menggunakan asam berkekuatan tinggi yang dioleskan langsung ke bekas luka ice-pick yang dalam untuk merangsang kolagen dan mengecilkan luka dari dalam.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Best for ice-pick scars', 'Improves scar depth', 'Affordable and effective', 'Minimal impact on surrounding skin'],
+      id: ['Terbaik untuk bekas luka ice-pick', 'Memperbaiki kedalaman luka', 'Terjangkau dan efektif', 'Dampak minimal pada kulit sekitar']
+    },
+    procedure: {
+      en: ['Skin cleaned thoroughly', 'TCA acid applied directly into each scar', 'Frosting appears as penetration indicator'],
+      id: ['Kulit dibersihkan menyeluruh', 'Asam TCA dioleskan langsung ke setiap bekas luka', 'Muncul frosting sebagai tanda penetrasi']
+    },
+    duration: { en: '15–30 mins', id: '15–30 menit' },
+    recovery: {
+      en: 'Downtime: 5–7 days. Scabbing and redness expected. Do not pick scabs.',
+      id: 'Downtime: 5-7 hari. Keropeng dan kemerahan diperkirakan. Jangan mengelupas keropeng.'
+    },
+    results: { en: 'Permanent improvement with collagen remodeling', id: 'Perbaikan permanen dengan pembangunan kembali kolagen' }
+  },
+  {
+    id: 'prp-scars',
+    name: { en: 'PRP (Platelet-Rich Plasma)', id: 'PRP (Platelet-Rich Plasma)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses your own blood’s growth factors to stimulate healing and skin renewal.',
+      id: 'Menggunakan faktor pertumbuhan darah sendiri untuk merangsang perbaikan kulit.'
+    },
+    description: {
+      en: 'PRP uses your own blood’s growth factors to stimulate healing, collagen production, and skin renewal. It’s a natural regenerative treatment.',
+      id: 'PRP menggunakan faktor pertumbuhan darah Anda sendiri untuk merangsang penyembuhan, produksi kolagen, dan pembaruan kulit. Perawatan regenerasi alami.'
+    },
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Improves acne scars', 'Enhances skin glow', 'Boosts healing after lasers', 'Safe and natural'],
+      id: ['Memperbaiki bekas jerawat', 'Meningkatkan kilau kulit', 'Mendorong penyembuhan pasca laser', 'Aman dan alami']
+    },
+    procedure: {
+      en: ['Blood drawn and processed', 'PRP separated via centrifuge', 'PRP injected or microneedled', 'Cooling mask applied'],
+      id: ['Darah diambil dan diproses', 'Pemisahan PRP via centrifuge', 'Suntikan atau aplikasi microneedle', 'Masker pendingin']
+    },
+    duration: { en: '45–60 mins', id: '45–60 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Redness and mild swelling possible. Stay hydrated.',
+      id: 'Downtime: 1-2 hari. Kemerahan dan bengkak ringan. Tetap terhidrasi.'
+    },
+    results: { en: 'Lasts 6–12 months', id: 'Bertahan 6-12 bulan' }
+  },
+  {
+    id: 'skin-boosters-scars',
+    name: { en: 'Skin Boosters (PN/HA / Rejuran / Profilo type)', id: 'Skin Booster (PN/HA / Rejuran / Profilo type)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injects hydrating and regenerative ingredients to improve texture and elasticity.',
+      id: 'Menyuntikkan bahan hidrasi dan regeneratif untuk memperbaiki tekstur dan elastisitas.'
+    },
+    description: {
+      en: 'Skin boosters inject hydrating and regenerative ingredients into the skin to improve texture, elasticity, and overall quality without adding volume.',
+      id: 'Skin booster menyuntikkan bahan hidrasi dan regeneratif ke dalam kulit untuk meningkatkan tekstur, elastisitas, dan kualitas tanpa menambah volume.'
+    },
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Deep hydration', 'Improved skin elasticity', 'Smoother texture', 'Radiant appearance'],
+      id: ['Hidrasi mendalam', 'Meningkatkan elastisitas kulit', 'Tekstur lebih halus', 'Penampilan bercahaya']
+    },
+    procedure: {
+      en: ['Numbing (20–30 mins)', 'Micro-injections placed evenly under skin', 'Gentle massage afterward'],
+      id: ['Anestesi (20-30 menit)', 'Suntikan mikro merata di bawah kulit', 'Pijatan lembut setelahnya']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Small bumps or mild redness possible. Gentle skincare.',
+      id: 'Downtime: 1-2 hari. Kemungkinan benjolan kecil atau kemerahan. Skincare lembut.'
+    },
+    results: { en: 'Lasts 6–9 months', id: 'Bertahan 6-9 bulan' }
+  },
+  {
+    id: 'meso-whitening',
+    name: { en: 'Meso Whitening for Acne Marks', id: 'Meso Whitening untuk Bekas Jerawat' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Delivers brightening and pigment-correcting ingredients directly to fade marks.',
+      id: 'Memberikan bahan pencerah dan pengoreksi pigmen untuk memudarkan noda.'
+    },
+    description: {
+      en: 'Meso whitening delivers brightening and pigment-correcting ingredients directly into the skin to fade acne marks and treat pigmentation from the inside.',
+      id: 'Meso whitening memberikan bahan pencerah dan pengoreksi pigmen langsung ke dalam kulit untuk memudarkan bekas jerawat dari dalam.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Lightens acne marks', 'Brightens dull skin', 'Improves uneven tone', 'Enhances glow'],
+      id: ['Mencerahkan bekas jerawat', 'Mencerahkan kulit kusam', 'Memperbaiki warna tidak merata', 'Meningkatkan kilau']
+    },
+    procedure: {
+      en: ['Cleansing and optional numbing', 'Whitening solution micro-injected', 'Cooling mask applied'],
+      id: ['Pembersihan dan anestesi opsional', 'Suntikan mikro larutan pencerah', 'Masker pendingin']
+    },
+    duration: { en: '30–40 mins', id: '30–40 menit' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Redness and mild swelling. Use sunscreen daily.',
+      id: 'Downtime: 1-2 hari. Kemerahan dan bengkak ringan. Gunakan tabir surya setiap hari.'
+    },
+    results: { en: 'Visible results in 3–6 months', id: 'Hasil terlihat dlm 3-6 bulan' }
+  },
+  {
+    id: 'filler-scars',
+    name: { en: 'Cross-Linked Filler for Atrophic Scars', id: 'Filler Cross-Linked untuk Bekas Luka Atrofik' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Injected under depressed scars to lift them and smooth the skin instantly.',
+      id: 'Disuntikkan di bawah bekas luka cekung untuk mengangkat dan menghaluskannya instan.'
+    },
+    description: {
+      en: 'Cross-linked fillers are precisely injected under depressed (atrophic) scars to lift them and smooth the skin contour, providing immediate visual improvement.',
+      id: 'Filler cross-linked disuntikkan tepat di bawah bekas luka cekung (atrofik) untuk mengangkat dan menghaluskan kontur kulit secara instan.'
+    },
+    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Instant scar lifting', 'Improves skin contour', 'Long-lasting correction', 'Natural appearance'],
+      id: ['Pengangkatan bekas luka instan', 'Memperbaiki kontur kulit', 'Koreksi tahan lama', 'Penampilan alami']
+    },
+    procedure: {
+      en: ['Area cleaned and numbed', 'Filler injected precisely beneath scars', 'Molded for smoothness'],
+      id: ['Area dibersihkan dan dianestesi', 'Filler disuntikkan tepat di bawah bekas luka', 'Dibentuk agar halus']
+    },
+    duration: { en: '30–45 mins', id: '30–45 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. Mild swelling or bruising possible. Avoid pressure.',
+      id: 'Downtime: 1-3 hari. Kemungkinan bengkak atau memar. Hindari tekanan.'
+    },
+    results: { en: 'Immediate results, lasts 12–24 months', id: 'Hasil instan, bertahan 12-24 bulan' }
+  },
+  {
+    id: 'diode-laser',
+    name: { en: 'Diode Laser Hair Removal', id: 'Penghilang Bulu Laser Diode' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses diode laser energy to target hair follicles at the root for long-term reduction.',
+      id: 'Menggunakan energi laser diode untuk menargetkan folikel rambut hingga ke akarnya.'
+    },
+    description: {
+      en: 'Diode Laser Hair Removal uses targeted laser energy to damage hair follicles and inhibit future growth. It is highly effective for most skin types and popular for its long-term results.',
+      id: 'Penghilang Bulu Laser Diode menggunakan energi laser terarah untuk merusak folikel rambut dan menghambat pertumbuhan di masa depan. Sangat efektif untuk sebagian besar jenis kulit.'
+    },
+    image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
+    benefits: {
+      en: ['Long-lasting hair reduction', 'Smoother skin texture', 'Prevents ingrown hairs'],
+      id: ['Pengurangan bulu jangka panjang', 'Tekstur kulit lebih halus', 'Mencegah bulu tumbuh ke dalam (ingrown hair)']
+    },
+    procedure: {
+      en: ['Area shaved before visit', 'Skin cleaned and cooling gel applied', 'Laser pulses delivered to follicles', 'Post-treatment cooling'],
+      id: ['Area dicukur sebelum kunjungan', 'Pembersihan kulit dan aplikasi gel pendingin', 'Pulsa laser dikirim ke folikel', 'Pendinginan pasca-tindakan']
+    },
+    duration: { en: '15–60 mins (area-based)', id: '15–60 menit (tergantung area)' },
+    recovery: {
+      en: 'No downtime. Mild warmth or redness (few hours). Avoid sun for 7 days. Consistency is key.',
+      id: 'Tanpa downtime. Rasa hangat atau kemerahan ringan (beberapa jam). Hindari matahari selama 7 hari.'
+    },
+    results: { en: 'Optimal reduction after 6–8 sessions', id: 'Pengurangan optimal setelah 6-8 sesi' }
+  },
+  {
+    id: 'alexandrite-laser',
+    name: { en: 'Alexandrite Laser (755 nm)', id: 'Laser Alexandrite (755 nm)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Fast and powerful laser effective for fair to light-medium skin types.',
+      id: 'Laser cepat dan kuat yang efektif untuk jenis kulit cerah hingga sedang.'
+    },
+    description: {
+      en: 'The Alexandrite laser operates at a 755nm wavelength, making it exceptionally fast and effective at targeting pigment in hair follicles, especially for lighter skin tones.',
+      id: 'Laser Alexandrite bekerja pada panjang gelombang 755nm, menjadikannya sangat cepat dan efektif dalam menargetkan pigmen pada folikel rambut, terutama untuk warna kulit yang lebih cerah.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Faster treatment sessions', 'Effective on thick/coarse hair', 'Strong pigment targeting'],
+      id: ['Sesi perawatan lebih cepat', 'Efektif untuk rambut tebal/kasar', 'Penargetan pigmen yang kuat']
+    },
+    procedure: {
+      en: ['Shaving and cleansing', 'Protective eyewear placement', 'Laser applied in quick pulses', 'Cooling application'],
+      id: ['Pencukuran dan pembersihan', 'Pemasangan pelindung mata', 'Aplikasi laser dalam pulsa cepat', 'Aplikasi pendinginan']
+    },
+    duration: { en: '15–45 mins', id: '15–45 menit' },
+    recovery: {
+      en: 'No downtime. Temporary redness or warmth possible. Strict sun protection required.',
+      id: 'Tanpa downtime. Kemungkinan kemerahan atau rasa hangat sementara. Diperlukan perlindungan matahari yang ketat.'
+    },
+    results: { en: 'Noticeable reduction dlm 2–4 sessions', id: 'Pengurangan nyata dlm 2-4 sesi' }
+  },
+  {
+    id: 'ipl-hair',
+    name: { en: 'IPL Hair Removal (Intense Pulsed Light)', id: 'Penghilang Bulu IPL (Intense Pulsed Light)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Uses broad-spectrum light to weaken follicles; a gentler maintenance option.',
+      id: 'Menggunakan cahaya spektrum luas untuk melemahkan folikel; pilihan perawatan yang lebih lembut.'
+    },
+    description: {
+      en: 'IPL uses intense pulses of broad-spectrum light to target hair follicles. It is a popular and versatile option for reducing hair growth and improving overall skin tone.',
+      id: 'IPL menggunakan pulsa cahaya spektrum luas yang intens untuk menargetkan folikel rambut. Pilihan populer untuk mengurangi pertumbuhan rambut dan memperbaiki warna kulit.'
+    },
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces hair growth', 'Improves skin tone', 'Cost-effective maintenance'],
+      id: ['Mengurangi pertumbuhan rambut', 'Memperbaiki warna kulit', 'Perawatan yang hemat biaya']
+    },
+    procedure: {
+      en: ['Shave and cleanse', 'Cooling gel application', 'IPL light flashes delivered', 'Cooling lotion application'],
+      id: ['Cukur dan bersihkan', 'Aplikasi gel pendingin', 'Kilatan cahaya IPL dikirimkan', 'Aplikasi losion pendingin']
+    },
+    duration: { en: '20–60 mins', id: '20–60 menit' },
+    recovery: {
+      en: 'No downtime. Mild redness possible. Avoid sun and heat exposure.',
+      id: 'Tanpa downtime. Kemungkinan kemerahan ringan. Hindari paparan matahari dan panas.'
+    },
+    results: { en: 'Gradual reduction over 6–10 sessions', id: 'Pengurangan bertahap selama 6-10 sesi' }
+  },
+  {
+    id: 'shr-hair',
+    name: { en: 'SHR (Super Hair Removal)', id: 'SHR (Super Hair Removal)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Advanced technology using gradual heating for a nearly painless experience.',
+      id: 'Teknologi canggih menggunakan pemanasan bertahap untuk pengalaman yang hampir tanpa rasa sakit.'
+    },
+    description: {
+      en: 'SHR is an advanced hair removal technology that uses repetitive low-energy pulses to gradually heat the follicles, making the process much more comfortable and safe for sensitive skin.',
+      id: 'SHR adalah teknologi penghilang bulu canggih yang menggunakan pulsa energi rendah berulang untuk memanaskan folikel secara bertahap, menjadikannya jauh lebih nyaman dan aman untuk kulit sensitif.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Nearly painless', 'Safe for sensitive skin', 'Effective on multiple hair types'],
+      id: ['Hampir tanpa rasa sakit', 'Aman untuk kulit sensitif', 'Efektif untuk berbagai jenis rambut']
+    },
+    procedure: {
+      en: ['Area shaving', 'Gel application', 'Repetitive low-energy passes', 'Cooling application'],
+      id: ['Pencukuran area', 'Aplikasi gel', 'Gerakan energi rendah berulang', 'Aplikasi pendinginan']
+    },
+    duration: { en: '20–60 mins', id: '20–60 menit' },
+    recovery: {
+      en: 'No downtime. Slight warmth possible. Moisturize and avoid direct sun.',
+      id: 'Tanpa downtime. Kemungkinan rasa hangat sedikit. Gunakan pelembap dan hindari matahari langsung.'
+    },
+    results: { en: 'Progressive thinning with regular sessions', id: 'Penipisan progresif dengan sesi rutin' }
+  },
+  {
+    id: 'electrolysis',
+    name: { en: 'Electrolysis (Permanent Removal)', id: 'Elektrolisis (Penghilang Permanen)' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'The only FDA-certified method for 100% permanent hair removal.',
+      id: 'Satu-satunya metode bersertifikat FDA untuk penghilang bulu 100% permanen.'
+    },
+    description: {
+      en: 'Electrolysis involves the insertion of a fine probe into each hair follicle to deliver a tiny amount of electrical energy, destroying the growth center permanently. It works regardless of hair or skin color.',
+      id: 'Elektrolisis melibatkan pemasukan probe halus ke setiap folikel rambut untuk mengirimkan sejumlah kecil energi listrik, menghancurkan pusat pertumbuhan secara permanen. Bekerja untuk semua warna rambut atau kulit.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['100% permanent results', 'Effective on all hair colors (including white/blonde)', 'Targets individual hairs precisely'],
+      id: ['Hasil 100% permanen', 'Efektif untuk semua warna rambut (termasuk putih/pirang)', 'Menargetkan bulu individu secara presisi']
+    },
+    procedure: {
+      en: ['Skin disinfection', 'Insertion of microscopic probe', 'Electrical pulse delivery', 'Sterilization post-treatment'],
+      id: ['Disinfeksi kulit', 'Pemasukan probe mikroskopis', 'Pengiriman pulsa listrik', 'Sterilisasi pasca-tindakan']
+    },
+    duration: { en: '15–60 mins (area-based)', id: '15–60 menit (tergantung area)' },
+    recovery: {
+      en: 'Downtime: 1–2 days. Tiny scabs or redness may occur. Do not pick skin.',
+      id: 'Downtime: 1-2 hari. Mungkin muncul keropeng kecil atau kemerahan. Jangan mengelupas kulit.'
+    },
+    results: { en: 'Permanent hair destruction after completion of sessions', id: 'Penghancuran bulu permanen setelah menyelesaikan sesi' }
+  },
+  {
+    id: 'armpit-hair',
+    name: { en: 'Armpit Hair Removal', id: 'Penghilang Bulu Ketiak' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Targets underarm hair for hygiene, comfort, and smoothness.',
+      id: 'Menargetkan bulu ketiak untuk kebersihan, kenyamanan, dan kehalusan.'
+    },
+    description: {
+      en: 'Underarm hair removal treatment using laser or IPL technology. It helps reduce body odor, improves hygiene, and provides long-lasting smoothness.',
+      id: 'Perawatan penghilang bulu ketiak menggunakan teknologi laser atau IPL. Membantu mengurangi bau badan, meningkatkan kebersihan, dan memberikan kehalusan tahan lama.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Reduces body odor', 'Smoother underarms', 'Eliminates shaving irritation'],
+      id: ['Mengurangi bau badan', 'Ketiak lebih halus', 'Menghilangkan iritasi akibat mencukur']
+    },
+    procedure: {
+      en: ['Cleansing', 'Laser/IPL application', 'Cooling application'],
+      id: ['Pembersihan', 'Aplikasi laser/IPL', 'Aplikasi pendinginan']
+    },
+    duration: { en: '10–15 mins', id: '10–15 menit' },
+    recovery: {
+      en: 'No downtime. Avoid deodorant for 24 hours. Moisturize as needed.',
+      id: 'Tanpa downtime. Hindari deodoran selama 24 jam. Gunakan pelembap sesuai kebutuhan.'
+    },
+    results: { en: 'Noticeable reduction after 4–6 sessions', id: 'Pengurangan nyata setelah 4-6 sesi' }
+  },
+  {
+    id: 'body-hair',
+    name: { en: 'Body Hair Removal', id: 'Penghilang Bulu Tubuh' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Comprehensive hair removal for arms, legs, back, or chest.',
+      id: 'Penghilang bulu menyeluruh untuk lengan, kaki, punggung, atau dada.'
+    },
+    description: {
+      en: 'Full-body or area-specific hair removal covering legs, arms, chest, back, and abdomen. Ideal for achieving full-body smoothness without constant shaving.',
+      id: 'Penghilang bulu seluruh tubuh atau area tertentu meliputi kaki, lengan, dada, punggung, dan perut. Ideal untuk kehalusan tubuh tanpa harus terus mencukur.'
+    },
+    image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
+    benefits: {
+      en: ['Full-body smoothness', 'Reduced preparation time', 'Fewer ingrown hairs'],
+      id: ['Kehalusan seluruh tubuh', 'Waktu persiapan lebih singkat', 'Lebih sedikti bulu yang tumbuh ke dalam']
+    },
+    procedure: {
+      en: ['Shaving and cleansing', 'Laser/IPL treatment', 'Post-treatment cooling'],
+      id: ['Pencukuran dan pembersihan', 'Perawatan laser/IPL', 'Pendinginan pasca-tindakan']
+    },
+    duration: { en: '30–90 mins (area-based)', id: '30–90 menit (tergantung area)' },
+    recovery: {
+      en: 'No downtime. Warm sensation common. Use moisturizer and sunscreen daily.',
+      id: 'Tanpa downtime. Rasa hangat umum terjadi. Gunakan pelembap dan tabir surya setiap hari.'
+    },
+    results: { en: 'Best results after 6–8 sessions', id: 'Hasil terbaik setelah 6-8 sesi' }
+  },
+  {
+    id: 'facial-hair',
+    name: { en: 'Facial Hair Removal', id: 'Penghilang Bulu Wajah' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Designed for delicate facial skin (upper lip, chin, cheeks).',
+      id: 'Dirancang untuk kulit wajah yang halus (bibir atas, dagu, pipi).'
+    },
+    description: {
+      en: 'Specialized treatment for delicate facial skin. Targets the upper lip, chin, and cheeks to provide a smoother canvas for makeup and refined pores.',
+      id: 'Perawatan khusus untuk kulit wajah. Menargetkan bibir atas, dagu, dan pipi untuk memberikan hasil yang halus bagi riasan wajah.'
+    },
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Finer pores', 'Smoother makeup application', 'Refined facial appearance'],
+      id: ['Pori-pori lebih halus', 'Aplikasi riasan lebih halus', 'Penampilan wajah lebih rapi']
+    },
+    procedure: {
+      en: ['Gentle cleansing', 'Eye protection', 'Controlled laser pulses', 'Post-treatment cooling'],
+      id: ['Pembersihan lembut', 'Pelindung mata', 'Pulsa laser terkontrol', 'Pendinginan pasca-tindakan']
+    },
+    duration: { en: '10–20 mins', id: '10–20 menit' },
+    recovery: {
+      en: 'No downtime. Temporary redness possible. Avoid active skincare for 48 hrs.',
+      id: 'Tanpa downtime. Kemungkinan kemerahan sementara. Hindari skincare aktif selama 48 jam.'
+    },
+    results: { en: 'Results dlm 4–6 sessions', id: 'Hasil terlihat dlm 4-6 sesi' }
+  },
+  {
+    id: 'brazilian-hair',
+    name: { en: 'Brazilian Hair Removal', id: 'Penghilang Bulu Brazilian' },
+    category: 'skin-aesthetic',
+    shortDescription: {
+      en: 'Removes hair from intimate areas with precision and hygiene.',
+      id: 'Menghilangkan bulu dari area intim dengan presisi dan higienis.'
+    },
+    description: {
+      en: 'Professional hair removal for intimate areas, focusing on hygiene and long-term comfort. This treatment provides long-lasting smoothness and prevents painful ingrown hairs.',
+      id: 'Penghilang bulu profesional untuk area intim, fokus pada kebersihan dan kenyamanan jangka panjang. Perawatan ini memberikan kehalusan dan mencegah bulu ingrown.'
+    },
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    benefits: {
+      en: ['Long-lasting hygiene', 'Fewer painful ingrown hairs', 'Complete smoothness'],
+      id: ['Kebersihan tahan lama', 'Lebih sedikit bulu ingrown yang sakit', 'Kehalusan sempurna']
+    },
+    procedure: {
+      en: ['Trimming/shaving', 'Cleansing', 'Targeted laser pulses', 'Soothing cream application'],
+      id: ['Pemotongan/pencukuran', 'Pembersihan', 'Pulsa laser terarah', 'Aplikasi krim penenang']
+    },
+    duration: { en: '20–30 mins', id: '20–30 menit' },
+    recovery: {
+      en: 'Downtime: None to 1 day sensitivity. Wear loose clothing. Avoid heat/intimacy for 24–48 hrs.',
+      id: 'Downtime: Tanpa hingga 1 hari sensitivitas. Gunakan pakaian longgar. Hindari panas/hubungan intim selama 24-48 jam.'
+    },
+    results: { en: 'Typically 6–8 sessions for best results', id: 'Biasanya 6-8 sesi untuk hasil terbaik' }
   }
 ];
 
@@ -3168,14 +5184,13 @@ export const skinAestheticCategories = [
     title: { en: 'Acne Solutions', id: 'Solusi Jerawat' },
     image: '/images/treatments/ACNE-Before-After.png',
     treatments: [
-      { name: { en: 'Acne Laser Therapy', id: 'Terapi Laser Jerawat' }, id: 'acne-laser' },
-      { name: { en: 'Chemical Peels', id: 'Chemical Peels' }, id: 'chemical-peels-acne' },
-      { name: { en: 'Extraction Facial', id: 'Facial Ekstraksi' }, id: 'extraction-facial' },
-      { name: { en: 'LED Blue Light Therapy', id: 'Terapi Sinar Biru LED' }, id: 'led-blue-light' },
-      { name: { en: 'Acne Injection', id: 'Suntik Jerawat' }, id: 'acne-injection' },
-      { name: { en: 'Acne Meso', id: 'Meso Jerawat' }, id: 'acne-meso' },
-      { name: { en: 'Oil Control Laser', id: 'Laser Kontrol Minyak' }, id: 'oil-control-laser' },
-      { name: { en: 'Acne Medicine', id: 'Obat Jerawat' }, id: 'acne-medicine' }
+      { name: { en: 'Acne Laser Therapy', id: 'Terapi Laser Jerawat' }, id: 'acne-laser', image: '/images/treatments/ACNE-Before-After.png' },
+      { name: { en: 'Chemical Peel for Acne', id: 'Chemical Peel untuk Jerawat' }, id: 'chemical-peels-acne', image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop' },
+      { name: { en: 'Extraction Facial', id: 'Facial Ekstraksi' }, id: 'extraction-facial', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'LED Blue Light Therapy', id: 'Terapi Sinar Biru LED' }, id: 'led-blue-light', image: '/images/treatments/ACNE-Before-After.png' },
+      { name: { en: 'Acne Injection', id: 'Suntik Jerawat' }, id: 'acne-injection', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Acne Meso', id: 'Meso Jerawat' }, id: 'acne-meso', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Oil Control Laser', id: 'Laser Kontrol Minyak' }, id: 'oil-control-laser', image: '/images/treatments/ACNE-Before-After.png' }
     ]
   },
   {
@@ -3183,16 +5198,16 @@ export const skinAestheticCategories = [
     title: { en: 'Brightening Solutions', id: 'Solusi Pencerah' },
     image: '/images/treatments/BRIGHTENING-Before-After.png',
     treatments: [
-      { name: { en: 'Brightening Laser', id: 'Laser Pencerah' }, id: 'brightening-laser' },
-      { name: { en: 'Whitening Drip', id: 'Infus Pemutih' }, id: 'whitening-drip' },
-      { name: { en: 'Whitening Injection', id: 'Suntik Pemutih' }, id: 'whitening-injection' },
-      { name: { en: 'Brightening Meso', id: 'Meso Pencerah' }, id: 'brightening-meso' },
-      { name: { en: 'Chemical Peels', id: 'Chemical Peels' }, id: 'chemical-peels-brightening' },
-      { name: { en: 'Melasma Laser', id: 'Laser Melasma' }, id: 'melasma-laser' },
-      { name: { en: 'Microneedling', id: 'Microneedling' }, id: 'microneedling-brightening' },
-      { name: { en: 'IPL Photofacial', id: 'IPL Photofacial' }, id: 'ipl-photofacial' },
-      { name: { en: 'Pigment Laser', id: 'Laser Pigmen' }, id: 'pigment-laser' },
-      { name: { en: 'Topical Skincare', id: 'Skincare Topikal' }, id: 'brightening-skincare' }
+      { name: { en: 'Brightening Laser', id: 'Laser Pencerah' }, id: 'brightening-laser', image: '/images/treatments/BRIGHTENING-Before-After.png' },
+      { name: { en: 'Pigment Laser / IPL', id: 'Laser Pigmen / IPL' }, id: 'pigment-laser-ipl', image: '/images/treatments/BRIGHTENING-Before-After.png' },
+      { name: { en: 'Melasma Laser', id: 'Laser Melasma' }, id: 'melasma-laser', image: '/images/treatments/BRIGHTENING-Before-After.png' },
+      { name: { en: 'Whitening Drip / Injection', id: 'Infus / Suntik Pemutih' }, id: 'whitening-drip-injection', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Brightening Meso', id: 'Meso Pencerah' }, id: 'brightening-meso', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Chemical Peel (Brightening)', id: 'Chemical Peel (Pencerah)' }, id: 'chemical-peels-brightening', image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop' },
+      { name: { en: 'Microneedling', id: 'Microneedling' }, id: 'microneedling-brightening', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' },
+      { name: { en: 'IPL Photofacial', id: 'IPL Photofacial' }, id: 'ipl-photofacial', image: '/images/treatments/BRIGHTENING-Before-After.png' },
+      { name: { en: 'Pigment Laser', id: 'Laser Pigmen' }, id: 'pigment-laser', image: '/images/treatments/BRIGHTENING-Before-After.png' },
+      { name: { en: 'Topical Skincare', id: 'Skincare Topikal' }, id: 'brightening-skincare', image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
@@ -3200,16 +5215,16 @@ export const skinAestheticCategories = [
     title: { en: 'Anti Aging Solutions', id: 'Solusi Anti Penuaan' },
     image: '/images/treatments/ANTIAGING-Before-After.png',
     treatments: [
-      { name: { en: 'Botox', id: 'Botox' }, id: 'botox-wrinkles' },
-      { name: { en: 'Dermal Fillers', id: 'Filler Dermal' }, id: 'dermal-fillers-aging' },
-      { name: { en: 'HIFU', id: 'HIFU' }, id: 'hifu-lifting' },
-      { name: { en: 'RF Tightening', id: 'Pengencangan RF' }, id: 'rf-tightening' },
-      { name: { en: 'Skin Booster', id: 'Skin Booster' }, id: 'skin-booster-aging' },
-      { name: { en: 'Laser Resurfacing', id: 'Laser Resurfacing' }, id: 'laser-resurfacing' },
-      { name: { en: 'Threadlift', id: 'Tanam Benang' }, id: 'threadlift' },
-      { name: { en: 'PRP Therapy', id: 'Terapi PRP' }, id: 'prp-therapy' },
-      { name: { en: 'Face Contouring', id: 'Kontur Wajah' }, id: 'face-contouring' },
-      { name: { en: 'Stem Cells', id: 'Sel Punca' }, id: 'stem-cells' }
+      { name: { en: 'Botox', id: 'Botox' }, id: 'botox-wrinkles', image: '/images/treatments/botox_treatment_1764461614966.png' },
+      { name: { en: 'Dermal Fillers', id: 'Filler Dermal' }, id: 'dermal-fillers-aging', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'HIFU', id: 'HIFU' }, id: 'hifu-lifting', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'RF Tightening', id: 'Pengencangan RF' }, id: 'rf-tightening', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Skin Booster', id: 'Skin Booster' }, id: 'skin-booster-aging', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Laser Resurfacing', id: 'Laser Resurfacing' }, id: 'laser-resurfacing', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Threadlift', id: 'Tanam Benang' }, id: 'threadlift', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'PRP Therapy', id: 'Terapi PRP' }, id: 'prp-therapy', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Face Contouring', id: 'Kontur Wajah' }, id: 'face-contouring', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Stem Cells', id: 'Sel Punca' }, id: 'stem-cells', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
@@ -3217,18 +5232,18 @@ export const skinAestheticCategories = [
     title: { en: 'Slimming & Contouring', id: 'Pelangsingan & Kontur' },
     image: '/images/treatments/SLIMMING-Before-After.png',
     treatments: [
-      { name: { en: 'Cryolipolysis', id: 'Cryolipolysis' }, id: 'cryolipolysis' },
-      { name: { en: 'RF Body Tightening', id: 'Pengencangan Tubuh RF' }, id: 'rf-body' },
-      { name: { en: 'Laser Lipo', id: 'Laser Lipo' }, id: 'laser-lipo' },
-      { name: { en: 'Slimming Injection', id: 'Suntik Pelangsing' }, id: 'slimming-injection' },
-      { name: { en: 'Lymphatic Massage', id: 'Pijat Limfatik' }, id: 'lymphatic-massage' },
-      { name: { en: 'HIFEM', id: 'HIFEM' }, id: 'hifem' },
-      { name: { en: 'HIFU V-Shape', id: 'HIFU V-Shape' }, id: 'hifu-v-shape' },
-      { name: { en: 'Jawline Botox', id: 'Botox Rahang' }, id: 'jawline-botox' },
-      { name: { en: 'Chin Filler', id: 'Filler Dagu' }, id: 'chin-cheek-filler' },
-      { name: { en: 'Thread Lift', id: 'Tanam Benang' }, id: 'thread-lift-contour' },
-      { name: { en: 'Fat Dissolving', id: 'Penghancur Lemak' }, id: 'fat-dissolving' },
-      { name: { en: 'Fat Removal Surgery', id: 'Operasi Lemak' }, id: 'fat-removal-surgery' }
+      { name: { en: 'Cryolipolysis (Fat Freeze)', id: 'Cryolipolysis (Pembekuan Lemak)' }, id: 'cryolipolysis', image: '/images/treatments/SLIMMING-Before-After.png' },
+      { name: { en: 'RF Body Tightening', id: 'Pengencangan Tubuh RF' }, id: 'rf-body', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Laser Lipo', id: 'Laser Lipo' }, id: 'laser-lipo', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Slimming Injection', id: 'Suntik Pelangsing' }, id: 'slimming-injection', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Lymphatic Massage', id: 'Pijat Limfatik' }, id: 'lymphatic-massage', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'HIFEM (Muscle Stimulation)', id: 'HIFEM (Stimulasi Otot)' }, id: 'hifem', image: '/images/treatments/SLIMMING-Before-After.png' },
+      { name: { en: 'HIFU V-Shape', id: 'HIFU V-Shape' }, id: 'hifu-v-shape', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Jawline Botox', id: 'Botox Rahang' }, id: 'jawline-botox', image: '/images/treatments/botox_treatment_1764461614966.png' },
+      { name: { en: 'Chin Filler', id: 'Filler Dagu' }, id: 'chin-cheek-filler', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Thread-Lift', id: 'Tanam Benang' }, id: 'thread-lift-contour', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Fat Dissolving Injection', id: 'Suntik Penghancur Lemak' }, id: 'fat-dissolving', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Fat Removal Surgery', id: 'Operasi Pengangkatan Lemak' }, id: 'fat-removal-surgery', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
@@ -3236,14 +5251,13 @@ export const skinAestheticCategories = [
     title: { en: 'Hair Growth Treatments', id: 'Perawatan Penumbuh Rambut' },
     image: '/images/treatments/HAIR-GROWTH-Before-After.png',
     treatments: [
-      { name: { en: 'Hair Growth Laser', id: 'Laser Penumbuh Rambut' }, id: 'hair-laser' },
-      { name: { en: 'Hair Meso', id: 'Meso Rambut' }, id: 'hair-meso' },
-      { name: { en: 'PRP Hair Treatment', id: 'Perawatan Rambut PRP' }, id: 'prp-hair' },
-      { name: { en: 'Topical Minoxidil', id: 'Minoxidil Topikal' }, id: 'minoxidil' },
-      { name: { en: 'DNA Salmon Hair', id: 'DNA Salmon Rambut' }, id: 'dna-salmon-hair' },
-      { name: { en: 'Oral Supplements', id: 'Suplemen Oral' }, id: 'hair-supplements' },
-      { name: { en: 'Scalp Detox', id: 'Detoks Kulit Kepala' }, id: 'scalp-detox' },
-      { name: { en: 'Hair Transplant', id: 'Transplantasi Rambut' }, id: 'hair-transplant' }
+      { name: { en: 'Hair Growth Laser / LLLT', id: 'Laser Penumbuh Rambut / LLLT' }, id: 'hair-laser', image: '/images/treatments/HAIR-GROWTH-Before-After.png' },
+      { name: { en: 'Hair Meso (Growth Factor Injections)', id: 'Meso Rambut (Suntik Growth Factor)' }, id: 'hair-meso', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'PRP Hair Treatment', id: 'Perawatan Rambut PRP' }, id: 'prp-hair', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Topical Minoxidil Program', id: 'Program Minoxidil Topikal' }, id: 'minoxidil', image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'DNA Salmon Hair (PN Therapy)', id: 'DNA Salmon Rambut (Terapi PN)' }, id: 'dna-salmon-hair', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Scalp Detox & Deep Cleansing', id: 'Detoks & Pembersihan Kulit Kepala' }, id: 'scalp-detox', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Hair Transplant', id: 'Transplantasi Rambut' }, id: 'hair-transplant', image: '/images/treatments/HAIR-GROWTH-Before-After.png' }
     ]
   },
   {
@@ -3251,15 +5265,15 @@ export const skinAestheticCategories = [
     title: { en: 'Rejuvenating Treatments', id: 'Perawatan Peremajaan' },
     image: '/images/treatments/REJUVENATE-Before-After.png',
     treatments: [
-      { name: { en: 'Skin Booster', id: 'Skin Booster' }, id: 'skin-booster-rejuv' },
-      { name: { en: 'Hydrafacial', id: 'Hydrafacial' }, id: 'hydrafacial' },
-      { name: { en: 'Microneedling', id: 'Microneedling' }, id: 'microneedling-rejuv' },
-      { name: { en: 'Laser Rejuvenation', id: 'Laser Peremajaan' }, id: 'laser-rejuv' },
-      { name: { en: 'Oxygen Facial', id: 'Oxygen Facial' }, id: 'oxygen-facial' },
-      { name: { en: 'Dermaplaning', id: 'Dermaplaning' }, id: 'dermaplaning' },
-      { name: { en: 'Meso Glow', id: 'Meso Glow' }, id: 'meso-glow' },
-      { name: { en: 'PRP Rejuvenation', id: 'Peremajaan PRP' }, id: 'prp-rejuv' },
-      { name: { en: 'DNA Salmon', id: 'DNA Salmon' }, id: 'dna-salmon' }
+      { name: { en: 'Skin Booster (HA / PDRN / Rejuran / NCTF)', id: 'Skin Booster (HA / PDRN / Rejuran / NCTF)' }, id: 'skin-booster-rejuv', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Hydrafacial / Aqua Peeling', id: 'Hydrafacial / Aqua Peeling' }, id: 'hydrafacial', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Microneedling Therapy', id: 'Terapi Microneedling' }, id: 'microneedling-rejuv', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' },
+      { name: { en: 'Laser Rejuvenation', id: 'Laser Peremajaan' }, id: 'laser-rejuv', image: '/images/treatments/REJUVENATE-Before-After.png' },
+      { name: { en: 'Oxygen Facial', id: 'Oxygen Facial' }, id: 'oxygen-facial', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Dermaplaning', id: 'Dermaplaning' }, id: 'dermaplaning', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Meso Glow (Vitamins + Peptides)', id: 'Meso Glow (Vitamin + Peptida)' }, id: 'meso-glow', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'PRP Rejuvenation Therapy', id: 'Terapi Peremajaan PRP' }, id: 'prp-rejuv', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'DNA Salmon (PDRN Therapy)', id: 'DNA Salmon (Terapi PDRN)' }, id: 'dna-salmon', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
@@ -3267,14 +5281,14 @@ export const skinAestheticCategories = [
     title: { en: 'Scars & Pore Solution', id: 'Solusi Bekas Luka & Pori-pori' },
     image: '/images/treatments/SCAR-Before-After.png',
     treatments: [
-      { name: { en: 'Subcision', id: 'Subcision' }, id: 'subcision' },
-      { name: { en: 'RF Microneedling', id: 'RF Microneedling' }, id: 'rf-microneedling' },
-      { name: { en: 'Fractional Laser', id: 'Laser Fraksional' }, id: 'fractional-laser' },
-      { name: { en: 'TCA CROSS', id: 'TCA CROSS' }, id: 'tca-cross' },
-      { name: { en: 'PRP Scars', id: 'PRP Bekas Luka' }, id: 'prp-scars' },
-      { name: { en: 'Skin Boosters', id: 'Skin Booster' }, id: 'skin-boosters-scars' },
-      { name: { en: 'Meso Whitening', id: 'Meso Whitening' }, id: 'meso-whitening' },
-      { name: { en: 'Filler for Scars', id: 'Filler Bekas Luka' }, id: 'filler-scars' }
+      { name: { en: 'Subcision', id: 'Subcision' }, id: 'subcision', image: '/images/treatments/SCAR-Before-After.png' },
+      { name: { en: 'RF Microneedling (Dermapen / Morpheus / Secret RF)', id: 'RF Microneedling' }, id: 'rf-microneedling', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' },
+      { name: { en: 'Fractional Laser (CO2 / Erbium / Fractional Resurfacing)', id: 'Laser Fraksional' }, id: 'fractional-laser', image: '/images/treatments/SCAR-Before-After.png' },
+      { name: { en: 'TCA CROSS', id: 'TCA CROSS' }, id: 'tca-cross', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'PRP (Platelet-Rich Plasma)', id: 'PRP Bekas Luka' }, id: 'prp-scars', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Skin Boosters (PN/HA / Rejuran / Profilo type)', id: 'Skin Booster' }, id: 'skin-boosters-scars', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Meso Whitening for Acne Marks', id: 'Meso Whitening' }, id: 'meso-whitening', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Cross-Linked Filler for Atrophic Scars', id: 'Filler Bekas Luka' }, id: 'filler-scars', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' }
     ]
   },
   {
@@ -3282,15 +5296,15 @@ export const skinAestheticCategories = [
     title: { en: 'Hair Removal', id: 'Penghilang Bulu' },
     image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
     treatments: [
-      { name: { en: 'Diode Laser', id: 'Diode Laser' }, id: 'diode-laser' },
-      { name: { en: 'Alexandrite Laser', id: 'Alexandrite Laser' }, id: 'alexandrite-laser' },
-      { name: { en: 'IPL', id: 'IPL' }, id: 'ipl-hair' },
-      { name: { en: 'SHR', id: 'SHR' }, id: 'shr-hair' },
-      { name: { en: 'Electrolysis', id: 'Elektrolisis' }, id: 'electrolysis' },
-      { name: { en: 'Armpit Hair Removal', id: 'Bulu Ketiak' }, id: 'armpit-hair' },
-      { name: { en: 'Body Hair Removal', id: 'Bulu Tubuh' }, id: 'body-hair' },
-      { name: { en: 'Facial Hair Removal', id: 'Bulu Wajah' }, id: 'facial-hair' },
-      { name: { en: 'Brazilian', id: 'Brazilian' }, id: 'brazilian-hair' }
+      { name: { en: 'Diode Laser Hair Removal', id: 'Penghilang Bulu Laser Diode' }, id: 'diode-laser', image: '/images/treatments/HAIR-REMOVAL-Before-After.png' },
+      { name: { en: 'Alexandrite Laser (755 nm)', id: 'Laser Alexandrite (755 nm)' }, id: 'alexandrite-laser', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'IPL Hair Removal (Intense Pulsed Light)', id: 'Penghilang Bulu IPL (Intense Pulsed Light)' }, id: 'ipl-hair', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'SHR (Super Hair Removal)', id: 'SHR (Super Hair Removal)' }, id: 'shr-hair', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Electrolysis (Permanent Removal)', id: 'Elektrolisis (Penghilang Permanen)' }, id: 'electrolysis', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Armpit Hair Removal', id: 'Penghilang Bulu Ketiak' }, id: 'armpit-hair', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Body Hair Removal', id: 'Penghilang Bulu Tubuh' }, id: 'body-hair', image: '/images/treatments/HAIR-REMOVAL-Before-After.png' },
+      { name: { en: 'Facial Hair Removal', id: 'Penghilang Bulu Wajah' }, id: 'facial-hair', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
+      { name: { en: 'Brazilian Hair Removal', id: 'Penghilang Bulu Brazilian' }, id: 'brazilian-hair', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' }
     ]
   }
 ];
