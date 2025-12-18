@@ -16,8 +16,8 @@ import Location from '../components/Location.vue'
     <Services />
     <Equipment />
     <PromoBanner />
-    <AboutUs />
-    <About />
+    <!-- <AboutUs /> -->
+    <!-- <About /> -->
     <!-- <Testimonials /> -->
     <Location />
   </div>

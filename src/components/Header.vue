@@ -95,9 +95,9 @@ onUnmounted(() => {
           </transition>
         </div>
         
-        <router-link to="/team" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.team') }}</router-link>
+        <!-- <router-link to="/team" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.team') }}</router-link> -->
         <router-link to="/gallery" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.gallery') }}</router-link>
-        <router-link to="/blog" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.blog') }}</router-link>
+        <!-- <router-link to="/blog" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.blog') }}</router-link> -->
         <router-link to="/career" class="nav-link text-sm uppercase tracking-[0.15em] text-primary/80 hover:text-accent font-medium transition-all duration-300">{{ $t('nav.career') }}</router-link>
         
         <!-- Language Switcher with Flags -->

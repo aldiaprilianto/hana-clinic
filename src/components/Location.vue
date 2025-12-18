@@ -83,7 +83,7 @@ const { t } = useI18n()
           <!-- Map Embed -->
           <div class="rounded-2xl overflow-hidden shadow-lg h-64">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2087595346!2d106.82065931476893!3d-6.232823895492953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJl.%20Jenderal%20Sudirman%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6715693457194!2d106.89370921476856!3d-6.174564595531383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c89c33817b%3A0xacc48927c07414c0!2sHana%20Skin%20Aesthetic%20and%20Dental%20Clinic!5e0!3m2!1sen!2sid!4v1702907400000!5m2!1sen!2sid" 
               width="100%" 
               height="100%" 
               style="border:0;" 
@@ -94,7 +94,7 @@ const { t } = useI18n()
             ></iframe>
           </div>
 
-          <a href="#contact" class="inline-block bg-primary text-white px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 w-full text-center">
+          <a href="https://maps.app.goo.gl/gqYYmrTgLSESsTne6" target="_blank" class="inline-block bg-primary text-white px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 w-full text-center">
             {{ $t('location.getDirections') }}
           </a>
         </div>

@@ -1,0 +1,40 @@
+﻿HTTP/1.1 302 Found
+Content-Type: application/binary
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 18 Dec 2025 13:42:03 GMT
+Location: https://www.google.com/maps/place/Hana+Skin+Aesthetic+and+Dental+Clinic/@-6.1745593,106.8937092,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5c89c33817b:0xacc48927c07414c0!8m2!3d-6.1745646!4d106.8962841!16s%2Fg%2F11msflxktn?entry=tts&g_ep=EgoyMDI1MTIwOS4wIPu8ASoASAFQAw%3D%3D&skid=6bbfae64-c6f4-4fe1-8686-c07245b4dc69
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Content-Security-Policy: script-src 'nonce-bFQzaer4ogepy5sSs5Yi4g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DurableDeepLinkUi/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/DurableDeepLinkUi/cspreport
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Cross-Origin-Opener-Policy: unsafe-none
+Cross-Origin-Resource-Policy: same-site
+Server: ESF
+Content-Length: 0
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+HTTP/1.1 200 OK
+Date: Thu, 18 Dec 2025 13:42:03 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=UTF-8
+Reporting-Endpoints: default="/maps/_/MapsWizUi/web-reports?context=eJzjiug6PZuhG4iZL8xm2A3ELRdnM7y_NJthyuXZDLOBmOHKbAY5IHYAYn8gzgLiKiCeA8QngfgaEN8A4ltAfBeInwCx-tXZDFL8IYnJJZk5qR75ualhmanlSlxGBkamhkYGlnoGAALkM9o"
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce--jYnws7h-wCN_KiWW1ceGQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/maps-tactile
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: __Secure-STRP=AD6DogtYQimt-M_i3P7sb09rZ2Xpz5siSa53D8rLXkLed22kADv_8s86_iEIJJv2mjTqZXC2EovuG-1DbKRMEu47nB2j3Sa6cry-; expires=Thu, 18-Dec-2025 13:47:03 GMT; path=/; domain=.google.com; Secure; SameSite=strict
+Set-Cookie: NID=527=M9UMy4HOavQdoQkidD_VLdwEbXX8Up7oDejXnuq_qqcdQi3QKgYZjLp8ZMZxRJ-nYkx2_NI8XfSLvgKoj6uTGXqaxJMm0SMgzEtJZl7_KwVL4s7Rwit2-oc5xTR4I9gWxKKCON3M-_yEB5PpzedGuuYKzSmBY6ZBNO1hok1AWwdKWvju2t-fsPvyerzR_pTH6mIfCpHif04wBEnf721DfSpUJNDF; expires=Fri, 19-Jun-2026 13:42:03 GMT; path=/; domain=.google.com; HttpOnly
+Set-Cookie: __Secure-BUCKET=CK8H; expires=Tue, 16-Jun-2026 13:42:03 GMT; path=/; domain=.google.com; Secure; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
