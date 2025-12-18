@@ -1234,751 +1234,1826 @@ export const skinAestheticTreatments = [
 export const dentalTreatments = [
   {
     id: 'bleaching-advanced',
-    name: {
-      en: 'Bleaching – Advanced',
-      id: 'Bleaching – Advanced'
-    },
+    name: { en: 'Bleaching – Advanced', id: 'Bleaching – Advanced' },
     category: 'dental',
     shortDescription: {
-      en: 'Advanced teeth whitening system for deep stains and immediate results',
-      id: 'Sistem pemutihan gigi tingkat lanjut untuk noda mendalam dan hasil instan'
+      en: 'A high-strength professional teeth whitening system using advanced activators (laser or LED).',
+      id: 'Sistem pemutihan gigi profesional berkekuatan tinggi menggunakan aktivator canggih (laser atau LED).'
     },
     description: {
-      en: 'Our Advanced Bleaching system is a premium teeth whitening treatment designed to remove deep stains from coffee, smoking, and aging. Using a high-concentration whitening gel activated by specialized light, it provides significant shade improvement in a single session.',
-      id: 'Sistem Bleaching Advanced kami adalah perawatan pemutihan gigi premium yang dirancang untuk menghilangkan noda mendalam akibat kopi, merokok, dan penuaan. Menggunakan gel pemutih konsentrasi tinggi yang diaktifkan oleh cahaya khusus, memberikan peningkatan warna yang signifikan dalam satu sesi.'
+      en: 'A high-strength professional teeth whitening system using advanced activators (laser or LED). It delivers dramatic whitening in one visit.',
+      id: 'Sistem pemutihan gigi profesional berkekuatan tinggi menggunakan aktivator canggih (laser atau LED). Memberikan hasil pemutihan yang dramatis dalam satu kunjungan.'
     },
     image: '/images/dental/Bleaching.png',
     benefits: {
-      en: [
-        'Removes deep stains (coffee, smoking)',
-        'Boosts confidence with a brighter smile',
-        'Immediate results visible after one session',
-        'Long-lasting effects (up to 1-2 years)',
-        'Safe, professional-grade procedure'
-      ],
-      id: [
-        'Menghilangkan noda mendalam (kopi, merokok)',
-        'Meningkatkan kepercayaan diri dengan senyum lebih cerah',
-        'Hasil instan terlihat setelah satu sesi',
-        'Efek tahan lama (hingga 1-2 tahun)',
-        'Prosedur tingkat profesional yang aman'
-      ]
+      en: ['Significantly whiter teeth', 'Removes deep stains (coffee, smoking)', 'Boosts smile confidence'],
+      id: ['Gigi jauh lebih putih', 'Menghilangkan noda mendalam (kopi, merokok)', 'Meningkatkan kepercayaan diri saat tersenyum']
     },
     procedure: {
-      en: [
-        'Oral examination and shade assessment',
-        'Protective gel placed on gums to prevent sensitivity',
-        'Application of high-concentration whitening gel',
-        'Light activation of the whitening agent',
-        'Final cleaning and post-care instructions'
-      ],
-      id: [
-        'Pemeriksaan mulut dan penilaian warna',
-        'Gel pelindung diletakkan pada gusi untuk mencegah sensitivitas',
-        'Aplikasi gel pemutih konsentrasi tinggi',
-        'Aktivasi cahaya pada agen pemutih',
-        'Pembersihan akhir dan instruksi pasca-perawatan'
-      ]
+      en: ['Dentist examines teeth & gums', 'Protective gel placed on gums', 'High-concentration whitening gel applied', 'Activated with laser/LED', 'Gel removed & teeth polished'],
+      id: ['Dokter gigi memeriksa gigi & gusi', 'Gel pelindung diletakkan pada gusi', 'Gel pemutih konsentrasi tinggi diaplikasikan', 'Diaktifkan dengan laser/LED', 'Gel dibersihkan & gigi dipoles']
     },
-    duration: {
-      en: '60-90 minutes',
-      id: '60-90 menit'
-    },
+    duration: { en: 'Procedure: 60–90 mins', id: 'Prosedur: 60–90 menit' },
     recovery: {
-      en: 'Effects: Temporary sensitivity for 24-48 hours. Avoid staining foods for 48 hours.',
-      id: 'Efek: Sensitivitas sementara selama 24-48 jam. Hindari makanan berwarna selama 48 jam.'
+      en: 'Downtime: None. After Effects: Temporary sensitivity (1–3 days). Post-Care: Avoid dark foods/drinks 48 hrs, use sensitivity toothpaste. Recommended Frequency: Once every 12–24 months.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas sementara (1–3 hari). Perawatan: Hindari makanan/minuman berwarna gelap selama 48 jam, gunakan pasta gigi sensitif. Frekuensi: Sekali setiap 12–24 bulan.'
     },
-    results: {
-      en: 'Immediate, lasts 1–2 years',
-      id: 'Instan, bertahan 1–2 tahun'
-    }
+    results: { en: 'Immediate, lasts 1–2 years', id: 'Instan, bertahan 1–2 tahun' }
   },
   {
-    id: 'dental-aesthetic',
-    name: {
-      en: 'Aesthetic Dentistry',
-      id: 'Kedokteran Gigi Estetik'
-    },
+    id: 'bleaching-standard',
+    name: { en: 'Bleaching – Standard', id: 'Bleaching – Standard' },
     category: 'dental',
     shortDescription: {
-      en: 'Transform your smile with cosmetic dental treatments',
-      id: 'Ubah senyum Anda dengan perawatan gigi kosmetik'
+      en: 'Professional whitening using lower-strength gel, ideal for gradual brightening.',
+      id: 'Pemutihan profesional menggunakan gel berkekuatan lebih rendah, ideal untuk pencerahan bertahap.'
     },
     description: {
-      en: 'Aesthetic dentistry focuses on improving the appearance of your teeth, gums, and smile. From teeth whitening to veneers, we offer comprehensive cosmetic solutions to give you the confident, beautiful smile you deserve.',
-      id: 'Kedokteran gigi estetik berfokus pada perbaikan penampilan gigi, gusi, dan senyum Anda. Dari pemutihan gigi hingga veneer, kami menawarkan solusi kosmetik komprehensif untuk memberi Anda senyum indah dan percaya diri yang layak Anda dapatkan.'
+      en: 'Professional whitening using lower-strength gel, ideal for gradual brightening. Perfect for patients wanting natural, comfortable results.',
+      id: 'Pemutihan profesional menggunakan gel berkekuatan lebih rendah, ideal untuk pencerahan bertahap. Cocok bagi pasien yang menginginkan hasil yang alami dan nyaman.'
+    },
+    image: '/images/dental/Bleaching.png',
+    benefits: {
+      en: ['Brighter smile', 'Safer for sensitive teeth'],
+      id: ['Senyum lebih cerah', 'Lebih aman untuk gigi sensitif']
+    },
+    procedure: {
+      en: ['Oral check-up', 'Gum protection', 'Whitening gel applied', 'Multiple short activation cycles'],
+      id: ['Pemeriksaan mulut', 'Perlindungan gusi', 'Gel pemutih diaplikasikan', 'Beberapa siklus aktivasi singkat']
+    },
+    duration: { en: 'Procedure: 45–60 mins', id: 'Prosedur: 45–60 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild sensitivity. Post-Care: Avoid staining foods 24–48 hrs. Recommended Frequency: Every 6–12 months.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas ringan. Perawatan: Hindari makanan berwarna selama 24–48 jam. Frekuensi: Setiap 6–12 bulan.'
+    },
+    results: { en: 'Gradual, 6–12 months', id: 'Bertahap, 6–12 bulan' }
+  },
+  {
+    id: 'veneer-direct-composite',
+    name: { en: 'Veneer Direct (Composite)', id: 'Veneer Direct (Composite)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Tooth-colored resin sculpted directly onto teeth for a one-visit transformation.',
+      id: 'Resin sewarna gigi yang dibentuk langsung pada gigi untuk transformasi dalam satu kunjungan.'
+    },
+    description: {
+      en: 'Tooth-colored resin sculpted directly onto teeth. It transforms smiles in one visit with no lab work required.',
+      id: 'Resin sewarna gigi yang dibentuk langsung pada gigi. Mengubah senyum dalam satu kunjungan tanpa perlu pengerjaan laboratorium.'
     },
     image: '/images/dental/Veneer.png',
     benefits: {
-      en: [
-        'Brighter, whiter smile',
-        'Improved tooth shape and alignment',
-        'Enhanced confidence',
-        'Natural-looking results',
-        'Long-lasting improvements',
-        'Customized treatment plans'
-      ],
-      id: [
-        'Senyum lebih cerah dan putih',
-        'Bentuk dan susunan gigi yang lebih baik',
-        'Meningkatkan kepercayaan diri',
-        'Hasil tampak alami',
-        'Perbaikan tahan lama',
-        'Rencana perawatan yang disesuaikan'
-      ]
+      en: ['Fixes chips, gaps, discoloration', 'Affordable aesthetic option'],
+      id: ['Memperbaiki gigi gumpil, celah, perubahan warna', 'Pilihan estetika yang terjangkau']
     },
     procedure: {
-      en: [
-        'Comprehensive smile analysis',
-        'Digital smile design',
-        'Treatment plan presentation',
-        'Cosmetic procedure execution'
-      ],
-      id: [
-        'Analisis senyum komprehensif',
-        'Desain senyum digital',
-        'Presentasi rencana perawatan',
-        'Pelaksanaan prosedur kosmetik'
-      ]
+      en: ['Shade selection', 'Minimal tooth preparation', 'Composite layered & shaped', 'Light curing', 'Polishing'],
+      id: ['Pemilihan warna', 'Persiapan gigi minimal', 'Komposit dilapis & dibentuk', 'Pengerasan dengan sinar', 'Pemolesan']
     },
-    duration: {
-      en: 'Varies by treatment',
-      id: 'Bervariasi tergantung perawatan'
-    },
+    duration: { en: 'Procedure: 60–90 mins per tooth', id: 'Prosedur: 60–90 menit per gigi' },
     recovery: {
-      en: 'Minimal to none',
-      id: 'Minimal hingga tidak ada'
+      en: 'Downtime: None. After Effects: Mild bite awareness. Post-Care: Avoid biting hard objects. Recommended Frequency: Touch-ups every few years.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Rasa sedikit berbeda saat menggigit. Perawatan: Hindari menggigit benda keras. Frekuensi: Perbaikan setiap beberapa tahun.'
     },
-    results: {
-      en: 'Immediate transformation',
-      id: 'Transformasi instan'
-    }
+    results: { en: 'Immediate, lasts 3–5 years', id: 'Instan, bertahan 3–5 tahun' }
   },
   {
-    id: 'endodontic',
-    name: {
-      en: 'Endodontic Treatment',
-      id: 'Perawatan Saluran Akar'
-    },
+    id: 'veneer-indirect-porcelain',
+    name: { en: 'Veneer Indirect (Porcelain)', id: 'Veneer Indirect (Porcelain)' },
     category: 'dental',
     shortDescription: {
-      en: 'Root canal therapy to save and preserve your natural teeth',
-      id: 'Terapi saluran akar untuk menyelamatkan dan mempertahankan gigi asli Anda'
+      en: 'Custom-made porcelain shells bonded to teeth for a long-lasting, ultra-natural design.',
+      id: 'Cangkang porselen khusus yang ditempelkan pada gigi untuk desain yang sangat alami dan tahan lama.'
     },
     description: {
-      en: 'Endodontic treatment, commonly known as root canal therapy, treats the inside of the tooth when the pulp becomes inflamed or infected. Our advanced techniques ensure comfortable, effective treatment to save your natural tooth.',
-      id: 'Perawatan endodontik, atau terapi saluran akar, merawat bagian dalam gigi ketika pulpa meradang atau terinfeksi. Teknik canggih kami memastikan perawatan yang nyaman dan efektif untuk menyelamatkan gigi asli Anda.'
+      en: 'Custom-made porcelain shells bonded to teeth. Ideal for long-lasting, ultra-natural smile design.',
+      id: 'Cangkang porselen khusus yang ditempelkan pada gigi. Ideal untuk desain senyum yang sangat alami dan tahan lama.'
+    },
+    image: '/images/dental/Veneer.png',
+    benefits: {
+      en: ['Natural translucency', 'Highly stain-resistant', 'Long-term durability'],
+      id: ['Transparansi alami', 'Sangat tahan noda', 'Daya tahan jangka panjang']
+    },
+    procedure: {
+      en: ['Smile design consultation', 'Tooth preparation', 'Impression or digital scan', 'Temporary veneers placed', 'Final veneers bonded'],
+      id: ['Konsultasi desain senyum', 'Persiapan gigi', 'Pencetakan atau scan digital', 'Pemasangan veneer sementara', 'Pemasangan veneer final']
+    },
+    duration: { en: 'Procedure: 2–3 visits over 1–2 weeks', id: 'Prosedur: 2–3 kunjungan selama 1–2 minggu' },
+    recovery: {
+      en: 'Downtime: Minimal. After Effects: Temporary sensitivity. Post-Care: Maintain oral hygiene, avoid hard biting. Recommended Frequency: Long-term solution.',
+      id: 'Pemulihan: Minimal. Efek Samping: Sensitivitas sementara. Perawatan: Jaga kebersihan mulut, hindari gigitan keras. Frekuensi: Solusi jangka panjang.'
+    },
+    results: { en: '10–15 years', id: '10–15 tahun' }
+  },
+  {
+    id: 'veneer-polishing',
+    name: { en: 'Veneer Polishing', id: 'Veneer Polishing' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Professional polishing to restore shine and smoothness of veneers.',
+      id: 'Pemolesan profesional untuk mengembalikan kilau dan kehalusan veneer.'
+    },
+    description: {
+      en: 'Professional polishing to restore shine and smoothness of veneers. Useful for extending veneer lifespan.',
+      id: 'Pemolesan profesional untuk mengembalikan kilau dan kehalusan veneer. Bermanfaat untuk memperpanjang masa pakai veneer.'
+    },
+    image: '/images/dental/Veneer.png',
+    benefits: {
+      en: ['Restores gloss', 'Removes surface stains'],
+      id: ['Mengembalikan kilau', 'Menghilangkan noda permukaan']
+    },
+    procedure: {
+      en: ['Veneer inspection', 'Specialized polishing tools', 'Final shine application'],
+      id: ['Inspeksi veneer', 'Alat pemoles khusus', 'Aplikasi kilau akhir']
+    },
+    duration: { en: 'Procedure: 20–30 mins', id: 'Prosedur: 20–30 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: None. Post-Care: Regular cleaning. Recommended Frequency: Every 6 months.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Tidak ada. Perawatan: Pembersihan rutin. Frekuensi: Setiap 6 bulan.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+  {
+    id: 'veneer-removal',
+    name: { en: 'Bongkar Veneer (Veneer Removal)', id: 'Bongkar Veneer' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Safe removal of old or damaged veneers for upgrades or corrections.',
+      id: 'Pelepasan veneer lama atau rusak dengan aman untuk pembaharuan atau perbaikan.'
+    },
+    description: {
+      en: 'Safe removal of old or damaged veneers. It allows upgrading or correcting previous veneer work.',
+      id: 'Pelepasan veneer lama atau rusak dengan aman. Memungkinkan pembaharuan atau perbaikan pengerjaan veneer sebelumnya.'
+    },
+    image: '/images/dental/Veneer.png',
+    benefits: {
+      en: ['Prepares teeth for new veneers', 'Resolves discomfort or damage'],
+      id: ['Mempersiapkan gigi untuk veneer baru', 'Mengatasi ketidaknyamanan atau kerusakan']
+    },
+    procedure: {
+      en: ['Evaluation & imaging', 'Gentle veneer removal', 'Tooth surface cleaning', 'Temporary protection if needed'],
+      id: ['Evaluasi & pencitraan', 'Pelepasan veneer secara lembut', 'Pembersihan permukaan gigi', 'Perlindungan sementara jika diperlukan']
+    },
+    duration: { en: 'Procedure: 30–60 mins per area', id: 'Prosedur: 30–60 menit per area' },
+    recovery: {
+      en: 'Downtime: 1–3 days sensitivity. After Effects: Temporary tooth sensitivity. Post-Care: Avoid extreme temperatures. Recommended Frequency: As needed before replacement.',
+      id: 'Pemulihan: Sensitivitas 1–3 hari. Efek Samping: Sensitivitas gigi sementara. Perawatan: Hindari suhu ekstrem. Frekuensi: Sesuai kebutuhan sebelum penggantian.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+
+
+  {
+    id: 'root-canal-anterior',
+    name: { en: 'Front Tooth Root Canal', id: 'Perawatan Saluran Akar Anterior' },
+    category: 'dental',
+    shortDescription: {
+      en: 'A root canal treatment for front teeth to remove infection while preserving the natural tooth.',
+      id: 'Perawatan saluran akar untuk gigi depan guna menghilangkan infeksi sambil tetap mempertahankan gigi asli.'
+    },
+    description: {
+      en: 'A root canal treatment for front teeth to remove infection while preserving the natural tooth. It saves the tooth from extraction by treating the infected inner tissue.',
+      id: 'Perawatan saluran akar untuk gigi depan guna menghilangkan infeksi sambil tetap mempertahankan gigi asli. Cara ini menyelamatkan gigi dari pencabutan dengan merawat jaringan dalam yang terinfeksi.'
     },
     image: '/images/dental/TambalGigi.png',
     benefits: {
-      en: [
-        'Saves natural tooth',
-        'Eliminates pain and infection',
-        'Prevents further complications',
-        'Modern, comfortable techniques',
-        'High success rate',
-        'Preserves natural bite'
-      ],
-      id: [
-        'Menyelamatkan gigi asli',
-        'Menghilangkan rasa sakit dan infeksi',
-        'Mencegah komplikasi lebih lanjut',
-        'Teknik modern dan nyaman',
-        'Tingkat keberhasilan tinggi',
-        'Mempertahankan gigitan alami'
-      ]
+      en: ['Relieves pain', 'Saves natural tooth', 'Restores function & appearance'],
+      id: ['Meredakan nyeri', 'Menyelamatkan gigi asli', 'Memulihkan fungsi & penampilan']
     },
     procedure: {
-      en: [
-        'Diagnosis and X-ray',
-        'Local anesthesia',
-        'Pulp removal and cleaning',
-        'Filling and sealing',
-        'Crown placement if needed'
-      ],
-      id: [
-        'Diagnosis dan Rontgen',
-        'Anestesi lokal',
-        'Pengangkatan dan pembersihan pulpa',
-        'Pengisian dan penyegelan',
-        'Pemasangan mahkota jika diperlukan'
-      ]
+      en: ['Local anesthesia given', 'Tooth isolated', 'Infected pulp removed', 'Root canal cleaned & disinfected', 'Canal filled & sealed', 'Temporary or permanent filling placed'],
+      id: ['Pemberian anestesi lokal', 'Isolasi gigi', 'Pengangkatan pulpa yang terinfeksi', 'Pembersihan & disinfeksi saluran akar', 'Pengisian & penyegelan saluran', 'Penempatan tambalan sementara atau permanen']
     },
-    duration: {
-      en: '60-90 minutes',
-      id: '60-90 menit'
-    },
+    duration: { en: 'Procedure: 45–60 mins (1–2 visits)', id: 'Prosedur: 45–60 menit (1–2 kunjungan)' },
     recovery: {
-      en: 'Mild discomfort for 2-3 days',
-      id: 'Ketidaknyamanan ringan selama 2-3 hari'
+      en: 'Downtime: None. After Effects: Mild soreness (1–3 days). Post-Care: Avoid biting hard foods (24–48 hrs). Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Nyeri ringan (1–3 hari). Perawatan: Hindari menggigit makanan keras (24–48 jam). Frekuensi: Satu kali per gigi.'
     },
-    results: {
-      en: 'Pain relief and tooth preservation',
-      id: 'Pereda nyeri dan pelestarian gigi'
-    }
+    results: { en: 'Immediate pain relief; long-term tooth preservation', id: 'Pereda nyeri instan; pelestarian gigi jangka panjang' }
   },
   {
-    id: 'bedah-mulut',
-    name: {
-      en: 'Bedah Mulut (Oral Surgery)',
-      id: 'Bedah Mulut'
-    },
+    id: 'root-canal-posterior',
+    name: { en: 'Back Tooth Root Canal', id: 'Perawatan Saluran Akar Posterior' },
     category: 'dental',
     shortDescription: {
-      en: 'Expert oral surgery for complex dental conditions',
-      id: 'Bedah mulut ahli untuk kondisi gigi yang kompleks'
+      en: 'Root canal for molars or premolars with multiple roots, crucial for chewing function.',
+      id: 'Perawatan saluran akar untuk gigi geraham dengan akar ganda, sangat penting untuk fungsi mengunyah.'
     },
     description: {
-      en: 'Oral surgery encompasses various surgical procedures including wisdom tooth extraction, dental implant placement, jaw surgery, and treatment of oral pathology. Our experienced surgeons use advanced techniques for optimal outcomes.',
-      id: 'Bedah mulut mencakup berbagai prosedur bedah termasuk pencabutan gigi bungsu, pemasangan implan gigi, bedah rahang, dan perawatan patologi mulut. Ahli bedah berpengalaman kami menggunakan teknik canggih untuk hasil optimal.'
+      en: 'Root canal treatment for molars or premolars. These teeth have multiple roots and are more complex, but the procedure is crucial for maintaining chewing ability and oral health.',
+      id: 'Perawatan saluran akar untuk gigi geraham kecil atau besar. Gigi ini memiliki banyak akar dan prosesnya lebih kompleks, namun sangat penting untuk menjaga kemampuan mengunyah dan kesehatan mulut.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Eliminates infection', 'Maintains chewing ability'],
+      id: ['Menghilangkan infeksi', 'Mempertahankan kemampuan mengunyah']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Tooth isolation', 'Multiple canals located', 'Deep cleaning & shaping', 'Filling & sealing', 'Crown preparation recommended'],
+      id: ['Anestesi', 'Isolasi gigi', 'Lokasi beberapa saluran akar', 'Pembersihan & pembentukan mendalam', 'Pengisian & penyegelan', 'Rekomendasi persiapan mahkota']
+    },
+    duration: { en: 'Procedure: 60–90 mins (1–3 visits)', id: 'Prosedur: 60–90 menit (1–3 kunjungan)' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Temporary bite sensitivity. Post-Care: Avoid chewing hard foods until crowned. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas gigitan sementara. Perawatan: Hindari mengunyah makanan keras sampai dipasang mahkota. Frekuensi: Satu kali per gigi.'
+    },
+    results: { en: 'Long-term tooth survival', id: 'Ketahanan gigi jangka panjang' }
+  },
+  {
+    id: 'inlay-onlay-pfm',
+    name: { en: 'Inlay/Onlay Porcelain Fused to Metal (PFM)', id: 'Inlay/Onlay Porcelain Fused to Metal (PFM)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'A custom restoration combining porcelain beauty with metal strength for high-bite areas.',
+      id: 'Restorasi kustom yang menggabungkan keindahan porselen dengan kekuatan logam untuk area kunyah tinggi.'
+    },
+    description: {
+      en: 'A custom dental restoration that combines the aesthetic beauty of porcelain with the underlying strength of metal. Ideal for durability in areas of the mouth that handle high biting pressure.',
+      id: 'Restorasi gigi kustom yang menggabungkan keindahan estetika porselen dengan kekuatan logam di bawahnya. Ideal untuk daya tahan pada area mulut yang menangani tekanan gigitan tinggi.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Strong, long-lasting', 'Natural-looking appearance'],
+      id: ['Kuat, tahan lama', 'Penampilan tampak alami']
+    },
+    procedure: {
+      en: ['Tooth reshaped', 'Impression taken', 'Temporary restoration', 'Lab fabrication', 'Final cementation'],
+      id: ['Pembentukan ulang gigi', 'Pencetakan gigi', 'Restorasi sementara', 'Pembuatan di laboratorium', 'Sementasi akhir']
+    },
+    duration: { en: 'Procedure: 2 visits over 1–2 weeks', id: 'Prosedur: 2 kunjungan selama 1–2 minggu' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild bite adjustment needed. Post-Care: Avoid very hard foods initially. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Penyesuaian gigitan ringan diperlukan. Perawatan: Hindari makanan sangat keras di awal. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: '10–15 years durability', id: 'Daya tahan 10–15 tahun' }
+  },
+  {
+    id: 'inlay-onlay-porcelain',
+    name: { en: 'Inlay/Onlay Porcelain', id: 'Inlay/Onlay Porcelain' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Metal-free ceramic restoration that blends seamlessly with natural teeth.',
+      id: 'Restorasi keramik bebas logam yang menyatu sempurna dengan gigi asli.'
+    },
+    description: {
+      en: 'Metal-free ceramic restoration designed to blend seamlessly with your natural teeth. It provides a highly aesthetic and durable solution for tooth repair.',
+      id: 'Restorasi keramik bebas logam yang dirancang untuk menyatu sempurna dengan gigi asli Anda. Memberikan solusi yang sangat estetis dan tahan lama untuk perbaikan gigi.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Highly aesthetic', 'Stain-resistant', 'Biocompatible'],
+      id: ['Sangat estetis', 'Tahan noda', 'Biokompatibel']
+    },
+    procedure: {
+      en: ['Tooth preparation', 'Digital or manual impression', 'Temporary inlay/onlay', 'Final bonding'],
+      id: ['Persiapan gigi', 'Pencetakan digital atau manual', 'Inlay/onlay sementara', 'Perekatan akhir']
+    },
+    duration: { en: 'Procedure: 2 visits (1–2 weeks)', id: 'Prosedur: 2 kunjungan (1–2 minggu)' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild sensitivity. Post-Care: Maintain good oral hygiene. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas ringan. Perawatan: Jaga kebersihan mulut yang baik. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: '10–15 years', id: '10–15 tahun' }
+  },
+  {
+    id: 'fiber-post',
+    name: { en: 'Fiber Post', id: 'Fiber Post' },
+    category: 'dental',
+    shortDescription: {
+      en: 'A flexible post placed inside a root-canal-treated tooth to support a crown.',
+      id: 'Pasak fleksibel di dalam gigi yang telah dirawat saluran akar untuk mendukung mahkota.'
+    },
+    description: {
+      en: 'A flexible fiber post placed inside a tooth that has undergone root canal treatment. It mimics natural tooth flexibility and provides essential support for a final crown restoration.',
+      id: 'Pasak serat fleksibel yang ditempatkan di dalam gigi yang telah menjalani perawatan saluran akar. Meniru fleksibilitas gigi alami dan memberikan dukungan penting untuk restorasi mahkota akhir.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Strengthens weak teeth', 'Prevents future fractures'],
+      id: ['Memperkuat gigi yang lemah', 'Mencegah patah di masa depan']
+    },
+    procedure: {
+      en: ['Root canal completed', 'Post space prepared', 'Fiber post bonded', 'Core buildup', 'Crown placement'],
+      id: ['Perawatan saluran akar selesai', 'Persiapan ruang pasak', 'Perekatan fiber post', 'Pembangunan inti (core)', 'Pemasangan mahkota']
+    },
+    duration: { en: 'Procedure: 30–45 mins', id: 'Prosedur: 30–45 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild pressure feeling. Post-Care: Avoid heavy biting temporarily. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Rasa tertekan ringan. Perawatan: Hindari gigitan berat untuk sementara. Frekuensi: Satu kali per gigi.'
+    },
+    results: { en: 'Long-term support for restorations', id: 'Dukungan jangka panjang untuk restorasi' }
+  },
+  {
+    id: 'psa-1-visit-1-akar',
+    name: { en: 'PSA 1 Visit – 1 Root', id: 'PSA 1 Visit – 1 Akar' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Single-visit root canal for teeth with one root. Fast and efficient.',
+      id: 'Perawatan saluran akar satu kunjungan untuk gigi dengan satu akar. Cepat dan efisien.'
+    },
+    description: {
+      en: 'An efficient root canal treatment completed in a single session for teeth with only one root. It is designed to provide rapid relief and convenience.',
+      id: 'Perawatan saluran akar yang efisien diselesaikan dalam satu sesi untuk gigi yang hanya memiliki satu akar. Dirancang untuk memberikan pereda nyeri cepat dan kenyamanan.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Immediate pain relief', 'Fewer dental visits'],
+      id: ['Pereda nyeri instan', 'Lebih sedikit kunjungan ke dokter gigi']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Canal cleaning & shaping', 'Immediate filling & sealing in one session'],
+      id: ['Anestesi', 'Pembersihan & pembentukan saluran', 'Pengisian & penyegelan langsung dalam satu sesi']
+    },
+    duration: { en: 'Procedure: 45–60 mins', id: 'Prosedur: 45–60 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild soreness. Post-Care: Avoid hard foods for 24 hrs. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Nyeri ringan. Perawatan: Hindari makanan keras selama 24 jam. Frekuensi: Satu kali per gigi.'
+    },
+    results: { en: 'Immediate relief and preservation', id: 'Pereda nyeri dan pelestarian instan' }
+  },
+  {
+    id: 'psa-1-visit-2-akar',
+    name: { en: 'PSA 1 Visit – 2 Roots', id: 'PSA 1 Visit – 2 Akar' },
+    category: 'dental',
+    shortDescription: {
+      en: 'One-session root canal treatment for teeth with two roots.',
+      id: 'Perawatan saluran akar satu sesi untuk gigi dengan dua akar.'
+    },
+    description: {
+      en: 'Root canal treatment involving two roots, completed in just one appointment. This procedure offers a faster path to recovery for teeth with multiple canals.',
+      id: 'Perawatan saluran akar yang melibatkan dua akar, diselesaikan hanya dalam satu janji temu. Prosedur ini menawarkan jalur pemulihan yang lebih cepat untuk gigi dengan beberapa saluran.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Faster recovery', 'Fewer appointments needed'],
+      id: ['Pemulihan lebih cepat', 'Lebih sedikit janji temu yang diperlukan']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Same-day cleaning, shaping, and filling of two canals'],
+      id: ['Anestesi', 'Pembersihan, pembentukan, dan pengisian dua saluran di hari yang sama']
+    },
+    duration: { en: 'Procedure: 60–75 mins', id: 'Prosedur: 60–75 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild tenderness. Post-Care: Maintain hygiene & plan follow-up crown. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Rasa lunak ringan. Perawatan: Jaga kebersihan & rencanakan tindak lanjut mahkota. Frekuensi: Satu kali per gigi.'
+    },
+    results: { en: 'Long-term preservation', id: 'Pelestarian jangka panjang' }
+  },
+  {
+    id: 'psa-1-visit-3-akar',
+    name: { en: 'PSA 1 Visit – 3 Roots', id: 'PSA 1 Visit – 3 Akar' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Advanced single-visit root canal for teeth with three roots.',
+      id: 'Perawatan saluran akar satu kunjungan canggih untuk gigi dengan tiga akar.'
+    },
+    description: {
+      en: 'A highly advanced root canal procedure for molars with three roots, performed entirely in one visit. It combines efficiency with precise infection control.',
+      id: 'Prosedur saluran akar yang sangat canggih untuk gigi geraham dengan tiga akar, dilakukan sepenuhnya dalam satu kunjungan. Menggabungkan efisiensi dengan kontrol infeksi yang presisi.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Efficient infection control', 'Saves natural tooth'],
+      id: ['Kontrol infeksi yang efisien', 'Menyelamatkan gigi asli']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Detailed multi-canal cleaning', 'Same-day canal filling'],
+      id: ['Anestesi', 'Pembersihan multisaluran yang terperinci', 'Pengisian saluran di hari yang sama']
+    },
+    duration: { en: 'Procedure: 75–90 mins', id: 'Prosedur: 75–90 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Bite sensitivity. Post-Care: Avoid chewing until area feels comfortable. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas gigitan. Perawatan: Hindari mengunyah sampai area terasa nyaman. Frekuensi: Satu kali per gigi.'
+    },
+    results: { en: 'Long-lasting results', id: 'Hasil yang tahan lama' }
+  },
+  {
+    id: 'psa-1-visit-4-akar',
+    name: { en: 'PSA 1 Visit – 4 Roots', id: 'PSA 1 Visit – 4 Akar' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Complex one-day root canal for four-root teeth, using advanced tools.',
+      id: 'Perawatan saluran akar satu hari yang kompleks untuk gigi dengan empat akar, menggunakan alat canggih.'
+    },
+    description: {
+      en: 'Our most complex single-visit root canal service, dealing with four separate root canals. We use advanced diagnostic and mapping tools to ensure all canals are thoroughly cleaned and sealed in one session.',
+      id: 'Layanan saluran akar satu kunjungan kami yang paling kompleks, menangani empat saluran akar yang terpisah. Kami menggunakan alat diagnostik dan pemetaan canggih untuk memastikan semua saluran dibersihkan dan disegel secara menyeluruh dalam satu sesi.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Saves severely infected teeth', 'Prevents future tooth loss'],
+      id: ['Menyelamatkan gigi yang terinfeksi parah', 'Mencegah kehilangan gigi di masa depan']
+    },
+    procedure: {
+      en: ['Detailed canal mapping', 'Thorough cleaning of all canals', 'Same-day sealing'],
+      id: ['Pemetaan saluran terperinci', 'Pembersihan menyeluruh di semua saluran', 'Penyegelan di hari yang sama']
+    },
+    duration: { en: 'Procedure: 90–120 mins', id: 'Prosedur: 90–120 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild swelling possible. Post-Care: Soft diet (1–2 days), crown highly recommended. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Kemungkinan pembengkakan ringan. Perawatan: Diet makanan lunak (1–2 hari), mahkota sangat direkomendasikan. Frekuensi: Satu kali per gigi.'
+    },
+    results: { en: 'Long-term tooth survival', id: 'Ketahanan gigi jangka panjang' }
+  },
+  {
+    id: 'extraction-standard-gp',
+    name: { en: 'Extraction Standard – GP', id: 'Pencabutan Gigi Standar – GP' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Routine tooth extraction performed by a general dentist for damaged or loose teeth.',
+      id: 'Pencabutan gigi rutin yang dilakukan oleh dokter gigi umum untuk gigi yang rusak atau goyang.'
+    },
+    description: {
+      en: 'Routine tooth extraction performed by a general dentist for damaged or loose teeth. It removes the source of pain and prevents the spread of infection.',
+      id: 'Pencabutan gigi rutin yang dilakukan oleh dokter gigi umum untuk gigi yang rusak atau goyang. Menghilangkan sumber rasa sakit dan mencegah penyebaran infeksi.'
     },
     image: '/images/dental/CabutGigi.png',
     benefits: {
-      en: [
-        'Expert surgical care',
-        'Advanced techniques',
-        'Minimal discomfort',
-        'Faster healing',
-        'Comprehensive aftercare',
-        'Problem resolution'
-      ],
-      id: [
-        'Perawatan bedah ahli',
-        'Teknik canggih',
-        'Ketidaknyamanan minimal',
-        'Penyembuhan lebih cepat',
-        'Perawatan pasca-tindakan komprehensif',
-        'Penyelesaian masalah'
-      ]
+      en: ['Removes pain source', 'Prevents infection spread'],
+      id: ['Menghilangkan sumber rasa sakit', 'Mencegah penyebaran infeksi']
     },
     procedure: {
-      en: [
-        'Thorough examination and imaging',
-        'Treatment planning',
-        'Anesthesia administration',
-        'Surgical procedure',
-        'Post-operative care instructions'
-      ],
-      id: [
-        'Pemeriksaan dan pencitraan menyeluruh',
-        'Perencanaan perawatan',
-        'Pemberian anestesi',
-        'Prosedur bedah',
-        'Instruksi perawatan pasca-operasi'
-      ]
+      en: ['Local anesthesia injection', 'Tooth gently loosened', 'Tooth removed', 'Gauze placed to stop bleeding'],
+      id: ['Suntikan anestesi lokal', 'Gigi dilonggarkan secara perlahan', 'Gigi dicabut', 'Penempatan kasa untuk menghentikan pendarahan']
     },
-    duration: {
-      en: '30-120 minutes depending on complexity',
-      id: '30-120 menit tergantung kompleksitas'
-    },
+    duration: { en: 'Procedure: 15–30 mins', id: 'Prosedur: 15–30 menit' },
     recovery: {
-      en: '3-7 days',
-      id: '3-7 hari'
+      en: 'Downtime: 1–2 days. After Effects: Mild pain, bleeding. Post-Care: Bite gauze, avoid straw, soft food. Frequency: Once per tooth.',
+      id: 'Pemulihan: 1–2 hari. Efek Samping: Nyeri ringan, pendarahan. Perawatan: Gigit kasa, hindari sedotan, makanan lunak. Frekuensi: Sekali per gigi.'
     },
-    results: {
-      en: 'Problem resolution and improved oral health',
-      id: 'Penyelesaian masalah dan peningkatan kesehatan mulut'
-    }
+    results: { en: 'Immediate relief', id: 'Pereda nyeri instan' }
   },
   {
-    id: 'dental-consultation',
-    name: {
-      en: 'Dental Consultation',
-      id: 'Konsultasi Gigi'
-    },
+    id: 'extraction-complicated-gp',
+    name: { en: 'Extraction Complicated – GP', id: 'Pencabutan Gigi Komplikasi – GP' },
     category: 'dental',
     shortDescription: {
-      en: 'Comprehensive dental examination and treatment planning',
-      id: 'Pemeriksaan gigi komprehensif dan perencanaan perawatan'
+      en: 'Safe removal of problematic teeth performed by a general dentist.',
+      id: 'Pencabutan gigi bermasalah yang aman yang dilakukan oleh dokter gigi umum.'
     },
     description: {
-      en: 'Our dental consultation includes a thorough examination of your teeth, gums, and oral health. We discuss your concerns, perform necessary diagnostics, and create a personalized treatment plan tailored to your needs.',
-      id: 'Konsultasi gigi kami mencakup pemeriksaan menyeluruh terhadap gigi, gusi, dan kesehatan mulut Anda. Kami mendiskusikan keluhan Anda, melakukan diagnostik yang diperlukan, dan membuat rencana perawatan yang disesuaikan dengan kebutuhan Anda.'
+      en: 'Safe removal of problematic teeth performed by a general dentist. Ideal for cases that require more surgical attention.',
+      id: 'Pencabutan gigi bermasalah yang aman yang dilakukan oleh dokter gigi umum. Ideal untuk kasus yang memerlukan perhatian bedah lebih lanjut.'
     },
-    image: 'https://images.unsplash.com/photo-1609840114035-3c981960afdd?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/dental/CabutGigi.png',
     benefits: {
-      en: [
-        'Comprehensive oral health assessment',
-        'Early problem detection',
-        'Personalized treatment planning',
-        'Professional advice',
-        'X-ray diagnostics if needed',
-        'No-pressure environment'
-      ],
-      id: [
-        'Penilaian kesehatan mulut komprehensif',
-        'Deteksi masalah dini',
-        'Perencanaan perawatan personal',
-        'Saran profesional',
-        'Diagnostik Rontgen jika diperlukan',
-        'Lingkungan tanpa tekanan'
-      ]
+      en: ['Safe removal of problematic teeth'],
+      id: ['Pencabutan gigi bermasalah yang aman']
     },
     procedure: {
-      en: [
-        'Medical history review',
-        'Visual examination',
-        'Diagnostic imaging if needed',
-        'Discussion of findings',
-        'Treatment plan presentation'
-      ],
-      id: [
-        'Tinjauan riwayat medis',
-        'Pemeriksaan visual',
-        'Pencitraan diagnostik jika diperlukan',
-        'Diskusi temuan',
-        'Presentasi rencana perawatan'
-      ]
+      en: ['Anesthesia', 'Gum separation if needed', 'Tooth sectioned if required', 'Extraction & cleaning'],
+      id: ['Anestesi', 'Pemisahan gusi jika diperlukan', 'Pemotongan gigi jika diperlukan', 'Ekstraksi & pembersihan']
     },
-    duration: {
-      en: '30-45 minutes',
-      id: '30-45 menit'
-    },
+    duration: { en: 'Procedure: 30–45 mins', id: 'Prosedur: 30–45 menit' },
     recovery: {
-      en: 'None',
-      id: 'Tidak ada'
+      en: 'Downtime: 2–4 days. After Effects: Swelling, soreness. Post-Care: Antibiotics if prescribed, ice compress.',
+      id: 'Pemulihan: 2–4 hari. Efek Samping: Pembengkakan, nyeri. Perawatan: Antibiotik jika diresepkan, kompres es.'
     },
-    results: {
-      en: 'Clear understanding of oral health status',
-      id: 'Pemahaman jelas tentang status kesehatan mulut'
-    }
+    results: { en: 'Immediate', id: 'Instan' }
   },
   {
-    id: 'scaling',
-    name: {
-      en: 'Scaling (Teeth Cleaning)',
-      id: 'Scaling (Pembersihan Karang Gigi)'
-    },
+    id: 'wisdom-tooth-gp',
+    name: { en: 'Wisdom Tooth – GP', id: 'Cabut Gigi Bungsu – GP' },
     category: 'dental',
     shortDescription: {
-      en: 'Professional teeth cleaning for optimal oral health',
-      id: 'Pembersihan gigi profesional untuk kesehatan mulut optimal'
+      en: 'Removal of wisdom teeth by general dentist when position is simple.',
+      id: 'Pencabutan gigi bungsu oleh dokter gigi umum saat posisinya sederhana.'
     },
     description: {
-      en: 'Dental scaling is a professional cleaning procedure that removes plaque, tartar, and stains from your teeth. Regular scaling prevents gum disease, cavities, and maintains fresh breath and healthy gums.',
-      id: 'Scaling gigi adalah prosedur pembersihan profesional yang menghilangkan plak, karang gigi, dan noda dari gigi Anda. Scaling rutin mencegah penyakit gusi, gigi berlubang, serta menjaga napas segar dan gusi sehat.'
+      en: 'Removal of wisdom teeth by a general dentist when the position is simple. Prevents future pain, swelling, and crowding of other teeth.',
+      id: 'Pencabutan gigi bungsu oleh dokter gigi umum saat posisinya sederhana. Mencegah rasa sakit di masa depan, pembengkakan, dan desakan gigi.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Prevents pain, swelling, crowding'],
+      id: ['Mencegah nyeri, pembengkakan, desakan gigi']
+    },
+    procedure: {
+      en: ['X-ray evaluation', 'Local anesthesia', 'Tooth removed', 'Gauze placement'],
+      id: ['Evaluasi rontgen', 'Anestesi lokal', 'Gigi dicabut', 'Penempatan kasa']
+    },
+    duration: { en: 'Procedure: 30–45 mins', id: 'Prosedur: 30–45 menit' },
+    recovery: {
+      en: 'Downtime: 3–5 days. After Effects: Swelling, jaw stiffness. Post-Care: Cold compress, soft diet.',
+      id: 'Pemulihan: 3–5 hari. Efek Samping: Pembengkakan, kekakuan rahang. Perawatan: Kompres dingin, diet makanan lunak.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+  {
+    id: 'wisdom-tooth-sp-standard',
+    name: { en: 'Wisdom Tooth SP (Standard)', id: 'Cabut Gigi Bungsu SP (Standar)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Wisdom tooth surgery by specialist for deeper or angled teeth.',
+      id: 'Operasi gigi bungsu oleh spesialis untuk gigi yang lebih dalam atau miring.'
+    },
+    description: {
+      en: 'Wisdom tooth surgery performed by a specialist for deeper or angled teeth. Provides a safe surgical removal with lower risk of complications.',
+      id: 'Operasi gigi bungsu yang dilakukan oleh spesialis untuk gigi yang lebih dalam atau miring. Memberikan pencabutan bedah yang aman dengan risiko komplikasi yang lebih rendah.'
+    },
+    image: '/images/dental/CabutGigi2.png',
+    benefits: {
+      en: ['Safe surgical removal', 'Lower complication risk'],
+      id: ['Pencabutan bedah yang aman', 'Risiko komplikasi yang lebih rendah']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Minor incision', 'Tooth sectioning', 'Removal & stitching'],
+      id: ['Anestesi', 'Sayatan kecil', 'Pemotongan gigi', 'Pencabutan & penjahitan']
+    },
+    duration: { en: 'Procedure: 45–60 mins', id: 'Prosedur: 45–60 menit' },
+    recovery: {
+      en: 'Downtime: 5–7 days. After Effects: Swelling, bruising. Post-Care: Medication, no smoking.',
+      id: 'Pemulihan: 5–7 hari. Efek Samping: Pembengkakan, memar. Perawatan: Obat-obatan, tidak merokok.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+  {
+    id: 'wisdom-tooth-sp-complicated',
+    name: { en: 'Wisdom Tooth SP (Complicated)', id: 'Cabut Gigi Bungsu SP (Komplikasi)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Complex wisdom tooth surgery involving nerves or infection.',
+      id: 'Operasi gigi bungsu kompleks yang melibatkan saraf atau infeksi.'
+    },
+    description: {
+      en: 'Complex wisdom tooth surgery involving nerves or infection. Prevents severe pain and jaw infection through specialist care.',
+      id: 'Operasi gigi bungsu kompleks yang melibatkan saraf atau infeksi. Mencegah nyeri parah dan infeksi rahang melalui perawatan spesialis.'
+    },
+    image: '/images/dental/CabutGigi2.png',
+    benefits: {
+      en: ['Prevents severe pain & jaw infection'],
+      id: ['Mencegah nyeri hebat & infeksi rahang']
+    },
+    procedure: {
+      en: ['Imaging & planning', 'Surgical extraction', 'Bone trimming if needed', 'Suturing'],
+      id: ['Pencitraan & perencanaan', 'Ekstraksi bedah', 'Pemangkasan tulang jika diperlukan', 'Penjahitan']
+    },
+    duration: { en: 'Procedure: 60–90 mins', id: 'Prosedur: 60–90 menit' },
+    recovery: {
+      en: 'Downtime: 7–10 days. After Effects: Significant swelling. Post-Care: Antibiotics, follow-ups.',
+      id: 'Pemulihan: 7–10 hari. Efek Samping: Pembengkakan signifikan. Perawatan: Antibiotik, tindak lanjut.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+  {
+    id: 'operculectomy',
+    name: { en: 'Operculektomi', id: 'Operkulektomi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Removal of excess gum covering partially erupted tooth.',
+      id: 'Pemotongan gusi berlebih yang menutupi gigi yang baru tumbuh sebagian.'
+    },
+    description: {
+      en: 'Removal of excess gum covering a partially erupted tooth. Reduces infection risks and pain associated with wisdom teeth.',
+      id: 'Pemotongan gusi berlebih yang menutupi gigi yang baru tumbuh sebagian. Mengurangi risiko infeksi dan nyeri yang terkait dengan gigi bungsu.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Reduces infection & pain'],
+      id: ['Mengurangi infeksi & nyeri']
+    },
+    procedure: {
+      en: ['Local anesthesia', 'Gum trimming', 'Cleaning area'],
+      id: ['Anestesi lokal', 'Pemangkasan gusi', 'Pembersihan area']
+    },
+    duration: { en: 'Procedure: 20–30 mins', id: 'Prosedur: 20–30 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. After Effects: Mild soreness. Post-Care: Rinse, avoid spicy food.',
+      id: 'Pemulihan: 1–3 hari. Efek Samping: Nyeri ringan. Perawatan: Berkumur, hindari makanan pedas.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+  {
+    id: 'alveolectomy',
+    name: { en: 'Alveolektomi', id: 'Alveolektomi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Surgical smoothing of jawbone after extraction.',
+      id: 'Penghalusan bedah pada tulang rahang setelah pencabutan.'
+    },
+    description: {
+      en: 'Surgical smoothing of the jawbone after extraction. Improves healing process and ensures future denture comfort.',
+      id: 'Penghalusan bedah pada tulang rahang setelah pencabutan. Meningkatkan proses penyembuhan dan memastikan kenyamanan gigi palsu di masa depan.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Improves healing & denture comfort'],
+      id: ['Meningkatkan penyembuhan & kenyamanan gigi palsu']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Bone reshaping', 'Suturing'],
+      id: ['Anestesi', 'Pembentukan ulang tulang', 'Penjahitan']
+    },
+    duration: { en: 'Procedure: 30–45 mins', id: 'Prosedur: 30–45 menit' },
+    recovery: {
+      en: 'Downtime: 3–5 days. After Effects: Swelling. Post-Care: Soft food, medication.',
+      id: 'Pemulihan: 3–5 hari. Efek Samping: Pembengkakan. Perawatan: Makanan lunak, obat-obatan.'
+    },
+    results: { en: 'Permanent', id: 'Permanen' }
+  },
+  {
+    id: 'windowing-gigi-grade-1',
+    name: { en: 'Windowing Gigi – Grade 1', id: 'Windowing Gigi – Grade 1' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Opening gum/bone to expose impacted tooth for orthodontics.',
+      id: 'Pembukaan gusi/tulang untuk mengekspos gigi yang terpendam untuk ortodonti.'
+    },
+    description: {
+      en: 'Surgical opening of the gum or bone to expose an impacted tooth for orthodontic purposes. Helps facilitate natural or guided tooth eruption.',
+      id: 'Pembukaan gusi atau tulang secara bedah untuk mengekspos gigi yang terpendam untuk keperluan ortodonti. Membantu memfasilitasi pertumbuhan gigi secara alami atau terpandu.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Helps tooth eruption'],
+      id: ['Membantu pertumbuhan gigi']
+    },
+    procedure: {
+      en: ['Anesthesia', 'Small incision', 'Tooth exposure'],
+      id: ['Anestesi', 'Sayatan kecil', 'Ekspos gigi']
+    },
+    duration: { en: 'Procedure: 30–45 mins', id: 'Prosedur: 30–45 menit' },
+    recovery: {
+      en: 'Downtime: 3–5 days. After Effects: Soreness. Post-Care: Oral hygiene care.',
+      id: 'Pemulihan: 3–5 hari. Efek Samping: Nyeri. Perawatan: Perawatan kebersihan mulut.'
+    },
+    results: { en: 'Weeks–months for eruption', id: 'Berminggu-minggu hingga berbulan-bulan untuk tumbuh' }
+  },
+  {
+    id: 'suturing',
+    name: { en: 'Penjahitan (Suturing)', id: 'Penjahitan (Suturing)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Closing surgical wound with stitches to facilitate faster healing.',
+      id: 'Penutupan luka bedah dengan jahitan untuk memfasilitasi penyembuhan yang lebih cepat.'
+    },
+    description: {
+      en: 'Closing a surgical wound with stitches. Promotes faster healing and protects the area from infection.',
+      id: 'Penutupan luka bedah dengan jahitan. Mendorong penyembuhan yang lebih cepat dan melindungi area dari infeksi.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Faster healing'],
+      id: ['Penyembuhan lebih cepat']
+    },
+    procedure: {
+      en: ['Area cleaned', 'Sutures placed'],
+      id: ['Area dibersihkan', 'Penempatan jahitan']
+    },
+    duration: { en: 'Procedure: 10–15 mins', id: 'Prosedur: 10–15 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Tight feeling. Post-Care: Keep area clean.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Rasa kencang. Perawatan: Jaga area tetap bersih.'
+    },
+    results: { en: 'Protected wound', id: 'Luka terlindungi' }
+  },
+  {
+    id: 'suture-removal',
+    name: { en: 'Lepas Jahitan', id: 'Lepas Jahitan' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Professional removal of stitches after initial healing is complete.',
+      id: 'Pelepasan jahitan secara profesional setelah penyembuhan awal selesai.'
+    },
+    description: {
+      en: 'Professional removal of stitches once the wound has healed sufficiently. Ensures a comfortable final recovery phase.',
+      id: 'Pelepasan jahitan secara profesional setelah luka cukup sembuh. Memastikan fase pemulihan akhir yang nyaman.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Comfortable recovery'],
+      id: ['Pemulihan yang nyaman']
+    },
+    procedure: {
+      en: ['Sterilization', 'Stitch removal'],
+      id: ['Sterilisasi', 'Pelepasan jahitan']
+    },
+    duration: { en: 'Procedure: 5–10 mins', id: 'Prosedur: 5–10 menit' },
+    recovery: {
+      en: 'Downtime: None.',
+      id: 'Pemulihan: Tidak ada.'
+    },
+    results: { en: 'Healed site', id: 'Area yang sudah sembuh' }
+  },
+  {
+    id: 'surgical-followup',
+    name: { en: 'Add-On Kontrol Bedah', id: 'Add-On Kontrol Bedah' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Follow-up visit after surgery to ensure proper healing.',
+      id: 'Kunjungan tindak lanjut setelah operasi untuk memastikan penyembuhan yang tepat.'
+    },
+    description: {
+      en: 'A follow-up visit after surgery to inspect the site and ensure the patient is healing as expected.',
+      id: 'Kunjungan tindak lanjut setelah operasi untuk memeriksa area dan memastikan pasien sembuh sesuai harapan.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Ensures proper healing'],
+      id: ['Memastikan penyembuhan yang tepat']
+    },
+    procedure: {
+      en: ['Area inspection', 'Cleaning if needed'],
+      id: ['Inspeksi area', 'Pembersihan jika diperlukan']
+    },
+    duration: { en: 'Procedure: 10–15 mins', id: 'Prosedur: 10–15 menit' },
+    recovery: {
+      en: 'Downtime: None.',
+      id: 'Pemulihan: Tidak ada.'
+    },
+    results: { en: 'Validated healing', id: 'Penyembuhan tervalidasi' }
+  },
+  {
+    id: 'frenectomy',
+    name: { en: 'Frenektomi', id: 'Frenektomi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Removal of tight lip/tongue frenulum to improve speech and hygiene.',
+      id: 'Pembuangan frenulum bibir/lidah yang kencang untuk meningkatkan bicara dan kebersihan.'
+    },
+    description: {
+      en: 'Surgical removal of a tight lip or tongue frenulum. Improves speech, overall comfort, and oral hygiene accessibility.',
+      id: 'Pembuangan secara bedah pada frenulum bibir atau lidah yang kencang. Meningkatkan bicara, kenyamanan umum, dan aksesibilitas kebersihan mulut.'
+    },
+    image: '/images/dental/CabutGigi.png',
+    benefits: {
+      en: ['Improves speech, comfort, hygiene'],
+      id: ['Meningkatkan bicara, kenyamanan, kebersihan']
+    },
+    procedure: {
+      en: ['Local anesthesia', 'Frenulum cut/laser', 'Suturing if needed'],
+      id: ['Anestesi lokal', 'Pemotongan frenulum/laser', 'Penjahitan jika diperlukan']
+    },
+    duration: { en: 'Procedure: 20–30 mins', id: 'Prosedur: 20–30 menit' },
+    recovery: {
+      en: 'Downtime: 1–3 days. After Effects: Mild soreness. Post-Care: Stretching exercises.',
+      id: 'Pemulihan: 1–3 hari. Efek Samping: Nyeri ringan. Perawatan: Latihan peregangan.'
+    },
+    results: { en: 'Immediate', id: 'Instan' }
+  },
+  {
+    id: 'scaling-polishing',
+    name: { en: 'Dental Scaling & Polishing', id: 'Scaling & Poles Gigi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Professional cleaning to remove plaque, tartar, and stains that brushing can’t reach.',
+      id: 'Pembersihan profesional untuk menghilangkan plak, karang gigi, dan noda yang tidak dapat dijangkau oleh sikat gigi.'
+    },
+    description: {
+      en: 'Professional cleaning to remove plaque, tartar, and stains that brushing can’t reach. It prevents gum disease and maintains oral hygiene before pain or complications start.',
+      id: 'Pembersihan profesional untuk menghilangkan plak, karang gigi, dan noda yang tidak dapat dijangkau oleh sikat gigi. Mencegah penyakit gusi dan menjaga kebersihan mulut sebelum timbul rasa sakit atau komplikasi.'
     },
     image: '/images/dental/Scaling.png',
     benefits: {
-      en: [
-        'Removes plaque and tartar',
-        'Prevents gum disease',
-        'Fresher breath',
-        'Brighter smile',
-        'Prevents cavities',
-        'Maintains oral health'
-      ],
-      id: [
-        'Menghilangkan plak dan karang gigi',
-        'Mencegah penyakit gusi',
-        'Napas lebih segar',
-        'Senyum lebih cerah',
-        'Mencegah gigi berlubang',
-        'Menjaga kesehatan mulut'
-      ]
+      en: ['Healthier gums', 'Fresher breath', 'Cleaner, smoother teeth'],
+      id: ['Gusi lebih sehat', 'Napas lebih segar', 'Gigi lebih bersih dan halus']
     },
     procedure: {
-      en: [
-        'Oral examination',
-        'Ultrasonic scaling',
-        'Manual scaling if needed',
-        'Polishing',
-        'Fluoride treatment (optional)'
-      ],
-      id: [
-        'Pemeriksaan mulut',
-        'Scaling ultrasonik',
-        'Scaling manual jika diperlukan',
-        'Pemolesan',
-        'Perawatan fluoride (opsional)'
-      ]
+      en: ['Oral exam', 'Ultrasonic scaling removes tartar', 'Hand scaling for fine areas', 'Polishing to smooth enamel'],
+      id: ['Pemeriksaan mulut', 'Scaling ultrasonik untuk menghilangkan karang gigi', 'Scaling manual untuk area halus', 'Pemolesan untuk menghaluskan email']
     },
-    duration: {
-      en: '30-60 minutes',
-      id: '30-60 menit'
-    },
+    duration: { en: 'Procedure: 30–60 mins', id: 'Prosedur: 30–60 menit' },
     recovery: {
-      en: 'None',
-      id: 'Tidak ada'
+      en: 'Downtime: None. After Effects: Mild sensitivity, slight bleeding. Post-Care: Avoid very hot/cold foods for 24 hrs. Frequency: Every 6 months.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas ringan, sedikit pendarahan. Perawatan: Hindari makanan sangat panas/dingin selama 24 jam. Frekuensi: Setiap 6 bulan.'
     },
-    results: {
-      en: 'Clean, fresh teeth and healthy gums',
-      id: 'Gigi bersih, segar, dan gusi sehat'
-    }
+    results: { en: 'Immediate results, lasts 3–6 months', id: 'Hasil instan, bertahan 3–6 bulan' }
   },
   {
-    id: 'tambal-gigi',
-    name: {
-      en: 'Tambal Gigi (Dental Filling)',
-      id: 'Tambal Gigi'
-    },
+    id: 'fluoride-treatment',
+    name: { en: 'Topical Fluoride Treatment', id: 'Perawatan Fluoride Topikal' },
     category: 'dental',
     shortDescription: {
-      en: 'Restore damaged teeth with modern filling materials',
-      id: 'Kembalikan gigi rusak dengan bahan tambal modern'
+      en: 'High-concentration fluoride strengthens enamel and prevents cavities.',
+      id: 'Fluoride konsentrasi tinggi memperkuat email dan mencegah gigi berlubang.'
     },
     description: {
-      en: 'Dental fillings restore teeth damaged by decay or trauma. We use high-quality, tooth-colored composite materials that blend naturally with your teeth while providing strong, durable restoration.',
-      id: 'Tambal gigi memperbaiki gigi yang rusak akibat pembusukan atau trauma. Kami menggunakan bahan komposit berkualitas tinggi sewarna gigi yang menyatu secara alami dengan gigi Anda sambil memberikan restorasi yang kuat dan tahan lama.'
+      en: 'High-concentration fluoride treatment that strengthens tooth enamel and prevents cavities. It is especially helpful for patients with sensitive or cavity-prone teeth.',
+      id: 'Perawatan fluoride konsentrasi tinggi yang memperkuat email gigi dan mencegah gigi berlubang. Sangat bermanfaat bagi pasien dengan gigi sensitif atau rentan berlubang.'
+    },
+    image: '/images/dental/Scaling.png',
+    benefits: {
+      en: ['Prevents decay', 'Reduces tooth sensitivity'],
+      id: ['Mencegah pembusukan', 'Mengurangi sensitivitas gigi']
+    },
+    procedure: {
+      en: ['Teeth cleaned', 'Fluoride gel/varnish applied', 'Material sets on teeth'],
+      id: ['Pembersihan gigi', 'Aplikasi gel/varnish fluoride', 'Bahan mengeras pada gigi']
+    },
+    duration: { en: 'Procedure: 5–10 mins', id: 'Prosedur: 5–10 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Temporary coating feel. Post-Care: No eating/drinking for 30 mins. Frequency: Every 3–6 months.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Terasa ada lapisan sementara pada gigi. Perawatan: Tidak makan/minum selama 30 menit. Frekuensi: Setiap 3-6 bulan.'
+    },
+    results: { en: 'Strengthens enamel over subsequent weeks', id: 'Memperkuat email selama minggu-minggu berikutnya' }
+  },
+  {
+    id: 'dental-sealant',
+    name: { en: 'Dental Sealant', id: 'Sealant Gigi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Thin protective coating placed on back teeth grooves to prevent cavities.',
+      id: 'Lapisan pelindung tipis yang ditempatkan pada lekukan gigi belakang untuk mencegah gigi berlubang.'
+    },
+    description: {
+      en: 'A thin protective coating placed on the deep grooves of back teeth (molars) to prevent cavities. It is a highly effective, painless preventive measure, especially popular for children and teens.',
+      id: 'Lapisan pelindung tipis yang ditempatkan pada lekukan dalam gigi belakang (geraham) untuk mencegah gigi berlubang. Merupakan tindakan pencegahan yang sangat efektif dan tanpa rasa sakit, populer untuk anak-anak dan remaja.'
     },
     image: '/images/dental/TambalGigi.png',
     benefits: {
-      en: [
-        'Stops decay progression',
-        'Restores tooth function',
-        'Natural appearance',
-        'Durable materials',
-        'Quick procedure',
-        'Pain relief'
-      ],
-      id: [
-        'Menghentikan perkembangan pembusukan',
-        'Mengembalikan fungsi gigi',
-        'Penampilan alami',
-        'Bahan tahan lama',
-        'Prosedur cepat',
-        'Pereda nyeri'
-      ]
+      en: ['Prevents decay in deep grooves', 'Painless protection'],
+      id: ['Mencegah pembusukan pada lekukan dalam', 'Perlindungan tanpa rasa sakit']
     },
     procedure: {
-      en: [
-        'Examination and X-ray',
-        'Local anesthesia',
-        'Decay removal',
-        'Filling placement',
-        'Shaping and polishing'
-      ],
-      id: [
-        'Pemeriksaan dan Rontgen',
-        'Anestesi lokal',
-        'Pengangkatan pembusukan',
-        'Penempatan tambalan',
-        'Pembentukan dan pemolesan'
-      ]
+      en: ['Clean tooth surface', 'Dry surface', 'Sealant applied', 'Light-cured to harden'],
+      id: ['Pembersihan permukaan gigi', 'Pengeringan permukaan', 'Aplikasi sealant', 'Pengerasan dengan sinar']
     },
-    duration: {
-      en: '30-60 minutes',
-      id: '30-60 menit'
-    },
+    duration: { en: 'Procedure: 15–20 mins per tooth', id: 'Prosedur: 15–20 menit per gigi' },
     recovery: {
-      en: 'None to minimal sensitivity',
-      id: 'Tidak ada hingga sensitivitas minimal'
+      en: 'Downtime: None. After Effects: None. Post-Care: Resume normal eating immediately. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Tidak ada. Perawatan: Dapat langsung makan secara normal. Frekuensi: Sesuai kebutuhan.'
     },
-    results: {
-      en: 'Restored tooth function and appearance',
-      id: 'Fungsi dan penampilan gigi pulih'
-    }
+    results: { en: 'Effective protection for 3–5 years', id: 'Perlindungan efektif selama 3–5 tahun' }
   },
   {
-    id: 'orthodontic',
-    name: {
-      en: 'Orthodontic Treatment',
-      id: 'Perawatan Ortodontik (Kawat Gigi)'
-    },
+    id: 'filling-anterior',
+    name: { en: 'Anterior Tooth Filling (Front Teeth)', id: 'Tambalan Gigi Anterior (Gigi Depan)' },
     category: 'dental',
     shortDescription: {
-      en: 'Straighten teeth and correct bite with braces or aligners',
-      id: 'Ratakan gigi dan perbaiki gigitan dengan kawat gigi atau aligner'
+      en: 'Tooth-colored composite filling for front teeth to restore function and aesthetics.',
+      id: 'Tambalan komposit sewarna gigi untuk gigi depan untuk memulihkan fungsi dan estetika.'
     },
     description: {
-      en: 'Orthodontic treatment corrects misaligned teeth and jaws using braces, clear aligners, or other appliances. Achieve a straighter, healthier smile with our modern orthodontic solutions.',
-      id: 'Perawatan ortodontik memperbaiki gigi dan rahang yang tidak rata menggunakan kawat gigi, aligner bening, atau alat lainnya. Dapatkan senyum yang lebih rata dan sehat dengan solusi ortodontik modern kami.'
+      en: 'Tooth-colored composite filling specifically for front teeth. It restores both the function and natural aesthetic appearance of the tooth after decay or damage.',
+      id: 'Tambalan komposit sewarna gigi khusus untuk gigi depan. Mengembalikan fungsi dan penampilan estetis alami gigi setelah pembusukan atau kerusakan.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Natural look', 'Restores anatomical shape', 'Stops decay progression'],
+      id: ['Tampilan alami', 'Mengembalikan bentuk anatomis', 'Menghentikan perkembangan pembusukan']
+    },
+    procedure: {
+      en: ['Local anesthesia if needed', 'Decay removal', 'Composite layered', 'Light curing', 'Polishing'],
+      id: ['Anestesi lokal jika diperlukan', 'Pengangkatan pembusukan', 'Pelapisan komposit', 'Pengerasan dengan sinar', 'Pemolesan']
+    },
+    duration: { en: 'Procedure: 30–45 mins per tooth', id: 'Prosedur: 30–45 menit per gigi' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild sensitivity. Post-Care: Avoid biting very hard foods for 24 hrs. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas ringan. Perawatan: Hindari menggigit makanan sangat keras selama 24 jam. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: 'Immediate restoration, lasts 5–7 years', id: 'Restorasi segera, bertahan 5–7 tahun' }
+  },
+  {
+    id: 'filling-posterior',
+    name: { en: 'Posterior Tooth Filling (Back Teeth)', id: 'Tambalan Gigi Posterior (Gigi Belakang)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Durable fillings for molars designed to handle strong chewing forces.',
+      id: 'Tambalan tahan lama untuk gigi geraham yang dirancang untuk menangani kekuatan mengunyah yang kuat.'
+    },
+    description: {
+      en: 'Durable fillings for molars and premolars designed to withstand heavy chewing forces. These fillings focus on restoring the strength and longevity of back teeth.',
+      id: 'Tambalan tahan lama untuk gigi geraham dan geraham kecil yang dirancang untuk menahan kekuatan mengunyah yang berat. Tambalan ini fokus pada pemulihan kekuatan dan daya tahan gigi belakang.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Restores chewing function', 'Prevents further decay', 'Long-lasting strength'],
+      id: ['Memulihkan fungsi mengunyah', 'Mencegah pembusukan lebih lanjut', 'Kekuatan tahan lama']
+    },
+    procedure: {
+      en: ['Local anesthesia', 'Caries removal', 'Filling placement', 'Bite adjustment'],
+      id: ['Anestesi lokal', 'Pengangkatan karies', 'Penempatan tambalan', 'Penyesuaian gigitan']
+    },
+    duration: { en: 'Procedure: 30–60 mins per tooth', id: 'Prosedur: 30–60 menit per gigi' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Temporary numbness, pressure sensitivity. Post-Care: Avoid chewing until numbness wears off. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Mati rasa sementara, sensitivitas terhadap tekanan. Perawatan: Hindari mengunyah sampai mati rasa hilang. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: 'Immediate results, lasts 7–10 years', id: 'Hasil instan, bertahan 7–10 tahun' }
+  },
+  {
+    id: 'temporary-filling',
+    name: { en: 'Temporary Filling', id: 'Tambalan Sementara' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Short-term filling used between treatments or in emergency cases.',
+      id: 'Tambalan jangka pendek yang digunakan di antara perawatan atau dalam kasus darurat.'
+    },
+    description: {
+      en: 'A short-term filling material used between multi-step dental treatments or as an emergency measure to protect the tooth and relieve pain.',
+      id: 'Bahan tambalan jangka pendek yang digunakan di antara perawatan gigi beberapa tahap atau sebagai tindakan darurat untuk melindungi gigi dan meredakan rasa sakit.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Protects exposed tooth structure', 'Relieves temporary pain'],
+      id: ['Melindungi struktur gigi yang terbuka', 'Meredakan nyeri sementara']
+    },
+    procedure: {
+      en: ['Clean cavity', 'Temporary material placed', 'Shaped to bite'],
+      id: ['Pembersihan lubang gigi', 'Penempatan bahan sementara', 'Pembentukan sesuai gigitan']
+    },
+    duration: { en: 'Procedure: 15–20 mins', id: 'Prosedur: 15–20 menit' },
+    recovery: {
+      en: 'After Effects: Filling may feel soft initially. Post-Care: Avoid sticky or very hard foods. Frequency: Until permanent treatment is completed.',
+      id: 'Efek Samping: Tambalan mungkin terasa lunak di awal. Perawatan: Hindari makanan lengket atau sangat keras. Frekuensi: Sampai perawatan permanen selesai.'
+    },
+    results: { en: 'Short-term protection (days to weeks)', id: 'Perlindungan jangka pendek (beberapa hari hingga minggu)' }
+  },
+  {
+    id: 'gi-filling',
+    name: { en: 'Glass Ionomer Filling', id: 'Tambalan Glass Ionomer' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Fluoride-releasing filling ideal for children or non-load-bearing areas.',
+      id: 'Tambalan pelepas fluoride yang ideal untuk anak-anak atau area yang tidak menahan beban berat.'
+    },
+    description: {
+      en: 'A unique fluoride-releasing filling material. It is ideal for children’s teeth or non-load-bearing areas, providing ongoing protection against further decay.',
+      id: 'Bahan tambalan pelepas fluoride yang unik. Ideal untuk gigi anak-anak atau area yang tidak menahan beban berat, memberikan perlindungan berkelanjutan terhadap pembusukan lebih lanjut.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Continuous fluoride protection', 'Gentle and biocompatible'],
+      id: ['Perlindungan fluoride berkelanjutan', 'Lembut dan biokompatibel']
+    },
+    procedure: {
+      en: ['Clean cavity', 'Material placed without layers', 'Shaped and set'],
+      id: ['Pembersihan lubang gigi', 'Bahan ditempatkan tanpa pelapisan', 'Dibentuk dan dikeraskan']
+    },
+    duration: { en: 'Procedure: 20–30 mins', id: 'Prosedur: 20–30 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild sensitivity. Post-Care: Avoid hard foods for 24 hrs. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas ringan. Perawatan: Hindari makanan keras selama 24 jam. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: 'Protective restoration for 3–5 years', id: 'Restorasi pelindung selama 3–5 tahun' }
+  },
+  {
+    id: 'desensitization',
+    name: { en: 'Tooth Desensitization Treatment', id: 'Perawatan Desensitisasi Gigi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Treats sensitive teeth by sealing exposed dentin for instant comfort.',
+      id: 'Mengatasi gigi sensitif dengan menutup dentin yang terbuka untuk kenyamanan instan.'
+    },
+    description: {
+      en: 'A specialized treatment for tooth sensitivity that works by sealing exposed dentin surfaces. It provides relief from pain triggered by cold, hot, or sweet substances.',
+      id: 'Perawatan khusus untuk sensitivitas gigi yang bekerja dengan menutup permukaan dentin yang terbuka. Memberikan bantuan dari rasa sakit yang dipicu oleh zat dingin, panas, atau manis.'
+    },
+    image: '/images/dental/TambalGigi.png',
+    benefits: {
+      en: ['Reduces pain from temperature/sweets', 'Instant comfort improvement'],
+      id: ['Mengurangi nyeri akibat suhu/makanan manis', 'Peningkatan kenyamanan instan']
+    },
+    procedure: {
+      en: ['Identify sensitive areas', 'Desensitizing agent applied', 'Light curing if required'],
+      id: ['Identifikasi area sensitif', 'Aplikasi bahan desensitisasi', 'Pengerasan dengan sinar jika diperlukan']
+    },
+    duration: { en: 'Procedure: 10–20 mins', id: 'Prosedur: 10–20 menit' },
+    recovery: {
+      en: 'After Effects: None. Post-Care: Use sensitivity-focused toothpaste. Frequency: As needed.',
+      id: 'Efek Samping: Tidak ada. Perawatan: Gunakan pasta gigi khusus gigi sensitif. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: 'Immediate improvement, lasting weeks to months', id: 'Peningkatan segera, bertahan berminggu-minggu hingga berbulan-bulan' }
+  },
+  {
+    id: 'dental-exam',
+    name: { en: 'Dental Examination & Diagnosis', id: 'Pemeriksaan & Diagnosis Gigi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Comprehensive check-up to detect oral problems early before pain appears.',
+      id: 'Pemeriksaan menyeluruh untuk mendeteksi masalah mulut lebih dini sebelum muncul rasa sakit.'
+    },
+    description: {
+      en: 'A comprehensive oral check-up designed to detect potential issues like cavities or gum disease early, allowing for cost-effective and preventive care before pain appears.',
+      id: 'Pemeriksaan mulut komprehensif yang dirancang untuk mendeteksi potensi masalah seperti gigi berlubang atau penyakit gusi lebih dini, memungkinkan perawatan pencegahan yang hemat biaya sebelum muncul rasa sakit.'
+    },
+    image: '/images/dental/Scaling.png',
+    benefits: {
+      en: ['Early problem detection', 'Cost-effective preventive care'],
+      id: ['Deteksi masalah dini', 'Perawatan pencegahan hemat biaya']
+    },
+    procedure: {
+      en: ['Comprehensive oral exam', 'X-ray if needed', 'Diagnosis & treatment plan development'],
+      id: ['Pemeriksaan mulut komprehensif', 'Rontgen jika diperlukan', 'Pengembangan diagnosis & rencana perawatan']
+    },
+    duration: { en: 'Procedure: 15–30 mins', id: 'Prosedur: 15–30 menit' },
+    recovery: {
+      en: 'Post-Care: Follow the recommended treatment plan. Frequency: Every 6 months.',
+      id: 'Perawatan: Ikuti rencana perawatan yang direkomendasikan. Frekuensi: Setiap 6 bulan.'
+    },
+    results: { en: 'Immediate understanding of oral health status', id: 'Pemahaman segera tentang status kesehatan mulut' }
+  },
+  {
+    id: 'dental-xray',
+    name: { en: 'Dental X-Ray (Periapical / Bitewing / Panoramic)', id: 'Rontgen Gigi (Periapical / Bitewing / Panoramic)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Imaging to see hidden cavities, infections, and overall bone health.',
+      id: 'Pencitraan untuk melihat gigi berlubang yang tersembunyi, infeksi, dan kesehatan tulang secara keseluruhan.'
+    },
+    description: {
+      en: 'Diagnostic dental imaging used to visualize hidden cavities, dental infections, and the health of the supporting jaw bone. Essential for accurate diagnosis and treatment planning.',
+      id: 'Pencitraan gigi diagnostik yang digunakan untuk memvisualisasikan gigi berlubang yang tersembunyi, infeksi gigi, dan kesehatan tulang rahang pendukung. Penting untuk diagnosis dan perencanaan perawatan yang akurat.'
+    },
+    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    benefits: {
+      en: ['Accurate diagnosis of hidden issues', 'Visualizes bone and root health'],
+      id: ['Diagnosis akurat untuk masalah tersembunyi', 'Memvisualisasikan kesehatan tulang dan akar']
+    },
+    procedure: {
+      en: ['Position sensor in mouth', 'Brief X-ray exposure', 'Immediate digital image review'],
+      id: ['Penempatan sensor di mulut', 'Paparan rontgen singkat', 'Peninjauan gambar digital segera']
+    },
+    duration: { en: 'Procedure: 5–10 mins', id: 'Prosedur: 5–10 menit' },
+    recovery: {
+      en: 'After Effects: Minimal radiation exposure (equivalent to a few hours of background radiation). Frequency: As recommended by dentist.',
+      id: 'Efek Samping: Paparan radiasi minimal (setara dengan beberapa jam radiasi latar belakang). Frekuensi: Sesuai rekomendasi dokter gigi.'
+    },
+    results: { en: 'Immediate diagnostic imaging results', id: 'Hasil pencitraan diagnostik instan' }
+  },
+  {
+    id: 'metal-braces-standard',
+    name: { en: 'Metal Braces – Standard', id: 'Metal Braces – Standar' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Classic braces using metal brackets and wires to gradually move teeth.',
+      id: 'Kawat gigi klasik menggunakan bracket dan kawat logam untuk meratakan gigi secara bertahap.'
+    },
+    description: {
+      en: 'Classic braces using metal brackets and wires to gradually move teeth. They are reliable, strong, and effective for all types of orthodontic cases.',
+      id: 'Kawat gigi klasik menggunakan bracket dan kawat logam untuk meratakan gigi secara bertahap. Sangat andal, kuat, dan efektif untuk semua jenis kasus ortodonti.'
     },
     image: '/images/dental/OrthoCekatBehel.png',
     benefits: {
-      en: [
-        'Straighter teeth',
-        'Improved bite function',
-        'Enhanced facial aesthetics',
-        'Easier cleaning',
-        'Boosted confidence',
-        'Multiple treatment options'
-      ],
-      id: [
-        'Gigi lebih rata',
-        'Fungsi gigitan lebih baik',
-        'Estetika wajah meningkat',
-        'Pembersihan lebih mudah',
-        'Kepercayaan diri meningkat',
-        'Banyak pilihan perawatan'
-      ]
+      en: ['Corrects crowding', 'Fixes gaps', 'Resolves bite issues'],
+      id: ['Memperbaiki gigi berjejal', 'Memperbaiki celah gigi', 'Mengatasi masalah gigitan']
     },
     procedure: {
-      en: [
-        'Comprehensive orthodontic assessment',
-        'Treatment planning and imaging',
-        'Appliance placement',
-        'Regular adjustment appointments',
-        'Retention phase'
-      ],
-      id: [
-        'Penilaian ortodontik komprehensif',
-        'Perencanaan perawatan dan pencitraan',
-        'Pemasangan alat',
-        'Janji temu penyesuaian rutin',
-        'Fase retensi'
-      ]
+      en: ['Dental exam & X-ray', 'Teeth cleaning', 'Brackets bonded to teeth', 'Wire attached & adjusted'],
+      id: ['Pemeriksaan gigi & Rontgen', 'Pembersihan gigi', 'Bracket direkatkan ke gigi', 'Kawat dipasang & disesuaikan']
     },
-    duration: {
-      en: '12-24 months average',
-      id: 'Rata-rata 12-24 bulan'
-    },
+    duration: { en: 'Procedure: 60–90 mins. Results: 12–24 months', id: 'Prosedur: 60–90 menit. Hasil: 12–24 bulan' },
     recovery: {
-      en: 'Adjustment period of few days',
-      id: 'Periode penyesuaian beberapa hari'
+      en: 'Downtime: None. After Effects: Soreness (3–7 days). Post-Care: Soft food, avoid sticky food, good brushing. Frequency: Control every 4–6 weeks.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Nyeri (3–7 hari). Perawatan: Makanan lunak, hindari makanan lengket, sikat gigi yang baik. Frekuensi: Kontrol setiap 4–6 minggu.'
     },
-    results: {
-      en: 'Beautifully aligned teeth and improved bite',
-      id: 'Gigi yang rata indah dan gigitan yang lebih baik'
-    }
+    results: { en: 'Properly aligned teeth and corrected bite', id: 'Gigi yang rata dan gigitan yang diperbaiki' }
   },
   {
-    id: 'dental-others',
-    name: {
-      en: 'Other Dental Services',
-      id: 'Layanan Gigi Lainnya'
-    },
+    id: 'metal-braces-premium',
+    name: { en: 'Metal Braces – Premium', id: 'Metal Braces – Premium' },
     category: 'dental',
     shortDescription: {
-      en: 'Comprehensive dental care for all your oral health needs',
-      id: 'Perawatan gigi komprehensif untuk semua kebutuhan kesehatan mulut Anda'
+      en: 'Enhanced metal braces with better materials for comfort and efficiency.',
+      id: 'Kawat gigi logam yang ditingkatkan dengan bahan yang lebih baik untuk kenyamanan dan efisiensi.'
     },
     description: {
-      en: 'We offer a wide range of additional dental services including emergency care, sports mouthguards, TMJ treatment, and more. Whatever your dental needs, our experienced team is here to help.',
-      id: 'Kami menawarkan berbagai layanan gigi tambahan termasuk perawatan darurat, pelindung mulut olahraga, perawatan TMJ, dan banyak lagi. Apa pun kebutuhan gigi Anda, tim berpengalaman kami siap membantu.'
+      en: 'Enhanced metal braces featuring superior materials for increased patient comfort and treatment efficiency. Provides a more refined orthodontic experience.',
+      id: 'Kawat gigi logam yang ditingkatkan dengan bahan superior untuk meningkatkan kenyamanan pasien dan efisiensi perawatan. Memberikan pengalaman ortodonti yang lebih halus.'
     },
-    image: 'https://images.unsplash.com/photo-1588776814546-daab30f310ce?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/dental/OrthoCekatBehel.png',
     benefits: {
-      en: [
-        'Comprehensive care',
-        'Emergency services available',
-        'Specialized treatments',
-        'Experienced team',
-        'Modern equipment',
-        'Patient-centered approach'
-      ],
-      id: [
-        'Perawatan komprehensif',
-        'Layanan darurat tersedia',
-        'Perawatan khusus',
-        'Tim berpengalaman',
-        'Peralatan modern',
-        'Pendekatan berpusat pada pasien'
-      ]
+      en: ['Faster tooth movement', 'Enhanced comfort'],
+      id: ['Pergerakan gigi lebih cepat', 'Kenyamanan yang ditingkatkan']
     },
     procedure: {
-      en: [
-        'Consultation and assessment',
-        'Customized treatment approach',
-        'Professional care delivery',
-        'Follow-up as needed'
-      ],
-      id: [
-        'Konsultasi dan penilaian',
-        'Pendekatan perawatan yang disesuaikan',
-        'Penyampaian perawatan profesional',
-        'Tindak lanjut jika diperlukan'
-      ]
+      en: ['Dental exam & X-ray', 'Teeth cleaning', 'Premium brackets bonded', 'Advanced wire attached'],
+      id: ['Pemeriksaan gigi & Rontgen', 'Pembersihan gigi', 'Bracket premium direkatkan', 'Kawat canggih dipasang']
     },
-    duration: {
-      en: 'Varies by service',
-      id: 'Bervariasi tergantung layanan'
-    },
+    duration: { en: 'Procedure: 60–90 mins. Results: 12–20 months', id: 'Prosedur: 60–90 menit. Hasil: 12–20 bulan' },
     recovery: {
-      en: 'Depends on treatment',
-      id: 'Tergantung perawatan'
+      en: 'Downtime: None. After Effects: Mild soreness. Post-Care: Excellent oral hygiene & dietary awareness. Frequency: Every 4–6 weeks.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Nyeri ringan. Perawatan: Kebersihan mulut yang sangat baik & kesadaran diet. Frekuensi: Setiap 4–6 minggu.'
     },
-    results: {
-      en: 'Improved oral health and comfort',
-      id: 'Peningkatan kesehatan dan kenyamanan mulut'
-    }
+    results: { en: 'Efficient tooth alignment', id: 'Perataan gigi yang efisien' }
   },
   {
-    id: 'pedodontic',
-    name: {
-      en: 'Pedodontic (Children\'s Dentistry)',
-      id: 'Pedodontik (Gigi Anak)'
-    },
+    id: 'sapphire-braces',
+    name: { en: 'Sapphire Braces', id: 'Sapphire Braces' },
     category: 'dental',
     shortDescription: {
-      en: 'Gentle, specialized dental care for children',
-      id: 'Perawatan gigi lembut dan khusus untuk anak-anak'
+      en: 'Clear crystal-like brackets that blend seamlessly with teeth.',
+      id: 'Bracket kristal bening yang menyatu sempurna dengan gigi.'
     },
     description: {
-      en: 'Pediatric dentistry focuses on the oral health of children from infancy through adolescence. Our gentle, patient approach helps children develop healthy dental habits and positive attitudes toward dental care.',
-      id: 'Kedokteran gigi anak berfokus pada kesehatan mulut anak-anak dari bayi hingga remaja. Pendekatan kami yang lembut dan sabar membantu anak-anak mengembangkan kebiasaan gigi yang sehat dan sikap positif terhadap perawatan gigi.'
+      en: 'Aesthetic braces featuring clear, crystal-like sapphire brackets that blend with your natural tooth color. Ideal for those seeking effective correction with a less visible appearance.',
+      id: 'Kawat gigi estetis dengan bracket safir bening seperti kristal yang menyatu dengan warna alami gigi Anda. Ideal bagi mereka yang mencari perbaikan efektif dengan penampilan yang tidak terlalu terlihat.'
     },
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+    image: '/images/dental/OrthoCekatBehel.png',
     benefits: {
-      en: [
-        'Child-friendly environment',
-        'Preventive care focus',
-        'Gentle techniques',
-        'Education for parents and children',
-        'Early problem detection',
-        'Positive dental experiences'
-      ],
-      id: [
-        'Lingkungan ramah anak',
-        'Fokus perawatan pencegahan',
-        'Teknik lembut',
-        'Edukasi untuk orang tua dan anak',
-        'Deteksi masalah dini',
-        'Pengalaman gigi positif'
-      ]
+      en: ['Highly aesthetic (nearly invisible)', 'Strong correction ability'],
+      id: ['Sangat estetis (hampir tidak terlihat)', 'Kemampuan perbaikan yang kuat']
     },
     procedure: {
-      en: [
-        'Gentle examination',
-        'Age-appropriate cleaning',
-        'Fluoride treatment',
-        'Sealants if needed',
-        'Parent education'
-      ],
-      id: [
-        'Pemeriksaan lembut',
-        'Pembersihan sesuai usia',
-        'Perawatan fluoride',
-        'Sealant jika diperlukan',
-        'Edukasi orang tua'
-      ]
+      en: ['Bracket bonding', 'Wire placement', 'Adjustments'],
+      id: ['Perekatan bracket', 'Penempatan kawat', 'Penyesuaian']
     },
-    duration: {
-      en: '30-45 minutes',
-      id: '30-45 menit'
-    },
+    duration: { en: 'Procedure: 60–90 mins. Results: 12–24 months', id: 'Prosedur: 60–90 menit. Hasil: 12–24 bulan' },
     recovery: {
-      en: 'None',
-      id: 'Tidak ada'
+      en: 'Downtime: None. After Effects: Initial tightness. Post-Care: Avoid staining foods/drinks. Frequency: Monthly.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Rasa kencang di awal. Perawatan: Hindari makanan/minuman yang meninggalkan noda. Frekuensi: Bulanan.'
     },
-    results: {
-      en: 'Healthy teeth and positive dental attitude',
-      id: 'Gigi sehat dan sikap gigi positif'
-    }
+    results: { en: 'Beautifully aligned teeth without the metal look', id: 'Gigi rata yang indah tanpa tampilan logam' }
   },
   {
-    id: 'dental-products',
-    name: {
-      en: 'Dental Products',
-      id: 'Produk Gigi'
-    },
+    id: 'self-ligating-braces',
+    name: { en: 'Self-Ligating Braces', id: 'Self-Ligating Braces' },
     category: 'dental',
     shortDescription: {
-      en: 'Professional-grade dental care products for home use',
-      id: 'Produk perawatan gigi kelas profesional untuk penggunaan di rumah'
+      en: 'Braces without rubber bands, using a sliding door system for faster movement.',
+      id: 'Kawat gigi tanpa karet, menggunakan sistem pintu geser untuk pergerakan lebih cepat.'
     },
     description: {
-      en: 'We offer a curated selection of professional-grade dental care products including toothbrushes, toothpaste, mouthwash, and specialized oral care items to maintain your oral health at home.',
-      id: 'Kami menawarkan pilihan produk perawatan gigi kelas profesional termasuk sikat gigi, pasta gigi, obat kumur, dan item perawatan mulut khusus untuk menjaga kesehatan mulut Anda di rumah.'
+      en: 'Modern braces that eliminate the need for elastic rubber bands. Instead, they use a specialized sliding door system to hold the wire, reducing friction and allowing for faster, more comfortable results.',
+      id: 'Kawat gigi modern yang menghilangkan kebutuhan akan karet elastis. Sebaliknya, mereka menggunakan sistem pintu geser khusus untuk menahan kawat, mengurangi gesekan dan memungkinkan hasil yang lebih cepat dan nyaman.'
     },
-    image: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?q=80&w=2080&auto=format&fit=crop',
+    image: '/images/dental/OrthoCekatBehel.png',
     benefits: {
-      en: [
-        'Professional-grade quality',
-        'Dentist-recommended',
-        'Effective oral care',
-        'Specialized solutions',
-        'Expert guidance',
-        'Convenient purchase'
-      ],
-      id: [
-        'Kualitas kelas profesional',
-        'Direkomendasikan dokter gigi',
-        'Perawatan mulut efektif',
-        'Solusi khusus',
-        'Panduan ahli',
-        'Pembelian mudah'
-      ]
+      en: ['Less friction', 'Fewer dental visits', 'Easier cleaning'],
+      id: ['Gaya gesek lebih kecil', 'Lebih sedikit kunjungan ke dokter', 'Pembersihan lebih mudah']
     },
     procedure: {
-      en: [
-        'Consultation on oral care needs',
-        'Product recommendations',
-        'Usage instructions',
-        'Ongoing support'
-      ],
-      id: [
-        'Konsultasi kebutuhan perawatan mulut',
-        'Rekomendasi produk',
-        'Instruksi penggunaan',
-        'Dukungan berkelanjutan'
-      ]
+      en: ['Brackets placed', 'Special wire inserted'],
+      id: ['Bracket dipasang', 'Kawat khusus dimasukkan']
     },
-    duration: {
-      en: 'N/A',
-      id: 'N/A'
-    },
+    duration: { en: 'Procedure: 60–90 mins. Results: 12–18 months', id: 'Prosedur: 60–90 menit. Hasil: 12–18 bulan' },
     recovery: {
-      en: 'N/A',
-      id: 'N/A'
+      en: 'Downtime: None. After Effects: Less soreness compared to standard braces. Post-Care: Maintain normal brushing habits. Frequency: Every 6–8 weeks.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Nyeri lebih sedikit dibanding kawat gigi standar. Perawatan: Jaga kebiasaan menyikat gigi yang normal. Frekuensi: Setiap 6–8 minggu.'
     },
-    results: {
-      en: 'Improved home oral care routine',
-      id: 'Rutinitas perawatan mulut di rumah yang lebih baik'
-    }
+    results: { en: 'Faster, more comfortable alignment', id: 'Perataan yang lebih cepat dan nyaman' }
   },
   {
-    id: 'prosthodontic',
-    name: {
-      en: 'Prosthodontic (Dental Prosthetics)',
-      id: 'Prostodontik (Gigi Tiruan)'
-    },
+    id: 'damon-braces',
+    name: { en: 'Damon Braces', id: 'Damon Braces' },
     category: 'dental',
     shortDescription: {
-      en: 'Replace missing teeth with crowns, bridges, and dentures',
-      id: 'Ganti gigi yang hilang dengan mahkota, jembatan, dan gigi palsu'
+      en: 'Advanced self-ligating braces designed for faster, more comfortable treatment.',
+      id: 'Kawat gigi self-ligating canggih yang dirancang untuk perawatan lebih cepat dan nyaman.'
     },
     description: {
-      en: 'Prosthodontics specializes in replacing missing teeth and restoring oral function with crowns, bridges, dentures, and dental implants. Regain your smile, confidence, and ability to eat comfortably.',
-      id: 'Prostodontik berspesialisasi dalam mengganti gigi yang hilang dan memulihkan fungsi mulut dengan mahkota, jembatan, gigi palsu, dan implan gigi. Dapatkan kembali senyum, kepercayaan diri, dan kemampuan makan Anda dengan nyaman.'
+      en: 'The premium Damon system uses advanced self-ligating technology and high-tech wires to move teeth faster and more comfortably, often without the need for extractions or headgear.',
+      id: 'Sistem Damon premium menggunakan teknologi self-ligating canggih dan kawat berteknologi tinggi untuk meratakan gigi lebih cepat dan nyaman, seringkali tanpa perlu pencabutan atau headgear.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Faster results', 'Less pain', 'Improved facial aesthetics'],
+      id: ['Hasil lebih cepat', 'Rasa sakit lebih sedikit', 'Estetika wajah yang lebih baik']
+    },
+    procedure: {
+      en: ['Digital planning', 'Bracket bonding', 'Damon high-tech wire placement'],
+      id: ['Perencanaan digital', 'Perekatan bracket', 'Penempatan kawat Damon berteknologi tinggi']
+    },
+    duration: { en: 'Procedure: 60–90 mins. Results: 10–18 months', id: 'Prosedur: 60–90 menit. Hasil: 10–18 bulan' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Mild pressure. Post-Care: Focus on oral hygiene. Frequency: 6–8 weeks.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Tekanan ringan. Perawatan: Fokus pada kebersihan mulut. Frekuensi: 6–8 minggu.'
+    },
+    results: { en: 'Premium smile transformation', id: 'Transformasi senyum premium' }
+  },
+  {
+    id: 'control-braces',
+    name: { en: 'Control Braces (Adjustment Visit)', id: 'Kontrol Kawat Gigi' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Routine tightening and wire adjustments for braces.',
+      id: 'Pengencangan rutin dan penyesuaian kawat untuk behel.'
+    },
+    description: {
+      en: 'Essential routine visits to tighten wires, change ligatures, and monitor progress to ensure teeth continue moving in the correct direction.',
+      id: 'Kunjungan rutin penting untuk mengencangkan kawat, mengganti karet, dan memantau kemajuan untuk memastikan gigi terus bergerak ke arah yang benar.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Keeps teeth moving correctly', 'Prevents treatment delays'],
+      id: ['Menjaga gigi bergerak dengan benar', 'Mencegah penundaan perawatan']
+    },
+    procedure: {
+      en: ['Wire change or adjustment', 'Tightening', 'Bite check'],
+      id: ['Penggantian atau penyesuaian kawat', 'Pengencangan', 'Cek gigitan']
+    },
+    duration: { en: 'Procedure: 15–30 mins', id: 'Prosedur: 15–30 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Possible mild soreness for a few hours. Frequency: Varies by brace type (4–8 weeks).',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Kemungkinan nyeri ringan selama beberapa jam. Frekuensi: Bervariasi tergantung jenis behel (4-8 minggu).'
+    },
+    results: { en: 'Ongoing orthodontic progress', id: 'Kemajuan ortodonti yang berkelanjutan' }
+  },
+  {
+    id: 'retainer-hawley',
+    name: { en: 'Retainer Metal Hawley (per jaw)', id: 'Retainer Metal Hawley (per rahang)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Removable metal and acrylic retainer to maintain teeth position.',
+      id: 'Retainer logam dan akrilik lepasan untuk menjaga posisi gigi.'
+    },
+    description: {
+      en: 'A classic, durable removable retainer made of metal wire and acrylic. It is used after orthodontic treatment to ensure the new position of your teeth is maintained.',
+      id: 'Retainer lepasan klasik yang tahan lama terbuat dari kawat logam dan akrilik. Digunakan setelah perawatan ortodonti untuk memastikan posisi baru gigi Anda tetap terjaga.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['Prevents tooth relapse', 'Very durable', 'Adjustable'],
+      id: ['Mencegah gigi kembali berantakan', 'Sangat tahan lama', 'Dapat disesuaikan']
+    },
+    procedure: {
+      en: ['Teeth impression', 'Retainer fitting and instruction'],
+      id: ['Pencetakan gigi', 'Pemasangan retainer dan instruksi']
+    },
+    duration: { en: 'Procedure: 20–30 mins', id: 'Prosedur: 20–30 menit' },
+    recovery: {
+      en: 'After Effects: Temporary speech changes. Post-Care: Clean daily, store in case.',
+      id: 'Efek Samping: Perubahan bicara sementara. Perawatan: Bersihkan setiap hari, simpan di kotak.'
+    },
+    results: { en: 'Long-term stability of tooth position', id: 'Stabilitas posisi gigi jangka panjang' }
+  },
+  {
+    id: 'retainer-essix',
+    name: { en: 'Retainer Clear Essix (per jaw)', id: 'Retainer Clear Essix (per rahang)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Clear plastic retainer, nearly invisible and comfortable.',
+      id: 'Retainer plastik bening, hampir tidak terlihat dan nyaman.'
+    },
+    description: {
+      en: 'A clear plastic, nearly invisible retainer that fits snugly over your teeth. It is highly aesthetic and comfortable for maintaining your treatment results.',
+      id: 'Retainer plastik bening yang hampir tidak terlihat dan pas dengan gigi Anda. Sangat estetis dan nyaman untuk menjaga hasil perawatan Anda.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['Nearly invisible', 'Comfortable', 'Lightweight'],
+      id: ['Hampir tidak terlihat', 'Nyaman', 'Ringan']
+    },
+    procedure: {
+      en: ['Digital scan or impression', 'Retainer fabrication & fitting'],
+      id: ['Pemindaian digital atau pencetakan', 'Pembuatan & pemasangan retainer']
+    },
+    duration: { en: 'Procedure: 20 mins', id: 'Prosedur: 20 menit' },
+    recovery: {
+      en: 'Post-Care: Keep clean, avoid hot water (warping danger).',
+      id: 'Perawatan: Jaga kebersihan, hindari air panas (bahaya melengkung).'
+    },
+    results: { en: 'Discreet long-term retention', id: 'Retensi jangka panjang yang tersamar' }
+  },
+  {
+    id: 'klar-aligner-basic',
+    name: { en: 'Clear Aligner (KLAR) – Basic', id: 'Clear Aligner (KLAR) – Basic' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Clear removable trays for mild to moderate tooth alignment cases.',
+      id: 'Aligner bening lepasan untuk kasus perabaan gigi ringan hingga sedang.'
+    },
+    description: {
+      en: 'A series of clear, removable plastic trays that gradually straighten teeth. The basic KLAR plan is designed for mild to moderate alignment issues, offering a discreet alternative to braces.',
+      id: 'Serangkaian tray plastik bening lepasan yang secara bertahap meratakan gigi. Paket KLAR dasar dirancang untuk masalah penyelarasan ringan hingga sedang, menawarkan alternatif kawat gigi yang tersamar.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['Virtually invisible', 'Removable for eating', 'Easier hygiene'],
+      id: ['Hampir tidak terlihat', 'Bisa dilepas untuk makan', 'Kebersihan lebih mudah']
+    },
+    procedure: {
+      en: ['Digital scan', 'Aligner series fabrication', 'Wear instructions'],
+      id: ['Pemindaian digital', 'Pembuatan seri aligner', 'Instruksi penggunaan']
+    },
+    duration: { en: 'Procedure: 30–45 mins. Results: 6–12 months', id: 'Prosedur: 30–45 menit. Hasil: 6–12 bulan' },
+    recovery: {
+      en: 'Post-Care: Wear 22 hours/day for best results.',
+      id: 'Perawatan: Gunakan 22 jam/hari untuk hasil terbaik.'
+    },
+    results: { en: 'Straighter smile without metal', id: 'Senyum lebih rata tanpa logam' }
+  },
+  {
+    id: 'klar-aligner-advance',
+    name: { en: 'Clear Aligner (KLAR) – Advance', id: 'Clear Aligner (KLAR) – Advance' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Advanced clear aligner planning for more complex alignment cases.',
+      id: 'Perencanaan aligner bening canggih untuk kasus perabaan yang lebih kompleks.'
+    },
+    description: {
+      en: 'The advanced KLAR system utilizes detailed digital simulations to treat more complex orthodontic cases with the convenience and aesthetics of clear aligners.',
+      id: 'Sistem KLAR tingkat lanjut menggunakan simulasi digital terperinci untuk menangani kasus ortodonti yang lebih kompleks dengan kenyamanan dan estetika aligner bening.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['Precision planning', 'Treats complex cases', 'Discreet'],
+      id: ['Perencanaan presisi', 'Menangani kasus kompleks', 'Tersamar']
+    },
+    procedure: {
+      en: ['Digital simulation', 'Comprehensive aligner set'],
+      id: ['Simulasi digital', 'Set aligner komprehensif']
+    },
+    duration: { en: 'Procedure: 45 mins. Results: 9–18 months', id: 'Prosedur: 45 menit. Hasil: 9–18 bulan' },
+    recovery: {
+      en: 'Post-Care: Strict adherence to wearing schedule.',
+      id: 'Perawatan: Kepatuhan ketat terhadap jadwal penggunaan.'
+    },
+    results: { en: 'Accurate correction of complex issues', id: 'Perbaikan akurat untuk masalah kompleks' }
+  },
+  {
+    id: 'invisalign-aligner-basic',
+    name: { en: 'Clear Aligner (Invisalign) – Basic', id: 'Clear Aligner (Invisalign) – Basic' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Global premium aligner system for mild alignment cases.',
+      id: 'Sistem aligner premium global untuk kasus perabaan ringan.'
+    },
+    description: {
+      en: 'The world-leading Invisalign system provides unmatched comfort and accuracy for correcting mild tooth misalignments using proprietary SmartTrack material.',
+      id: 'Sistem Invisalign terkemuka di dunia memberikan kenyamanan dan akurasi tak tertandingi untuk memperbaiki ketidakrataan gigi ringan menggunakan bahan SmartTrack yang dipatenkan.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['High accuracy', 'Superior comfort', 'Globally trusted'],
+      id: ['Akurasi tinggi', 'Kenyamanan superior', 'Terpercaya secara global']
+    },
+    procedure: {
+      en: ['iTero digital scan', 'Aligner delivery & training'],
+      id: ['Pemindaian digital iTero', 'Pengiriman aligner & pelatihan']
+    },
+    duration: { en: 'Procedure: 30–45 mins. Results: 6–12 months', id: 'Prosedur: 30–45 menit. Hasil: 6–12 bulan' },
+    recovery: {
+      en: 'Post-Care: Regular cleaning of trays.',
+      id: 'Perawatan: Pembersihan rutin pada tray.'
+    },
+    results: { en: 'Predictable, high-quality results', id: 'Hasil yang terprediksi dan berkualitas tinggi' }
+  },
+  {
+    id: 'invisalign-aligner-advance',
+    name: { en: 'Clear Aligner (Invisalign) – Advance', id: 'Clear Aligner (Invisalign) – Advance' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Advanced Invisalign plan for complex alignment and bite correction.',
+      id: 'Paket Invisalign canggih untuk perabaan kompleks dan perbaikan gigitan.'
+    },
+    description: {
+      en: 'The most comprehensive Invisalign plan for complex cases involving significant alignment issues and bite corrections, all planned through advanced 3D simulations.',
+      id: 'Paket Invisalign paling komprehensif untuk kasus kompleks yang melibatkan masalah perabaan signifikan dan perbaikan gigitan, semuanya direncanakan melalui simulasi 3D tingkat lanjut.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['Treats severe crowding/bite', 'Predictable aesthetics', 'No metal wires'],
+      id: ['Menangani gigi berjejal/gigitan parah', 'Estetika yang terprediksi', 'Tanpa kawat logam']
+    },
+    procedure: {
+      en: ['Detailed 3D simulation', 'Staged aligner sequence'],
+      id: ['Simulasi 3D terperinci', 'Urutan aligner bertahap']
+    },
+    duration: { en: 'Procedure: 45 mins. Results: 12–24 months', id: 'Prosedur: 45 menit. Hasil: 12–24 bulan' },
+    recovery: {
+      en: 'Post-Care: Consistent wear (22+ hours daily).',
+      id: 'Perawatan: Penggunaan konsisten (22+ jam sehari).'
+    },
+    results: { en: 'Comprehensive smile reconstruction', id: 'Rekonstruksi senyum yang komprehensif' }
+  },
+  {
+    id: 'ortho-wire',
+    name: { en: 'Add-On: Wire (NiTi / CuNiTi)', id: 'Kawat Tambahan (NiTi / CuNiTi)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Specialized orthodontic wires to optimize tooth movement.',
+      id: 'Kawat ortodonti khusus untuk mengoptimalkan pergerakan gigi.'
+    },
+    description: {
+      en: 'High-tech Nickel-Titanium (NiTi) or Copper NiTi wires that provide constant, gentle forces to move teeth more efficiently and comfortably during braces treatment.',
+      id: 'Kawat Nikel-Titanium (NiTi) atau NiTi Tembaga berteknologi tinggi yang memberikan kekuatan konstan dan lembut untuk meratakan gigi lebih efisien dan nyaman selama perawatan kawat gigi.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Faster movement', 'Gentler on teeth'],
+      id: ['Pergerakan lebih cepat', 'Lebih lembut untuk gigi']
+    },
+    procedure: {
+      en: ['Old wire removed', 'New specialized wire placed'],
+      id: ['Pelepasan kawat lama', 'Pemasangan kawat khusus baru']
+    },
+    duration: { en: 'Procedure: 10–15 mins', id: 'Prosedur: 10–15 menit' },
+    recovery: {
+      en: 'Results: Gradual, efficient progress.',
+      id: 'Hasil: Kemajuan yang bertahap dan efisien.'
+    },
+    results: { en: 'Enhanced treatment speed', id: 'Kecepatan perawatan yang ditingkatkan' }
+  },
+  {
+    id: 'ortho-ocs',
+    name: { en: 'OCS (Orthodontic Consultation System)', id: 'OCS (Orthodontic Consultation System)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Digital planning and case evaluation for orthodontic treatment.',
+      id: 'Perencanaan digital dan evaluasi kasus untuk perawatan ortodonti.'
+    },
+    description: {
+      en: 'A comprehensive consultation system involving detailed photography, X-rays, and computer-aided bite analysis to create a precise and effective treatment plan.',
+      id: 'Sistem konsultasi komprehensif yang melibatkan fotografi terperinci, rontgen, dan analisis gigitan berbantuan komputer untuk membuat rencana perawatan yang presisi dan efektif.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Accurate diagnosis', 'Personalized treatment plan'],
+      id: ['Diagnosis akurat', 'Rencana perawatan personal']
+    },
+    procedure: {
+      en: ['Photos', 'X-ray', 'Digital bite analysis'],
+      id: ['Foto', 'Rontgen', 'Analisis gigitan digital']
+    },
+    duration: { en: 'Procedure: 30–45 mins', id: 'Prosedur: 30–45 menit' },
+    recovery: {
+      en: 'Results: Detailed treatment roadmap.',
+      id: 'Hasil: Peta jalan perawatan yang terperinci.'
+    },
+    results: { en: 'Foundation for a perfect smile', id: 'Fondasi untuk senyum yang sempurna' }
+  },
+  {
+    id: 'lingual-button',
+    name: { en: 'Lingual Button', id: 'Lingual Button' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Small attachment to assist specialized tooth movement.',
+      id: 'Lampiran kecil untuk membantu pergerakan gigi khusus.'
+    },
+    description: {
+      en: 'Small orthodontic buttons bonded to the inside or outside of teeth to provide anchor points for elastics, helping correct difficult tooth rotations or positions.',
+      id: 'Tombol ortodonti kecil yang ditempelkan di bagian dalam atau luar gigi untuk memberikan titik jangkar bagi karet, membantu memperbaiki rotasi atau posisi gigi yang sulit.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Improves force control', 'Corrects rotations'],
+      id: ['Meningkatkan kontrol kekuatan', 'Memperbaiki rotasi gigi']
+    },
+    procedure: {
+      en: ['Bonded directly to tooth surface'],
+      id: ['Direkatkan langsung ke permukaan gigi']
+    },
+    duration: { en: 'Procedure: 10 mins', id: 'Prosedur: 10 menit' },
+    recovery: {
+      en: 'Results: Specialized movement during treatment phase.',
+      id: 'Hasil: Pergerakan khusus selama fase perawatan.'
+    },
+    results: { en: 'Better control of difficult teeth', id: 'Kontrol yang lebih baik untuk gigi yang sulit ditangani' }
+  },
+  {
+    id: 'bite-riser',
+    name: { en: 'Bite Riser', id: 'Bite Riser' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Small blocks to open the bite and protect orthodontic brackets.',
+      id: 'Blok kecil untuk membuka gigitan dan melindungi bracket behel.'
+    },
+    description: {
+      en: 'Small, tooth-colored blocks placed on the biting surfaces of molars to prevent upper teeth from hitting lower brackets. Essential for patients with deep bites.',
+      id: 'Blok kecil sewarna gigi yang diletakkan pada permukaan kunyah gigi geraham untuk mencegah gigi atas menabrak bracket bawah. Penting bagi pasien dengan gigitan dalam.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Prevents bracket damage', 'Helps open the bite'],
+      id: ['Mencegah kerusakan bracket', 'Membantu membuka gigitan']
+    },
+    procedure: {
+      en: ['Bonded to molar surfaces'],
+      id: ['Direkatkan ke permukaan geraham']
+    },
+    duration: { en: 'Procedure: 10 mins', id: 'Prosedur: 10 menit' },
+    recovery: {
+      en: 'After Effects: Temporary change in chewing feeling.',
+      id: 'Efek Samping: Perubahan sementara pada rasa mengunyah.'
+    },
+    results: { en: 'Protected orthodontic components', id: 'Komponen ortodonti yang terlindungi' }
+  },
+  {
+    id: 'aligner-attachment',
+    name: { en: 'Attachment (Clear Aligner)', id: 'Attachment (Clear Aligner)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Tooth-colored shapes that help clear aligners grip the teeth.',
+      id: 'Bentuk sewarna gigi yang membantu aligner bening mencengkeram gigi.'
+    },
+    description: {
+      en: 'Small pieces of tooth-colored composite material bonded to the teeth. They act as "handles" for the clear aligner, allowing it to exert the necessary forces for complex movements.',
+      id: 'Potongan kecil bahan komposit sewarna gigi yang ditempelkan pada gigi. Mereka berfungsi sebagai "pegangan" bagi aligner bening, memungkinkannya memberikan kekuatan yang diperlukan untuk pergerakan kompleks.'
+    },
+    image: '/images/dental/ClearAligner.png',
+    benefits: {
+      en: ['Better movement control', 'More predictable results'],
+      id: ['Kontrol pergerakan yang lebih baik', 'Hasil yang lebih terprediksi']
+    },
+    procedure: {
+      en: ['Bonded to teeth', 'Aligner fitted over them'],
+      id: ['Direkatkan ke gigi', 'Aligner dipasang di atasnya']
+    },
+    duration: { en: 'Procedure: 15–20 mins', id: 'Prosedur: 15–20 menit' },
+    recovery: {
+      en: 'Results: Used Throughout treatment.',
+      id: 'Hasil: Digunakan sepanjang perawatan.'
+    },
+    results: { en: 'Precise aligner-guided movements', id: 'Pergerakan terpandu aligner yang presisi' }
+  },
+  {
+    id: 'ligature',
+    name: { en: 'Ligature (per jaw)', id: 'Ligature (per rahang)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Rubber or wire ties securing orthodontic brackets to the wires.',
+      id: 'Pengikat karet atau kawat yang menahan bracket behel pada kawat.'
+    },
+    description: {
+      en: 'Essential components of traditional braces, these small rubber bands or wire ties hold the archwire into each bracket. They come in many colors for personalization.',
+      id: 'Komponen penting behel tradisional, karet kecil atau pengikat kawat ini menahan kawat pada setiap bracket. Tersedia dalam banyak warna untuk personalisasi.'
+    },
+    image: '/images/dental/OrthoCekatBehel.png',
+    benefits: {
+      en: ['Controls tooth movement', 'Allows for style personalization'],
+      id: ['Mengontrol pergerakan gigi', 'Memungkinkan personalisasi gaya']
+    },
+    procedure: {
+      en: ['Ligature replacement during control visit'],
+      id: ['Penggantian ligature selama kunjungan kontrol']
+    },
+    duration: { en: 'Procedure: 10–15 mins', id: 'Prosedur: 10–15 menit' },
+    recovery: {
+      en: 'Results: Ongoing progress.',
+      id: 'Hasil: Kemajuan yang berkelanjutan.'
+    },
+    results: { en: 'Secure orthodontic force delivery', id: 'Penyaluran kekuatan ortodonti yang aman' }
+  },
+
+  {
+    id: 'dental-crown',
+    name: { en: 'Dental Crown (PFM / All-Ceramic / Zirconia)', id: 'Mahkota Gigi (PFM / All-Ceramic / Zirconia)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'A crown is a “cap” placed over a damaged or weakened tooth to restore strength and aesthetics.',
+      id: 'Mahkota gigi adalah "penutup" yang ditempatkan di atas gigi yang rusak atau lemah untuk mengembalikan kekuatan dan estetika.'
+    },
+    description: {
+      en: 'A dental crown is a custom-made “cap” placed over a damaged, weakened, or decayed tooth. It fully encases the tooth, restoring its natural strength, shape, and aesthetic appearance.',
+      id: 'Mahkota gigi adalah "penutup" khusus yang ditempatkan di atas gigi yang rusak, lemah, atau membusuk. Ini menutupi gigi sepenuhnya, mengembalikan kekuatan alami, bentuk, dan penampilan estetisnya.'
     },
     image: '/images/dental/GigiPalsuTiruan.png',
     benefits: {
-      en: [
-        'Restores missing teeth',
-        'Improves chewing function',
-        'Enhances appearance',
-        'Natural-looking results',
-        'Durable solutions',
-        'Customized fit'
-      ],
-      id: [
-        'Mengembalikan gigi yang hilang',
-        'Meningkatkan fungsi mengunyah',
-        'Meningkatkan penampilan',
-        'Hasil tampak alami',
-        'Solusi tahan lama',
-        'Pas yang disesuaikan'
-      ]
+      en: ['Protects weak teeth', 'Improves shape & color', 'Restores full chewing function'],
+      id: ['Melindungi gigi yang lemah', 'Memperbaiki bentuk & warna', 'Memulihkan fungsi mengunyah sepenuhnya']
     },
     procedure: {
-      en: [
-        'Comprehensive assessment',
-        'Treatment planning',
-        'Tooth preparation or impressions',
-        'Prosthetic fabrication',
-        'Fitting and adjustment'
-      ],
-      id: [
-        'Penilaian komprehensif',
-        'Perencanaan perawatan',
-        'Persiapan gigi atau pencetakan',
-        'Pembuatan prostetik',
-        'Pemasangan dan penyesuaian'
-      ]
+      en: ['Tooth exam & X-ray', 'Local anesthesia', 'Tooth reshaped', 'Impression or digital scan', 'Temporary crown placed', 'Permanent crown cemented'],
+      id: ['Pemeriksaan gigi & Rontgen', 'Anestesi lokal', 'Pembentukan kembali gigi', 'Pencetakan atau scan digital', 'Pemasangan mahkota sementara', 'Penyemenan mahkota permanen']
     },
-    duration: {
-      en: 'Multiple appointments over weeks',
-      id: 'Beberapa janji temu selama beberapa minggu'
-    },
+    duration: { en: 'Procedure: 2 visits, 30–60 min each', id: 'Prosedur: 2 kunjungan, masing-masing 30–60 menit' },
     recovery: {
-      en: 'Adjustment period varies',
-      id: 'Periode penyesuaian bervariasi'
+      en: 'Downtime: None. After Effects: Mild sensitivity. Post-Care: Avoid hard foods first 24 hrs, good hygiene. Frequency: One-time per tooth.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas ringan. Perawatan: Hindari makanan keras 24 jam pertama, kebersihan yang baik. Frekuensi: Satu kali per gigi.'
     },
-    results: {
-      en: 'Restored smile and function',
-      id: 'Senyum dan fungsi pulih'
-    }
+    results: { en: '10–15 years durability (or longer with care)', id: 'Daya tahan 10–15 tahun (atau lebih lama dengan perawatan)' }
+  },
+  {
+    id: 'dental-bridge',
+    name: { en: 'Dental Bridge', id: 'Jembatan Gigi (Bridge)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'A bridge replaces missing teeth using neighboring teeth as support, filling gaps without surgery.',
+      id: 'Jembatan gigi menggantikan gigi yang hilang menggunakan gigi tetangga sebagai penyangga, mengisi celah tanpa operasi.'
+    },
+    description: {
+      en: 'A dental bridge is a fixed restoration used to replace one or more missing teeth. It spans the gap where teeth are missing and is supported by natural teeth or implants on either side.',
+      id: 'Jembatan gigi adalah restorasi tetap yang digunakan untuk menggantikan satu atau lebih gigi yang hilang. Ini menjembatani celah di mana gigi hilang dan didukung oleh gigi asli atau implan di kedua sisi.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Restores chewing ability', 'Prevents teeth shifting', 'Improves smile aesthetics'],
+      id: ['Memulihkan kemampuan mengunyah', 'Mencegah pergeseran gigi', 'Meningkatkan estetika senyum']
+    },
+    procedure: {
+      en: ['Adjacent teeth prepared', 'Impression taken', 'Temporary bridge placed', 'Final bridge cemented'],
+      id: ['Persiapan gigi tetangga', 'Pengambilan cetakan', 'Pemasangan jembatan sementara', 'Penyemenan jembatan akhir']
+    },
+    duration: { en: 'Procedure: 2–3 visits over 1–2 weeks', id: 'Prosedur: 2–3 kunjungan selama 1–2 minggu' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Temporary sensitivity. Post-Care: Floss under bridge, regular cleaning. Frequency: Long-term solution.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Sensitivitas sementara. Perawatan: Floss di bawah jembatan, pembersihan rutin. Frekuensi: Solusi jangka panjang.'
+    },
+    results: { en: '8–15 years of functional restoration', id: '8–15 tahun restorasi fungsional' }
+  },
+  {
+    id: 'full-denture',
+    name: { en: 'Full Denture', id: 'Gigi Palsu Lengkap' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Removable replacement for all missing teeth to restore smile and function.',
+      id: 'Pengganti lepasan untuk semua gigi yang hilang untuk mengembalikan senyum dan fungsi.'
+    },
+    description: {
+      en: 'Full dentures are removable appliances used when all teeth in a jaw are missing. They are designed to mimic the appearance of natural teeth and gums while restoring oral function.',
+      id: 'Gigi palsu lengkap adalah alat lepasan yang digunakan ketika semua gigi di rahang hilang. Dirancang untuk meniru penampilan gigi dan gusi asli sambil memulihkan fungsi mulut.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Improves speech & chewing', 'Facial support', 'Affordable total replacement'],
+      id: ['Memperbaiki bicara & mengunyah', 'Dukungan wajah', 'Penggantian total yang terjangkau']
+    },
+    procedure: {
+      en: ['Oral assessment', 'Impressions & bite registration', 'Try-in stage', 'Final denture delivery'],
+      id: ['Penilaian mulut', 'Pencetakan & registrasi gigitan', 'Tahap uji coba', 'Penyerahan gigi palsu akhir']
+    },
+    duration: { en: 'Procedure: 3–5 visits', id: 'Prosedur: 3–5 kunjungan' },
+    recovery: {
+      en: 'Adjustment: 1–2 weeks. After Effects: Soreness, saliva increase. Post-Care: Clean daily, remove at night. Frequency: Relining every few years.',
+      id: 'Penyesuaian: 1–2 minggu. Efek Samping: Nyeri, peningkatan air liur. Perawatan: Bersihkan harian, lepas saat tidur. Frekuensi: Re-lining setiap beberapa tahun.'
+    },
+    results: { en: '5–8 years (varies based on bone changes)', id: '5–8 tahun (bervariasi berdasarkan perubahan tulang)' }
+  },
+  {
+    id: 'partial-denture',
+    name: { en: 'Partial Denture', id: 'Gigi Palsu Sebagian' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Removable appliance replacing some missing teeth with flexibility.',
+      id: 'Alat lepasan yang menggantikan beberapa gigi yang hilang dengan fleksibel.'
+    },
+    description: {
+      en: 'Partial dentures are removable restorations for patients who are missing some but not all of their teeth. They attach to remaining natural teeth to provide support and stability.',
+      id: 'Gigi palsu sebagian adalah restorasi lepasan untuk pasien yang kehilangan beberapa tetapi tidak semua gigi mereka. Alat ini menempel pada gigi asli yang tersisa untuk memberikan dukungan dan stabilitas.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Preserves remaining teeth', 'Restores bite balance', 'Cost-effective'],
+      id: ['Mempertahankan gigi yang tersisa', 'Memulihkan keseimbangan gigitan', 'Hemat biaya']
+    },
+    procedure: {
+      en: ['Examination', 'Impression & framework design', 'Try-in', 'Final insertion'],
+      id: ['Pemeriksaan', 'Pencetakan & desain kerangka', 'Uji coba', 'Pemasangan akhir']
+    },
+    duration: { en: 'Procedure: 2–4 visits', id: 'Prosedur: 2–4 kunjungan' },
+    recovery: {
+      en: 'Downtime: Minimal. After Effects: Initial discomfort. Post-Care: Clean daily, regular adjustments. Frequency: Long-term use.',
+      id: 'Pemulihan: Minimal. Efek Samping: Ketidaknyamanan awal. Perawatan: Bersihkan harian, penyesuaian rutin. Frekuensi: Penggunaan jangka panjang.'
+    },
+    results: { en: '5–10 years durability', id: 'Daya tahan 5–10 tahun' }
+  },
+  {
+    id: 'implant-crown',
+    name: { en: 'Implant-Supported Crown', id: 'Mahkota dengan Implan' },
+    category: 'dental',
+    shortDescription: {
+      en: 'A crown placed on a dental implant to replace a missing tooth root.',
+      id: 'Mahkota yang ditempatkan pada implan gigi untuk menggantikan akar gigi yang hilang.'
+    },
+    description: {
+      en: 'An implant-supported crown is a restoration that attaches directly to a dental implant (a titanium post acting as a tooth root). This provides the most stable and natural-feeling replacement for a single missing tooth.',
+      id: 'Mahkota yang didukung implan adalah restorasi yang menempel langsung pada implan gigi (pasak titanium yang berfungsi sebagai akar gigi). Ini memberikan penggantian yang paling stabil dan terasa alami untuk satu gigi yang hilang.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Strong & stable', 'Natural look and feel', 'Prevents jaw bone loss'],
+      id: ['Kuat & stabil', 'Tampilan dan rasa alami', 'Mencegah keropos tulang rahang']
+    },
+    procedure: {
+      en: ['Implant placement (surgical)', 'Healing period', 'Impression', 'Crown placement'],
+      id: ['Penempatan implan (bedah)', 'Masa penyembuhan', 'Pengambilan cetakan', 'Pemasangan mahkota']
+    },
+    duration: { en: 'Procedure: 2–6 months total processing', id: 'Prosedur: total 2–6 bulan pengerjaan' },
+    recovery: {
+      en: 'Downtime: 1–3 days post-surgery. After Effects: Mild swelling. Post-Care: Good hygiene, avoid smoking. Frequency: One-time solution.',
+      id: 'Pemulihan: 1–3 hari pasca bedah. Efek Samping: Pembengkakan ringan. Perawatan: Kebersihan yang baik, hindari merokok. Frekuensi: Solusi satu kali.'
+    },
+    results: { en: '15–25+ years of success', id: 'Keberhasilan 15–25+ tahun' }
+  },
+  {
+    id: 'implant-bridge',
+    name: { en: 'Implant-Supported Bridge', id: 'Jembatan dengan Implan' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Multiple teeth replaced using implants instead of natural teeth soporte.',
+      id: 'Beberapa gigi diganti menggunakan implan alih-alih penyangga gigi asli.'
+    },
+    description: {
+      en: 'An implant-supported bridge uses dental implants to support a multi-tooth restoration. This is an ideal solution for replacing several missing teeth in a row without affecting neighboring natural teeth.',
+      id: 'Jembatan yang didukung implan menggunakan implan gigi untuk menopang restorasi beberapa gigi. Ini adalah solusi ideal untuk mengganti beberapa gigi yang hilang berturut-turut tanpa memengaruhi gigi asli di sekitarnya.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Very strong & stable', 'Saves neighboring teeth', 'Long-lasting'],
+      id: ['Sangat kuat & stabil', 'Menyelamatkan gigi tetangga', 'Tahan lama']
+    },
+    procedure: {
+      en: ['Implant surgery', 'Healing phase', 'Bridge fabrication', 'Final placement'],
+      id: ['Operasi implan', 'Fase penyembuhan', 'Pembuatan jembatan', 'Pemasangan akhir']
+    },
+    duration: { en: 'Procedure: 3–6 months', id: 'Prosedur: 3–6 bulan' },
+    recovery: {
+      en: 'Downtime: 2–5 days post-surgery. After Effects: Swelling. Post-Care: Soft diet initially, hygiene. Frequency: Long-term.',
+      id: 'Pemulihan: 2–5 hari pasca bedah. Efek Samping: Pembengkakan. Perawatan: Diet makanan lunak di awal, kebersihan. Frekuensi: Jangka panjang.'
+    },
+    results: { en: '15–20 years of durability', id: 'Daya tahan 15–20 tahun' }
+  },
+  {
+    id: 'overdenture',
+    name: { en: 'Overdenture (Implant or Tooth-Supported)', id: 'Overdenture (Implant atau Tooth-Supported)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Denture secured by implants or remaining teeth for extra stability.',
+      id: 'Gigi palsu yang dikencangkan oleh implan atau gigi yang tersisa untuk stabilitas ekstra.'
+    },
+    description: {
+      en: 'An overdenture is a removable prosthetic that fits over natural teeth or dental implants. The implants or teeth act as anchor points, providing significantly better retention and comfort than traditional dentures.',
+      id: 'Overdenture adalah prostetik lepasan yang dipasang di atas gigi asli atau implan gigi. Implan atau gigi tersebut berfungsi sebagai titik jangkar, memberikan retensi dan kenyamanan yang jauh lebih baik daripada gigi palsu tradisional.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Enhanced stability', 'Increased comfort', 'Better bone preservation'],
+      id: ['Stabilitas yang ditingkatkan', 'Kenyamanan meningkat', 'Pelestarian tulang yang lebih baik']
+    },
+    procedure: {
+      en: ['Support placement', 'Denture fabrication', 'Attachment fitting'],
+      id: ['Penempatan penyangga', 'Pembuatan gigi palsu', 'Pemasangan alat tambahan']
+    },
+    duration: { en: 'Procedure: 2–4 months', id: 'Prosedur: 2–4 bulan' },
+    recovery: {
+      en: 'Downtime: Minimal. After Effects: Adjustment soreness. Post-Care: Clean attachments regularly. Frequency: Periodic maintenance visits.',
+      id: 'Pemulihan: Minimal. Efek Samping: Nyeri penyesuaian. Perawatan: Bersihkan alat tambahan secara rutin. Frekuensi: Kunjungan pemeliharaan berkala.'
+    },
+    results: { en: '8–12 years of secure function', id: '8–12 tahun fungsi yang aman' }
+  },
+  {
+    id: 'temporary-crown-bridge',
+    name: { en: 'Temporary Crown / Bridge', id: 'Mahkota / Jembatan Sementara' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Short-term restoration while waiting for permanent prosthesis.',
+      id: 'Restorasi jangka pendek sambil menunggu prostesis permanen.'
+    },
+    description: {
+      en: 'A temporary crown or bridge is placed after a tooth is prepared for a permanent restoration. It protects the prepared tooth and maintains your appearance while the dental lab fabricates your final prosthesis.',
+      id: 'Mahkota atau jembatan sementara dipasang setelah gigi dipersiapkan untuk restorasi permanen. Alat ini melindungi gigi yang telah dipersiapkan dan menjaga penampilan Anda sementara laboratorium gigi membuat prostesis akhir Anda.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Protects prepared tooth', 'Maintains aesthetic appearance', 'Prevents sensitivity'],
+      id: ['Melindungi gigi yang dipersiapkan', 'Menjaga penampilan estetis', 'Mencegah sensitivitas']
+    },
+    procedure: {
+      en: ['Tooth preparation', 'Temporary fabrication', 'Temporary cementation'],
+      id: ['Persiapan gigi', 'Pembuatan sementara', 'Penyemenan sementara']
+    },
+    duration: { en: 'Procedure: Same day', id: 'Prosedur: Hari yang sama' },
+    recovery: {
+      en: 'Downtime: None. After Effects: Possible sensitivity. Post-Care: Avoid sticky foods. Frequency: Transient (1–3 weeks).',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Mungkin sensitif. Perawatan: Hindari makanan lengket. Frekuensi: Sementara (1–3 minggu).'
+    },
+    results: { en: 'Short-term protection (1–3 weeks)', id: 'Perlindungan jangka pendek (1–3 minggu)' }
+  },
+  {
+    id: 'crown-lengthening',
+    name: { en: 'Crown Lengthening', id: 'Crown Lengthening' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Gum reshaping to expose more tooth structure for prosthetic success.',
+      id: 'Pembentukan kembali gusi untuk mengekspos lebih banyak struktur gigi demi keberhasilan prostetik.'
+    },
+    description: {
+      en: 'Crown lengthening is a surgical procedure that repositions the gum line to expose more of the natural tooth. This is often necessary to provide enough structure for a crown to fit securely and last longer.',
+      id: 'Mahkota panjang (crown lengthening) adalah prosedur bedah yang mengubah posisi garis gusi untuk mengekspos lebih banyak gigi asli. Ini sering diperlukan untuk menyediakan struktur yang cukup agar mahkota terpasang aman dan tahan lama.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Enables secure crown fit', 'Improves long-term results', 'Aesthetic gum alignment'],
+      id: ['Memungkinkan pemasangan mahkota yang aman', 'Meningkatkan hasil jangka panjang', 'Keselarasan gusi yang estetis']
+    },
+    procedure: {
+      en: ['Local anesthesia', 'Gum reshaping surgery', 'Healing period'],
+      id: ['Anestesi lokal', 'Operasi pembentukan gusi', 'Masa penyembuhan']
+    },
+    duration: { en: 'Procedure: 30–60 mins', id: 'Prosedur: 30–60 menit' },
+    recovery: {
+      en: 'Downtime: 3–7 days. After Effects: Swelling. Post-Care: Antiseptic rinse, soft diet. Frequency: One-time procedure.',
+      id: 'Pemulihan: 3–7 hari. Efek Samping: Pembengkakan. Perawatan: Kumur antiseptik, diet makanan lunak. Frekuensi: Prosedur satu kali.'
+    },
+    results: { en: 'Permanent structure modification', id: 'Modifikasi struktur permanen' }
+  },
+  {
+    id: 'occlusal-adjustment',
+    name: { en: 'Occlusal Adjustment', id: 'Penyesuaian Oklusal (Ganjal Gigitan)' },
+    category: 'dental',
+    shortDescription: {
+      en: 'Minor reshaping of biting surfaces to improve bite balance.',
+      id: 'Pembentukan kembali minor pada permukaan kunyah untuk meningkatkan keseimbangan gigitan.'
+    },
+    description: {
+      en: 'Occlusal adjustment involves fine-tuning the biting surfaces of your teeth to ensure they meet correctly. This helps balance the force across your mouth, reducing jaw pain and protecting dental work.',
+      id: 'Penyesuaian oklusal melibatkan penyempurnaan permukaan kunyah gigi Anda untuk memastikan gigi tersebut bertemu dengan benar. Ini membantu menyeimbangkan kekuatan di seluruh mulut, mengurangi nyeri rahang dan melindungi pengerjaan gigi.'
+    },
+    image: '/images/dental/GigiPalsuTiruan.png',
+    benefits: {
+      en: ['Reduces jaw (TMJ) pain', 'Protects dental restorations', 'More balanced bite'],
+      id: ['Mengurangi nyeri rahang (TMJ)', 'Melindungi restorasi gigi', 'Gigitan yang lebih seimbang']
+    },
+    procedure: {
+      en: ['Bite analysis', 'Selective surface adjustment'],
+      id: ['Analisis gigitan', 'Penyesuaian permukaan selektif']
+    },
+    duration: { en: 'Procedure: 15–30 mins', id: 'Prosedur: 15–30 menit' },
+    recovery: {
+      en: 'Downtime: None. After Effects: None. Post-Care: Normal routine. Frequency: As needed.',
+      id: 'Pemulihan: Tidak ada. Efek Samping: Tidak ada. Perawatan: Rutinitas normal. Frekuensi: Sesuai kebutuhan.'
+    },
+    results: { en: 'Immediate improvement in bite comfort', id: 'Peningkatan kenyamanan gigitan segera' }
   },
   {
     id: 'rontgen',
