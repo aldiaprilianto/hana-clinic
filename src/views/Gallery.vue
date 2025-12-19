@@ -125,7 +125,7 @@ const filterGallery = (category) => {
       </div>
     </section>
 
-    <!-- Filter Section -->
+    <!-- Filter Section
     <section class="py-12 bg-surface">
       <div class="container mx-auto px-6">
         <div class="flex flex-wrap justify-center gap-4">
@@ -145,8 +145,9 @@ const filterGallery = (category) => {
         </div>
       </div>
     </section>
+    -->
 
-    <!-- Gallery Grid -->
+    <!-- Gallery Grid 
     <section class="py-20">
       <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -165,13 +166,13 @@ const filterGallery = (category) => {
               Empty / Kosong
             </div>
             
-            <!-- Overlay -->
+          
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
               <h3 class="text-white text-xl font-serif mb-2">{{ item.title }}</h3>
               <p class="text-white/80 text-sm">{{ item.description }}</p>
             </div>
 
-            <!-- Icon -->
+          
             <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
@@ -180,14 +181,16 @@ const filterGallery = (category) => {
           </div>
         </div>
       </div>
-    </section>
+    </section> 
+  -->
+  
 
     <!-- CTA Section -->
     <section class="bg-gradient-to-br from-primary via-primary to-[#2a3f3f] text-white py-20">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-serif mb-6">{{ $t('gallery.readyForTransformation') }}</h2>
         <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">{{ $t('gallery.readyDescription') }}</p>
-        <a href="https://wa.me/6281386017622" target="_blank" class="inline-block bg-accent text-primary px-10 py-4 rounded-full uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.4)] hover:shadow-[0_0_40px_rgba(197,160,89,0.6)] hover:scale-105">
+        <a href="https://wa.me/6281386017622" target="_blank" class="bg-accent text-white px-10 py-4 hover:bg-dark transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium rounded-full shadow-lg hover:shadow-xl hover:scale-105">
           {{ $t('gallery.bookConsultation') }}
         </a>
       </div>

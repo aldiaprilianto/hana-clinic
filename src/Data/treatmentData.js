@@ -16,7 +16,7 @@ export const skinAestheticTreatments = [
       en: 'Botox injections are one of the most popular non-surgical cosmetic treatments worldwide. Using purified botulinum toxin, this treatment temporarily relaxes facial muscles that cause wrinkles, resulting in smoother, younger-looking skin.',
       id: 'Suntik Botox adalah salah satu perawatan kosmetik non-bedah paling populer di dunia. Menggunakan toksin botulinum yang dimurnikan, perawatan ini merilekskan otot wajah yang menyebabkan kerutan untuk sementara, menghasilkan kulit yang lebih halus dan tampak lebih muda.'
     },
-    image: '/images/treatments/botox_treatment_1764461614966.png',
+    image: '/images/AESTHETIC/ANTI-AGING/Botox.png',
     benefits: {
       en: [
         'Reduces appearance of fine lines and wrinkles',
@@ -77,7 +77,7 @@ export const skinAestheticTreatments = [
       en: 'Lipolytic injections use deoxycholic acid to break down and absorb dietary fat. This treatment is ideal for reducing moderate to severe fat beneath the chin (submental fullness) and other small areas of stubborn fat.',
       id: 'Suntikan lipolitik menggunakan asam deoksikolat untuk memecah dan menyerap lemak. Perawatan ini ideal untuk mengurangi lemak sedang hingga parah di bawah dagu (double chin) dan area kecil lemak membandel lainnya.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Body Slimming Injection.png',
     benefits: {
       en: [
         'Non-surgical fat reduction',
@@ -138,7 +138,7 @@ export const skinAestheticTreatments = [
       en: 'Dermal fillers are gel-like substances injected beneath the skin to restore lost volume, smooth lines and soften creases, or enhance facial contours. We use premium hyaluronic acid fillers for natural-looking, reversible results.',
       id: 'Filler dermal adalah zat seperti gel yang disuntikkan di bawah kulit untuk mengembalikan volume yang hilang, menghaluskan garis dan kerutan, atau meningkatkan kontur wajah. Kami menggunakan filler asam hialuronat premium untuk hasil yang tampak alami dan dapat dibalik.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Dermal Filler.png',
     benefits: {
       en: [
         'Immediate volume restoration',
@@ -201,7 +201,7 @@ export const skinAestheticTreatments = [
       en: 'Thread lift is a minimally invasive procedure that lifts and tightens sagging skin using medical-grade threads. It stimulates collagen production for long-term rejuvenation and instant lifting effects.',
       id: 'Tanam benang adalah prosedur invasif minimal yang mengangkat dan mengencangkan kulit kendur menggunakan benang medis. Ini merangsang produksi kolagen untuk peremajaan jangka panjang dan efek lifting instan.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Threadlift.png',
     benefits: {
       en: [
         'Instant lifting effect',
@@ -264,7 +264,7 @@ export const skinAestheticTreatments = [
       en: 'Platelet-Rich Plasma (PRP) therapy uses a concentration of a patient\'s own platelets to accelerate the healing of injured tendons, ligaments, muscles and joints. In aesthetics, it stimulates collagen and elastin production for youthful skin.',
       id: 'Terapi Platelet-Rich Plasma (PRP) menggunakan konsentrasi trombosit pasien sendiri untuk mempercepat penyembuhan. Dalam estetika, ini merangsang produksi kolagen dan elastin untuk kulit yang awet muda.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/PRP Therapy.png',
     benefits: {
       en: [
         'Natural rejuvenation',
@@ -325,7 +325,7 @@ export const skinAestheticTreatments = [
       en: 'Microneedling involves pricking the skin with tiny sterilized needles. The small wounds cause your body to make more collagen and elastin, which heal your skin and help you look younger.',
       id: 'Microneedling melibatkan penusukan kulit dengan jarum steril kecil. Luka kecil menyebabkan tubuh Anda membuat lebih banyak kolagen dan elastin, yang menyembuhkan kulit Anda dan membantu Anda terlihat lebih muda.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Microneedling.png',
     benefits: {
       en: [
         'Reduces acne scars',
@@ -386,7 +386,7 @@ export const skinAestheticTreatments = [
       en: 'A chemical peel is a technique used to improve the appearance of the skin on the face, neck or hands. A chemical solution is applied to the skin that causes it to exfoliate and eventually peel off.',
       id: 'Chemical peeling adalah teknik yang digunakan untuk memperbaiki penampilan kulit pada wajah, leher, atau tangan. Larutan kimia dioleskan ke kulit yang menyebabkannya terkelupas dan akhirnya mengelupas.'
     },
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ACNE/Chemical Peels.png',
     benefits: {
       en: [
         'Brightens skin tone',
@@ -447,7 +447,7 @@ export const skinAestheticTreatments = [
       en: 'Laser toning uses low-energy laser beams to treat pigmentation issues like melasma and sun spots. It gently breaks down melanin without damaging the surrounding skin, leading to a clearer, brighter complexion.',
       id: 'Laser toning menggunakan sinar laser berenergi rendah untuk mengatasi masalah pigmentasi seperti melasma dan bintik matahari. Ini memecah melanin dengan lembut tanpa merusak kulit di sekitarnya, menghasilkan kulit yang lebih bersih dan cerah.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Brightening Laser (Q-Switched _ Pico).png',
     benefits: {
       en: [
         'Treats melasma and pigmentation',
@@ -508,7 +508,7 @@ export const skinAestheticTreatments = [
       en: 'High-Intensity Focused Ultrasound (HIFU) delivers heat energy to the deep layers of the skin (SMAS layer) to stimulate collagen production. This results in a natural lifting and tightening effect without surgery.',
       id: 'High-Intensity Focused Ultrasound (HIFU) menghantarkan energi panas ke lapisan dalam kulit (lapisan SMAS) untuk merangsang produksi kolagen. Ini menghasilkan efek lifting dan pengencangan alami tanpa operasi.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/HIFU _ Ultrasound Lifting.png',
     benefits: {
       en: [
         'Lifts sagging skin',
@@ -569,7 +569,7 @@ export const skinAestheticTreatments = [
       en: 'Skin boosters like Rejuran Healer deliver DNA fragments (polynucleotides) into the skin to repair damaged cells, improve elasticity, and provide deep hydration. It creates a healthy, dewy glow from within.',
       id: 'Skin booster seperti Rejuran Healer mengirimkan fragmen DNA (polinukleotida) ke dalam kulit untuk memperbaiki sel yang rusak, meningkatkan elastisitas, dan memberikan hidrasi mendalam. Ini menciptakan kilau sehat dan berembun dari dalam.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Skin Booster.png',
     benefits: {
       en: [
         'Repairs damaged skin barrier',
@@ -630,7 +630,7 @@ export const skinAestheticTreatments = [
       en: 'Aqua Peel is a multi-step treatment that cleanses, exfoliates, and extracts impurities while simultaneously infusing the skin with hydrating serums. It is perfect for unclogging pores and achieving a fresh, clean look.',
       id: 'Aqua Peel adalah perawatan multi-langkah yang membersihkan, mengeksfoliasi, dan mengekstraksi kotoran sambil secara bersamaan memasukkan serum hidrasi ke dalam kulit. Ini sempurna untuk membuka pori-pori dan mendapatkan tampilan segar dan bersih.'
     },
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Hydrafacial.png',
     benefits: {
       en: [
         'Deep pore cleansing',
@@ -691,7 +691,7 @@ export const skinAestheticTreatments = [
       en: 'IPL uses broad-spectrum light to target various skin concerns such as sun damage, rosacea, broken capillaries, and unwanted hair. It improves skin tone and texture with minimal downtime.',
       id: 'IPL menggunakan cahaya spektrum luas untuk menargetkan berbagai masalah kulit seperti kerusakan akibat sinar matahari, rosacea, kapiler pecah, dan bulu yang tidak diinginkan. Ini meningkatkan warna dan tekstur kulit dengan waktu pemulihan minimal.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/IPL Photofacial.png',
     benefits: {
       en: [
         'Reduces redness and rosacea',
@@ -752,7 +752,7 @@ export const skinAestheticTreatments = [
       en: 'CO2 Fractional Laser creates microscopic channels in the skin to trigger a potent healing response. It is the gold standard for treating acne scars, deep wrinkles, and uneven texture, revealing dramatically smoother skin.',
       id: 'Laser Fraksional CO2 menciptakan saluran mikroskopis di kulit untuk memicu respons penyembuhan yang kuat. Ini adalah standar emas untuk mengobati bekas jerawat, kerutan dalam, dan tekstur tidak rata, mengungkapkan kulit yang jauh lebih halus.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/Laser Co2 Fractional.png',
     benefits: {
       en: [
         'Dramatically reduces acne scars',
@@ -813,7 +813,7 @@ export const skinAestheticTreatments = [
       en: 'Thermage FLX uses monopolar radiofrequency energy to heat the deep layers of the skin, tightening existing collagen and stimulating new collagen growth. It provides a smooth, contoured look with a single treatment.',
       id: 'Thermage FLX menggunakan energi radiofrekuensi monopolar untuk memanaskan lapisan dalam kulit, mengencangkan kolagen yang ada dan merangsang pertumbuhan kolagen baru. Ini memberikan tampilan halus dan berkontur dengan satu perawatan.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/RF Tightening.png',
     benefits: {
       en: [
         'Tightens loose skin',
@@ -874,7 +874,7 @@ export const skinAestheticTreatments = [
       en: 'Pico Laser delivers energy in picoseconds (trillionths of a second) to shatter pigment particles without burning surrounding tissue. It is highly effective for tattoo removal, melasma, and acne scars.',
       id: 'Pico Laser menghantarkan energi dalam pikodetik (triliunan detik) untuk memecahkan partikel pigmen tanpa membakar jaringan di sekitarnya. Ini sangat efektif untuk penghapusan tato, melasma, dan bekas jerawat.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Brightening Laser (Q-Switched _ Pico).png',
     benefits: {
       en: [
         'Faster tattoo removal',
@@ -935,7 +935,7 @@ export const skinAestheticTreatments = [
       en: 'Our Acne Treatment Program combines deep cleansing, chemical peels, and LED therapy to kill acne-causing bacteria, reduce inflammation, and prevent future breakouts. Customized for your skin type.',
       id: 'Program Perawatan Jerawat kami menggabungkan pembersihan mendalam, chemical peeling, dan terapi LED untuk membunuh bakteri penyebab jerawat, mengurangi peradangan, dan mencegah jerawat di masa depan. Disesuaikan untuk jenis kulit Anda.'
     },
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ACNE/Acne Laser Therapy.png',
     benefits: {
       en: [
         'Clears active acne',
@@ -998,7 +998,7 @@ export const skinAestheticTreatments = [
       en: 'Whitening Infusion delivers a potent blend of Vitamin C, Glutathione, and antioxidants directly into your bloodstream. It brightens skin tone, boosts immunity, and detoxifies the body for a healthy glow.',
       id: 'Infus Pemutih memberikan campuran kuat Vitamin C, Glutathione, dan antioksidan langsung ke aliran darah Anda. Ini mencerahkan warna kulit, meningkatkan imunitas, dan mendetoksifikasi tubuh untuk kilau sehat.'
     },
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Whitening Drip _ Whitening Infusion.png',
     benefits: {
       en: [
         'Brightens overall skin tone',
@@ -1059,7 +1059,7 @@ export const skinAestheticTreatments = [
       en: 'We use CO2 laser or radiofrequency to safely remove moles, warts, skin tags, and other benign skin growths. The procedure is quick, precise, and leaves minimal to no scarring.',
       id: 'Kami menggunakan laser CO2 atau radiofrekuensi untuk menghilangkan tahi lalat, kutil, skin tag, dan pertumbuhan kulit jinak lainnya dengan aman. Prosedurnya cepat, presisi, dan meninggalkan sedikit atau tanpa bekas luka.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/Laser Co2 Fractional.png',
     benefits: {
       en: [
         'Removes unwanted growths',
@@ -1120,7 +1120,7 @@ export const skinAestheticTreatments = [
       en: 'Scar revision treatments aim to minimize the visibility of scars so they blend in with the surrounding skin tone and texture. We use a combination of lasers, injections, and microneedling tailored to your scar type.',
       id: 'Perawatan revisi bekas luka bertujuan untuk meminimalkan visibilitas bekas luka agar menyatu dengan warna dan tekstur kulit di sekitarnya. Kami menggunakan kombinasi laser, suntikan, dan microneedling yang disesuaikan dengan jenis bekas luka Anda.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/RF Microneedling.png',
     benefits: {
       en: [
         'Flattens raised scars',
@@ -1181,7 +1181,7 @@ export const skinAestheticTreatments = [
       en: 'Indulge in our Luxury Anti-Aging Facial, designed to lift, firm, and hydrate mature skin. Using premium Korean skincare products rich in peptides and antioxidants, this treatment restores vitality and youthfulness.',
       id: 'Manjakan diri dengan Facial Anti-Aging Mewah kami, dirancang untuk mengangkat, mengencangkan, dan menghidrasi kulit dewasa. Menggunakan produk perawatan kulit Korea premium yang kaya akan peptida dan antioksidan, perawatan ini mengembalikan vitalitas dan keremajaan.'
     },
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Meso Glow.png',
     benefits: {
       en: [
         'Deep relaxation',
@@ -1241,7 +1241,7 @@ export const skinAestheticTreatments = [
       en: 'Uses medical laser to kill acne bacteria and calm oil glands—fast, modern acne control. It effectively addresses active acne and prevents future breakouts.',
       id: 'Menggunakan laser medis untuk membunuh bakteri penyebab jerawat dan menenangkan kelenjar minyak—kontrol jerawat yang cepat dan modern. Efektif mengatasi jerawat aktif dan mencegah timbulnya jerawat di masa depan.'
     },
-    image: '/images/treatments/ACNE-Before-After.png',
+    image: '/images/AESTHETIC/ACNE/Acne Laser Therapy.png',
     benefits: {
       en: ['Reduces acne', 'Controls oil production', 'Minimizes redness'],
       id: ['Mengurangi jerawat', 'Mengontrol produksi minyak', 'Meminimalkan kemerahan']
@@ -1269,7 +1269,7 @@ export const skinAestheticTreatments = [
       en: 'An acid-based peel that exfoliates pores and controls breakouts. It helps clear existing acne and prevents new ones from forming by removing dead skin cells and excess oil.',
       id: 'Cairan peeling berbasis asam yang mengeksfoliasi pori-pori dan mengontrol timbulnya jerawat. Membantu membersihkan jerawat yang ada dan mencegah pembentukan jerawat baru dengan mengangkat sel kulit mati dan minyak berlebih.'
     },
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ACNE/Chemical Peels.png',
     benefits: {
       en: ['Clears clogged pores', 'Smooths skin texture'],
       id: ['Membersihkan pori-pori tersumbat', 'Menghaluskan tekstur kulit']
@@ -1297,7 +1297,7 @@ export const skinAestheticTreatments = [
       en: 'Manual removal of blackheads and whiteheads. It provides immediate pore clearing and smoother skin surface by removing impurities directly.',
       id: 'Pengangkatan komedo hitam dan putih secara manual. Memberikan pembersihan pori-pori instan dan permukaan kulit yang lebih halus dengan mengangkat kotoran secara langsung.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ACNE/Extraction Facial.png',
     benefits: {
       en: ['Immediate pore clearing', 'Reduced skin congestion'],
       id: ['Pembersihan pori-pori seketika', 'Mengurangi penyumbatan kulit']
@@ -1325,7 +1325,7 @@ export const skinAestheticTreatments = [
       en: 'Blue light kills acne bacteria without pain. It calms active acne and is a gentle yet effective way to manage breakouts without harsh chemicals.',
       id: 'Sinar biru membunuh bakteri jerawat tanpa rasa sakit. Menenangkan jerawat aktif dan merupakan cara yang lembut namun efektif untuk mengatasi jerawat tanpa bahan kimia keras.'
     },
-    image: '/images/treatments/ACNE-Before-After.png',
+    image: '/images/AESTHETIC/ACNE/LED Blue Light Therapy.png',
     benefits: {
       en: ['Calms active acne', 'Pain-free treatment'],
       id: ['Menenangkan jerawat aktif', 'Perawatan tanpa rasa sakit']
@@ -1353,7 +1353,7 @@ export const skinAestheticTreatments = [
       en: 'Steroid injection shrinks painful cystic acne fast. It provides rapid swelling reduction and is perfect for large, inflamed spots that need quick attention.',
       id: 'Suntikan steroid merampingkan jerawat kistik yang menyakitkan dengan cepat. Memberikan pengurangan pembengkakan yang cepat dan sangat cocok untuk bintik-bintik besar meradang yang membutuhkan penanganan segera.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ACNE/Acne Injection.png',
     benefits: {
       en: ['Rapid swelling reduction', 'Fast pain relief'],
       id: ['Pengurangan pembengkakan yang cepat', 'Pereda nyeri yang cepat']
@@ -1381,7 +1381,7 @@ export const skinAestheticTreatments = [
       en: 'Anti-acne cocktail injected into the skin. It controls oil and inflammation effectively, delivering therapeutic ingredients directly to where they are needed most.',
       id: 'Koktail anti-jerawat yang disuntikkan ke dalam kulit. Mengontrol minyak dan peradangan secara efektif, memberikan bahan-bahan terapeutik langsung ke tempat yang paling membutuhkannya.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ACNE/Acne Meso.png',
     benefits: {
       en: ['Controls oil production', 'Reduces inflammation'],
       id: ['Mengontrol produksi minyak', 'Mengurangi peradangan']
@@ -1409,7 +1409,7 @@ export const skinAestheticTreatments = [
       en: 'Laser targets sebaceous glands to reduce oil production long-term. This treatment helps in maintaining a matte skin appearance and preventing breakouts caused by excess sebum.',
       id: 'Laser menargetkan kelenjar minyak untuk mengurangi produksi minyak dalam jangka panjang. Perawatan ini membantu menjaga tampilan kulit tetap matte dan mencegah timbulnya jerawat akibat minyak berlebih.'
     },
-    image: '/images/treatments/ACNE-Before-After.png',
+    image: '/images/AESTHETIC/ACNE/Oil Control Laser.png',
     benefits: {
       en: ['Long-term oil reduction', 'Refines skin appearance'],
       id: ['Pengurangan minyak jangka panjang', 'Memperbaiki tampilan kulit']
@@ -1437,7 +1437,7 @@ export const skinAestheticTreatments = [
       en: 'A gentle laser that improves dull skin by stimulating collagen and breaking down uneven pigment. It gives a natural glow without peeling or injections.',
       id: 'Laser lembut yang memperbaiki kulit kusam dengan merangsang kolagen dan memecah pigmen yang tidak rata. Memberikan kilau alami tanpa pengelupasan atau suntikan.'
     },
-    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    image: '/images/AESTHETIC/BRIGHTENING/Brightening Laser (Q-Switched _ Pico).png',
     benefits: {
       en: ['Brighter complexion', 'Even skin tone', 'Boosts collagen'],
       id: ['Wajah lebih cerah', 'Warna kulit merata', 'Meningkatkan kolagen']
@@ -1465,7 +1465,7 @@ export const skinAestheticTreatments = [
       en: 'Uses laser or light energy to target sunspots, freckles, and pigmentation without damaging surrounding skin.',
       id: 'Menggunakan laser atau energi cahaya untuk menargetkan bintik matahari, freckles, dan pigmentasi tanpa merusak kulit di sekitarnya.'
     },
-    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    image: '/images/AESTHETIC/BRIGHTENING/pigment laser.png',
     benefits: {
       en: ['Reduces dark spots', 'More even tone', 'Clearer skin'],
       id: ['Mengurangi bintik hitam', 'Warna kulit lebih merata', 'Kulit lebih bersih']
@@ -1493,7 +1493,7 @@ export const skinAestheticTreatments = [
       en: 'Specialized laser designed for hormonal pigmentation. It focuses on safe, gradual improvement rather than aggressive peeling.',
       id: 'Laser khusus yang dirancang untuk pigmentasi hormonal. Berfokus pada perbaikan yang aman dan bertahap daripada pengelupasan agresif.'
     },
-    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    image: '/images/AESTHETIC/BRIGHTENING/Melasma Laser.png',
     benefits: {
       en: ['Lightens melasma', 'Prevents rebound darkening', 'Improves skin clarity'],
       id: ['Mencerahkan melasma', 'Mencegah penggelapan berulang', 'Meningkatkan kebersihan kulit']
@@ -1521,7 +1521,7 @@ export const skinAestheticTreatments = [
       en: 'IV or injection treatment delivering antioxidants and glutathione to brighten skin from within. It works systemically for an overall brightening effect.',
       id: 'Perawatan infus atau suntikan yang memberikan antioksidan dan glutathione untuk mencerahkan kulit dari dalam. Bekerja secara sistemik untuk efek pencerahan menyeluruh.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Whitening Drip _ Whitening Infusion.png',
     benefits: {
       en: ['Brighter skin tone', 'Improves dullness', 'Antioxidant benefits'],
       id: ['Warna kulit lebih cerah', 'Memperbaiki kekusaman', 'Manfaat antioksidan']
@@ -1549,7 +1549,7 @@ export const skinAestheticTreatments = [
       en: 'Micro-injections of brightening agents directly into the skin, delivering nutrients exactly where pigmentation forms.',
       id: 'Suntikan mikro agen pencerah langsung ke dalam kulit, memberikan nutrisi tepat di tempat pembentukan pigmentasi.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Brightening Meso (Vit C, Glutathione cocktails).png',
     benefits: {
       en: ['Brightens skin', 'Improves tone', 'Hydrated glow'],
       id: ['Mencerahkan kulit', 'Memperbaiki warna kulit', 'Kilau terhidrasi']
@@ -1577,7 +1577,7 @@ export const skinAestheticTreatments = [
       en: 'Uses controlled acids to exfoliate dead skin and reduce pigmentation, renewing skin layers for a brighter tone.',
       id: 'Menggunakan asam terkontrol untuk mengeksfoliasi kulit mati dan mengurangi pigmentasi, memperbarui lapisan kulit untuk warna yang lebih cerah.'
     },
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Chemical Peels for Brightening.png',
     benefits: {
       en: ['Fades pigmentation', 'Smooths texture', 'Improves radiance'],
       id: ['Memudarkan pigmentasi', 'Menghaluskan tekstur', 'Meningkatkan kecerahan']
@@ -1605,7 +1605,7 @@ export const skinAestheticTreatments = [
       en: 'Creates micro-channels to stimulate collagen and improve pigment absorption using the skin’s own healing process.',
       id: 'Membuat saluran mikro untuk merangsang kolagen dan meningkatkan penyerapan pigmen menggunakan proses penyembuhan alami kulit.'
     },
-    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Microneedling with Brightening Serum.png',
     benefits: {
       en: ['Improves tone & texture', 'Boosts collagen', 'Enhances skincare efficacy'],
       id: ['Memperbaiki warna & tekstur', 'Meningkatkan kolagen', 'Meningkatkan efektivitas skincare']
@@ -1633,7 +1633,7 @@ export const skinAestheticTreatments = [
       en: 'Broad-spectrum light treats redness, pigment, and dull skin together in an all-in-one skin refresh.',
       id: 'Cahaya spektrum luas mengatasi kemerahan, pigmen, dan kulit kusam bersama-an dalam satu perawatan penyegaran kulit.'
     },
-    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    image: '/images/AESTHETIC/BRIGHTENING/IPL Photofacial.png',
     benefits: {
       en: ['Brighter skin', 'Reduced pigment & redness', 'Healthy glow'],
       id: ['Kulit lebih cerah', 'Mengurangi pigmen & kemerahan', 'Kilau sehat']
@@ -1661,7 +1661,7 @@ export const skinAestheticTreatments = [
       en: 'Precision laser targets stubborn pigmentation deeper in the skin. It is ideal for treating resistant dark spots.',
       id: 'Laser presisi menargetkan pigmentasi membandel jauh di dalam kulit. Ideal untuk menangani bintik hitam yang resisten.'
     },
-    image: '/images/treatments/BRIGHTENING-Before-After.png',
+    image: '/images/AESTHETIC/BRIGHTENING/pigment laser.png',
     benefits: {
       en: ['Breaks down stubborn pigment', 'Improves skin clarity'],
       id: ['Memecah pigmen membandel', 'Meningkatkan kebersihan kulit']
@@ -1689,7 +1689,7 @@ export const skinAestheticTreatments = [
       en: 'Medical-grade skincare with brightening and pigment-control ingredients to support and maintain treatment results.',
       id: 'Skincare kelas medis dengan bahan pencerah dan pengontrol pigmen untuk mendukung dan mempertahankan hasil perawatan.'
     },
-    image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/BRIGHTENING/Topical Skincare.png',
     benefits: {
       en: ['Prevents pigment formation', 'Maintains results', 'Improves skin health'],
       id: ['Mencegah pembentukan pigmen', 'Mempertahankan hasil', 'Meningkatkan kesehatan kulit']
@@ -1717,7 +1717,7 @@ export const skinAestheticTreatments = [
       en: 'Botox is a non-surgical injectable treatment designed to soften fine lines and wrinkles by relaxing targeted facial muscles. It is a highly effective and FDA-approved solution for areas like the forehead, frown lines, and crow’s feet.',
       id: 'Botox adalah perawatan suntik non-bedah yang dirancang untuk menghaluskan garis halus dan kerutan dengan merelaksasi otot wajah tertentu. Ini adalah solusi yang sangat efektif dan disetujui FDA untuk area seperti dahi, garis kerut, dan crow’s feet.'
     },
-    image: '/images/treatments/botox_treatment_1764461614966.png',
+    image: '/images/AESTHETIC/ANTI-AGING/Botox.png',
     benefits: {
       en: ['Reduces forehead wrinkles and crow’s feet', 'Prevents deeper lines from forming', 'Subtle, natural-looking rejuvenation', 'Quick treatment with long-lasting results'],
       id: ['Mengurangi kerutan dahi dan crow’s feet', 'Mencegah pembentukan garis yang lebih dalam', 'Peremajaan alami yang halus', 'Perawatan cepat dengan hasil tahan lama']
@@ -1745,7 +1745,7 @@ export const skinAestheticTreatments = [
       en: 'Dermal fillers use high-quality hyaluronic acid to restore volume, enhance facial contours, and smooth fine lines, creating natural-looking definition.',
       id: 'Filler dermal menggunakan asam hialuronat berkualitas tinggi untuk mengembalikan volume, meningkatkan kontur wajah, dan menghaluskan garis halus, menciptakan definisi yang tampak alami.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Dermal Filler.png',
     benefits: {
       en: ['Adds volume to cheeks, lips, and chin', 'Smooths deep folds', 'Enhances facial contours', 'Immediate results'],
       id: ['Menambah volume pada pipi, bibir, dan dagu', 'Menghaluskan lipatan dalam', 'Meningkatkan kontur wajah', 'Hasil instan']
@@ -1773,7 +1773,7 @@ export const skinAestheticTreatments = [
       en: 'HIFU is a non-invasive treatment that uses focused ultrasound energy to stimulate collagen, firming the skin and redefining facial contours without surgery.',
       id: 'HIFU adalah perawatan non-invasif yang menggunakan energi ultrasound terfokus untuk merangsang kolagen, mengencangkan kulit, dan mempertegas kontur wajah tanpa operasi.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/HIFU _ Ultrasound Lifting.png',
     benefits: {
       en: ['Lifts face, jawline, and neck', 'Improves elasticity', 'Reduces sagging', 'No downtime'],
       id: ['Mengangkat wajah, rahang, dan leher', 'Meningkatkan elastisitas', 'Mengurangi kekenduran', 'Tanpa downtime']
@@ -1801,7 +1801,7 @@ export const skinAestheticTreatments = [
       en: 'RF Tightening uses controlled radiofrequency energy to heat deeper layers of the skin, stimulating collagen production for a more youthful appearance.',
       id: 'Pengencangan RF menggunakan energi radiofrekuensi terkontrol untuk memanaskan lapisan kulit yang lebih dalam, merangsang produksi kolagen untuk penampilan yang lebih muda.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/RF Tightening.png',
     benefits: {
       en: ['Improves skin firmness', 'Reduces fine lines', 'Enhances facial contours', 'Comfortable treatment'],
       id: ['Meningkatkan kekencangan kulit', 'Mengurangi garis halus', 'Meningkatkan kontur wajah', 'Perawatan yang nyaman']
@@ -1829,7 +1829,7 @@ export const skinAestheticTreatments = [
       en: 'Skin Booster delivers micro-droplets of hyaluronic acid into the skin to improve moisture, smoothness, and overall skin quality for a naturally refreshed glow.',
       id: 'Skin Booster memberikan tetesan mikro asam hialuronat ke dalam kulit untuk meningkatkan kelembapan, kehalusan, dan kualitas kulit secara keseluruhan untuk kilau segar alami.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Skin Booster.png',
     benefits: {
       en: ['Deeply hydrates and nourishes', 'Improves texture and elasticity', 'Reduces dullness', 'Creates dewy glow'],
       id: ['Menghidrasi dan menutrisi secara mendalam', 'Memperbaiki tekstur dan elastisitas', 'Mengurangi kekusaman', 'Menciptakan kilau dewy']
@@ -1857,7 +1857,7 @@ export const skinAestheticTreatments = [
       en: 'Laser Resurfacing is an advanced treatment that removes damaged skin layers and stimulates new collagen to refine texture and restore a youthful complexion.',
       id: 'Laser Resurfacing adalah perawatan canggih yang mengangkat lapisan kulit yang rusak dan merangsang kolagen baru untuk memperbaiki tekstur dan memulihkan wajah awet muda.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Laser Resurfacing.png',
     benefits: {
       en: ['Reduces scars and wrinkles', 'Improves skin texture and pores', 'Minimizes pigmentation', 'Long-term renewal'],
       id: ['Mengurangi bekas luka dan kerutan', 'Memperbaiki tekstur kulit dan pori', 'Meminimalkan pigmentasi', 'Pembaruan jangka panjang']
@@ -1885,7 +1885,7 @@ export const skinAestheticTreatments = [
       en: 'Threadlift uses dissolvable threads to reposition sagging skin and define facial contours, offering a subtle, natural lift without surgery.',
       id: 'Tanam benang menggunakan benang yang dapat larut untuk memposisikan ulang kulit yang kendur dan mempertegas kontur wajah, menawarkan pengangkatan alami yang halus tanpa operasi.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Threadlift.png',
     benefits: {
       en: ['Lifts sagging cheeks and jawline', 'Improves skin firmness', 'Natural-looking definition', 'Collagen stimulation'],
       id: ['Mengangkat pipi dan rahang kendur', 'Meningkatkan kekencangan kulit', 'Definisi yang tampak alami', 'Stimulasi kolagen']
@@ -1913,7 +1913,7 @@ export const skinAestheticTreatments = [
       en: 'PRP facial uses your own platelet-rich plasma to boost collagen and promote natural rejuvenation, revitalizing the complexion from within.',
       id: 'Terapi PRP menggunakan plasma kaya trombosit Anda sendiri untuk meningkatkan kolagen dan mendorong peremajaan alami, merevitalisasi wajah dari dalam.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/PRP Therapy.png',
     benefits: {
       en: ['Improves texture and glow', 'Reduces fine lines and scars', 'Tissue repair', 'Youthful appearance'],
       id: ['Memperbaiki tekstur dan kilau', 'Mengurangi garis halus dan bekas luka', 'Perbaikan jaringan', 'Penampilan awet muda']
@@ -1941,7 +1941,7 @@ export const skinAestheticTreatments = [
       en: 'Face Contouring is a non-surgical treatment designed to refine facial features and create a more balanced, sculpted appearance using various methods.',
       id: 'Kontur Wajah adalah perawatan non-bedah yang dirancang untuk menyempurnakan fitur wajah dan menciptakan penampilan yang lebih seimbang dan terpahat menggunakan berbagai metode.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Face Contouring.png',
     benefits: {
       en: ['Enhances jawline and chin', 'Creates symmetrical shape', 'Customizable results', 'Lifted look'],
       id: ['Mempertegas rahang dan dagu', 'Menciptakan bentuk simetris', 'Hasil yang dapat disesuaikan', 'Tampilan terangkat']
@@ -1969,7 +1969,7 @@ export const skinAestheticTreatments = [
       en: 'Stem Cell Treatment is an advanced regenerative therapy that uses concentrated growth factors to repair and rejuvenate the skin at a cellular level.',
       id: 'Perawatan Sel Punca adalah terapi regeneratif canggih yang menggunakan faktor pertumbuhan terkonsentrasi untuk memperbaiki dan meremajakan kulit pada tingkat sel.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/ANTI-AGING/Stem-Cells.png',
     benefits: {
       en: ['Boosts cellular regeneration', 'Improves firmness and elasticity', 'Reduces scars', 'Radiance'],
       id: ['Meningkatkan regenerasi seluler', 'Meningkatkan kekencangan dan elastisitas', 'Mengurangi bekas luka', 'Kilau']
@@ -1997,7 +1997,7 @@ export const skinAestheticTreatments = [
       en: 'A non-surgical fat reduction treatment that freezes fat cells, allowing the body to naturally eliminate them without needles or surgery.',
       id: 'Perawatan pengurangan lemak non-bedah yang membekukan sel lemak, memungkinkan tubuh untuk membuangnya secara alami tanpa jarum atau pembedahan.'
     },
-    image: '/images/treatments/SLIMMING-Before-After.png',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Cryolipolysis _ Fat Freeze.png',
     benefits: {
       en: ['Reduces stubborn fat pockets', 'No surgery or scars', 'Natural-looking slimming'],
       id: ['Mengurangi kantong lemak membandel', 'Tanpa operasi atau bekas luka', 'Pelangsingan yang tampak alami']
@@ -2025,7 +2025,7 @@ export const skinAestheticTreatments = [
       en: 'Uses radiofrequency heat to tighten skin and stimulate collagen, firming loose skin and improving cellulite without fat removal.',
       id: 'Menggunakan panas radiofrekuensi untuk mengencangkan kulit dan merangsang kolagen, mengencangkan kulit yang kendur dan memperbaiki selulit tanpa sedot lemak.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/RF Body Tightening.png',
     benefits: {
       en: ['Firmer skin', 'Improves cellulite', 'Smooth body contours'],
       id: ['Kulit lebih kencang', 'Memperbaiki selulit', 'Kontur tubuh yang halus']
@@ -2053,7 +2053,7 @@ export const skinAestheticTreatments = [
       en: 'Uses laser energy to break down fat cells and tighten skin simultaneously, melting fat while firming the target area.',
       id: 'Menggunakan energi laser untuk memecah sel lemak dan mengencangkan kulit secara bersamaan, melelehkan lemak sambil mengencangkan area target.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Laser Lipo _ Cavitation.png',
     benefits: {
       en: ['Reduces localized fat', 'Tightens skin', 'Body shaping'],
       id: ['Mengurangi lemak lokal', 'Mengencangkan kulit', 'Pembentukan tubuh']
@@ -2081,7 +2081,7 @@ export const skinAestheticTreatments = [
       en: 'Fat-burning injections that help dissolve localized fat and boost metabolism for targeted fat reduction.',
       id: 'Suntikan pembakar lemak yang membantu melarutkan lemak lokal dan meningkatkan metabolisme untuk pengurangan lemak yang ditargetkan.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Body Slimming Injection.png',
     benefits: {
       en: ['Reduces fat volume', 'Body contouring'],
       id: ['Mengurangi volume lemak', 'Kontur tubuh']
@@ -2109,7 +2109,7 @@ export const skinAestheticTreatments = [
       en: 'A gentle massage that improves circulation and drainage, enhancing slimming results and reducing water retention.',
       id: 'Pijatan lembut yang meningkatkan sirkulasi dan drainase, meningkatkan hasil pelangsingan dan mengurangi retensi air.'
     },
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Lymphatic Detox Massage.png',
     benefits: {
       en: ['Reduces water retention', 'Detox effect', 'Improves body contour'],
       id: ['Mengurangi retensi air', 'Efek detoks', 'Memperbaiki kontur tubuh']
@@ -2137,7 +2137,7 @@ export const skinAestheticTreatments = [
       en: 'Uses high-intensity electromagnetic energy to build muscle and burn fat simultaneously, mimicking the effects of intense workouts.',
       id: 'Menggunakan energi elektromagnetik intensitas tinggi untuk membentuk otot dan membakar lemak secara bersamaan, meniru efek olahraga intens.'
     },
-    image: '/images/treatments/SLIMMING-Before-After.png',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/HIFEM Muscle Stimulation.png',
     benefits: {
       en: ['Builds muscle', 'Burns fat', 'Stronger core'],
       id: ['Membentuk otot', 'Membakar lemak', 'Core yang lebih kuat']
@@ -2165,7 +2165,7 @@ export const skinAestheticTreatments = [
       en: 'Ultrasound lifting treatment designed to tighten sagging skin and sharpen facial contours for a desirable V-shape.',
       id: 'Perawatan lifting ultrasound yang dirancang untuk mengencangkan kulit kendur dan mempertajam kontur wajah untuk bentuk V yang diinginkan.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/HIFU V-Shape Lifting.png',
     benefits: {
       en: ['Lifts jawline', 'Reduces sagging', 'Non-surgical results'],
       id: ['Mengangkat garis rahang', 'Mengurangi kekenduran', 'Hasil non-bedah']
@@ -2193,7 +2193,7 @@ export const skinAestheticTreatments = [
       en: 'Relaxes the masseter (jaw) muscles to slim the lower face profile and can also help reduce teeth grinding.',
       id: 'Merelaksasi otot masseter (rahang) untuk melangsingkan profil wajah bawah dan juga dapat membantu mengurangi kebiasaan menggeritkan gigi.'
     },
-    image: '/images/treatments/botox_treatment_1764461614966.png',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/JAWLINE BOTOX.png',
     benefits: {
       en: ['Slimmer jawline', 'Reduces teeth grinding'],
       id: ['Garis rahang lebih ramping', 'Mengurangi kebiasaan menggeritkan gigi']
@@ -2221,7 +2221,7 @@ export const skinAestheticTreatments = [
       en: 'Hyaluronic acid filler used to enhance chin projection, improve facial harmony, and balance the profile.',
       id: 'Filler asam hialuronat yang digunakan untuk meningkatkan proyeksi dagu, memperbaiki harmoni wajah, dan menyeimbangkan profil.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Chin & Cheek Filler.png',
     benefits: {
       en: ['Sharper profile', 'Better facial harmony'],
       id: ['Profil lebih tajam', 'Harmoni wajah yang lebih baik']
@@ -2249,7 +2249,7 @@ export const skinAestheticTreatments = [
       en: 'Dissolvable threads inserted under the skin to provide an instant lift to sagging tissues while stimulating long-term collagen production.',
       id: 'Benang yang dapat larut dimasukkan di bawah kulit untuk memberikan pengangkatan instan pada jaringan yang kendur sambil merangsang produksi kolagen jangka panjang.'
     },
-    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Thread Lift for Contour.png',
     benefits: {
       en: ['Instant lift', 'Improved firmness'],
       id: ['Pengangkatan instan', 'Peningkatan kekencangan']
@@ -2277,7 +2277,7 @@ export const skinAestheticTreatments = [
       en: 'An injectable solution that permanently breaks down fat cells, which are then naturally processed and eliminated by the body.',
       id: 'Cairan suntik yang memecah sel lemak secara permanen, yang kemudian diproses dan dibuang secara alami oleh tubuh.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Fat-Dissolving Injection (Kybella-type).png',
     benefits: {
       en: ['Permanent fat reduction', 'Non-surgical'],
       id: ['Pengurangan lemak permanen', 'Non-bedah']
@@ -2305,7 +2305,7 @@ export const skinAestheticTreatments = [
       en: 'Surgical removal of fat for dramatic and permanent contouring. Most effective for addressing larger fat deposits.',
       id: 'Pengangkatan lemak melalui pembedahan untuk pembentukan kontur yang dramatis dan permanen. Paling efektif untuk menangani timbunan lemak yang lebih besar.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SLIMMING & CONTOURING/Fat removal surgery.png',
     benefits: {
       en: ['Immediate results', 'Long-lasting contour'],
       id: ['Hasil instan', 'Kontur tahan lama']
@@ -2333,7 +2333,7 @@ export const skinAestheticTreatments = [
       en: 'Uses low-level laser light to stimulate dormant hair follicles and improve scalp circulation. It is a painless, drug-free solution suitable for long-term maintenance.',
       id: 'Menggunakan cahaya laser tingkat rendah untuk merangsang folikel rambut yang tidak aktif dan meningkatkan sirkulasi kulit kepala. Solusi tanpa rasa sakit dan bebas obat yang cocok untuk perawatan jangka panjang.'
     },
-    image: '/images/treatments/HAIR-GROWTH-Before-After.png',
+    image: '/images/AESTHETIC/HAIR GROWTH/Hair Growth Laser _ LLLT.png',
     benefits: {
       en: ['Reduces hair shedding', 'Strengthens existing hair', 'Improves scalp health'],
       id: ['Mengurangi kerontokan rambut', 'Memperkuat rambut yang ada', 'Meningkatkan kesehatan kulit kepala']
@@ -2361,7 +2361,7 @@ export const skinAestheticTreatments = [
       en: 'Delivers vitamins, peptides, and growth factors directly into the scalp, targeting hair roots precisely where they need nourishment most.',
       id: 'Memberikan vitamin, peptida, dan growth factor langsung ke kulit kepala, menargetkan akar rambut tepat di tempat yang paling membutuhkan nutrisi.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR GROWTH/Hair Meso (Growth Factor Injections).png',
     benefits: {
       en: ['Reduces hair fall', 'Improves hair thickness', 'Revitalizes weak follicles'],
       id: ['Mengurangi rambut rontok', 'Meningkatkan ketebalan rambut', 'Merevitalisasi folikel yang lemah']
@@ -2389,7 +2389,7 @@ export const skinAestheticTreatments = [
       en: 'Uses your own platelet-rich plasma (PRP) to stimulate natural hair regrowth and thickening, harnessing your body’s own healing power.',
       id: 'Menggunakan plasma kaya trombosit (PRP) Anda sendiri untuk merangsang penumbuhan dan penebalan rambut alami, memanfaatkan kekuatan penyembuhan tubuh Anda sendiri.'
     },
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR GROWTH/PRP Hair Treatment.png',
     benefits: {
       en: ['Stimulates new hair growth', 'Thickens hair shafts', 'Improves scalp healing'],
       id: ['Merangsang pertumbuhan rambut baru', 'Menebalkan batang rambut', 'Meningkatkan penyembuhan kulit kepala']
@@ -2417,7 +2417,7 @@ export const skinAestheticTreatments = [
       en: 'An FDA-approved topical treatment that prolongs the hair growth phase. It is a scientifically proven method for managing hair loss and promoting regrowth.',
       id: 'Perawatan topikal yang disetujui FDA untuk memperpanjang fase pertumbuhan rambut. Ini adalah metode yang terbukti secara ilmiah untuk mengatasi kerontokan dan mendukung penumbuhan kembali.'
     },
-    image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR GROWTH/Topical Minoxidil Program.png',
     benefits: {
       en: ['Slows hair loss', 'Promotes regrowth', 'Strengthens follicles'],
       id: ['Memperlambat kerontokan', 'Mendorong penumbuhan kembali', 'Memperkuat folikel']
@@ -2445,7 +2445,7 @@ export const skinAestheticTreatments = [
       en: 'Uses polynucleotides (salmon DNA) to repair scalp tissue and rejuvenate follicles at a cellular level, promoting a healthy environment for hair growth.',
       id: 'Menggunakan polinukleotida (DNA salmon) untuk memperbaiki jaringan kulit kepala dan meremajakan folikel di tingkat sel, mendukung lingkungan sehat untuk pertumbuhan rambut.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR GROWTH/DNA Salmon Hair Injection.png',
     benefits: {
       en: ['Improves scalp health', 'Enhances hair density', 'Strengthens follicles'],
       id: ['Meningkatkan kesehatan kulit kepala', 'Meningkatkan kepadatan rambut', 'Memperkuat folikel']
@@ -2473,7 +2473,7 @@ export const skinAestheticTreatments = [
       en: 'Removes oil, product buildup, and dead skin from the scalp to improve circulation and create a clean environment for healthier hair growth.',
       id: 'Mengangkat minyak, sisa produk, dan kulit mati dari kulit kepala untuk meningkatkan sirkulasi dan menciptakan lingkungan bersih bagi pertumbuhan rambut yang lebih sehat.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR GROWTH/Scalp Detox & Deep Cleansing Treatment.png',
     benefits: {
       en: ['Improves scalp circulation', 'Reduces dandruff & oil', 'Boosts other treatment results'],
       id: ['Meningkatkan sirkulasi kulit kepala', 'Mengurangi ketombe & minyak', 'Meningkatkan hasil perawatan lainnya']
@@ -2501,7 +2501,7 @@ export const skinAestheticTreatments = [
       en: 'A surgical procedure that transfers hair follicles from a donor area to thinning or bald areas for permanent and natural-looking restoration.',
       id: 'Prosedur bedah yang memindahkan folikel rambut dari area donor ke area yang menipis atau botak untuk restorasi yang permanen dan tampak alami.'
     },
-    image: '/images/treatments/HAIR-GROWTH-Before-After.png',
+    image: '/images/AESTHETIC/HAIR GROWTH/Hair Transplant - 1.png',
     benefits: {
       en: ['Permanent hair restoration', 'Natural-looking hairline'],
       id: ['Restorasi rambut permanen', 'Garis rambut yang tampak alami']
@@ -2529,7 +2529,7 @@ export const skinAestheticTreatments = [
       en: 'Injectable skin nutrients that deeply hydrate and repair skin from within. It improves skin quality and texture rather than changing facial shape.',
       id: 'Nutrisi kulit suntik yang menghidrasi secara mendalam dan memperbaiki kulit dari dalam. Meningkatkan kualitas dan tekstur kulit tanpa mengubah bentuk wajah.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/SKIN BOOSTER.png',
     benefits: {
       en: ['Deep hydration', 'Glow & elasticity', 'Skin repair'],
       id: ['Hidrasi mendalam', 'Kilau & elastisitas', 'Perbaikan kulit']
@@ -2557,7 +2557,7 @@ export const skinAestheticTreatments = [
       en: 'Multi-step deep cleansing, exfoliation, extraction, and hydration treatment. It delivers an instant glow with zero downtime.',
       id: 'Perawatan pembersihan mendalam, eksfoliasi, ekstraksi, dan hidrasi multi-tahap. Memberikan kilau instan tanpa downtime.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Hydrafacial.png',
     benefits: {
       en: ['Clean pores', 'Hydrated skin', 'Instant brightness'],
       id: ['Pori-pori bersih', 'Kulit terhidrasi', 'Kecerahan instan']
@@ -2585,7 +2585,7 @@ export const skinAestheticTreatments = [
       en: 'Creates controlled micro-injuries to stimulate the skin’s natural healing power, leading to increased collagen and improved skin texture.',
       id: 'Menciptakan luka mikro terkontrol untuk merangsang kekuatan penyembuhan alami kulit, menghasilkan peningkatan kolagen dan tekstur kulit yang lebih baik.'
     },
-    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Microneedling.png',
     benefits: {
       en: ['Smooth texture', 'Reduce pores & scars', 'Boost collagen'],
       id: ['Tekstur halus', 'Mengurangi pori & bekas luka', 'Meningkatkan kolagen']
@@ -2613,7 +2613,7 @@ export const skinAestheticTreatments = [
       en: 'Non-ablative laser therapy that refreshes skin tone, minimizes pores, and reduces fine lines without peeling or significant downtime.',
       id: 'Terapi laser non-ablatif yang menyegarkan warna kulit, mengecilkan pori-pori, dan mengurangi garis halus tanpa pengelupasan atau downtime yang berarti.'
     },
-    image: '/images/treatments/REJUVENATE-Before-After.png',
+    image: '/images/AESTHETIC/REJUVENATION/Laser Rejuvenation.png',
     benefits: {
       en: ['Brighter skin', 'Refined pores', 'Youthful glow'],
       id: ['Kulit lebih cerah', 'Pori-pori lebih halus', 'Kilau awet muda']
@@ -2641,7 +2641,7 @@ export const skinAestheticTreatments = [
       en: 'Delivers high-pressure oxygen and active serums deep into the skin. It instantly refreshes tired, dull, or dehydrated skin.',
       id: 'Memberikan oksigen bertekanan tinggi dan serum aktif ke dalam kulit. Menyegarkan kulit yang lelah, kusam, atau dehidrasi secara instan.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Oxygen Facial.png',
     benefits: {
       en: ['Instant glow', 'Deep hydration', 'Calms sensitive skin'],
       id: ['Kilau instan', 'Hidrasi mendalam', 'Menenangkan kulit sensitif']
@@ -2669,7 +2669,7 @@ export const skinAestheticTreatments = [
       en: 'A physical exfoliation method that removes dead skin cells and "peach fuzz" hair, resulting in baby-smooth skin and better makeup application.',
       id: 'Metode eksfoliasi fisik yang mengangkat sel kulit mati dan bulu halus (peach fuzz), menghasilkan kulit selembut bayi dan aplikasi riasan yang lebih baik.'
     },
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Dermaplaning.png',
     benefits: {
       en: ['Baby-smooth skin', 'Better makeup application', 'Brighter tone'],
       id: ['Kulit halus seperti bayi', 'Aplikasi riasan lebih baik', 'Warna kulit lebih cerah']
@@ -2697,7 +2697,7 @@ export const skinAestheticTreatments = [
       en: 'Micro-injections of essential vitamins and peptides to revive dull skin, delivering nutrients directly to where they are needed most for a radiant glow.',
       id: 'Suntikan mikro vitamin esensial dan peptida untuk menghidupkan kembali kulit kusam, memberikan nutrisi langsung ke tempat yang paling dibutuhkan untuk kilau alami.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/Meso Glow.png',
     benefits: {
       en: ['Radiant skin', 'Even tone', 'Improved texture'],
       id: ['Kulit bercahaya', 'Warna kulit merata', 'Tekstur yang lebih baik']
@@ -2725,7 +2725,7 @@ export const skinAestheticTreatments = [
       en: 'Harnesses your own platelet-rich plasma (PRP) growth factors to regenerate skin tissue, boost collagen, and provide a 100% natural glow.',
       id: 'Memanfaatkan faktor pertumbuhan plasma kaya trombosit (PRP) Anda sendiri untuk meregenerasi jaringan kulit, meningkatkan kolagen, dan memberikan kilau 100% alami.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/PRP Rejuvenation.png',
     benefits: {
       en: ['Collagen boost', 'Skin tissue repair', 'Natural glow'],
       id: ['Peningkatan kolagen', 'Perbaikan jaringan kulit', 'Kilau alami']
@@ -2753,7 +2753,7 @@ export const skinAestheticTreatments = [
       en: 'Regenerative skin treatment using polynucleotides (salmon DNA) to repair damaged tissue and rejuvenate follicles. Excellent for anti-aging and overall healing.',
       id: 'Perawatan kulit regeneratif menggunakan polinukleotida (DNA salmon) untuk memperbaiki jaringan yang rusak dan meremajakan folikel. Sangat baik untuk anti-penuaan dan penyembuhan menyeluruh.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/REJUVENATION/DNA Salmon.png',
     benefits: {
       en: ['Skin regeneration', 'Improved elasticity', 'Anti-aging healing'],
       id: ['Regenerasi kulit', 'Meningkatkan elastisitas', 'Penyembuhan anti-penuaan']
@@ -2781,7 +2781,7 @@ export const skinAestheticTreatments = [
       en: 'Subcision works beneath the skin’s surface to release stubborn acne scars that are pulled down by tight fibrous bands. Once released, the skin can naturally lift and smooth out over time.',
       id: 'Subcision bekerja di bawah permukaan kulit untuk melepaskan bekas jerawat membandel yang ditarik ke bawah oleh pita serat kencang. Setelah dilepaskan, kulit dapat terangkat dan halus kembali secara alami seiring waktu.'
     },
-    image: '/images/treatments/SCAR-Before-After.png',
+    image: '/images/AESTHETIC/SCAR & PORE/Subcision.png',
     benefits: {
       en: ['Improves deep, rolling acne scars', 'Smooths uneven skin texture', 'Stimulates natural collagen production'],
       id: ['Memperbaiki bekas jerawat dalam (rolling scars)', 'Menghaluskan tekstur kulit yang tidak rata', 'Merangsang produksi kolagen alami']
@@ -2809,7 +2809,7 @@ export const skinAestheticTreatments = [
       en: 'RF Microneedling combines microneedles and radiofrequency energy to stimulate collagen deep within the skin, improving acne scars, pores, and tightening sagging skin.',
       id: 'RF Microneedling menggabungkan microneedle dan energi radiofrekuensi untuk merangsang kolagen jauh di dalam kulit, memperbaiki bekas jerawat, pori-pori, dan mengencangkan kulit.'
     },
-    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/RF Microneedling.png',
     benefits: {
       en: ['Improves acne scars and pores', 'Tightens sagging skin', 'Smoothens texture', 'Minimal downtime compared to lasers'],
       id: ['Memperbaiki bekas jerawat dan pori-pori', 'Mengencangkan kulit kendur', 'Menghaluskan tekstur', 'Downtime minimal dibanding laser']
@@ -2837,7 +2837,7 @@ export const skinAestheticTreatments = [
       en: 'Fractional laser creates microscopic thermal zones in the skin to trigger powerful skin renewal and collagen rebuilding, addressing deep acne scars and uneven texture.',
       id: 'Laser fraksional menciptakan zona termal mikroskopis pada kulit untuk memicu pembaruan kulit yang kuat dan pembangunan kembali kolagen; efektif untuk bekas luka dalam.'
     },
-    image: '/images/treatments/SCAR-Before-After.png',
+    image: '/images/AESTHETIC/SCAR & PORE/Laser Co2 Fractional.png',
     benefits: {
       en: ['Reduces deep acne scars', 'Smooths uneven texture', 'Improves fine lines and pores', 'Long-term skin rejuvenation'],
       id: ['Mengurangi bekas jerawat dalam', 'Menghaluskan tekstur tidak rata', 'Memperbaiki garis halus dan pori-pori', 'Peremajaan kulit jangka panjang']
@@ -2865,7 +2865,7 @@ export const skinAestheticTreatments = [
       en: 'TCA CROSS uses high-strength acid applied directly into deep ice-pick scars to stimulate collagen and shrink scars from within, targeting them precisely.',
       id: 'TCA CROSS menggunakan asam berkekuatan tinggi yang dioleskan langsung ke bekas luka ice-pick yang dalam untuk merangsang kolagen dan mengecilkan luka dari dalam.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/TCA CROSS (Chemical Reconstruction of Skin Scars).png',
     benefits: {
       en: ['Best for ice-pick scars', 'Improves scar depth', 'Affordable and effective', 'Minimal impact on surrounding skin'],
       id: ['Terbaik untuk bekas luka ice-pick', 'Memperbaiki kedalaman luka', 'Terjangkau dan efektif', 'Dampak minimal pada kulit sekitar']
@@ -2893,7 +2893,7 @@ export const skinAestheticTreatments = [
       en: 'PRP uses your own blood’s growth factors to stimulate healing, collagen production, and skin renewal. It’s a natural regenerative treatment.',
       id: 'PRP menggunakan faktor pertumbuhan darah Anda sendiri untuk merangsang penyembuhan, produksi kolagen, dan pembaruan kulit. Perawatan regenerasi alami.'
     },
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/PRP Scars.png',
     benefits: {
       en: ['Improves acne scars', 'Enhances skin glow', 'Boosts healing after lasers', 'Safe and natural'],
       id: ['Memperbaiki bekas jerawat', 'Meningkatkan kilau kulit', 'Mendorong penyembuhan pasca laser', 'Aman dan alami']
@@ -2921,7 +2921,7 @@ export const skinAestheticTreatments = [
       en: 'Skin boosters inject hydrating and regenerative ingredients into the skin to improve texture, elasticity, and overall quality without adding volume.',
       id: 'Skin booster menyuntikkan bahan hidrasi dan regeneratif ke dalam kulit untuk meningkatkan tekstur, elastisitas, dan kualitas tanpa menambah volume.'
     },
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/SKIN BOOSTER.png',
     benefits: {
       en: ['Deep hydration', 'Improved skin elasticity', 'Smoother texture', 'Radiant appearance'],
       id: ['Hidrasi mendalam', 'Meningkatkan elastisitas kulit', 'Tekstur lebih halus', 'Penampilan bercahaya']
@@ -2949,7 +2949,7 @@ export const skinAestheticTreatments = [
       en: 'Meso whitening delivers brightening and pigment-correcting ingredients directly into the skin to fade acne marks and treat pigmentation from the inside.',
       id: 'Meso whitening memberikan bahan pencerah dan pengoreksi pigmen langsung ke dalam kulit untuk memudarkan bekas jerawat dari dalam.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/Meso Whitening for Acne Marks.png',
     benefits: {
       en: ['Lightens acne marks', 'Brightens dull skin', 'Improves uneven tone', 'Enhances glow'],
       id: ['Mencerahkan bekas jerawat', 'Mencerahkan kulit kusam', 'Memperbaiki warna tidak merata', 'Meningkatkan kilau']
@@ -2977,7 +2977,7 @@ export const skinAestheticTreatments = [
       en: 'Cross-linked fillers are precisely injected under depressed (atrophic) scars to lift them and smooth the skin contour, providing immediate visual improvement.',
       id: 'Filler cross-linked disuntikkan tepat di bawah bekas luka cekung (atrofik) untuk mengangkat dan menghaluskan kontur kulit secara instan.'
     },
-    image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/SCAR & PORE/Filler for Scars _ Cross-Linked Filler for Atrophic Scars.png',
     benefits: {
       en: ['Instant scar lifting', 'Improves skin contour', 'Long-lasting correction', 'Natural appearance'],
       id: ['Pengangkatan bekas luka instan', 'Memperbaiki kontur kulit', 'Koreksi tahan lama', 'Penampilan alami']
@@ -3005,7 +3005,7 @@ export const skinAestheticTreatments = [
       en: 'Diode Laser Hair Removal uses targeted laser energy to damage hair follicles and inhibit future growth. It is highly effective for most skin types and popular for its long-term results.',
       id: 'Penghilang Bulu Laser Diode menggunakan energi laser terarah untuk merusak folikel rambut dan menghambat pertumbuhan di masa depan. Sangat efektif untuk sebagian besar jenis kulit.'
     },
-    image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
+    image: '/images/AESTHETIC/HAIR REMOVAL/diode laser hair removal.png',
     benefits: {
       en: ['Long-lasting hair reduction', 'Smoother skin texture', 'Prevents ingrown hairs'],
       id: ['Pengurangan bulu jangka panjang', 'Tekstur kulit lebih halus', 'Mencegah bulu tumbuh ke dalam (ingrown hair)']
@@ -3033,7 +3033,7 @@ export const skinAestheticTreatments = [
       en: 'The Alexandrite laser operates at a 755nm wavelength, making it exceptionally fast and effective at targeting pigment in hair follicles, especially for lighter skin tones.',
       id: 'Laser Alexandrite bekerja pada panjang gelombang 755nm, menjadikannya sangat cepat dan efektif dalam menargetkan pigmen pada folikel rambut, terutama untuk warna kulit yang lebih cerah.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/Alexandrite Laser (755 nm).png',
     benefits: {
       en: ['Faster treatment sessions', 'Effective on thick/coarse hair', 'Strong pigment targeting'],
       id: ['Sesi perawatan lebih cepat', 'Efektif untuk rambut tebal/kasar', 'Penargetan pigmen yang kuat']
@@ -3061,7 +3061,7 @@ export const skinAestheticTreatments = [
       en: 'IPL uses intense pulses of broad-spectrum light to target hair follicles. It is a popular and versatile option for reducing hair growth and improving overall skin tone.',
       id: 'IPL menggunakan pulsa cahaya spektrum luas yang intens untuk menargetkan folikel rambut. Pilihan populer untuk mengurangi pertumbuhan rambut dan memperbaiki warna kulit.'
     },
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/IPL Hair Removal.png',
     benefits: {
       en: ['Reduces hair growth', 'Improves skin tone', 'Cost-effective maintenance'],
       id: ['Mengurangi pertumbuhan rambut', 'Memperbaiki warna kulit', 'Perawatan yang hemat biaya']
@@ -3089,7 +3089,7 @@ export const skinAestheticTreatments = [
       en: 'SHR is an advanced hair removal technology that uses repetitive low-energy pulses to gradually heat the follicles, making the process much more comfortable and safe for sensitive skin.',
       id: 'SHR adalah teknologi penghilang bulu canggih yang menggunakan pulsa energi rendah berulang untuk memanaskan folikel secara bertahap, menjadikannya jauh lebih nyaman dan aman untuk kulit sensitif.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/SHR Hair Removal.png',
     benefits: {
       en: ['Nearly painless', 'Safe for sensitive skin', 'Effective on multiple hair types'],
       id: ['Hampir tanpa rasa sakit', 'Aman untuk kulit sensitif', 'Efektif untuk berbagai jenis rambut']
@@ -3117,7 +3117,7 @@ export const skinAestheticTreatments = [
       en: 'Electrolysis involves the insertion of a fine probe into each hair follicle to deliver a tiny amount of electrical energy, destroying the growth center permanently. It works regardless of hair or skin color.',
       id: 'Elektrolisis melibatkan pemasukan probe halus ke setiap folikel rambut untuk mengirimkan sejumlah kecil energi listrik, menghancurkan pusat pertumbuhan secara permanen. Bekerja untuk semua warna rambut atau kulit.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/Electrolysis Hair Removal.png',
     benefits: {
       en: ['100% permanent results', 'Effective on all hair colors (including white/blonde)', 'Targets individual hairs precisely'],
       id: ['Hasil 100% permanen', 'Efektif untuk semua warna rambut (termasuk putih/pirang)', 'Menargetkan bulu individu secara presisi']
@@ -3145,7 +3145,7 @@ export const skinAestheticTreatments = [
       en: 'Underarm hair removal treatment using laser or IPL technology. It helps reduce body odor, improves hygiene, and provides long-lasting smoothness.',
       id: 'Perawatan penghilang bulu ketiak menggunakan teknologi laser atau IPL. Membantu mengurangi bau badan, meningkatkan kebersihan, dan memberikan kehalusan tahan lama.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/Armpit Hair Removal.png',
     benefits: {
       en: ['Reduces body odor', 'Smoother underarms', 'Eliminates shaving irritation'],
       id: ['Mengurangi bau badan', 'Ketiak lebih halus', 'Menghilangkan iritasi akibat mencukur']
@@ -3173,7 +3173,7 @@ export const skinAestheticTreatments = [
       en: 'Full-body or area-specific hair removal covering legs, arms, chest, back, and abdomen. Ideal for achieving full-body smoothness without constant shaving.',
       id: 'Penghilang bulu seluruh tubuh atau area tertentu meliputi kaki, lengan, dada, punggung, dan perut. Ideal untuk kehalusan tubuh tanpa harus terus mencukur.'
     },
-    image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
+    image: '/images/AESTHETIC/HAIR REMOVAL/Body Hair Removal.png',
     benefits: {
       en: ['Full-body smoothness', 'Reduced preparation time', 'Fewer ingrown hairs'],
       id: ['Kehalusan seluruh tubuh', 'Waktu persiapan lebih singkat', 'Lebih sedikti bulu yang tumbuh ke dalam']
@@ -3201,7 +3201,7 @@ export const skinAestheticTreatments = [
       en: 'Specialized treatment for delicate facial skin. Targets the upper lip, chin, and cheeks to provide a smoother canvas for makeup and refined pores.',
       id: 'Perawatan khusus untuk kulit wajah. Menargetkan bibir atas, dagu, dan pipi untuk memberikan hasil yang halus bagi riasan wajah.'
     },
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/Facial Hair Removal.png',
     benefits: {
       en: ['Finer pores', 'Smoother makeup application', 'Refined facial appearance'],
       id: ['Pori-pori lebih halus', 'Aplikasi riasan lebih halus', 'Penampilan wajah lebih rapi']
@@ -3229,7 +3229,7 @@ export const skinAestheticTreatments = [
       en: 'Professional hair removal for intimate areas, focusing on hygiene and long-term comfort. This treatment provides long-lasting smoothness and prevents painful ingrown hairs.',
       id: 'Penghilang bulu profesional untuk area intim, fokus pada kebersihan dan kenyamanan jangka panjang. Perawatan ini memberikan kehalusan dan mencegah bulu ingrown.'
     },
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/AESTHETIC/HAIR REMOVAL/Brazilian Hair Removal.png',
     benefits: {
       en: ['Long-lasting hygiene', 'Fewer painful ingrown hairs', 'Complete smoothness'],
       id: ['Kebersihan tahan lama', 'Lebih sedikit bulu ingrown yang sakit', 'Kehalusan sempurna']
@@ -3260,7 +3260,7 @@ export const dentalTreatments = [
       en: 'A high-strength professional teeth whitening system using advanced activators (laser or LED). It delivers dramatic whitening in one visit.',
       id: 'Sistem pemutihan gigi profesional berkekuatan tinggi menggunakan aktivator canggih (laser atau LED). Memberikan hasil pemutihan yang dramatis dalam satu kunjungan.'
     },
-    image: '/images/dental/Bleaching.png',
+    image: '/images/dental/AESTHETIC/Bleaching.png',
     benefits: {
       en: ['Significantly whiter teeth', 'Removes deep stains (coffee, smoking)', 'Boosts smile confidence'],
       id: ['Gigi jauh lebih putih', 'Menghilangkan noda mendalam (kopi, merokok)', 'Meningkatkan kepercayaan diri saat tersenyum']
@@ -3288,7 +3288,7 @@ export const dentalTreatments = [
       en: 'Professional whitening using lower-strength gel, ideal for gradual brightening. Perfect for patients wanting natural, comfortable results.',
       id: 'Pemutihan profesional menggunakan gel berkekuatan lebih rendah, ideal untuk pencerahan bertahap. Cocok bagi pasien yang menginginkan hasil yang alami dan nyaman.'
     },
-    image: '/images/dental/Bleaching.png',
+    image: '/images/dental/AESTHETIC/Bleaching.png',
     benefits: {
       en: ['Brighter smile', 'Safer for sensitive teeth'],
       id: ['Senyum lebih cerah', 'Lebih aman untuk gigi sensitif']
@@ -3316,7 +3316,7 @@ export const dentalTreatments = [
       en: 'Tooth-colored resin sculpted directly onto teeth. It transforms smiles in one visit with no lab work required.',
       id: 'Resin sewarna gigi yang dibentuk langsung pada gigi. Mengubah senyum dalam satu kunjungan tanpa perlu pengerjaan laboratorium.'
     },
-    image: '/images/dental/Veneer.png',
+    image: '/images/dental/AESTHETIC/Veneer.png',
     benefits: {
       en: ['Fixes chips, gaps, discoloration', 'Affordable aesthetic option'],
       id: ['Memperbaiki gigi gumpil, celah, perubahan warna', 'Pilihan estetika yang terjangkau']
@@ -3344,7 +3344,7 @@ export const dentalTreatments = [
       en: 'Custom-made porcelain shells bonded to teeth. Ideal for long-lasting, ultra-natural smile design.',
       id: 'Cangkang porselen khusus yang ditempelkan pada gigi. Ideal untuk desain senyum yang sangat alami dan tahan lama.'
     },
-    image: '/images/dental/Veneer.png',
+    image: '/images/dental/AESTHETIC/Veneer.png',
     benefits: {
       en: ['Natural translucency', 'Highly stain-resistant', 'Long-term durability'],
       id: ['Transparansi alami', 'Sangat tahan noda', 'Daya tahan jangka panjang']
@@ -3372,7 +3372,7 @@ export const dentalTreatments = [
       en: 'Professional polishing to restore shine and smoothness of veneers. Useful for extending veneer lifespan.',
       id: 'Pemolesan profesional untuk mengembalikan kilau dan kehalusan veneer. Bermanfaat untuk memperpanjang masa pakai veneer.'
     },
-    image: '/images/dental/Veneer.png',
+    image: '/images/dental/AESTHETIC/Veneer.png',
     benefits: {
       en: ['Restores gloss', 'Removes surface stains'],
       id: ['Mengembalikan kilau', 'Menghilangkan noda permukaan']
@@ -3400,7 +3400,7 @@ export const dentalTreatments = [
       en: 'Safe removal of old or damaged veneers. It allows upgrading or correcting previous veneer work.',
       id: 'Pelepasan veneer lama atau rusak dengan aman. Memungkinkan pembaharuan atau perbaikan pengerjaan veneer sebelumnya.'
     },
-    image: '/images/dental/Veneer.png',
+    image: '/images/dental/AESTHETIC/Veneer.png',
     benefits: {
       en: ['Prepares teeth for new veneers', 'Resolves discomfort or damage'],
       id: ['Mempersiapkan gigi untuk veneer baru', 'Mengatasi ketidaknyamanan atau kerusakan']
@@ -3430,7 +3430,7 @@ export const dentalTreatments = [
       en: 'A root canal treatment for front teeth to remove infection while preserving the natural tooth. It saves the tooth from extraction by treating the infected inner tissue.',
       id: 'Perawatan saluran akar untuk gigi depan guna menghilangkan infeksi sambil tetap mempertahankan gigi asli. Cara ini menyelamatkan gigi dari pencabutan dengan merawat jaringan dalam yang terinfeksi.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/ORTHODONTIC/canal root treatment.png',
     benefits: {
       en: ['Relieves pain', 'Saves natural tooth', 'Restores function & appearance'],
       id: ['Meredakan nyeri', 'Menyelamatkan gigi asli', 'Memulihkan fungsi & penampilan']
@@ -3458,7 +3458,7 @@ export const dentalTreatments = [
       en: 'Root canal treatment for molars or premolars. These teeth have multiple roots and are more complex, but the procedure is crucial for maintaining chewing ability and oral health.',
       id: 'Perawatan saluran akar untuk gigi geraham kecil atau besar. Gigi ini memiliki banyak akar dan prosesnya lebih kompleks, namun sangat penting untuk menjaga kemampuan mengunyah dan kesehatan mulut.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/ORTHODONTIC/canal root treatment.png',
     benefits: {
       en: ['Eliminates infection', 'Maintains chewing ability'],
       id: ['Menghilangkan infeksi', 'Mempertahankan kemampuan mengunyah']
@@ -3486,7 +3486,7 @@ export const dentalTreatments = [
       en: 'A custom dental restoration that combines the aesthetic beauty of porcelain with the underlying strength of metal. Ideal for durability in areas of the mouth that handle high biting pressure.',
       id: 'Restorasi gigi kustom yang menggabungkan keindahan estetika porselen dengan kekuatan logam di bawahnya. Ideal untuk daya tahan pada area mulut yang menangani tekanan gigitan tinggi.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Tambal Gigi.png',
     benefits: {
       en: ['Strong, long-lasting', 'Natural-looking appearance'],
       id: ['Kuat, tahan lama', 'Penampilan tampak alami']
@@ -3514,7 +3514,7 @@ export const dentalTreatments = [
       en: 'Metal-free ceramic restoration designed to blend seamlessly with your natural teeth. It provides a highly aesthetic and durable solution for tooth repair.',
       id: 'Restorasi keramik bebas logam yang dirancang untuk menyatu sempurna dengan gigi asli Anda. Memberikan solusi yang sangat estetis dan tahan lama untuk perbaikan gigi.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Tambal Gigi.png',
     benefits: {
       en: ['Highly aesthetic', 'Stain-resistant', 'Biocompatible'],
       id: ['Sangat estetis', 'Tahan noda', 'Biokompatibel']
@@ -3542,7 +3542,7 @@ export const dentalTreatments = [
       en: 'A flexible fiber post placed inside a tooth that has undergone root canal treatment. It mimics natural tooth flexibility and provides essential support for a final crown restoration.',
       id: 'Pasak serat fleksibel yang ditempatkan di dalam gigi yang telah menjalani perawatan saluran akar. Meniru fleksibilitas gigi alami dan memberikan dukungan penting untuk restorasi mahkota akhir.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Tambal Gigi.png',
     benefits: {
       en: ['Strengthens weak teeth', 'Prevents future fractures'],
       id: ['Memperkuat gigi yang lemah', 'Mencegah patah di masa depan']
@@ -3570,7 +3570,7 @@ export const dentalTreatments = [
       en: 'An efficient root canal treatment completed in a single session for teeth with only one root. It is designed to provide rapid relief and convenience.',
       id: 'Perawatan saluran akar yang efisien diselesaikan dalam satu sesi untuk gigi yang hanya memiliki satu akar. Dirancang untuk memberikan pereda nyeri cepat dan kenyamanan.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/ORTHODONTIC/canal root treatment.png',
     benefits: {
       en: ['Immediate pain relief', 'Fewer dental visits'],
       id: ['Pereda nyeri instan', 'Lebih sedikit kunjungan ke dokter gigi']
@@ -3598,7 +3598,7 @@ export const dentalTreatments = [
       en: 'Root canal treatment involving two roots, completed in just one appointment. This procedure offers a faster path to recovery for teeth with multiple canals.',
       id: 'Perawatan saluran akar yang melibatkan dua akar, diselesaikan hanya dalam satu janji temu. Prosedur ini menawarkan jalur pemulihan yang lebih cepat untuk gigi dengan beberapa saluran.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/ORTHODONTIC/canal root treatment.png',
     benefits: {
       en: ['Faster recovery', 'Fewer appointments needed'],
       id: ['Pemulihan lebih cepat', 'Lebih sedikit janji temu yang diperlukan']
@@ -3626,7 +3626,7 @@ export const dentalTreatments = [
       en: 'A highly advanced root canal procedure for molars with three roots, performed entirely in one visit. It combines efficiency with precise infection control.',
       id: 'Prosedur saluran akar yang sangat canggih untuk gigi geraham dengan tiga akar, dilakukan sepenuhnya dalam satu kunjungan. Menggabungkan efisiensi dengan kontrol infeksi yang presisi.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/ORTHODONTIC/canal root treatment.png',
     benefits: {
       en: ['Efficient infection control', 'Saves natural tooth'],
       id: ['Kontrol infeksi yang efisien', 'Menyelamatkan gigi asli']
@@ -3654,7 +3654,7 @@ export const dentalTreatments = [
       en: 'Our most complex single-visit root canal service, dealing with four separate root canals. We use advanced diagnostic and mapping tools to ensure all canals are thoroughly cleaned and sealed in one session.',
       id: 'Layanan saluran akar satu kunjungan kami yang paling kompleks, menangani empat saluran akar yang terpisah. Kami menggunakan alat diagnostik dan pemetaan canggih untuk memastikan semua saluran dibersihkan dan disegel secara menyeluruh dalam satu sesi.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/ORTHODONTIC/canal root treatment.png',
     benefits: {
       en: ['Saves severely infected teeth', 'Prevents future tooth loss'],
       id: ['Menyelamatkan gigi yang terinfeksi parah', 'Mencegah kehilangan gigi di masa depan']
@@ -3710,7 +3710,7 @@ export const dentalTreatments = [
       en: 'Safe removal of problematic teeth performed by a general dentist. Ideal for cases that require more surgical attention.',
       id: 'Pencabutan gigi bermasalah yang aman yang dilakukan oleh dokter gigi umum. Ideal untuk kasus yang memerlukan perhatian bedah lebih lanjut.'
     },
-    image: '/images/dental/CabutGigi.png',
+    image: '/images/dental/CabutGigi2.png',
     benefits: {
       en: ['Safe removal of problematic teeth'],
       id: ['Pencabutan gigi bermasalah yang aman']
@@ -3766,7 +3766,7 @@ export const dentalTreatments = [
       en: 'Wisdom tooth surgery performed by a specialist for deeper or angled teeth. Provides a safe surgical removal with lower risk of complications.',
       id: 'Operasi gigi bungsu yang dilakukan oleh spesialis untuk gigi yang lebih dalam atau miring. Memberikan pencabutan bedah yang aman dengan risiko komplikasi yang lebih rendah.'
     },
-    image: '/images/dental/CabutGigi2.png',
+    image: '/images/dental/CabutGigi.png',
     benefits: {
       en: ['Safe surgical removal', 'Lower complication risk'],
       id: ['Pencabutan bedah yang aman', 'Risiko komplikasi yang lebih rendah']
@@ -4018,7 +4018,7 @@ export const dentalTreatments = [
       en: 'Professional cleaning to remove plaque, tartar, and stains that brushing can’t reach. It prevents gum disease and maintains oral hygiene before pain or complications start.',
       id: 'Pembersihan profesional untuk menghilangkan plak, karang gigi, dan noda yang tidak dapat dijangkau oleh sikat gigi. Mencegah penyakit gusi dan menjaga kebersihan mulut sebelum timbul rasa sakit atau komplikasi.'
     },
-    image: '/images/dental/Scaling.png',
+    image: '/images/dental/GENERAL DENTISTRY/Dental Scaling & Polishing.png',
     benefits: {
       en: ['Healthier gums', 'Fresher breath', 'Cleaner, smoother teeth'],
       id: ['Gusi lebih sehat', 'Napas lebih segar', 'Gigi lebih bersih dan halus']
@@ -4046,7 +4046,7 @@ export const dentalTreatments = [
       en: 'High-concentration fluoride treatment that strengthens tooth enamel and prevents cavities. It is especially helpful for patients with sensitive or cavity-prone teeth.',
       id: 'Perawatan fluoride konsentrasi tinggi yang memperkuat email gigi dan mencegah gigi berlubang. Sangat bermanfaat bagi pasien dengan gigi sensitif atau rentan berlubang.'
     },
-    image: '/images/dental/Scaling.png',
+    image: '/images/dental/GENERAL DENTISTRY/Topical Fluoride Treatment.png',
     benefits: {
       en: ['Prevents decay', 'Reduces tooth sensitivity'],
       id: ['Mencegah pembusukan', 'Mengurangi sensitivitas gigi']
@@ -4074,7 +4074,7 @@ export const dentalTreatments = [
       en: 'A thin protective coating placed on the deep grooves of back teeth (molars) to prevent cavities. It is a highly effective, painless preventive measure, especially popular for children and teens.',
       id: 'Lapisan pelindung tipis yang ditempatkan pada lekukan dalam gigi belakang (geraham) untuk mencegah gigi berlubang. Merupakan tindakan pencegahan yang sangat efektif dan tanpa rasa sakit, populer untuk anak-anak dan remaja.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Dental Sealant.png',
     benefits: {
       en: ['Prevents decay in deep grooves', 'Painless protection'],
       id: ['Mencegah pembusukan pada lekukan dalam', 'Perlindungan tanpa rasa sakit']
@@ -4102,7 +4102,7 @@ export const dentalTreatments = [
       en: 'Tooth-colored composite filling specifically for front teeth. It restores both the function and natural aesthetic appearance of the tooth after decay or damage.',
       id: 'Tambalan komposit sewarna gigi khusus untuk gigi depan. Mengembalikan fungsi dan penampilan estetis alami gigi setelah pembusukan atau kerusakan.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Anterior Tooth Filling (Front Teeth).png',
     benefits: {
       en: ['Natural look', 'Restores anatomical shape', 'Stops decay progression'],
       id: ['Tampilan alami', 'Mengembalikan bentuk anatomis', 'Menghentikan perkembangan pembusukan']
@@ -4130,7 +4130,7 @@ export const dentalTreatments = [
       en: 'Durable fillings for molars and premolars designed to withstand heavy chewing forces. These fillings focus on restoring the strength and longevity of back teeth.',
       id: 'Tambalan tahan lama untuk gigi geraham dan geraham kecil yang dirancang untuk menahan kekuatan mengunyah yang berat. Tambalan ini fokus pada pemulihan kekuatan dan daya tahan gigi belakang.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Posterior Tooth Filling (Back Teeth).png',
     benefits: {
       en: ['Restores chewing function', 'Prevents further decay', 'Long-lasting strength'],
       id: ['Memulihkan fungsi mengunyah', 'Mencegah pembusukan lebih lanjut', 'Kekuatan tahan lama']
@@ -4158,7 +4158,7 @@ export const dentalTreatments = [
       en: 'A short-term filling material used between multi-step dental treatments or as an emergency measure to protect the tooth and relieve pain.',
       id: 'Bahan tambalan jangka pendek yang digunakan di antara perawatan gigi beberapa tahap atau sebagai tindakan darurat untuk melindungi gigi dan meredakan rasa sakit.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Temporary Tooth filling.png',
     benefits: {
       en: ['Protects exposed tooth structure', 'Relieves temporary pain'],
       id: ['Melindungi struktur gigi yang terbuka', 'Meredakan nyeri sementara']
@@ -4186,7 +4186,7 @@ export const dentalTreatments = [
       en: 'A unique fluoride-releasing filling material. It is ideal for children’s teeth or non-load-bearing areas, providing ongoing protection against further decay.',
       id: 'Bahan tambalan pelepas fluoride yang unik. Ideal untuk gigi anak-anak atau area yang tidak menahan beban berat, memberikan perlindungan berkelanjutan terhadap pembusukan lebih lanjut.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Glass Ionomer Filling.png',
     benefits: {
       en: ['Continuous fluoride protection', 'Gentle and biocompatible'],
       id: ['Perlindungan fluoride berkelanjutan', 'Lembut dan biokompatibel']
@@ -4214,7 +4214,7 @@ export const dentalTreatments = [
       en: 'A specialized treatment for tooth sensitivity that works by sealing exposed dentin surfaces. It provides relief from pain triggered by cold, hot, or sweet substances.',
       id: 'Perawatan khusus untuk sensitivitas gigi yang bekerja dengan menutup permukaan dentin yang terbuka. Memberikan bantuan dari rasa sakit yang dipicu oleh zat dingin, panas, atau manis.'
     },
-    image: '/images/dental/TambalGigi.png',
+    image: '/images/dental/GENERAL DENTISTRY/Tooth Desensitization Treatment.png',
     benefits: {
       en: ['Reduces pain from temperature/sweets', 'Instant comfort improvement'],
       id: ['Mengurangi nyeri akibat suhu/makanan manis', 'Peningkatan kenyamanan instan']
@@ -4242,7 +4242,7 @@ export const dentalTreatments = [
       en: 'A comprehensive oral check-up designed to detect potential issues like cavities or gum disease early, allowing for cost-effective and preventive care before pain appears.',
       id: 'Pemeriksaan mulut komprehensif yang dirancang untuk mendeteksi potensi masalah seperti gigi berlubang atau penyakit gusi lebih dini, memungkinkan perawatan pencegahan yang hemat biaya sebelum muncul rasa sakit.'
     },
-    image: '/images/dental/Scaling.png',
+    image: '/images/dental/GENERAL DENTISTRY/Dental Examination & Diagnosis.png',
     benefits: {
       en: ['Early problem detection', 'Cost-effective preventive care'],
       id: ['Deteksi masalah dini', 'Perawatan pencegahan hemat biaya']
@@ -4270,7 +4270,7 @@ export const dentalTreatments = [
       en: 'Diagnostic dental imaging used to visualize hidden cavities, dental infections, and the health of the supporting jaw bone. Essential for accurate diagnosis and treatment planning.',
       id: 'Pencitraan gigi diagnostik yang digunakan untuk memvisualisasikan gigi berlubang yang tersembunyi, infeksi gigi, dan kesehatan tulang rahang pendukung. Penting untuk diagnosis dan perencanaan perawatan yang akurat.'
     },
-    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    image: '/images/dental/GENERAL DENTISTRY/Dental X-Ray (Periapical _ Bitewing _ Panoramic).png',
     benefits: {
       en: ['Accurate diagnosis of hidden issues', 'Visualizes bone and root health'],
       id: ['Diagnosis akurat untuk masalah tersembunyi', 'Memvisualisasikan kesehatan tulang dan akar']
@@ -4298,7 +4298,7 @@ export const dentalTreatments = [
       en: 'Classic braces using metal brackets and wires to gradually move teeth. They are reliable, strong, and effective for all types of orthodontic cases.',
       id: 'Kawat gigi klasik menggunakan bracket dan kawat logam untuk meratakan gigi secara bertahap. Sangat andal, kuat, dan efektif untuk semua jenis kasus ortodonti.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Corrects crowding', 'Fixes gaps', 'Resolves bite issues'],
       id: ['Memperbaiki gigi berjejal', 'Memperbaiki celah gigi', 'Mengatasi masalah gigitan']
@@ -4326,7 +4326,7 @@ export const dentalTreatments = [
       en: 'Enhanced metal braces featuring superior materials for increased patient comfort and treatment efficiency. Provides a more refined orthodontic experience.',
       id: 'Kawat gigi logam yang ditingkatkan dengan bahan superior untuk meningkatkan kenyamanan pasien dan efisiensi perawatan. Memberikan pengalaman ortodonti yang lebih halus.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Faster tooth movement', 'Enhanced comfort'],
       id: ['Pergerakan gigi lebih cepat', 'Kenyamanan yang ditingkatkan']
@@ -4354,7 +4354,7 @@ export const dentalTreatments = [
       en: 'Aesthetic braces featuring clear, crystal-like sapphire brackets that blend with your natural tooth color. Ideal for those seeking effective correction with a less visible appearance.',
       id: 'Kawat gigi estetis dengan bracket safir bening seperti kristal yang menyatu dengan warna alami gigi Anda. Ideal bagi mereka yang mencari perbaikan efektif dengan penampilan yang tidak terlalu terlihat.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Highly aesthetic (nearly invisible)', 'Strong correction ability'],
       id: ['Sangat estetis (hampir tidak terlihat)', 'Kemampuan perbaikan yang kuat']
@@ -4382,7 +4382,7 @@ export const dentalTreatments = [
       en: 'Modern braces that eliminate the need for elastic rubber bands. Instead, they use a specialized sliding door system to hold the wire, reducing friction and allowing for faster, more comfortable results.',
       id: 'Kawat gigi modern yang menghilangkan kebutuhan akan karet elastis. Sebaliknya, mereka menggunakan sistem pintu geser khusus untuk menahan kawat, mengurangi gesekan dan memungkinkan hasil yang lebih cepat dan nyaman.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Less friction', 'Fewer dental visits', 'Easier cleaning'],
       id: ['Gaya gesek lebih kecil', 'Lebih sedikit kunjungan ke dokter', 'Pembersihan lebih mudah']
@@ -4410,7 +4410,7 @@ export const dentalTreatments = [
       en: 'The premium Damon system uses advanced self-ligating technology and high-tech wires to move teeth faster and more comfortably, often without the need for extractions or headgear.',
       id: 'Sistem Damon premium menggunakan teknologi self-ligating canggih dan kawat berteknologi tinggi untuk meratakan gigi lebih cepat dan nyaman, seringkali tanpa perlu pencabutan atau headgear.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Faster results', 'Less pain', 'Improved facial aesthetics'],
       id: ['Hasil lebih cepat', 'Rasa sakit lebih sedikit', 'Estetika wajah yang lebih baik']
@@ -4438,7 +4438,7 @@ export const dentalTreatments = [
       en: 'Essential routine visits to tighten wires, change ligatures, and monitor progress to ensure teeth continue moving in the correct direction.',
       id: 'Kunjungan rutin penting untuk mengencangkan kawat, mengganti karet, dan memantau kemajuan untuk memastikan gigi terus bergerak ke arah yang benar.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Keeps teeth moving correctly', 'Prevents treatment delays'],
       id: ['Menjaga gigi bergerak dengan benar', 'Mencegah penundaan perawatan']
@@ -4466,7 +4466,7 @@ export const dentalTreatments = [
       en: 'A classic, durable removable retainer made of metal wire and acrylic. It is used after orthodontic treatment to ensure the new position of your teeth is maintained.',
       id: 'Retainer lepasan klasik yang tahan lama terbuat dari kawat logam dan akrilik. Digunakan setelah perawatan ortodonti untuk memastikan posisi baru gigi Anda tetap terjaga.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['Prevents tooth relapse', 'Very durable', 'Adjustable'],
       id: ['Mencegah gigi kembali berantakan', 'Sangat tahan lama', 'Dapat disesuaikan']
@@ -4494,7 +4494,7 @@ export const dentalTreatments = [
       en: 'A clear plastic, nearly invisible retainer that fits snugly over your teeth. It is highly aesthetic and comfortable for maintaining your treatment results.',
       id: 'Retainer plastik bening yang hampir tidak terlihat dan pas dengan gigi Anda. Sangat estetis dan nyaman untuk menjaga hasil perawatan Anda.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['Nearly invisible', 'Comfortable', 'Lightweight'],
       id: ['Hampir tidak terlihat', 'Nyaman', 'Ringan']
@@ -4522,7 +4522,7 @@ export const dentalTreatments = [
       en: 'A series of clear, removable plastic trays that gradually straighten teeth. The basic KLAR plan is designed for mild to moderate alignment issues, offering a discreet alternative to braces.',
       id: 'Serangkaian tray plastik bening lepasan yang secara bertahap meratakan gigi. Paket KLAR dasar dirancang untuk masalah penyelarasan ringan hingga sedang, menawarkan alternatif kawat gigi yang tersamar.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['Virtually invisible', 'Removable for eating', 'Easier hygiene'],
       id: ['Hampir tidak terlihat', 'Bisa dilepas untuk makan', 'Kebersihan lebih mudah']
@@ -4550,7 +4550,7 @@ export const dentalTreatments = [
       en: 'The advanced KLAR system utilizes detailed digital simulations to treat more complex orthodontic cases with the convenience and aesthetics of clear aligners.',
       id: 'Sistem KLAR tingkat lanjut menggunakan simulasi digital terperinci untuk menangani kasus ortodonti yang lebih kompleks dengan kenyamanan dan estetika aligner bening.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['Precision planning', 'Treats complex cases', 'Discreet'],
       id: ['Perencanaan presisi', 'Menangani kasus kompleks', 'Tersamar']
@@ -4578,7 +4578,7 @@ export const dentalTreatments = [
       en: 'The world-leading Invisalign system provides unmatched comfort and accuracy for correcting mild tooth misalignments using proprietary SmartTrack material.',
       id: 'Sistem Invisalign terkemuka di dunia memberikan kenyamanan dan akurasi tak tertandingi untuk memperbaiki ketidakrataan gigi ringan menggunakan bahan SmartTrack yang dipatenkan.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['High accuracy', 'Superior comfort', 'Globally trusted'],
       id: ['Akurasi tinggi', 'Kenyamanan superior', 'Terpercaya secara global']
@@ -4606,7 +4606,7 @@ export const dentalTreatments = [
       en: 'The most comprehensive Invisalign plan for complex cases involving significant alignment issues and bite corrections, all planned through advanced 3D simulations.',
       id: 'Paket Invisalign paling komprehensif untuk kasus kompleks yang melibatkan masalah perabaan signifikan dan perbaikan gigitan, semuanya direncanakan melalui simulasi 3D tingkat lanjut.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['Treats severe crowding/bite', 'Predictable aesthetics', 'No metal wires'],
       id: ['Menangani gigi berjejal/gigitan parah', 'Estetika yang terprediksi', 'Tanpa kawat logam']
@@ -4634,7 +4634,7 @@ export const dentalTreatments = [
       en: 'High-tech Nickel-Titanium (NiTi) or Copper NiTi wires that provide constant, gentle forces to move teeth more efficiently and comfortably during braces treatment.',
       id: 'Kawat Nikel-Titanium (NiTi) atau NiTi Tembaga berteknologi tinggi yang memberikan kekuatan konstan dan lembut untuk meratakan gigi lebih efisien dan nyaman selama perawatan kawat gigi.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Faster movement', 'Gentler on teeth'],
       id: ['Pergerakan lebih cepat', 'Lebih lembut untuk gigi']
@@ -4662,7 +4662,7 @@ export const dentalTreatments = [
       en: 'A comprehensive consultation system involving detailed photography, X-rays, and computer-aided bite analysis to create a precise and effective treatment plan.',
       id: 'Sistem konsultasi komprehensif yang melibatkan fotografi terperinci, rontgen, dan analisis gigitan berbantuan komputer untuk membuat rencana perawatan yang presisi dan efektif.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Accurate diagnosis', 'Personalized treatment plan'],
       id: ['Diagnosis akurat', 'Rencana perawatan personal']
@@ -4690,7 +4690,7 @@ export const dentalTreatments = [
       en: 'Small orthodontic buttons bonded to the inside or outside of teeth to provide anchor points for elastics, helping correct difficult tooth rotations or positions.',
       id: 'Tombol ortodonti kecil yang ditempelkan di bagian dalam atau luar gigi untuk memberikan titik jangkar bagi karet, membantu memperbaiki rotasi atau posisi gigi yang sulit.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Improves force control', 'Corrects rotations'],
       id: ['Meningkatkan kontrol kekuatan', 'Memperbaiki rotasi gigi']
@@ -4718,7 +4718,7 @@ export const dentalTreatments = [
       en: 'Small, tooth-colored blocks placed on the biting surfaces of molars to prevent upper teeth from hitting lower brackets. Essential for patients with deep bites.',
       id: 'Blok kecil sewarna gigi yang diletakkan pada permukaan kunyah gigi geraham untuk mencegah gigi atas menabrak bracket bawah. Penting bagi pasien dengan gigitan dalam.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Prevents bracket damage', 'Helps open the bite'],
       id: ['Mencegah kerusakan bracket', 'Membantu membuka gigitan']
@@ -4746,7 +4746,7 @@ export const dentalTreatments = [
       en: 'Small pieces of tooth-colored composite material bonded to the teeth. They act as "handles" for the clear aligner, allowing it to exert the necessary forces for complex movements.',
       id: 'Potongan kecil bahan komposit sewarna gigi yang ditempelkan pada gigi. Mereka berfungsi sebagai "pegangan" bagi aligner bening, memungkinkannya memberikan kekuatan yang diperlukan untuk pergerakan kompleks.'
     },
-    image: '/images/dental/ClearAligner.png',
+    image: '/images/dental/ENDODONTIC/Clear Aligner.png',
     benefits: {
       en: ['Better movement control', 'More predictable results'],
       id: ['Kontrol pergerakan yang lebih baik', 'Hasil yang lebih terprediksi']
@@ -4774,7 +4774,7 @@ export const dentalTreatments = [
       en: 'Essential components of traditional braces, these small rubber bands or wire ties hold the archwire into each bracket. They come in many colors for personalization.',
       id: 'Komponen penting behel tradisional, karet kecil atau pengikat kawat ini menahan kawat pada setiap bracket. Tersedia dalam banyak warna untuk personalisasi.'
     },
-    image: '/images/dental/OrthoCekatBehel.png',
+    image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png',
     benefits: {
       en: ['Controls tooth movement', 'Allows for style personalization'],
       id: ['Mengontrol pergerakan gigi', 'Memungkinkan personalisasi gaya']
@@ -4803,7 +4803,7 @@ export const dentalTreatments = [
       en: 'A dental crown is a custom-made “cap” placed over a damaged, weakened, or decayed tooth. It fully encases the tooth, restoring its natural strength, shape, and aesthetic appearance.',
       id: 'Mahkota gigi adalah "penutup" khusus yang ditempatkan di atas gigi yang rusak, lemah, atau membusuk. Ini menutupi gigi sepenuhnya, mengembalikan kekuatan alami, bentuk, dan penampilan estetisnya.'
     },
-    image: '/images/dental/GigiPalsuTiruan.png',
+    image: '/images/dental/CrownGigi.png',
     benefits: {
       en: ['Protects weak teeth', 'Improves shape & color', 'Restores full chewing function'],
       id: ['Melindungi gigi yang lemah', 'Memperbaiki bentuk & warna', 'Memulihkan fungsi mengunyah sepenuhnya']
@@ -4915,7 +4915,7 @@ export const dentalTreatments = [
       en: 'An implant-supported crown is a restoration that attaches directly to a dental implant (a titanium post acting as a tooth root). This provides the most stable and natural-feeling replacement for a single missing tooth.',
       id: 'Mahkota yang didukung implan adalah restorasi yang menempel langsung pada implan gigi (pasak titanium yang berfungsi sebagai akar gigi). Ini memberikan penggantian yang paling stabil dan terasa alami untuk satu gigi yang hilang.'
     },
-    image: '/images/dental/GigiPalsuTiruan.png',
+    image: '/images/dental/ImplanGigi.png',
     benefits: {
       en: ['Strong & stable', 'Natural look and feel', 'Prevents jaw bone loss'],
       id: ['Kuat & stabil', 'Tampilan dan rasa alami', 'Mencegah keropos tulang rahang']
@@ -4943,7 +4943,7 @@ export const dentalTreatments = [
       en: 'An implant-supported bridge uses dental implants to support a multi-tooth restoration. This is an ideal solution for replacing several missing teeth in a row without affecting neighboring natural teeth.',
       id: 'Jembatan yang didukung implan menggunakan implan gigi untuk menopang restorasi beberapa gigi. Ini adalah solusi ideal untuk mengganti beberapa gigi yang hilang berturut-turut tanpa memengaruhi gigi asli di sekitarnya.'
     },
-    image: '/images/dental/GigiPalsuTiruan.png',
+    image: '/images/dental/ImplanGigi.png',
     benefits: {
       en: ['Very strong & stable', 'Saves neighboring teeth', 'Long-lasting'],
       id: ['Sangat kuat & stabil', 'Menyelamatkan gigi tetangga', 'Tahan lama']
@@ -4999,7 +4999,7 @@ export const dentalTreatments = [
       en: 'A temporary crown or bridge is placed after a tooth is prepared for a permanent restoration. It protects the prepared tooth and maintains your appearance while the dental lab fabricates your final prosthesis.',
       id: 'Mahkota atau jembatan sementara dipasang setelah gigi dipersiapkan untuk restorasi permanen. Alat ini melindungi gigi yang telah dipersiapkan dan menjaga penampilan Anda sementara laboratorium gigi membuat prostesis akhir Anda.'
     },
-    image: '/images/dental/GigiPalsuTiruan.png',
+    image: '/images/dental/CrownGigi.png',
     benefits: {
       en: ['Protects prepared tooth', 'Maintains aesthetic appearance', 'Prevents sensitivity'],
       id: ['Melindungi gigi yang dipersiapkan', 'Menjaga penampilan estetis', 'Mencegah sensitivitas']
@@ -5027,7 +5027,7 @@ export const dentalTreatments = [
       en: 'Crown lengthening is a surgical procedure that repositions the gum line to expose more of the natural tooth. This is often necessary to provide enough structure for a crown to fit securely and last longer.',
       id: 'Mahkota panjang (crown lengthening) adalah prosedur bedah yang mengubah posisi garis gusi untuk mengekspos lebih banyak gigi asli. Ini sering diperlukan untuk menyediakan struktur yang cukup agar mahkota terpasang aman dan tahan lama.'
     },
-    image: '/images/dental/GigiPalsuTiruan.png',
+    image: '/images/dental/CrownGigi.png',
     benefits: {
       en: ['Enables secure crown fit', 'Improves long-term results', 'Aesthetic gum alignment'],
       id: ['Memungkinkan pemasangan mahkota yang aman', 'Meningkatkan hasil jangka panjang', 'Keselarasan gusi yang estetis']
@@ -5055,7 +5055,7 @@ export const dentalTreatments = [
       en: 'Occlusal adjustment involves fine-tuning the biting surfaces of your teeth to ensure they meet correctly. This helps balance the force across your mouth, reducing jaw pain and protecting dental work.',
       id: 'Penyesuaian oklusal melibatkan penyempurnaan permukaan kunyah gigi Anda untuk memastikan gigi tersebut bertemu dengan benar. Ini membantu menyeimbangkan kekuatan di seluruh mulut, mengurangi nyeri rahang dan melindungi pengerjaan gigi.'
     },
-    image: '/images/dental/GigiPalsuTiruan.png',
+    image: '/images/dental/CrownGigi.png',
     benefits: {
       en: ['Reduces jaw (TMJ) pain', 'Protects dental restorations', 'More balanced bite'],
       id: ['Mengurangi nyeri rahang (TMJ)', 'Melindungi restorasi gigi', 'Gigitan yang lebih seimbang']
@@ -5086,7 +5086,7 @@ export const dentalTreatments = [
       en: 'Dental X-rays are essential diagnostic tools that help us detect problems not visible during regular examination. We use modern digital X-ray technology with minimal radiation exposure for safe, accurate imaging.',
       id: 'Rontgen gigi adalah alat diagnostik penting yang membantu kami mendeteksi masalah yang tidak terlihat selama pemeriksaan rutin. Kami menggunakan teknologi Rontgen digital modern dengan paparan radiasi minimal untuk pencitraan yang aman dan akurat.'
     },
-    image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop',
+    image: '/images/dental/GENERAL DENTISTRY/Dental X-Ray (Periapical _ Bitewing _ Panoramic).png',
     benefits: {
       en: [
         'Accurate diagnosis',
@@ -5184,13 +5184,13 @@ export const skinAestheticCategories = [
     title: { en: 'Acne Solutions', id: 'Solusi Jerawat' },
     image: '/images/treatments/ACNE-Before-After.png',
     treatments: [
-      { name: { en: 'Acne Laser Therapy', id: 'Terapi Laser Jerawat' }, id: 'acne-laser', image: '/images/treatments/ACNE-Before-After.png' },
-      { name: { en: 'Chemical Peel for Acne', id: 'Chemical Peel untuk Jerawat' }, id: 'chemical-peels-acne', image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop' },
-      { name: { en: 'Extraction Facial', id: 'Facial Ekstraksi' }, id: 'extraction-facial', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'LED Blue Light Therapy', id: 'Terapi Sinar Biru LED' }, id: 'led-blue-light', image: '/images/treatments/ACNE-Before-After.png' },
-      { name: { en: 'Acne Injection', id: 'Suntik Jerawat' }, id: 'acne-injection', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Acne Meso', id: 'Meso Jerawat' }, id: 'acne-meso', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Oil Control Laser', id: 'Laser Kontrol Minyak' }, id: 'oil-control-laser', image: '/images/treatments/ACNE-Before-After.png' }
+      { name: { en: 'Acne Laser Therapy', id: 'Terapi Laser Jerawat' }, id: 'acne-laser', image: '/images/AESTHETIC/ACNE/Acne Laser Therapy.png' },
+      { name: { en: 'Chemical Peel for Acne', id: 'Chemical Peel untuk Jerawat' }, id: 'chemical-peels-acne', image: '/images/AESTHETIC/ACNE/Chemical Peels.png' },
+      { name: { en: 'Extraction Facial', id: 'Facial Ekstraksi' }, id: 'extraction-facial', image: '/images/AESTHETIC/ACNE/Extraction Facial.png' },
+      { name: { en: 'LED Blue Light Therapy', id: 'Terapi Sinar Biru LED' }, id: 'led-blue-light', image: '/images/AESTHETIC/ACNE/LED Blue Light Therapy.png' },
+      { name: { en: 'Acne Injection', id: 'Suntik Jerawat' }, id: 'acne-injection', image: '/images/AESTHETIC/ACNE/Acne Injection.png' },
+      { name: { en: 'Acne Meso', id: 'Meso Jerawat' }, id: 'acne-meso', image: '/images/AESTHETIC/ACNE/Acne Meso.png' },
+      { name: { en: 'Oil Control Laser', id: 'Laser Kontrol Minyak' }, id: 'oil-control-laser', image: '/images/AESTHETIC/ACNE/Oil Control Laser.png' }
     ]
   },
   {
@@ -5198,16 +5198,16 @@ export const skinAestheticCategories = [
     title: { en: 'Brightening Solutions', id: 'Solusi Pencerah' },
     image: '/images/treatments/BRIGHTENING-Before-After.png',
     treatments: [
-      { name: { en: 'Brightening Laser', id: 'Laser Pencerah' }, id: 'brightening-laser', image: '/images/treatments/BRIGHTENING-Before-After.png' },
-      { name: { en: 'Pigment Laser / IPL', id: 'Laser Pigmen / IPL' }, id: 'pigment-laser-ipl', image: '/images/treatments/BRIGHTENING-Before-After.png' },
-      { name: { en: 'Melasma Laser', id: 'Laser Melasma' }, id: 'melasma-laser', image: '/images/treatments/BRIGHTENING-Before-After.png' },
-      { name: { en: 'Whitening Drip / Injection', id: 'Infus / Suntik Pemutih' }, id: 'whitening-drip-injection', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Brightening Meso', id: 'Meso Pencerah' }, id: 'brightening-meso', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Chemical Peel (Brightening)', id: 'Chemical Peel (Pencerah)' }, id: 'chemical-peels-brightening', image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2073&auto=format&fit=crop' },
-      { name: { en: 'Microneedling', id: 'Microneedling' }, id: 'microneedling-brightening', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' },
-      { name: { en: 'IPL Photofacial', id: 'IPL Photofacial' }, id: 'ipl-photofacial', image: '/images/treatments/BRIGHTENING-Before-After.png' },
-      { name: { en: 'Pigment Laser', id: 'Laser Pigmen' }, id: 'pigment-laser', image: '/images/treatments/BRIGHTENING-Before-After.png' },
-      { name: { en: 'Topical Skincare', id: 'Skincare Topikal' }, id: 'brightening-skincare', image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Brightening Laser', id: 'Laser Pencerah' }, id: 'brightening-laser', image: '/images/AESTHETIC/BRIGHTENING/Brightening Laser (Q-Switched _ Pico).png' },
+      { name: { en: 'Pigment Laser / IPL', id: 'Laser Pigmen / IPL' }, id: 'pigment-laser-ipl', image: '/images/AESTHETIC/BRIGHTENING/pigment laser.png' },
+      { name: { en: 'Melasma Laser', id: 'Laser Melasma' }, id: 'melasma-laser', image: '/images/AESTHETIC/BRIGHTENING/Melasma Laser.png' },
+      { name: { en: 'Whitening Drip / Injection', id: 'Infus / Suntik Pemutih' }, id: 'whitening-drip-injection', image: '/images/AESTHETIC/BRIGHTENING/Whitening Drip _ Whitening Infusion.png' },
+      { name: { en: 'Brightening Meso', id: 'Meso Pencerah' }, id: 'brightening-meso', image: '/images/AESTHETIC/BRIGHTENING/Brightening Meso (Vit C, Glutathione cocktails).png' },
+      { name: { en: 'Chemical Peel (Brightening)', id: 'Chemical Peel (Pencerah)' }, id: 'chemical-peels-brightening', image: '/images/AESTHETIC/BRIGHTENING/Chemical Peels for Brightening.png' },
+      { name: { en: 'Microneedling', id: 'Microneedling' }, id: 'microneedling-brightening', image: '/images/AESTHETIC/BRIGHTENING/Microneedling with Brightening Serum.png' },
+      { name: { en: 'IPL Photofacial', id: 'IPL Photofacial' }, id: 'ipl-photofacial', image: '/images/AESTHETIC/BRIGHTENING/IPL Photofacial.png' },
+      { name: { en: 'Pigment Laser', id: 'Laser Pigmen' }, id: 'pigment-laser', image: '/images/AESTHETIC/BRIGHTENING/pigment laser.png' },
+      { name: { en: 'Topical Skincare', id: 'Skincare Topikal' }, id: 'brightening-skincare', image: '/images/AESTHETIC/BRIGHTENING/Topical Skincare.png' }
     ]
   },
   {
@@ -5215,16 +5215,16 @@ export const skinAestheticCategories = [
     title: { en: 'Anti Aging Solutions', id: 'Solusi Anti Penuaan' },
     image: '/images/treatments/ANTIAGING-Before-After.png',
     treatments: [
-      { name: { en: 'Botox', id: 'Botox' }, id: 'botox-wrinkles', image: '/images/treatments/botox_treatment_1764461614966.png' },
-      { name: { en: 'Dermal Fillers', id: 'Filler Dermal' }, id: 'dermal-fillers-aging', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'HIFU', id: 'HIFU' }, id: 'hifu-lifting', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'RF Tightening', id: 'Pengencangan RF' }, id: 'rf-tightening', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Skin Booster', id: 'Skin Booster' }, id: 'skin-booster-aging', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Laser Resurfacing', id: 'Laser Resurfacing' }, id: 'laser-resurfacing', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Threadlift', id: 'Tanam Benang' }, id: 'threadlift', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'PRP Therapy', id: 'Terapi PRP' }, id: 'prp-therapy', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Face Contouring', id: 'Kontur Wajah' }, id: 'face-contouring', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Stem Cells', id: 'Sel Punca' }, id: 'stem-cells', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Botox', id: 'Botox' }, id: 'botox-wrinkles', image: '/images/AESTHETIC/ANTI-AGING/Botox.png' },
+      { name: { en: 'Dermal Fillers', id: 'Filler Dermal' }, id: 'dermal-fillers-aging', image: '/images/AESTHETIC/ANTI-AGING/Dermal Filler.png' },
+      { name: { en: 'HIFU', id: 'HIFU' }, id: 'hifu-lifting', image: '/images/AESTHETIC/ANTI-AGING/HIFU _ Ultrasound Lifting.png' },
+      { name: { en: 'RF Tightening', id: 'Pengencangan RF' }, id: 'rf-tightening', image: '/images/AESTHETIC/ANTI-AGING/RF Tightening.png' },
+      { name: { en: 'Skin Booster', id: 'Skin Booster' }, id: 'skin-booster-aging', image: '/images/AESTHETIC/ANTI-AGING/Skin Booster.png' },
+      { name: { en: 'Laser Resurfacing', id: 'Laser Resurfacing' }, id: 'laser-resurfacing', image: '/images/AESTHETIC/ANTI-AGING/Laser Resurfacing.png' },
+      { name: { en: 'Threadlift', id: 'Tanam Benang' }, id: 'threadlift', image: '/images/AESTHETIC/ANTI-AGING/Threadlift.png' },
+      { name: { en: 'PRP Therapy', id: 'Terapi PRP' }, id: 'prp-therapy', image: '/images/AESTHETIC/ANTI-AGING/PRP Therapy.png' },
+      { name: { en: 'Face Contouring', id: 'Kontur Wajah' }, id: 'face-contouring', image: '/images/AESTHETIC/ANTI-AGING/Face Contouring.png' },
+      { name: { en: 'Stem Cells', id: 'Sel Punca' }, id: 'stem-cells', image: '/images/AESTHETIC/ANTI-AGING/Stem-Cells.png' }
     ]
   },
   {
@@ -5232,18 +5232,18 @@ export const skinAestheticCategories = [
     title: { en: 'Slimming & Contouring', id: 'Pelangsingan & Kontur' },
     image: '/images/treatments/SLIMMING-Before-After.png',
     treatments: [
-      { name: { en: 'Cryolipolysis (Fat Freeze)', id: 'Cryolipolysis (Pembekuan Lemak)' }, id: 'cryolipolysis', image: '/images/treatments/SLIMMING-Before-After.png' },
-      { name: { en: 'RF Body Tightening', id: 'Pengencangan Tubuh RF' }, id: 'rf-body', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Laser Lipo', id: 'Laser Lipo' }, id: 'laser-lipo', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Slimming Injection', id: 'Suntik Pelangsing' }, id: 'slimming-injection', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Lymphatic Massage', id: 'Pijat Limfatik' }, id: 'lymphatic-massage', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'HIFEM (Muscle Stimulation)', id: 'HIFEM (Stimulasi Otot)' }, id: 'hifem', image: '/images/treatments/SLIMMING-Before-After.png' },
-      { name: { en: 'HIFU V-Shape', id: 'HIFU V-Shape' }, id: 'hifu-v-shape', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Jawline Botox', id: 'Botox Rahang' }, id: 'jawline-botox', image: '/images/treatments/botox_treatment_1764461614966.png' },
-      { name: { en: 'Chin Filler', id: 'Filler Dagu' }, id: 'chin-cheek-filler', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Thread-Lift', id: 'Tanam Benang' }, id: 'thread-lift-contour', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Fat Dissolving Injection', id: 'Suntik Penghancur Lemak' }, id: 'fat-dissolving', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Fat Removal Surgery', id: 'Operasi Pengangkatan Lemak' }, id: 'fat-removal-surgery', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Cryolipolysis (Fat Freeze)', id: 'Cryolipolysis (Pembekuan Lemak)' }, id: 'cryolipolysis', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Cryolipolysis _ Fat Freeze.png' },
+      { name: { en: 'RF Body Tightening', id: 'Pengencangan Tubuh RF' }, id: 'rf-body', image: '/images/AESTHETIC/SLIMMING & CONTOURING/RF Body Tightening.png' },
+      { name: { en: 'Laser Lipo', id: 'Laser Lipo' }, id: 'laser-lipo', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Laser Lipo _ Cavitation.png' },
+      { name: { en: 'Slimming Injection', id: 'Suntik Pelangsing' }, id: 'slimming-injection', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Body Slimming Injection.png' },
+      { name: { en: 'Lymphatic Massage', id: 'Pijat Limfatik' }, id: 'lymphatic-massage', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Lymphatic Detox Massage.png' },
+      { name: { en: 'HIFEM (Muscle Stimulation)', id: 'HIFEM (Stimulasi Otot)' }, id: 'hifem', image: '/images/AESTHETIC/SLIMMING & CONTOURING/HIFEM Muscle Stimulation.png' },
+      { name: { en: 'HIFU V-Shape', id: 'HIFU V-Shape' }, id: 'hifu-v-shape', image: '/images/AESTHETIC/SLIMMING & CONTOURING/HIFU V-Shape Lifting.png' },
+      { name: { en: 'Jawline Botox', id: 'Botox Rahang' }, id: 'jawline-botox', image: '/images/AESTHETIC/SLIMMING & CONTOURING/JAWLINE BOTOX.png' },
+      { name: { en: 'Chin Filler', id: 'Filler Dagu' }, id: 'chin-cheek-filler', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Chin & Cheek Filler.png' },
+      { name: { en: 'Thread-Lift', id: 'Tanam Benang' }, id: 'thread-lift-contour', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Thread Lift for Contour.png' },
+      { name: { en: 'Fat Dissolving Injection', id: 'Suntik Penghancur Lemak' }, id: 'fat-dissolving', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Fat-Dissolving Injection (Kybella-type).png' },
+      { name: { en: 'Fat Removal Surgery', id: 'Operasi Pengangkatan Lemak' }, id: 'fat-removal-surgery', image: '/images/AESTHETIC/SLIMMING & CONTOURING/Fat removal surgery.png' }
     ]
   },
   {
@@ -5251,13 +5251,13 @@ export const skinAestheticCategories = [
     title: { en: 'Hair Growth Treatments', id: 'Perawatan Penumbuh Rambut' },
     image: '/images/treatments/HAIR-GROWTH-Before-After.png',
     treatments: [
-      { name: { en: 'Hair Growth Laser / LLLT', id: 'Laser Penumbuh Rambut / LLLT' }, id: 'hair-laser', image: '/images/treatments/HAIR-GROWTH-Before-After.png' },
-      { name: { en: 'Hair Meso (Growth Factor Injections)', id: 'Meso Rambut (Suntik Growth Factor)' }, id: 'hair-meso', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'PRP Hair Treatment', id: 'Perawatan Rambut PRP' }, id: 'prp-hair', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Topical Minoxidil Program', id: 'Program Minoxidil Topikal' }, id: 'minoxidil', image: 'https://images.unsplash.com/photo-1556228578-8c7c2f22ad1d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'DNA Salmon Hair (PN Therapy)', id: 'DNA Salmon Rambut (Terapi PN)' }, id: 'dna-salmon-hair', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Scalp Detox & Deep Cleansing', id: 'Detoks & Pembersihan Kulit Kepala' }, id: 'scalp-detox', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Hair Transplant', id: 'Transplantasi Rambut' }, id: 'hair-transplant', image: '/images/treatments/HAIR-GROWTH-Before-After.png' }
+      { name: { en: 'Hair Growth Laser / LLLT', id: 'hair-laser' }, id: 'hair-laser', image: '/images/AESTHETIC/HAIR GROWTH/Hair Growth Laser _ LLLT.png' },
+      { name: { en: 'Hair Meso (Growth Factor Injections)', id: 'hair-meso' }, id: 'hair-meso', image: '/images/AESTHETIC/HAIR GROWTH/Hair Meso (Growth Factor Injections).png' },
+      { name: { en: 'PRP Hair Treatment', id: 'prp-hair' }, id: 'prp-hair', image: '/images/AESTHETIC/HAIR GROWTH/PRP Hair Treatment.png' },
+      { name: { en: 'Topical Minoxidil Program', id: 'minoxidil' }, id: 'minoxidil', image: '/images/AESTHETIC/HAIR GROWTH/Topical Minoxidil Program.png' },
+      { name: { en: 'DNA Salmon Hair (PN Therapy)', id: 'dna-salmon-hair' }, id: 'dna-salmon-hair', image: '/images/AESTHETIC/HAIR GROWTH/DNA Salmon Hair Injection.png' },
+      { name: { en: 'Scalp Detox & Deep Cleansing', id: 'scalp-detox' }, id: 'scalp-detox', image: '/images/AESTHETIC/HAIR GROWTH/Scalp Detox & Deep Cleansing Treatment.png' },
+      { name: { en: 'Hair Transplant', id: 'hair-transplant' }, id: 'hair-transplant', image: '/images/AESTHETIC/HAIR GROWTH/Hair Transplant - 1.png' }
     ]
   },
   {
@@ -5265,15 +5265,15 @@ export const skinAestheticCategories = [
     title: { en: 'Rejuvenating Treatments', id: 'Perawatan Peremajaan' },
     image: '/images/treatments/REJUVENATE-Before-After.png',
     treatments: [
-      { name: { en: 'Skin Booster (HA / PDRN / Rejuran / NCTF)', id: 'Skin Booster (HA / PDRN / Rejuran / NCTF)' }, id: 'skin-booster-rejuv', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Hydrafacial / Aqua Peeling', id: 'Hydrafacial / Aqua Peeling' }, id: 'hydrafacial', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Microneedling Therapy', id: 'Terapi Microneedling' }, id: 'microneedling-rejuv', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' },
-      { name: { en: 'Laser Rejuvenation', id: 'Laser Peremajaan' }, id: 'laser-rejuv', image: '/images/treatments/REJUVENATE-Before-After.png' },
-      { name: { en: 'Oxygen Facial', id: 'Oxygen Facial' }, id: 'oxygen-facial', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Dermaplaning', id: 'Dermaplaning' }, id: 'dermaplaning', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Meso Glow (Vitamins + Peptides)', id: 'Meso Glow (Vitamin + Peptida)' }, id: 'meso-glow', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'PRP Rejuvenation Therapy', id: 'Terapi Peremajaan PRP' }, id: 'prp-rejuv', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'DNA Salmon (PDRN Therapy)', id: 'DNA Salmon (Terapi PDRN)' }, id: 'dna-salmon', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Skin Booster (HA / PDRN / Rejuran / NCTF)', id: 'skin-booster-rejuv' }, id: 'skin-booster-rejuv', image: '/images/AESTHETIC/REJUVENATION/SKIN BOOSTER.png' },
+      { name: { en: 'Hydrafacial / Aqua Peeling', id: 'hydrafacial' }, id: 'hydrafacial', image: '/images/AESTHETIC/REJUVENATION/Hydrafacial.png' },
+      { name: { en: 'Microneedling Therapy', id: 'microneedling-rejuv' }, id: 'microneedling-rejuv', image: '/images/AESTHETIC/REJUVENATION/Microneedling.png' },
+      { name: { en: 'Laser Rejuvenation', id: 'laser-rejuv' }, id: 'laser-rejuv', image: '/images/AESTHETIC/REJUVENATION/Laser Rejuvenation.png' },
+      { name: { en: 'Oxygen Facial', id: 'oxygen-facial' }, id: 'oxygen-facial', image: '/images/AESTHETIC/REJUVENATION/Oxygen Facial.png' },
+      { name: { en: 'Dermaplaning', id: 'dermaplaning' }, id: 'dermaplaning', image: '/images/AESTHETIC/REJUVENATION/Dermaplaning.png' },
+      { name: { en: 'Meso Glow (Vitamins + Peptides)', id: 'meso-glow' }, id: 'meso-glow', image: '/images/AESTHETIC/REJUVENATION/Meso Glow.png' },
+      { name: { en: 'PRP Rejuvenation Therapy', id: 'prp-rejuv' }, id: 'prp-rejuv', image: '/images/AESTHETIC/REJUVENATION/PRP Rejuvenation.png' },
+      { name: { en: 'DNA Salmon (PDRN Therapy)', id: 'dna-salmon' }, id: 'dna-salmon', image: '/images/AESTHETIC/REJUVENATION/DNA Salmon.png' }
     ]
   },
   {
@@ -5281,14 +5281,14 @@ export const skinAestheticCategories = [
     title: { en: 'Scars & Pore Solution', id: 'Solusi Bekas Luka & Pori-pori' },
     image: '/images/treatments/SCAR-Before-After.png',
     treatments: [
-      { name: { en: 'Subcision', id: 'Subcision' }, id: 'subcision', image: '/images/treatments/SCAR-Before-After.png' },
-      { name: { en: 'RF Microneedling (Dermapen / Morpheus / Secret RF)', id: 'RF Microneedling' }, id: 'rf-microneedling', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' },
-      { name: { en: 'Fractional Laser (CO2 / Erbium / Fractional Resurfacing)', id: 'Laser Fraksional' }, id: 'fractional-laser', image: '/images/treatments/SCAR-Before-After.png' },
-      { name: { en: 'TCA CROSS', id: 'TCA CROSS' }, id: 'tca-cross', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'PRP (Platelet-Rich Plasma)', id: 'PRP Bekas Luka' }, id: 'prp-scars', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Skin Boosters (PN/HA / Rejuran / Profilo type)', id: 'Skin Booster' }, id: 'skin-boosters-scars', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Meso Whitening for Acne Marks', id: 'Meso Whitening' }, id: 'meso-whitening', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Cross-Linked Filler for Atrophic Scars', id: 'Filler Bekas Luka' }, id: 'filler-scars', image: 'https://images.unsplash.com/photo-1579165466741-7f35a4755657?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Subcision', id: 'subcision' }, id: 'subcision', image: '/images/AESTHETIC/SCAR & PORE/Subcision.png' },
+      { name: { en: 'RF Microneedling (Dermapen / Morpheus / Secret RF)', id: 'rf-microneedling' }, id: 'rf-microneedling', image: '/images/AESTHETIC/SCAR & PORE/RF Microneedling.png' },
+      { name: { en: 'Fractional Laser (CO2 / Erbium / Fractional Resurfacing)', id: 'fractional-laser' }, id: 'fractional-laser', image: '/images/AESTHETIC/SCAR & PORE/Laser Co2 Fractional.png' },
+      { name: { en: 'TCA CROSS', id: 'tca-cross' }, id: 'tca-cross', image: '/images/AESTHETIC/SCAR & PORE/TCA CROSS (Chemical Reconstruction of Skin Scars).png' },
+      { name: { en: 'PRP (Platelet-Rich Plasma)', id: 'prp-scars' }, id: 'prp-scars', image: '/images/AESTHETIC/SCAR & PORE/PRP Scars.png' },
+      { name: { en: 'Skin Boosters (PN/HA / Rejuran / Profilo type)', id: 'skin-boosters-scars' }, id: 'skin-boosters-scars', image: '/images/AESTHETIC/SCAR & PORE/SKIN BOOSTER.png' },
+      { name: { en: 'Meso Whitening for Acne Marks', id: 'meso-whitening' }, id: 'meso-whitening', image: '/images/AESTHETIC/SCAR & PORE/Meso Whitening for Acne Marks.png' },
+      { name: { en: 'Cross-Linked Filler for Atrophic Scars', id: 'filler-scars' }, id: 'filler-scars', image: '/images/AESTHETIC/SCAR & PORE/Filler for Scars _ Cross-Linked Filler for Atrophic Scars.png' }
     ]
   },
   {
@@ -5296,17 +5296,17 @@ export const skinAestheticCategories = [
     title: { en: 'Hair Removal', id: 'Penghilang Bulu' },
     image: '/images/treatments/HAIR-REMOVAL-Before-After.png',
     treatments: [
-      { name: { en: 'Diode Laser Hair Removal', id: 'Penghilang Bulu Laser Diode' }, id: 'diode-laser', image: '/images/treatments/HAIR-REMOVAL-Before-After.png' },
-      { name: { en: 'Alexandrite Laser (755 nm)', id: 'Laser Alexandrite (755 nm)' }, id: 'alexandrite-laser', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'IPL Hair Removal (Intense Pulsed Light)', id: 'Penghilang Bulu IPL (Intense Pulsed Light)' }, id: 'ipl-hair', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'SHR (Super Hair Removal)', id: 'SHR (Super Hair Removal)' }, id: 'shr-hair', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Electrolysis (Permanent Removal)', id: 'Elektrolisis (Penghilang Permanen)' }, id: 'electrolysis', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Armpit Hair Removal', id: 'Penghilang Bulu Ketiak' }, id: 'armpit-hair', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Body Hair Removal', id: 'Penghilang Bulu Tubuh' }, id: 'body-hair', image: '/images/treatments/HAIR-REMOVAL-Before-After.png' },
-      { name: { en: 'Facial Hair Removal', id: 'Penghilang Bulu Wajah' }, id: 'facial-hair', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop' },
-      { name: { en: 'Brazilian Hair Removal', id: 'Penghilang Bulu Brazilian' }, id: 'brazilian-hair', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop' }
+      { name: { en: 'Diode Laser Hair Removal', id: 'diode-laser' }, id: 'diode-laser', image: '/images/AESTHETIC/HAIR REMOVAL/diode laser hair removal.png' },
+      { name: { en: 'Alexandrite Laser (755 nm)', id: 'alexandrite-laser' }, id: 'alexandrite-laser', image: '/images/AESTHETIC/HAIR REMOVAL/Alexandrite Laser (755 nm).png' },
+      { name: { en: 'IPL Hair Removal (Intense Pulsed Light)', id: 'ipl-hair' }, id: 'ipl-hair', image: '/images/AESTHETIC/HAIR REMOVAL/IPL Hair Removal.png' },
+      { name: { en: 'SHR (Super Hair Removal)', id: 'shr-hair' }, id: 'shr-hair', image: '/images/AESTHETIC/HAIR REMOVAL/SHR Hair Removal.png' },
+      { name: { en: 'Electrolysis (Permanent Removal)', id: 'electrolysis' }, id: 'electrolysis', image: '/images/AESTHETIC/HAIR REMOVAL/Electrolysis Hair Removal.png' },
+      { name: { en: 'Armpit Hair Removal', id: 'armpit-hair' }, id: 'armpit-hair', image: '/images/AESTHETIC/HAIR REMOVAL/Armpit Hair Removal.png' },
+      { name: { en: 'Body Hair Removal', id: 'body-hair' }, id: 'body-hair', image: '/images/AESTHETIC/HAIR REMOVAL/Body Hair Removal.png' },
+      { name: { en: 'Facial Hair Removal', id: 'facial-hair' }, id: 'facial-hair', image: '/images/AESTHETIC/HAIR REMOVAL/Facial Hair Removal.png' },
+      { name: { en: 'Brazilian Hair Removal', id: 'brazilian-hair' }, id: 'brazilian-hair', image: '/images/AESTHETIC/HAIR REMOVAL/Brazilian Hair Removal.png' }
     ]
-  }
+  },
 ];
 
 export const dentalCategories = [
@@ -5314,27 +5314,27 @@ export const dentalCategories = [
     id: 'aesthetic',
     title: { en: 'Aesthetic', id: 'Estetika' },
     treatments: [
-      { name: { en: 'Bleaching – Advanced', id: 'Bleaching – Advanced' }, id: 'bleaching-advanced', image: '/images/dental/Bleaching.png' },
-      { name: { en: 'Bleaching – Standard', id: 'Bleaching – Standard' }, id: 'bleaching-standard', image: '/images/dental/Bleaching.png' },
-      { name: { en: 'Veneer Direct (Composite)', id: 'Veneer Direct (Composite)' }, id: 'veneer-direct-composite', image: '/images/dental/Veneer.png' },
-      { name: { en: 'Veneer Indirect (Porcelain)', id: 'Veneer Indirect (Porcelain)' }, id: 'veneer-indirect-porcelain', image: '/images/dental/Veneer.png' },
-      { name: { en: 'Veneer Polishing', id: 'Polis Veneer' }, id: 'veneer-polishing', image: '/images/dental/Veneer.png' },
-      { name: { en: 'Bongkar Veneer (Veneer Removal)', id: 'Bongkar Veneer' }, id: 'veneer-removal', image: '/images/dental/Veneer.png' }
+      { name: { en: 'Bleaching – Advanced', id: 'Bleaching – Advanced' }, id: 'bleaching-advanced', image: '/images/dental/AESTHETIC/Bleaching.png' },
+      { name: { en: 'Bleaching – Standard', id: 'Bleaching – Standard' }, id: 'bleaching-standard', image: '/images/dental/AESTHETIC/Bleaching.png' },
+      { name: { en: 'Veneer Direct (Composite)', id: 'Veneer Direct (Composite)' }, id: 'veneer-direct-composite', image: '/images/dental/AESTHETIC/Veneer.png' },
+      { name: { en: 'Veneer Indirect (Porcelain)', id: 'Veneer Indirect (Porcelain)' }, id: 'veneer-indirect-porcelain', image: '/images/dental/AESTHETIC/Veneer.png' },
+      { name: { en: 'Veneer Polishing', id: 'Polis Veneer' }, id: 'veneer-polishing', image: '/images/dental/AESTHETIC/Veneer.png' },
+      { name: { en: 'Bongkar Veneer (Veneer Removal)', id: 'Bongkar Veneer' }, id: 'veneer-removal', image: '/images/dental/AESTHETIC/Veneer.png' }
     ]
   },
   {
     id: 'endodontic',
     title: { en: 'Endodontic', id: 'Endodontik' },
     treatments: [
-      { name: { en: 'Front Tooth Root Canal', id: 'Perawatan Saluran Akar Anterior' }, id: 'root-canal-anterior', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Back Tooth Root Canal', id: 'Perawatan Saluran Akar Posterior' }, id: 'root-canal-posterior', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Inlay/Onlay PFM', id: 'Inlay/Onlay Porcelain Fused to Metal' }, id: 'inlay-onlay-pfm', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Inlay/Onlay Porcelain', id: 'Inlay/Onlay Porcelain' }, id: 'inlay-onlay-porcelain', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Fiber Post', id: 'Fiber Post' }, id: 'fiber-post', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'PSA 1 Visit – 1 Root', id: 'PSA 1 Visit – 1 Akar' }, id: 'psa-1-visit-1-akar', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'PSA 1 Visit – 2 Roots', id: 'PSA 1 Visit – 2 Akar' }, id: 'psa-1-visit-2-akar', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'PSA 1 Visit – 3 Roots', id: 'PSA 1 Visit – 3 Akar' }, id: 'psa-1-visit-3-akar', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'PSA 1 Visit – 4 Roots', id: 'PSA 1 Visit – 4 Akar' }, id: 'psa-1-visit-4-akar', image: '/images/dental/TambalGigi.png' }
+      { name: { en: 'Front Tooth Root Canal', id: 'Perawatan Saluran Akar Anterior' }, id: 'root-canal-anterior', image: '/images/dental/ORTHODONTIC/canal root treatment.png' },
+      { name: { en: 'Back Tooth Root Canal', id: 'Perawatan Saluran Akar Posterior' }, id: 'root-canal-posterior', image: '/images/dental/ORTHODONTIC/canal root treatment.png' },
+      { name: { en: 'Inlay/Onlay PFM', id: 'Inlay/Onlay Porcelain Fused to Metal' }, id: 'inlay-onlay-pfm', image: '/images/dental/GENERAL DENTISTRY/Tambal Gigi.png' },
+      { name: { en: 'Inlay/Onlay Porcelain', id: 'Inlay/Onlay Porcelain' }, id: 'inlay-onlay-porcelain', image: '/images/dental/GENERAL DENTISTRY/Tambal Gigi.png' },
+      { name: { en: 'Fiber Post', id: 'Fiber Post' }, id: 'fiber-post', image: '/images/dental/GENERAL DENTISTRY/Tambal Gigi.png' },
+      { name: { en: 'PSA 1 Visit – 1 Root', id: 'PSA 1 Visit – 1 Akar' }, id: 'psa-1-visit-1-akar', image: '/images/dental/ORTHODONTIC/canal root treatment.png' },
+      { name: { en: 'PSA 1 Visit – 2 Roots', id: 'PSA 1 Visit – 2 Akar' }, id: 'psa-1-visit-2-akar', image: '/images/dental/ORTHODONTIC/canal root treatment.png' },
+      { name: { en: 'PSA 1 Visit – 3 Roots', id: 'PSA 1 Visit – 3 Akar' }, id: 'psa-1-visit-3-akar', image: '/images/dental/ORTHODONTIC/canal root treatment.png' },
+      { name: { en: 'PSA 1 Visit – 4 Roots', id: 'PSA 1 Visit – 4 Akar' }, id: 'psa-1-visit-4-akar', image: '/images/dental/ORTHODONTIC/canal root treatment.png' }
     ]
   },
   {
@@ -5342,9 +5342,9 @@ export const dentalCategories = [
     title: { en: 'Odontektomi', id: 'Odontektomi' },
     treatments: [
       { name: { en: 'Extraction Standard – GP', id: 'Pencabutan Gigi Standar – GP' }, id: 'extraction-standard-gp', image: '/images/dental/CabutGigi.png' },
-      { name: { en: 'Extraction Complicated – GP', id: 'Pencabutan Gigi Komplikasi – GP' }, id: 'extraction-complicated-gp', image: '/images/dental/CabutGigi.png' },
+      { name: { en: 'Extraction Complicated – GP', id: 'Pencabutan Gigi Komplikasi – GP' }, id: 'extraction-complicated-gp', image: '/images/dental/CabutGigi2.png' },
       { name: { en: 'Wisdom Tooth – GP', id: 'Cabut Gigi Bungsu – GP' }, id: 'wisdom-tooth-gp', image: '/images/dental/CabutGigi.png' },
-      { name: { en: 'Wisdom Tooth SP (Standard)', id: 'Cabut Gigi Bungsu SP (Standar)' }, id: 'wisdom-tooth-sp-standard', image: '/images/dental/CabutGigi2.png' },
+      { name: { en: 'Wisdom Tooth SP (Standard)', id: 'Cabut Gigi Bungsu SP (Standar)' }, id: 'wisdom-tooth-sp-standard', image: '/images/dental/CabutGigi.png' },
       { name: { en: 'Wisdom Tooth SP (Complicated)', id: 'Cabut Gigi Bungsu SP (Komplikasi)' }, id: 'wisdom-tooth-sp-complicated', image: '/images/dental/CabutGigi2.png' },
       { name: { en: 'Operculectomy', id: 'Operkulektomi' }, id: 'operculectomy', image: '/images/dental/CabutGigi.png' },
       { name: { en: 'Alveolectomy', id: 'Alveolektomi' }, id: 'alveolectomy', image: '/images/dental/CabutGigi.png' },
@@ -5359,56 +5359,56 @@ export const dentalCategories = [
     id: 'orthodontic',
     title: { en: 'Orthodontic', id: 'Ortodontik' },
     treatments: [
-      { name: { en: 'Metal Braces – Standard', id: 'Metal Braces – Standard' }, id: 'metal-braces-standard', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Metal Braces – Premium', id: 'Metal Braces – Premium' }, id: 'metal-braces-premium', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Sapphire Braces', id: 'Sapphire Braces' }, id: 'sapphire-braces', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Self-Ligating Braces', id: 'Self-Ligating Braces' }, id: 'self-ligating-braces', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Damon Braces', id: 'Damon Braces' }, id: 'damon-braces', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Control Braces (Adjustment)', id: 'Kontrol Kawat Gigi' }, id: 'control-braces', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Retainer Metal Hawley', id: 'Retainer Metal Hawley' }, id: 'retainer-hawley', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Retainer Clear Essix', id: 'Retainer Clear Essix' }, id: 'retainer-essix', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Clear Aligner (KLAR) – Basic', id: 'Clear Aligner (KLAR) – Basic' }, id: 'klar-aligner-basic', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Clear Aligner (KLAR) – Advance', id: 'Clear Aligner (KLAR) – Advance' }, id: 'klar-aligner-advance', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Clear Aligner (Invisalign) – Basic', id: 'Clear Aligner (Invisalign) – Basic' }, id: 'invisalign-aligner-basic', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Clear Aligner (Invisalign) – Advance', id: 'Clear Aligner (Invisalign) – Advance' }, id: 'invisalign-aligner-advance', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Add-On: Wire (NiTi / CuNiTi)', id: 'Kawat Tambahan (NiTi / CuNiTi)' }, id: 'ortho-wire', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'OCS (Ortho Consultation)', id: 'OCS (Orthodontic Consultation System)' }, id: 'ortho-ocs', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Lingual Button', id: 'Lingual Button' }, id: 'lingual-button', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Bite Riser', id: 'Bite Riser' }, id: 'bite-riser', image: '/images/dental/OrthoCekatBehel.png' },
-      { name: { en: 'Attachment (Clear Aligner)', id: 'Attachment (Clear Aligner)' }, id: 'aligner-attachment', image: '/images/dental/ClearAligner.png' },
-      { name: { en: 'Ligature (per jaw)', id: 'Ligature (per rahang)' }, id: 'ligature', image: '/images/dental/OrthoCekatBehel.png' }
+      { name: { en: 'Metal Braces – Standard', id: 'Metal Braces – Standard' }, id: 'metal-braces-standard', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Metal Braces – Premium', id: 'Metal Braces – Premium' }, id: 'metal-braces-premium', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Sapphire Braces', id: 'Sapphire Braces' }, id: 'sapphire-braces', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Self-Ligating Braces', id: 'Self-Ligating Braces' }, id: 'self-ligating-braces', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Damon Braces', id: 'Damon Braces' }, id: 'damon-braces', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Control Braces (Adjustment)', id: 'Kontrol Kawat Gigi' }, id: 'control-braces', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Retainer Metal Hawley', id: 'Retainer Metal Hawley' }, id: 'retainer-hawley', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Retainer Clear Essix', id: 'Retainer Clear Essix' }, id: 'retainer-essix', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Clear Aligner (KLAR) – Basic', id: 'Clear Aligner (KLAR) – Basic' }, id: 'klar-aligner-basic', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Clear Aligner (KLAR) – Advance', id: 'Clear Aligner (KLAR) – Advance' }, id: 'klar-aligner-advance', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Clear Aligner (Invisalign) – Basic', id: 'Clear Aligner (Invisalign) – Basic' }, id: 'invisalign-aligner-basic', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Clear Aligner (Invisalign) – Advance', id: 'Clear Aligner (Invisalign) – Advance' }, id: 'invisalign-aligner-advance', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Add-On: Wire (NiTi / CuNiTi)', id: 'Kawat Tambahan (NiTi / CuNiTi)' }, id: 'ortho-wire', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'OCS (Ortho Consultation)', id: 'OCS (Orthodontic Consultation System)' }, id: 'ortho-ocs', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Lingual Button', id: 'Lingual Button' }, id: 'lingual-button', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Bite Riser', id: 'Bite Riser' }, id: 'bite-riser', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' },
+      { name: { en: 'Attachment (Clear Aligner)', id: 'Attachment (Clear Aligner)' }, id: 'aligner-attachment', image: '/images/dental/ENDODONTIC/Clear Aligner.png' },
+      { name: { en: 'Ligature (per jaw)', id: 'Ligature (per rahang)' }, id: 'ligature', image: '/images/dental/ENDODONTIC/Ortho Cekat _ Behel.png' }
     ]
   },
   {
     id: 'prosthodontic',
     title: { en: 'Prosthodontic', id: 'Prostodontik' },
     treatments: [
-      { name: { en: 'Dental Crown (PFM/All-Ceramic)', id: 'Mahkota Gigi' }, id: 'dental-crown', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Dental Crown (PFM/All-Ceramic)', id: 'Mahkota Gigi' }, id: 'dental-crown', image: '/images/dental/CrownGigi.png' },
       { name: { en: 'Dental Bridge', id: 'Jembatan Gigi' }, id: 'dental-bridge', image: '/images/dental/GigiPalsuTiruan.png' },
       { name: { en: 'Full Denture', id: 'Gigi Palsu Lengkap' }, id: 'full-denture', image: '/images/dental/GigiPalsuTiruan.png' },
       { name: { en: 'Partial Denture', id: 'Gigi Palsu Sebagian' }, id: 'partial-denture', image: '/images/dental/GigiPalsuTiruan.png' },
-      { name: { en: 'Implant-Supported Crown', id: 'Mahkota dengan Implan' }, id: 'implant-crown', image: '/images/dental/GigiPalsuTiruan.png' },
-      { name: { en: 'Implant-Supported Bridge', id: 'Jembatan dengan Implan' }, id: 'implant-bridge', image: '/images/dental/GigiPalsuTiruan.png' },
+      { name: { en: 'Implant-Supported Crown', id: 'Mahkota dengan Implan' }, id: 'implant-crown', image: '/images/dental/ImplanGigi.png' },
+      { name: { en: 'Implant-Supported Bridge', id: 'Jembatan dengan Implan' }, id: 'implant-bridge', image: '/images/dental/ImplanGigi.png' },
       { name: { en: 'Overdenture', id: 'Overdenture' }, id: 'overdenture', image: '/images/dental/GigiPalsuTiruan.png' },
-      { name: { en: 'Temporary Crown / Bridge', id: 'Mahkota/Jembatan Sementara' }, id: 'temporary-crown-bridge', image: '/images/dental/GigiPalsuTiruan.png' },
-      { name: { en: 'Crown Lengthening', id: 'Crown Lengthening' }, id: 'crown-lengthening', image: '/images/dental/GigiPalsuTiruan.png' },
-      { name: { en: 'Occlusal Adjustment', id: 'Penyesuaian Oklusal' }, id: 'occlusal-adjustment', image: '/images/dental/GigiPalsuTiruan.png' }
+      { name: { en: 'Temporary Crown / Bridge', id: 'Mahkota/Jembatan Sementara' }, id: 'temporary-crown-bridge', image: '/images/dental/CrownGigi.png' },
+      { name: { en: 'Crown Lengthening', id: 'Crown Lengthening' }, id: 'crown-lengthening', image: '/images/dental/CrownGigi.png' },
+      { name: { en: 'Occlusal Adjustment', id: 'Penyesuaian Oklusal' }, id: 'occlusal-adjustment', image: '/images/dental/CrownGigi.png' }
     ]
   },
   {
     id: 'general-dentistry',
     title: { en: 'General Dentistry', id: 'Gigi Umum' },
     treatments: [
-      { name: { en: 'Dental Scaling & Polishing', id: 'Scaling & Poles Gigi' }, id: 'scaling-polishing', image: '/images/dental/Scaling.png' },
-      { name: { en: 'Topical Fluoride Treatment', id: 'Perawatan Fluoride Topikal' }, id: 'fluoride-treatment', image: '/images/dental/Scaling.png' },
-      { name: { en: 'Dental Sealant', id: 'Sealant Gigi' }, id: 'dental-sealant', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Front Tooth Filling', id: 'Tambal Gigi Anterior' }, id: 'filling-anterior', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Back Tooth Filling', id: 'Tambal Gigi Posterior' }, id: 'filling-posterior', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Temporary Filling', id: 'Tambalan Sementara' }, id: 'temporary-filling', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Glass Ionomer Filling', id: 'Tambalan Glass Ionomer' }, id: 'gi-filling', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Desensitization Treatment', id: 'Perawatan Desensitisasi' }, id: 'desensitization', image: '/images/dental/TambalGigi.png' },
-      { name: { en: 'Examination & Diagnosis', id: 'Pemeriksaan & Diagnosis' }, id: 'dental-exam', image: '/images/dental/Scaling.png' },
-      { name: { en: 'Dental X-Ray', id: 'Rontgen Gigi' }, id: 'dental-xray', image: 'https://images.unsplash.com/photo-1629909615957-be38b9e8f3b5?q=80&w=2071&auto=format&fit=crop' }
+      { name: { en: 'Dental Scaling & Polishing', id: 'Scaling & Poles Gigi' }, id: 'scaling-polishing', image: '/images/dental/GENERAL DENTISTRY/Dental Scaling & Polishing.png' },
+      { name: { en: 'Topical Fluoride Treatment', id: 'Perawatan Fluoride Topikal' }, id: 'fluoride-treatment', image: '/images/dental/GENERAL DENTISTRY/Topical Fluoride Treatment.png' },
+      { name: { en: 'Dental Sealant', id: 'Sealant Gigi' }, id: 'dental-sealant', image: '/images/dental/GENERAL DENTISTRY/Dental Sealant.png' },
+      { name: { en: 'Front Tooth Filling', id: 'Tambal Gigi Anterior' }, id: 'filling-anterior', image: '/images/dental/GENERAL DENTISTRY/Anterior Tooth Filling (Front Teeth).png' },
+      { name: { en: 'Back Tooth Filling', id: 'Tambal Gigi Posterior' }, id: 'filling-posterior', image: '/images/dental/GENERAL DENTISTRY/Posterior Tooth Filling (Back Teeth).png' },
+      { name: { en: 'Temporary Filling', id: 'Tambalan Sementara' }, id: 'temporary-filling', image: '/images/dental/GENERAL DENTISTRY/Temporary Tooth filling.png' },
+      { name: { en: 'Glass Ionomer Filling', id: 'Tambalan Glass Ionomer' }, id: 'gi-filling', image: '/images/dental/GENERAL DENTISTRY/Glass Ionomer Filling.png' },
+      { name: { en: 'Desensitization Treatment', id: 'Perawatan Desensitisasi' }, id: 'desensitization', image: '/images/dental/GENERAL DENTISTRY/Tooth Desensitization Treatment.png' },
+      { name: { en: 'Examination & Diagnosis', id: 'Pemeriksaan & Diagnosis' }, id: 'dental-exam', image: '/images/dental/GENERAL DENTISTRY/Dental Examination & Diagnosis.png' },
+      { name: { en: 'Dental X-Ray', id: 'Rontgen Gigi' }, id: 'dental-xray', image: '/images/dental/GENERAL DENTISTRY/Dental X-Ray (Periapical _ Bitewing _ Panoramic).png' }
     ]
   }
 ];
